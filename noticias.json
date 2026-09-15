@@ -1,0 +1,9 @@
+{
+ "data": "15/09/2026",
+ "hora": "07h00",
+ "itens": [
+  {"titulo": "Alto padrão perde ritmo em São Paulo", "texto": "Vendas de apartamentos de luxo caíram pela metade na capital e o Imobi Report registra desaceleração no segmento. Para quem lança 2 a 3 projetos por ano, é o dado da semana.", "fontes": [{"nome": "Imobi Report", "url": "https://imobireport.com.br/newsletter-do-imobi/vendas-de-imoveis-de-luxo-e-alto-padrao-perdem-ritmo/"}, {"nome": "InfoMoney", "url": "https://www.infomoney.com.br/minhas-financas/vendas-de-apartamentos-de-luxo-caem-pela-metade-na-cidade-de-sao-paulo/"}]},
+  {"titulo": "Reforma tributária: 2027 começa agora para incorporadoras", "texto": "O Portal VGV detalha o que muda no regime das incorporadoras com IBS e CBS e por que o planejamento precisa começar neste ano.", "fontes": [{"nome": "Portal VGV", "url": "https://www.portalvgv.com.br/reforma-tributaria-para-incorporadoras-2027/"}]},
+  {"titulo": "Imóvel de classe média nunca foi tão raro", "texto": "InfoMoney mostra como o Minha Casa Minha Vida e o alto padrão comprimiram a faixa do meio, a que mais sente juro alto.", "fontes": [{"nome": "InfoMoney", "url": "https://www.infomoney.com.br/minhas-financas/imovel-de-classe-media-nunca-foi-tao-raro-o-que-mudou/"}]}
+ ]
+}
