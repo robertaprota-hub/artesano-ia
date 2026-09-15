@@ -291,7 +291,7 @@
       <div class="card drive">
         <div class="kicker">pasta da turma</div>
         <div class="title">Gravações e apresentações</div>
-        <p>Tudo da sua turma numa pasta só, no Drive. Cada aula aparece aqui com o link direto quando for publicada.</p>
+        <p>Tudo da sua turma numa pasta só, no Drive: <b>01 - apresentações</b> e <b>02 - gravações</b>. Cada aula ganha o link direto aqui depois de publicada.</p>
         <div class="row" style="gap:12px;flex-wrap:wrap"><a class="btn primary" id="driveBtn" href="#" target="_blank" rel="noopener">Abrir no Drive</a><button class="btn ghost on-dark" data-copy="drive">copiar link</button></div>
       </div>
       <div class="section-label"><span class="kicker">apresentações</span><small>pdf por aula</small></div>
@@ -356,12 +356,12 @@
 
 <script>
 /* ===== dados (no app final, isto vive em turmas.js) ===== */
-const PROGRAMA = { nome:'Artesano · IA', duracaoHoras:1, drive:'', sala:'Sala 104' };
+const PROGRAMA = { nome:'Artesano · IA', duracaoHoras:1, drive:'https://drive.google.com/drive/folders/1OSHTagBSvJYz2GQXBij83KGg70AFjM8y', sala:'Sala 104' };
 const TURMAS = [
-  { slug:'bairro-artesano', cor:'#02394A', nome:'Bairro Artesano', dia:'terças',  diaCurto:'ter', hora:'14h00', h:14, m:0,  meet:'https://meet.google.com/nxs-aedg-fhn', areas:'Negócios, Produto, Implantação, Arquitetura e Urbanismo' },
-  { slug:'londrina',        cor:'#5D8A98', nome:'Londrina',        dia:'terças',  diaCurto:'ter', hora:'15h30', h:15, m:30, meet:'https://meet.google.com/tay-apaj-dni', areas:'Engenharia, Obra, Planejamento Técnico, Suprimentos' },
-  { slug:'praia-do-paiva',  cor:'#C38F70', nome:'Praia do Paiva',  dia:'quintas', diaCurto:'qui', hora:'14h00', h:14, m:0,  meet:'https://meet.google.com/ofz-hsqe-jkw', areas:'Financeiro, Planejamento Financeiro, RH, Novos Negócios' },
-  { slug:'sjc',             cor:'#296F93', nome:'SJC',             dia:'quintas', diaCurto:'qui', hora:'15h30', h:15, m:30, meet:'https://meet.google.com/znq-vkxf-pro', areas:'Comercial, Marketing, Experiência do Cliente, Jurídico, Instituto' }
+  { slug:'bairro-artesano', drive:'https://drive.google.com/drive/folders/10lsi7tHUbbhP_CkF6ZceWQ5Zq0Qem32P', pastaApresentacoes:'https://drive.google.com/drive/folders/1J_Uxw_spSwTUk3O7ATU47_qvUXgzrUX0', pastaGravacoes:'https://drive.google.com/drive/folders/1JLIZdwCxoeNT7mlKqjVgNiCej44Hj1tG', cor:'#02394A', nome:'Bairro Artesano', dia:'terças',  diaCurto:'ter', hora:'14h00', h:14, m:0,  meet:'https://meet.google.com/nxs-aedg-fhn', areas:'Negócios, Produto, Implantação, Arquitetura e Urbanismo' },
+  { slug:'londrina', drive:'https://drive.google.com/drive/folders/1QOGKjTmAOsC5Y4AnSDlAzYA0M9xGY6C3', pastaApresentacoes:'https://drive.google.com/drive/folders/1JbTb4KX81jUOv_BknU4_uVdHde2ZFMj5', pastaGravacoes:'https://drive.google.com/drive/folders/19jrhNF5-1CDC4oo5st_aq07y3ouWQf94',        cor:'#5D8A98', nome:'Londrina',        dia:'terças',  diaCurto:'ter', hora:'15h30', h:15, m:30, meet:'https://meet.google.com/tay-apaj-dni', areas:'Engenharia, Obra, Planejamento Técnico, Suprimentos' },
+  { slug:'praia-do-paiva', drive:'https://drive.google.com/drive/folders/1-OyPyj-w5sbHi62jY-zlNvHb2a2mHvdV', pastaApresentacoes:'https://drive.google.com/drive/folders/1PMpjlRH4_ArZgvlXCScmL6ppjIi8eOxm', pastaGravacoes:'https://drive.google.com/drive/folders/1VSia_0UVtr5Zql3AzgpoyCyt9jxOPHcH',  cor:'#C38F70', nome:'Praia do Paiva',  dia:'quintas', diaCurto:'qui', hora:'14h00', h:14, m:0,  meet:'https://meet.google.com/ofz-hsqe-jkw', areas:'Financeiro, Planejamento Financeiro, RH, Novos Negócios' },
+  { slug:'sjc', drive:'https://drive.google.com/drive/folders/1E9vT40Q2Dw0QR5mCtfDZXpAVxzCLxvOG', pastaApresentacoes:'https://drive.google.com/drive/folders/13ScyApv-el9ADAgHx2Qkzd7oATbeRZVz', pastaGravacoes:'https://drive.google.com/drive/folders/1KQaomDDz3Ez1xzI6-Nh2EgN0dUmLKlUV',             cor:'#296F93', nome:'SJC',             dia:'quintas', diaCurto:'qui', hora:'15h30', h:15, m:30, meet:'https://meet.google.com/znq-vkxf-pro', areas:'Comercial, Marketing, Experiência do Cliente, Jurídico, Instituto' }
 ];
 const TER = ['2026-09-15','2026-09-22','2026-09-29','2026-10-06'], QUI = ['2026-09-17','2026-09-24','2026-10-01','2026-10-08'];
 const AULAS = [
@@ -389,7 +389,7 @@ function setTurma(slug){
   $$('[data-turma-nome]').forEach(e=>e.textContent=turma.nome);
   $$('[data-turma-quando]').forEach(e=>e.textContent=turma.diaCurto+' · '+turma.hora);
   $('#agendaKicker').textContent=turma.dia+' · '+turma.hora+' · 1h · híbrido';
-  $('#meetBtn').href=turma.meet; $('#driveBtn').href=PROGRAMA.drive||'#';
+  $('#meetBtn').href=turma.meet; $('#driveBtn').href=turma.drive||PROGRAMA.drive;
   $$('.opt').forEach(o=>o.classList.toggle('sel',o.dataset.slug===turma.slug));
   document.documentElement.style.setProperty('--turma',turma.cor);
   renderAulas(); renderPdfs(); renderAgenda();
@@ -403,13 +403,14 @@ function renderAulas(){
     const el=document.createElement('div'); el.className='card aula row'; el.setAttribute('role','button'); el.tabIndex=0;
     el.innerHTML=`<div class="num ${live?'live':''}">${a.num}</div>
       <div class="grow"><div class="title">${a.titulo}</div><div class="meta">${p.dow}, ${String(p.d).padStart(2,'0')} ${p.mes} · ${turma.hora} · ${a.sub}</div></div>
-      ${live?'<span class="pill hoje">hoje</span>':futura?'<span class="pill breve">em breve</span>':(link?'':'<span class="pill breve">gravação em breve</span>')}
+      ${live?'<span class="pill hoje">hoje</span>':futura?'<span class="pill breve">em breve</span>':(link?'':'<span class="pill breve">pasta</span>')}
       ${!futura?`<button class="check ${on?'on':''}" aria-label="marcar aula ${a.num} como assistida"><svg class="icon"><use href="#i-check"/></svg></button>`:''}`;
     el.addEventListener('click',e=>{
       if(e.target.closest('.check')){ assistidas=on?assistidas.filter(n=>n!==a.num):[...assistidas,a.num]; salvarAssistidas(); renderAulas(); return; }
       if(link){ window.open(link,'_blank'); if(!on){assistidas.push(a.num);salvarAssistidas();renderAulas();} }
       else if(live){ window.open(turma.meet,'_blank'); }
-      else toast(futura?'aula ainda não aconteceu':'gravação publicada após a aula');
+      else if(futura) toast('aula ainda não aconteceu');
+      else window.open(turma.pastaGravacoes||turma.drive,'_blank');
     });
     box.appendChild(el);
   });
@@ -418,8 +419,8 @@ function renderAulas(){
 function renderPdfs(){
   const box=$('#pdfList'); box.innerHTML='';
   AULAS.forEach(a=>{const link=a.pdf[turma.slug]||'', d=dataAula(a), p=partes(d);
-    const el=document.createElement('a'); el.className='file'+(link?'':' soon'); el.href=link||'#'; if(link){el.target='_blank';el.rel='noopener';} else el.onclick=()=>{toast('pdf publicado após a aula');return false;};
-    el.innerHTML=`<svg class="icon"><use href="#i-file"/></svg><div class="grow"><div class="title" style="font-size:15px">${a.num} · ${a.titulo}</div><div class="meta">${link?'apresentação da aula':'disponível após '+String(p.d).padStart(2,'0')+'/'+String(p.m).padStart(2,'0')}</div></div>${link?'<svg class="icon go"><use href="#i-ext"/></svg>':'<span class="pill breve">em breve</span>'}`;
+    const el=document.createElement('a'); el.className='file'+(link?'':' soon'); el.href=link||turma.pastaApresentacoes||turma.drive; el.target='_blank'; el.rel='noopener';
+    el.innerHTML=`<svg class="icon"><use href="#i-file"/></svg><div class="grow"><div class="title" style="font-size:15px">${a.num} · ${a.titulo}</div><div class="meta">${link?'apresentação da aula':'na pasta após '+String(p.d).padStart(2,'0')+'/'+String(p.m).padStart(2,'0')}</div></div>${link?'<svg class="icon go"><use href="#i-ext"/></svg>':'<span class="pill breve">pasta</span>'}`;
     box.appendChild(el);
   });
 }
@@ -449,7 +450,7 @@ function toast(msg){const t=$('#toast');t.textContent=msg;t.classList.add('show'
 $$('.tab').forEach(b=>b.addEventListener('click',()=>{$$('.tab').forEach(x=>x.classList.toggle('active',x===b));$$('.view').forEach(v=>v.classList.toggle('active',v.dataset.view===b.dataset.tab));$('.view.active').scrollTop=0;}));
 $$('[data-open-sheet]').forEach(b=>b.addEventListener('click',()=>$('#sheet').classList.add('open')));
 $('#sheet').addEventListener('click',e=>{if(e.target===e.currentTarget&&turma)$('#sheet').classList.remove('open');});
-$$('[data-copy]').forEach(b=>b.addEventListener('click',()=>{const v=PROGRAMA.drive||'pasta ainda não publicada';navigator.clipboard?.writeText(v).then(()=>toast('link copiado')).catch(()=>toast(v));}));
+$$('[data-copy]').forEach(b=>b.addEventListener('click',()=>{const v=turma.drive||PROGRAMA.drive;navigator.clipboard?.writeText(v).then(()=>toast('link copiado')).catch(()=>toast(v));}));
 const opts=$('#turmaOpts');
 TURMAS.forEach(t=>{const b=document.createElement('button');b.className='opt';b.dataset.slug=t.slug;b.style.setProperty('--c',t.cor);
   b.innerHTML=`<div class="grow"><div class="t">${t.nome}</div><div class="a">${t.areas}</div></div><div class="when">${t.diaCurto} · ${t.hora}</div>`;
