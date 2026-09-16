@@ -7,7 +7,7 @@ const FEEDS = [
   ['Secovi-SP','https://www.secovi.com.br/feed/'],
   ['Exame','https://exame.com/feed/', true]   // feed geral: só entra o que casar com as palavras do setor
 ];
-const SETOR=/imobili|im[óo]ve|loteament|incorporad|constru|vgv|selic|cr[ée]dito|financiamento|aluguel|\bfii|minha casa|habita|terreno|condom/i;
+const SETOR=/imobili|im[óo]ve|loteament|incorporad|incorpora[çc][ãa]o|\bvgv\b|cr[ée]dito imobili|financiamento imobili|aluguel|\bfiis?\b|minha casa|habita[çc]/i;
 const PESO=[/selic|juro|cr[ée]dito|financiamento|funding|cri\b/i,/reforma tribut|ibs|cbs|decreto|lei\b|regula/i,/lançament|vgv|vendas|estoque|pre[çc]o|vac[âa]ncia/i,/loteament|urbanis|bairro planejado|condom[íi]nio/i];
 const tag=(x,t)=>{const m=x.match(new RegExp(`<${t}[^>]*>([\\s\\S]*?)</${t}>`));return m?m[1].replace(/<!\[CDATA\[([\s\S]*?)\]\]>/,'$1').replace(/<[^>]+>/g,'').replace(/&amp;/g,'&').replace(/&#8217;|&rsquo;/g,'’').replace(/&quot;/g,'"').trim():'';};
 const limite=Date.now()-3*864e5, itens=[];

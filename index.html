@@ -254,7 +254,7 @@
       <div class="sources">
         <a href="https://imobireport.com.br/" target="_blank" rel="noopener">Imobi Report</a><a href="https://www.portalvgv.com.br/" target="_blank" rel="noopener">Portal VGV</a><a href="https://www.infomoney.com.br/tudo-sobre/mercado-imobiliario/" target="_blank" rel="noopener">InfoMoney</a><a href="https://exame.com/mercado-imobiliario/" target="_blank" rel="noopener">Exame</a><a href="https://www.abrainc.org.br/noticias" target="_blank" rel="noopener">ABRAINC</a><a href="https://www.secovi.com.br/noticias" target="_blank" rel="noopener">Secovi-SP</a>
       </div>
-      <p class="note">Manchetes lidas nos sites das fontes hoje, 15/09, às 07h. As atualizações do topo são escritas pela skill de mercado imobiliário. Nenhum número é inventado: cada item tem o link da matéria.</p>
+      <p class="note" id="notaFontes">Manchetes lidas nos sites das fontes todo dia às 7h. As atualizações do topo são escritas pela skill de mercado imobiliário. Nenhum número é inventado: cada item tem o link da matéria.</p>
       <div class="credit">programa conduzido por prota.ia</div>
     </div>
   </section>
@@ -460,5 +460,23 @@ const salva=ls.get(KEY_TURMA);
 if(salva&&TURMAS.some(t=>t.slug===salva)) setTurma(salva); else { setTurma(TURMAS[0].slug); ls.set(KEY_TURMA,''); $$('.opt').forEach(o=>o.classList.remove('sel')); $('#sheet').classList.add('open'); }
 </script>
 
+<script>
+/* ===== notícias: noticias.json (skill, diário) e manchetes.json (RSS, diário). Sem arquivo, fica o conteúdo fixo ===== */
+(function(){
+const esc=t=>String(t??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const q=s=>document.querySelector(s);
+fetch('noticias.json?t='+Date.now(),{cache:'no-store'}).then(r=>r.ok?r.json():null).then(n=>{
+  if(!n||!Array.isArray(n.itens)||!n.itens.length) return;
+  q('#atuData').textContent=(n.data||'')+(n.hora?' · '+n.hora:'');
+  q('#atuBox').innerHTML=n.itens.map((it,i)=>`<div class="card${i===0?' lead':''}"><div class="title">${esc(it.titulo)}</div>${it.texto?`<p class="ctx">${esc(it.texto)}</p>`:''}<div class="row" style="gap:14px;flex-wrap:wrap">${(it.fontes||[]).map(f=>`<a class="link" href="${esc(f.url)}" target="_blank" rel="noopener">${esc(f.nome)}</a>`).join('')}</div></div>`).join('');
+  q('#notaFontes').textContent='Atualizações escritas pela skill de mercado imobiliário em '+(n.data||'')+'. Nenhum número é inventado: cada item tem o link da matéria.';
+}).catch(()=>{});
+fetch('manchetes.json?t='+Date.now(),{cache:'no-store'}).then(r=>r.ok?r.json():null).then(m=>{
+  if(!m||!Array.isArray(m.itens)||!m.itens.length) return;
+  q('#manData').textContent='automático · '+(m.atualizado||'');
+  q('#manBox').innerHTML=m.itens.slice(0,10).map(it=>`<div class="news-item"><div class="src"><b>${esc(it.fonte)}</b><span>${esc(it.data)}</span></div><a class="hl" href="${esc(it.url)}" target="_blank" rel="noopener">${esc(it.titulo)}</a></div>`).join('');
+}).catch(()=>{});
+})();
+</script>
 </body>
 </html>
