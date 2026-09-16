@@ -1,9 +1,60 @@
 {
- "data": "15/09/2026",
- "hora": "07h00",
+ "data": "16/09/2026",
+ "hora": "09h30",
  "itens": [
-  {"titulo": "Alto padrão perde ritmo em São Paulo", "texto": "Vendas de apartamentos de luxo caíram pela metade na capital e o Imobi Report registra desaceleração no segmento. Para quem lança 2 a 3 projetos por ano, é o dado da semana.", "fontes": [{"nome": "Imobi Report", "url": "https://imobireport.com.br/newsletter-do-imobi/vendas-de-imoveis-de-luxo-e-alto-padrao-perdem-ritmo/"}, {"nome": "InfoMoney", "url": "https://www.infomoney.com.br/minhas-financas/vendas-de-apartamentos-de-luxo-caem-pela-metade-na-cidade-de-sao-paulo/"}]},
-  {"titulo": "Reforma tributária: 2027 começa agora para incorporadoras", "texto": "O Portal VGV detalha o que muda no regime das incorporadoras com IBS e CBS e por que o planejamento precisa começar neste ano.", "fontes": [{"nome": "Portal VGV", "url": "https://www.portalvgv.com.br/reforma-tributaria-para-incorporadoras-2027/"}]},
-  {"titulo": "Imóvel de classe média nunca foi tão raro", "texto": "InfoMoney mostra como o Minha Casa Minha Vida e o alto padrão comprimiram a faixa do meio, a que mais sente juro alto.", "fontes": [{"nome": "InfoMoney", "url": "https://www.infomoney.com.br/minhas-financas/imovel-de-classe-media-nunca-foi-tao-raro-o-que-mudou/"}]}
+  {
+   "titulo": "São Paulo vendeu 10,3 mil unidades novas em julho",
+   "texto": "A Pesquisa Mensal do Secovi-SP apurou 10.301 unidades residenciais novas comercializadas na capital em julho e 118,1 mil no acumulado de 12 meses. Dado de referência para calibrar velocidade de vendas.",
+   "fontes": [
+    {
+     "nome": "Secovi-SP",
+     "url": "https://secovi.com.br/pesquisa-mensal-do-mercado-imobiliario-julho-2026/"
+    }
+   ]
+  },
+  {
+   "titulo": "Alto padrão perde ritmo na capital paulista",
+   "texto": "O Imobi Report registra desaceleração nas vendas de luxo e alto padrão em São Paulo, na sequência da queda pela metade apontada pelo InfoMoney.",
+   "fontes": [
+    {
+     "nome": "Imobi Report",
+     "url": "https://imobireport.com.br/newsletter-do-imobi/vendas-de-imoveis-de-luxo-e-alto-padrao-perdem-ritmo/"
+    },
+    {
+     "nome": "InfoMoney",
+     "url": "https://www.infomoney.com.br/minhas-financas/vendas-de-apartamentos-de-luxo-caem-pela-metade-na-cidade-de-sao-paulo/"
+    }
+   ]
+  },
+  {
+   "titulo": "Requalifica Centro amplia retrofit e oferta de moradia",
+   "texto": "Secovi-SP destaca as atualizações normativas do programa, que facilitam a conversão de edifícios antigos do centro de São Paulo em moradias.",
+   "fontes": [
+    {
+     "nome": "Secovi-SP",
+     "url": "https://secovi.com.br/a-forca-do-requalifica-centro/"
+    }
+   ]
+  },
+  {
+   "titulo": "Reforma tributária: 2027 começa agora para incorporadoras",
+   "texto": "Portal VGV detalha os impactos sobre tributação, RET, documentos fiscais e gestão. O planejamento precisa começar neste ano.",
+   "fontes": [
+    {
+     "nome": "Portal VGV",
+     "url": "https://www.portalvgv.com.br/reforma-tributaria-para-incorporadoras-2027/"
+    }
+   ]
+  },
+  {
+   "titulo": "Raio-x do interior, Baixada e Grande SP sai em 23/09",
+   "texto": "Secovi-SP apresenta a pesquisa do 2º trimestre com indicadores de 42 cidades, incluindo praças do interior paulista.",
+   "fontes": [
+    {
+     "nome": "Secovi-SP",
+     "url": "https://secovi.com.br/secovi-sp-divulga-raio-x-do-mercado-imobiliario-do-interior-baixada-santista-e-grande-sp-no-2o-trimestre-de-2026/"
+    }
+   ]
+  }
  ]
 }
