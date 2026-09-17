@@ -372,7 +372,7 @@ const TURMAS = [
 ];
 const TER = ['2026-09-15','2026-09-22','2026-09-29','2026-10-06'], QUI = ['2026-09-17','2026-09-24','2026-10-01','2026-10-08'];
 const AULAS = [
-  { num:'01', titulo:'Fundamentos e prompts',           sub:'camadas da IA, ciclo 4D e prompt em cinco passos', gravacao:{ 'londrina':'https://drive.google.com/file/d/1q7gH8xxp9DBWVl9tAbsrOfP0pqCuWyOb/view', 'sjc':'https://drive.google.com/file/d/1JHQeMLVxthGcbyLurMMjXs-V0m5UgmMV/view' }, pdf:{ 'bairro-artesano':'https://drive.google.com/file/d/1Ql4tSA_38sjvt2q2h_DIyVrlT_NrexmZ/view', 'londrina':'https://drive.google.com/file/d/1-i_uu12dpbGLb82SYPodBu7QB3r5JBCv/view', 'praia-do-paiva':'https://drive.google.com/file/d/1npcdmaoxyPkrpDWH7J0tTt-W8MbTSP09/view', 'sjc':'https://drive.google.com/file/d/1VcPN5pkMNJjLX2zNMv7iffIPCud7WtMW/view' } },
+  { num:'01', titulo:'Fundamentos e prompts',           sub:'camadas da IA, ciclo 4D e prompt em cinco passos', obs:{ 'bairro-artesano':'gravação da turma das 15h30' }, gravacao:{ 'bairro-artesano':'https://drive.google.com/file/d/15629-Duu4Nz3V-ZNosQ7bzIURZqoiZTv/view', 'londrina':'https://drive.google.com/file/d/1q7gH8xxp9DBWVl9tAbsrOfP0pqCuWyOb/view', 'sjc':'https://drive.google.com/file/d/1JHQeMLVxthGcbyLurMMjXs-V0m5UgmMV/view' }, pdf:{ 'bairro-artesano':'https://drive.google.com/file/d/1Ql4tSA_38sjvt2q2h_DIyVrlT_NrexmZ/view', 'londrina':'https://drive.google.com/file/d/1-i_uu12dpbGLb82SYPodBu7QB3r5JBCv/view', 'praia-do-paiva':'https://drive.google.com/file/d/1npcdmaoxyPkrpDWH7J0tTt-W8MbTSP09/view', 'sjc':'https://drive.google.com/file/d/1VcPN5pkMNJjLX2zNMv7iffIPCud7WtMW/view' } },
   { num:'02', titulo:'Projetos, Markdown, Artifacts',    sub:'contexto fixo em .md, iterar em Artifacts e dados na fonte', gravacao:{}, pdf:{} },
   { num:'03', titulo:'Skills',                           sub:'quando criar, estrutura da skill e criação sem código', gravacao:{}, pdf:{} },
   { num:'04', titulo:'Claude no Office e rotinas',       sub:'arquivo aberto no Office, planilha ao slide e rotinas agendadas', gravacao:{}, pdf:{} }
@@ -411,7 +411,7 @@ function renderAulas(){
     if(ok) disp++;
     const el=document.createElement('div'); el.className='card aula row'+(futura?' soon':''); el.setAttribute('role','button'); el.tabIndex=0;
     el.innerHTML=`<div class="num ${live?'live':''}">${a.num}</div>
-      <div class="grow"><div class="title">${a.titulo}</div><div class="meta">${p.dow}, ${String(p.d).padStart(2,'0')} ${p.mes} · ${turma.hora} · ${a.sub}</div></div>
+      <div class="grow"><div class="title">${a.titulo}</div><div class="meta">${p.dow}, ${String(p.d).padStart(2,'0')} ${p.mes} · ${turma.hora} · ${a.sub}${(a.obs&&a.obs[turma.slug])?' · '+a.obs[turma.slug]:''}</div></div>
       ${live?'<span class="pill hoje">hoje</span>':futura?'<span class="pill breve">em breve</span>':'<span class="play" aria-hidden="true"><svg class="icon"><use href="#i-playfill"/></svg></span><span class="ok" aria-label="disponível"><svg class="icon"><use href="#i-check"/></svg></span>'}`;
     el.addEventListener('click',()=>{
       if(live) window.open(turma.meet,'_blank');
