@@ -2,49 +2,55 @@
  "atualizado": "17/09 08:48",
  "resumo": {
   "data": "17/09/2026",
-  "hora": "05h10",
+  "hora": "10h50",
   "itens": [
    {
-    "titulo": "São Paulo vendeu 10,3 mil unidades novas em julho",
-    "texto": "A Pesquisa Mensal do Secovi-SP apurou 10.301 unidades residenciais novas comercializadas na capital em julho e 118,1 mil no acumulado de 12 meses.",
+    "titulo": "Selic caiu, mas a prestação do financiamento não cai já",
+    "texto": "InfoMoney explica por que o corte de juros demora a chegar às parcelas do crédito imobiliário.",
     "fontes": [
-     {
-      "nome": "Secovi-SP",
-      "url": "https://secovi.com.br/pesquisa-mensal-do-mercado-imobiliario-julho-2026/"
-     }
-    ]
-   },
-   {
-    "titulo": "Alto padrão perde ritmo na capital paulista",
-    "texto": "O Imobi Report registra desaceleração nas vendas de luxo e alto padrão em São Paulo, na sequência da queda pela metade apontada pelo InfoMoney.",
-    "fontes": [
-     {
-      "nome": "Imobi Report",
-      "url": "https://imobireport.com.br/newsletter-do-imobi/vendas-de-imoveis-de-luxo-e-alto-padrao-perdem-ritmo/"
-     },
      {
       "nome": "InfoMoney",
-      "url": "https://www.infomoney.com.br/minhas-financas/vendas-de-apartamentos-de-luxo-caem-pela-metade-na-cidade-de-sao-paulo/"
+      "url": "https://www.infomoney.com.br/minhas-financas/selic-caiu-mas-sua-prestacao-no-financiamento-nao-vai-diminuir-eis-o-porque/"
      }
     ]
    },
    {
-    "titulo": "Requalifica Centro amplia retrofit e oferta de moradia",
-    "texto": "Secovi-SP destaca as atualizações normativas do programa, que facilitam a conversão de edifícios antigos do centro de São Paulo em moradias.",
+    "titulo": "Benx põe R$ 500 milhões no alto padrão e prevê freio no mercado",
+    "texto": "A incorporadora do Parque Global detalha onde vai investir nos próximos anos e espera desaceleração do setor.",
+    "fontes": [
+     {
+      "nome": "Exame",
+      "url": "https://exame.com/exame-in/de-r-500-milhoes-a-r-10-bilhoes-onde-a-benx-vai-colocar-dinheiro-nos-proximos-anos/"
+     }
+    ]
+   },
+   {
+    "titulo": "Loteamentos: funding e novas regras de saneamento em debate",
+    "texto": "Painel da Convenção Secovi-SP discutiu financiamento e as mudanças de saneamento que afetam o setor de loteamentos.",
     "fontes": [
      {
       "nome": "Secovi-SP",
-      "url": "https://secovi.com.br/a-forca-do-requalifica-centro/"
+      "url": "https://secovi.com.br/painel-na-convencao-secovi-sp-discute-funding-e-novas-regras-de-saneamento-para-o-setor-de-loteamentos/"
      }
     ]
    },
    {
-    "titulo": "Reforma tributária: 2027 começa agora para incorporadoras",
-    "texto": "Portal VGV detalha os impactos sobre tributação, RET, documentos fiscais e gestão. O planejamento precisa começar neste ano.",
+    "titulo": "Reforma tributária: os desafios da implementação",
+    "texto": "Especialistas reunidos na Convenção Secovi-SP debateram como o setor imobiliário deve se preparar para o novo sistema.",
+    "fontes": [
+     {
+      "nome": "Secovi-SP",
+      "url": "https://secovi.com.br/especialistas-debatem-desafios-da-implementacao-da-reforma-tributaria-em-painel-na-convencao-secovi-sp/"
+     }
+    ]
+   },
+   {
+    "titulo": "Incorporação em 6 cidades, 6 realidades diferentes",
+    "texto": "Portal VGV compara os desafios de incorporar em mercados regionais distintos.",
     "fontes": [
      {
       "nome": "Portal VGV",
-      "url": "https://www.portalvgv.com.br/reforma-tributaria-para-incorporadoras-2027/"
+      "url": "https://www.portalvgv.com.br/desafios-da-incorporacao-6-cidades-vgv-max/"
      }
     ]
    }
@@ -53,39 +59,9 @@
  "itens": [
   {
    "fonte": "Secovi-SP",
-   "titulo": "Painel na Convenção Secovi-SP discute funding e novas regras de saneamento para o setor de loteamentos",
-   "url": "https://secovi.com.br/painel-na-convencao-secovi-sp-discute-funding-e-novas-regras-de-saneamento-para-o-setor-de-loteamentos/",
-   "data": "16/09"
-  },
-  {
-   "fonte": "InfoMoney",
-   "titulo": "Selic caiu, mas sua prestação no financiamento não vai diminuir já — eis o porquê",
-   "url": "https://www.infomoney.com.br/minhas-financas/selic-caiu-mas-sua-prestacao-no-financiamento-nao-vai-diminuir-eis-o-porque/",
-   "data": "17/09"
-  },
-  {
-   "fonte": "Secovi-SP",
    "titulo": "10º Painel na Convenção Secovi-SP mostra como tecnologia e crédito estão acelerando a jornada de compra do imóvel",
    "url": "https://secovi.com.br/10o-painel-na-convencao-secovi-sp-mostra-como-tecnologia-e-credito-estao-acelerando-a-jornada-de-compra-do-imovel/",
    "data": "16/09"
-  },
-  {
-   "fonte": "Secovi-SP",
-   "titulo": "Especialistas debatem desafios da implementação da reforma tributária em painel na Convenção Secovi-SP",
-   "url": "https://secovi.com.br/especialistas-debatem-desafios-da-implementacao-da-reforma-tributaria-em-painel-na-convencao-secovi-sp/",
-   "data": "16/09"
-  },
-  {
-   "fonte": "Portal VGV",
-   "titulo": "Desafios da incorporação: 6 cidades, diferentes realidades",
-   "url": "https://www.portalvgv.com.br/desafios-da-incorporacao-6-cidades-vgv-max/",
-   "data": "16/09"
-  },
-  {
-   "fonte": "Exame",
-   "titulo": "Benx, do Parque Global, põe R$ 500 milhões no alto padrão e prevê freio no mercado imobiliário",
-   "url": "https://exame.com/exame-in/de-r-500-milhoes-a-r-10-bilhoes-onde-a-benx-vai-colocar-dinheiro-nos-proximos-anos/",
-   "data": "17/09"
   }
  ]
 }
