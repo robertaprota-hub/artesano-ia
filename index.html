@@ -372,7 +372,7 @@ const TURMAS = [
 ];
 const TER = ['2026-09-15','2026-09-22','2026-09-29','2026-10-06'], QUI = ['2026-09-17','2026-09-24','2026-10-01','2026-10-08'];
 const AULAS = [
-  { num:'01', titulo:'Fundamentos e prompts',           sub:'camadas da IA, ciclo 4D e prompt em cinco passos', gravacao:{}, pdf:{} },
+  { num:'01', titulo:'Fundamentos e prompts',           sub:'camadas da IA, ciclo 4D e prompt em cinco passos', gravacao:{ 'londrina':'https://drive.google.com/file/d/1q7gH8xxp9DBWVl9tAbsrOfP0pqCuWyOb/view', 'sjc':'https://drive.google.com/file/d/1JHQeMLVxthGcbyLurMMjXs-V0m5UgmMV/view' }, pdf:{ 'bairro-artesano':'https://drive.google.com/file/d/1Ql4tSA_38sjvt2q2h_DIyVrlT_NrexmZ/view', 'londrina':'https://drive.google.com/file/d/1-i_uu12dpbGLb82SYPodBu7QB3r5JBCv/view', 'praia-do-paiva':'https://drive.google.com/file/d/1npcdmaoxyPkrpDWH7J0tTt-W8MbTSP09/view', 'sjc':'https://drive.google.com/file/d/1VcPN5pkMNJjLX2zNMv7iffIPCud7WtMW/view' } },
   { num:'02', titulo:'Projetos, Markdown, Artifacts',    sub:'contexto fixo em .md, iterar em Artifacts e dados na fonte', gravacao:{}, pdf:{} },
   { num:'03', titulo:'Skills',                           sub:'quando criar, estrutura da skill e criação sem código', gravacao:{}, pdf:{} },
   { num:'04', titulo:'Claude no Office e rotinas',       sub:'arquivo aberto no Office, planilha ao slide e rotinas agendadas', gravacao:{}, pdf:{} }
@@ -407,7 +407,7 @@ function renderAulas(){
   const box=$('#aulasList'); box.innerHTML='';
   let disp=0;
   AULAS.forEach(a=>{
-    const d=dataAula(a), p=partes(d), live=d===hojeISO, futura=d>hojeISO, ok=!futura&&!live, link=a.gravacao[turma.slug]||'';
+    const d=dataAula(a), p=partes(d), link=a.gravacao[turma.slug]||'', live=d===hojeISO&&!link, futura=d>hojeISO, ok=!!link||(d<hojeISO);
     if(ok) disp++;
     const el=document.createElement('div'); el.className='card aula row'+(futura?' soon':''); el.setAttribute('role','button'); el.tabIndex=0;
     el.innerHTML=`<div class="num ${live?'live':''}">${a.num}</div>
@@ -424,7 +424,7 @@ function renderAulas(){
 }
 function renderPdfs(){
   const box=$('#pdfList'); box.innerHTML='';
-  AULAS.forEach(a=>{const link=a.pdf[turma.slug]||'', d=dataAula(a), p=partes(d), futura=d>hojeISO, live=d===hojeISO, ok=!futura&&!live;
+  AULAS.forEach(a=>{const link=a.pdf[turma.slug]||'', d=dataAula(a), p=partes(d), futura=d>hojeISO, ok=!!link||(d<hojeISO);
     const el=document.createElement('a'); el.className='file'+(ok?'':' soon'); el.href=ok?(link||turma.pastaApresentacoes||turma.drive):'#';
     if(ok){el.target='_blank';el.rel='noopener';} else el.onclick=()=>{toast('disponível após a aula');return false;};
     el.innerHTML=`<div class="num">${a.num}</div><div class="grow"><div class="title" style="font-size:15px">${a.titulo}</div><div class="meta">${ok?'apresentação da aula':'disponível após '+String(p.d).padStart(2,'0')+'/'+String(p.m).padStart(2,'0')}</div></div>${ok?'<span class="ok" aria-label="disponível"><svg class="icon"><use href="#i-check"/></svg></span>':'<span class="pill breve">em breve</span>'}`;
