@@ -33,7 +33,10 @@ let resumo=null;
 try{
   const r=await fetch('https://drive.google.com/uc?export=download&id=1SpWiLkMzI03Fp_qvZWyWhQhjq86OgMBM',{signal:AbortSignal.timeout(20000)});
   const j=JSON.parse(await r.text());
-  if(j&&Array.isArray(j.itens)&&j.itens.length) resumo=j;
+  // só vale resumo de hoje ou de ontem; mais velho que isso, não mostra
+  const [dd,mm,aa]=String(j?.data||'').split('/').map(Number);
+  const idade=(spNow-new Date(aa,mm-1,dd))/864e5;
+  if(j&&Array.isArray(j.itens)&&j.itens.length&&idade<2) resumo=j;
 }catch(e){console.error('resumo do Drive indisponível:',e.message);}
 const jaNoResumo=new Set((resumo?.itens||[]).flatMap(it=>(it.fontes||[]).map(f=>(f.url||'').replace(/\/$/,''))));
 const vistos=new Set(), unicos=itens.filter(i=>{
