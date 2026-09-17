@@ -26,5 +26,12 @@ for(const [fonte,url,filtrar] of FEEDS){
 const vistos=new Set(), unicos=itens.filter(i=>{const k=i.titulo.toLowerCase().replace(/[^a-z0-9]+/g,' ').slice(0,60);if(vistos.has(k))return false;vistos.add(k);return true;});
 unicos.sort((a,b)=>(b.peso-a.peso)||(b.ts-a.ts));
 const atualizado=new Date().toLocaleString('pt-BR',{day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit',timeZone:'America/Sao_Paulo'}).replace(',','');
-writeFileSync('manchetes.json',JSON.stringify({atualizado,itens:unicos.slice(0,12).map(({peso,ts,...r})=>r)},null,1));
+// resumo escrito pela skill (tarefa diária na nuvem) e salvo no Google Drive como noticias.json
+let resumo=null;
+try{
+  const r=await fetch('https://drive.google.com/uc?export=download&id=1SpWiLkMzI03Fp_qvZWyWhQhjq86OgMBM',{signal:AbortSignal.timeout(20000)});
+  const j=JSON.parse(await r.text());
+  if(j&&Array.isArray(j.itens)&&j.itens.length) resumo=j;
+}catch(e){console.error('resumo do Drive indisponível:',e.message);}
+writeFileSync('manchetes.json',JSON.stringify({atualizado,resumo,itens:unicos.slice(0,12).map(({peso,ts,...r})=>r)},null,1));
 console.log(unicos.length,'manchetes');
