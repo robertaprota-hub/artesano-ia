@@ -1,0 +1,21 @@
+name: manchetes do dia
+on:
+  schedule:
+    - cron: '0 10 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  manchetes:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - run: node .github/scripts/manchetes.mjs
+      - run: |
+          git config user.name "artesano-ia bot"
+          git config user.email "noreply@protaia.com.br"
+          git add manchetes.json
+          git diff --cached --quiet || git commit -m "manchetes $(date -u +%Y-%m-%d)"
+          git push
