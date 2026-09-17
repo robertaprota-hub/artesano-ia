@@ -137,6 +137,12 @@
   .aula:hover{box-shadow:var(--shadow-2)}
   .num{width:44px;height:44px;border-radius:50%;background:var(--steel-soft);color:var(--brand-light);display:flex;align-items:center;justify-content:center;font-family:var(--font-mono);font-weight:600;font-size:15px;flex:0 0 auto}
   .num.live{background:var(--terra);color:#fff}
+  .play{width:38px;height:38px;border-radius:50%;background:var(--terra);color:#fff;display:flex;align-items:center;justify-content:center;flex:0 0 auto}
+  .play .icon{width:16px;height:16px;fill:currentColor;stroke:none;margin-left:2px}
+  .ok{width:28px;height:28px;border-radius:50%;background:var(--steel-soft);color:var(--steel);display:flex;align-items:center;justify-content:center;flex:0 0 auto}
+  .ok .icon{width:16px;height:16px;stroke-width:2.6}
+  .aula.soon,.file.soon{opacity:.62}
+  .file .num{width:40px;height:40px;font-size:14px}
   .check{width:28px;height:28px;border-radius:50%;border:1.5px solid var(--terra);display:flex;align-items:center;justify-content:center;color:transparent;flex:0 0 auto}
   .check.on{background:var(--terra);color:#fff}
   .check .icon{width:15px;height:15px;stroke-width:2.5}
@@ -202,6 +208,7 @@
     <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></symbol>
     <symbol id="i-file" viewBox="0 0 24 24"><path d="M6 3h8l5 5v13H6z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></symbol>
     <symbol id="i-ext" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4l-9 9"/><path d="M18 13v6H5V6h6"/></symbol>
+    <symbol id="i-playfill" viewBox="0 0 24 24"><path d="M7 4.5v15l13-7.5z"/></symbol>
     <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7"/></symbol>
     <symbol id="i-video" viewBox="0 0 24 24"><rect x="3" y="7" width="13" height="10" rx="2"/><path d="M16 11l5-3v8l-5-3z"/></symbol>
     <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-6-5.3-6-10a6 6 0 0 1 12 0c0 4.7-6 10-6 10z"/><circle cx="12" cy="11" r="2.2"/></symbol>
@@ -265,15 +272,15 @@
       <div class="head-inner">
         <div class="brand"><svg class="lockup" viewBox="0 0 626 602" role="img" aria-label="Artesano Urbanismo"><use href="#logoAll"/></svg><span class="sep"></span><span class="prota" role="img" aria-label="prota.ia"></span></div>
         <div class="kicker">treinamento · 4 aulas</div>
-        <h1>Claude na rotina da Artesano</h1>
-        <p class="editorial">O Claude trabalha no seu material, onde ele já está.</p>
+        <h1>Claude Estruturado</h1>
+        <p class="editorial">Gravações</p>
         <button class="turma-chip" data-open-sheet><span class="dot"></span><b data-turma-nome>Praia do Paiva</b><span data-turma-quando>qui · 14h00</span><em>trocar</em></button>
       </div>
     </header>
     <div class="content">
-      <div class="progress"><div class="lbl"><span>seu progresso</span><b id="progLabel">0/4</b></div><div class="track"><i id="progBar" style="width:0%"></i></div></div>
+      <div class="progress"><div class="lbl"><span>aulas disponíveis</span><b id="progLabel">0/4</b></div><div class="track"><i id="progBar" style="width:0%"></i></div></div>
       <div id="aulasList" style="display:flex;flex-direction:column;gap:12px"></div>
-      <p class="note">Toque na aula para abrir a gravação. O círculo marca como assistida e fica salvo neste aparelho.</p>
+      <p class="note">Toque na aula disponível para assistir a gravação.</p>
     </div>
   </section>
 
@@ -398,29 +405,29 @@ function salvarAssistidas(){ls.set('artesano-ia:'+turma.slug+':assistidas',JSON.
 
 function renderAulas(){
   const box=$('#aulasList'); box.innerHTML='';
+  let disp=0;
   AULAS.forEach(a=>{
-    const d=dataAula(a), p=partes(d), live=d===hojeISO, futura=d>hojeISO, on=assistidas.includes(a.num), link=a.gravacao[turma.slug]||'';
-    const el=document.createElement('div'); el.className='card aula row'; el.setAttribute('role','button'); el.tabIndex=0;
+    const d=dataAula(a), p=partes(d), live=d===hojeISO, futura=d>hojeISO, ok=!futura&&!live, link=a.gravacao[turma.slug]||'';
+    if(ok) disp++;
+    const el=document.createElement('div'); el.className='card aula row'+(futura?' soon':''); el.setAttribute('role','button'); el.tabIndex=0;
     el.innerHTML=`<div class="num ${live?'live':''}">${a.num}</div>
       <div class="grow"><div class="title">${a.titulo}</div><div class="meta">${p.dow}, ${String(p.d).padStart(2,'0')} ${p.mes} · ${turma.hora} · ${a.sub}</div></div>
-      ${live?'<span class="pill hoje">hoje</span>':futura?'<span class="pill breve">em breve</span>':(link?'':'<span class="pill breve">pasta</span>')}
-      ${!futura?`<button class="check ${on?'on':''}" aria-label="marcar aula ${a.num} como assistida"><svg class="icon"><use href="#i-check"/></svg></button>`:''}`;
-    el.addEventListener('click',e=>{
-      if(e.target.closest('.check')){ assistidas=on?assistidas.filter(n=>n!==a.num):[...assistidas,a.num]; salvarAssistidas(); renderAulas(); return; }
-      if(link){ window.open(link,'_blank'); if(!on){assistidas.push(a.num);salvarAssistidas();renderAulas();} }
-      else if(live){ window.open(turma.meet,'_blank'); }
-      else if(futura) toast('aula ainda não aconteceu');
-      else window.open(turma.pastaGravacoes||turma.drive,'_blank');
+      ${live?'<span class="pill hoje">hoje</span>':futura?'<span class="pill breve">em breve</span>':'<span class="play" aria-hidden="true"><svg class="icon"><use href="#i-playfill"/></svg></span><span class="ok" aria-label="disponível"><svg class="icon"><use href="#i-check"/></svg></span>'}`;
+    el.addEventListener('click',()=>{
+      if(live) window.open(turma.meet,'_blank');
+      else if(futura) toast('disponível após a aula');
+      else window.open(link||turma.pastaGravacoes||turma.drive,'_blank');
     });
     box.appendChild(el);
   });
-  const n=assistidas.length; $('#progLabel').textContent=n+'/'+AULAS.length; $('#progBar').style.width=(100*n/AULAS.length)+'%';
+  $('#progLabel').textContent=disp+'/'+AULAS.length; $('#progBar').style.width=(100*disp/AULAS.length)+'%';
 }
 function renderPdfs(){
   const box=$('#pdfList'); box.innerHTML='';
-  AULAS.forEach(a=>{const link=a.pdf[turma.slug]||'', d=dataAula(a), p=partes(d);
-    const el=document.createElement('a'); el.className='file'+(link?'':' soon'); el.href=link||turma.pastaApresentacoes||turma.drive; el.target='_blank'; el.rel='noopener';
-    el.innerHTML=`<svg class="icon"><use href="#i-file"/></svg><div class="grow"><div class="title" style="font-size:15px">${a.num} · ${a.titulo}</div><div class="meta">${link?'apresentação da aula':'na pasta após '+String(p.d).padStart(2,'0')+'/'+String(p.m).padStart(2,'0')}</div></div>${link?'<svg class="icon go"><use href="#i-ext"/></svg>':'<span class="pill breve">pasta</span>'}`;
+  AULAS.forEach(a=>{const link=a.pdf[turma.slug]||'', d=dataAula(a), p=partes(d), futura=d>hojeISO, live=d===hojeISO, ok=!futura&&!live;
+    const el=document.createElement('a'); el.className='file'+(ok?'':' soon'); el.href=ok?(link||turma.pastaApresentacoes||turma.drive):'#';
+    if(ok){el.target='_blank';el.rel='noopener';} else el.onclick=()=>{toast('disponível após a aula');return false;};
+    el.innerHTML=`<div class="num">${a.num}</div><div class="grow"><div class="title" style="font-size:15px">${a.titulo}</div><div class="meta">${ok?'apresentação da aula':'disponível após '+String(p.d).padStart(2,'0')+'/'+String(p.m).padStart(2,'0')}</div></div>${ok?'<span class="ok" aria-label="disponível"><svg class="icon"><use href="#i-check"/></svg></span>':'<span class="pill breve">em breve</span>'}`;
     box.appendChild(el);
   });
 }
