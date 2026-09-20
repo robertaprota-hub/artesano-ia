@@ -30,7 +30,7 @@ for(const [fonte,url,filtrar] of FEEDS){
       const peso=PESO.reduce((n,r,i)=>n+(r.test(texto)?(4-i):0),0);
       // primeira frase da descrição, sem o boilerplate de "o post apareceu primeiro"
       let ctx=desc.replace(/O post .*? apareceu primeiro em .*$/i,'').replace(/Não perca .*?\.\s*/i,'').replace(/Os ingressos .*?\.\s*/i,'').trim();
-      ctx=(ctx.match(/^.{40,220}?[.!?](\s|$)/)||[ctx.slice(0,200)])[0].trim();
+      const fr=ctx.match(/^.{40,300}?[.!?](\s|$)/); ctx=fr?fr[0].trim():(ctx.length>200?ctx.slice(0,200).replace(/\s+\S*$/,'')+'…':ctx);
       brutos.push({fonte,titulo,url:link,ts:pub.getTime(),data:dataSP(pub),peso,ctx});
     }
   }catch(e){console.error('falhou',fonte,e.message);}
