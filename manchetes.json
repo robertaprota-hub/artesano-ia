@@ -1,5 +1,59 @@
 {
- "atualizado": "20/09 11:03",
- "resumo": null,
- "itens": []
+ "atualizado": "20/09 20h43",
+ "janela": 3,
+ "resumo": {
+  "data": "20/09/2026",
+  "hora": "20h43",
+  "periodo": "últimos 3 dias",
+  "itens": [
+   {
+    "titulo": "O incorporador precisa entender mais do que incorporação",
+    "texto": "Crédito, tecnologia, tributação, cidade e comportamento ampliam o desafio do incorporador.",
+    "fontes": [
+     {
+      "nome": "Portal VGV",
+      "url": "https://www.portalvgv.com.br/incorporador-alem-da-incorporacao/"
+     }
+    ]
+   },
+   {
+    "titulo": "Selic caiu, mas sua prestação no financiamento não vai diminuir já — eis o porquê",
+    "texto": "Quinto corte consecutivo dos juros pode melhorar gradualmente as condições dos financiamentos; para quem já tem contrato, especialistas recomendam renegociação e portabilidade, comparando o custo tota",
+    "fontes": [
+     {
+      "nome": "InfoMoney",
+      "url": "https://www.infomoney.com.br/minhas-financas/selic-caiu-mas-sua-prestacao-no-financiamento-nao-vai-diminuir-eis-o-porque/"
+     }
+    ]
+   },
+   {
+    "titulo": "Inteligência artificial e e-commerce impulsionam novos polos de galpões",
+    "texto": "O avanço do e-commerce e da inteligência artificial, combinado com a descentralização dos centros de distribuição de produtos, trouxe um novo olhar para os galpões logísticos no mercado imobiliário.",
+    "fontes": [
+     {
+      "nome": "Imobi Report",
+      "url": "https://imobireport.com.br/aluguel/inteligencia-artificial-e-e-commerce-impulsionam-novos-polos-de-galpoes-logisticos/"
+     }
+    ]
+   },
+   {
+    "titulo": "Airbnb movimentou R$ 113,2 bilhões em 2025 no Brasil",
+    "texto": "Em Curitiba, parceria com incorporadoras incorpora mais de 2 mil unidades à plataforma Um relatório elaborado pela FGV mensura os impactos econômicos do Airbnb no Brasil durante o ano de 2025.",
+    "fontes": [
+     {
+      "nome": "Imobi Report",
+      "url": "https://imobireport.com.br/imobiliario/airbnb-movimentou-r-1132-bilhoes-em-2025-no-brasil/"
+     }
+    ]
+   }
+  ]
+ },
+ "itens": [
+  {
+   "fonte": "Secovi-SP",
+   "titulo": "Secovi-SP e SindusCon-SP debatem inadimplência, FGTS e chegada do Núcleo de Cidades Inteligentes do CEBRI",
+   "url": "https://secovi.com.br/secovi-sp-e-sinduscon-sp-debatem-inadimplencia-fgts-e-chegada-do-nucleo-de-cidades-inteligentes-do-cebri/",
+   "data": "17/09"
+  }
+ ]
 }
