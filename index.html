@@ -449,6 +449,7 @@ if(salva&&TURMAS.some(t=>t.slug===salva)) setTurma(salva); else { setTurma(TURMA
 (function(){
 const esc=t=>String(t??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const q=s=>document.querySelector(s);
+function carregarNoticias(){
 fetch('manchetes.json?t='+Date.now(),{cache:'no-store'}).then(r=>r.ok?r.json():null).then(m=>{
   if(!m) return;
   const n=m.resumo;
@@ -461,7 +462,13 @@ fetch('manchetes.json?t='+Date.now(),{cache:'no-store'}).then(r=>r.ok?r.json():n
   if(!Array.isArray(m.itens)||!m.itens.length){ if(!(n&&n.itens&&n.itens.length)) q('#vazio').textContent='Nenhuma novidade nas fontes nos últimos dias. Lido em '+(m.atualizado||'')+'.'; return; }
   q('#vazio').hidden=true; q('#manLabel').hidden=false; q('#manBox').hidden=false; q('#manData').textContent='automático · '+(m.atualizado||'');
   q('#manBox').innerHTML=m.itens.slice(0,10).map(it=>`<div class="news-item"><div class="src"><b>${esc(it.fonte)}</b><span>${esc(it.data)}</span></div><a class="hl" href="${esc(it.url)}" target="_blank" rel="noopener">${esc(it.titulo)}</a></div>`).join('');
-}).catch(()=>{ q('#vazio').textContent='Não foi possível carregar as notícias agora. Tente de novo em instantes.'; });
+}).catch(()=>{ if(!q('#atuBox').children.length) q('#vazio').textContent='Não foi possível carregar as notícias agora. Tente de novo em instantes.'; });
+}
+carregarNoticias();
+/* recarrega ao voltar para o app e a cada 30 min; a página inteira é renovada 1x por dia para pegar versões novas do app */
+let ultimaCarga=Date.now(), abertoEm=Date.now();
+document.addEventListener('visibilitychange',()=>{ if(document.visibilityState!=='visible') return; if(Date.now()-abertoEm>20*36e5){ location.reload(); return; } if(Date.now()-ultimaCarga>5*6e4){ ultimaCarga=Date.now(); carregarNoticias(); } });
+setInterval(()=>{ ultimaCarga=Date.now(); carregarNoticias(); },30*6e4);
 })();
 </script>
 </body>
