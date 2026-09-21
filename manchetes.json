@@ -1,11 +1,21 @@
 {
- "atualizado": "20/09 20h47",
- "janela": 3,
+ "atualizado": "21/09 09h50",
+ "janela": 5,
  "resumo": {
-  "data": "20/09/2026",
-  "hora": "20h47",
-  "periodo": "últimos 3 dias",
+  "data": "21/09/2026",
+  "hora": "09h50",
+  "periodo": "últimos 5 dias",
   "itens": [
+   {
+    "titulo": "Painel na Convenção Secovi-SP discute funding e novas regras de saneamento para o setor de loteamentos",
+    "texto": "O primeiro painel, entitulado \"Desafios do Desenvolvimento Urbano e Loteamentos\", realizado no Espaço 2 da 23ª Convenção Secovi-SP, reuniu representantes do setor de loteamentos, da Sabesp e do…",
+    "fontes": [
+     {
+      "nome": "Secovi-SP",
+      "url": "https://secovi.com.br/painel-na-convencao-secovi-sp-discute-funding-e-novas-regras-de-saneamento-para-o-setor-de-loteamentos/"
+     }
+    ]
+   },
    {
     "titulo": "O incorporador precisa entender mais do que incorporação",
     "texto": "Crédito, tecnologia, tributação, cidade e comportamento ampliam o desafio do incorporador.",
@@ -27,22 +37,12 @@
     ]
    },
    {
-    "titulo": "Inteligência artificial e e-commerce impulsionam novos polos de galpões",
-    "texto": "O avanço do e-commerce e da inteligência artificial, combinado com a descentralização dos centros de distribuição de produtos, trouxe um novo olhar para os galpões logísticos no mercado imobiliário.",
+    "titulo": "10º Painel na Convenção Secovi-SP mostra como tecnologia e crédito estão acelerando a jornada de compra do imóvel",
+    "texto": "O painel \"Descubra Como Tornar a Jornada de Compra Mais Fluida\", realizado no Espaço 2 da 23ª Convenção Secovi-SP, discutiu como mudanças no comportamento do consumidor e a integração entre [&#8230;]",
     "fontes": [
      {
-      "nome": "Imobi Report",
-      "url": "https://imobireport.com.br/aluguel/inteligencia-artificial-e-e-commerce-impulsionam-novos-polos-de-galpoes-logisticos/"
-     }
-    ]
-   },
-   {
-    "titulo": "Airbnb movimentou R$ 113,2 bilhões em 2025 no Brasil",
-    "texto": "Em Curitiba, parceria com incorporadoras incorpora mais de 2 mil unidades à plataforma Um relatório elaborado pela FGV mensura os impactos econômicos do Airbnb no Brasil durante o ano de 2025.",
-    "fontes": [
-     {
-      "nome": "Imobi Report",
-      "url": "https://imobireport.com.br/imobiliario/airbnb-movimentou-r-1132-bilhoes-em-2025-no-brasil/"
+      "nome": "Secovi-SP",
+      "url": "https://secovi.com.br/10o-painel-na-convencao-secovi-sp-mostra-como-tecnologia-e-credito-estao-acelerando-a-jornada-de-compra-do-imovel/"
      }
     ]
    }
@@ -50,10 +50,28 @@
  },
  "itens": [
   {
-   "fonte": "Secovi-SP",
-   "titulo": "Secovi-SP e SindusCon-SP debatem inadimplência, FGTS e chegada do Núcleo de Cidades Inteligentes do CEBRI",
-   "url": "https://secovi.com.br/secovi-sp-e-sinduscon-sp-debatem-inadimplencia-fgts-e-chegada-do-nucleo-de-cidades-inteligentes-do-cebri/",
+   "fonte": "Imobi Report",
+   "titulo": "Inteligência artificial e e-commerce impulsionam novos polos de galpões",
+   "url": "https://imobireport.com.br/aluguel/inteligencia-artificial-e-e-commerce-impulsionam-novos-polos-de-galpoes-logisticos/",
    "data": "17/09"
+  },
+  {
+   "fonte": "Secovi-SP",
+   "titulo": "Especialistas debatem desafios da implementação da reforma tributária em painel na Convenção Secovi-SP",
+   "url": "https://secovi.com.br/especialistas-debatem-desafios-da-implementacao-da-reforma-tributaria-em-painel-na-convencao-secovi-sp/",
+   "data": "16/09"
+  },
+  {
+   "fonte": "Portal VGV",
+   "titulo": "Desafios da incorporação: 6 cidades, diferentes realidades",
+   "url": "https://www.portalvgv.com.br/desafios-da-incorporacao-6-cidades-vgv-max/",
+   "data": "16/09"
+  },
+  {
+   "fonte": "Imobi Report",
+   "titulo": "Airbnb movimentou R$ 113,2 bilhões em 2025 no Brasil",
+   "url": "https://imobireport.com.br/imobiliario/airbnb-movimentou-r-1132-bilhoes-em-2025-no-brasil/",
+   "data": "18/09"
   }
  ]
 }
