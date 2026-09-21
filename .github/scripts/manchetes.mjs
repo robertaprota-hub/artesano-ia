@@ -35,9 +35,9 @@ for(const [fonte,url,filtrar] of FEEDS){
     }
   }catch(e){console.error('falhou',fonte,e.message);}
 }
-// janela: ontem em diante; se o dia for fraco (fim de semana, feriado), alarga até ter pelo menos 4 itens
-let janela=spNow.getDay()===1?3:1, itens=[];
-for(const dias of [janela,3,5,7,10]){ janela=dias; itens=brutos.filter(i=>i.ts>=inicioDias(dias)); if(itens.length>=4) break; }
+// janela fixa: segunda-feira pega sexta, sábado e domingo; nos outros dias, só o dia anterior (mais o que saiu hoje até a hora da leitura)
+const janela=spNow.getDay()===1?3:1;
+const itens=brutos.filter(i=>i.ts>=inicioDias(janela));
 const vistos=new Set(), unicos=itens.filter(i=>{const k=i.titulo.toLowerCase().replace(/[^a-z0-9]+/g,' ').slice(0,60);if(vistos.has(k))return false;vistos.add(k);return true;});
 unicos.sort((a,b)=>(b.peso-a.peso)||(b.ts-a.ts));
 const porFonte={}; const equilibrado=unicos.filter(i=>{porFonte[i.fonte]=(porFonte[i.fonte]||0)+1;return porFonte[i.fonte]<=3;});
@@ -45,7 +45,7 @@ const porFonte={}; const equilibrado=unicos.filter(i=>{porFonte[i.fonte]=(porFon
 // resumo do dia: os 4 mais relevantes, com uma frase de contexto da própria fonte
 const hoje=spNow.toLocaleDateString('pt-BR',{day:'2-digit',month:'2-digit',year:'numeric'});
 const hora=spNow.toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'}).replace(':','h');
-let resumo={data:hoje,hora,periodo:janela>1?`últimos ${janela} dias`:'ontem e hoje',itens:equilibrado.slice(0,4).map(i=>({titulo:i.titulo,texto:i.ctx,fontes:[{nome:i.fonte,url:i.url}]}))};
+let resumo={data:hoje,hora,periodo:janela>1?'sexta a domingo':'desde ontem',itens:equilibrado.slice(0,4).map(i=>({titulo:i.titulo,texto:i.ctx,fontes:[{nome:i.fonte,url:i.url}]}))};
 // se a skill tiver gravado um resumo recente no Drive, ele tem prioridade
 try{
   const r=await fetch('https://drive.google.com/uc?export=download&id=1SpWiLkMzI03Fp_qvZWyWhQhjq86OgMBM',{signal:AbortSignal.timeout(20000)});
