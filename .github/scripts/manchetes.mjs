@@ -6,10 +6,11 @@ const FEEDS = [
   ['Portal VGV','https://www.portalvgv.com.br/feed/'],
   ['InfoMoney','https://www.infomoney.com.br/tudo-sobre/mercado-imobiliario/feed/'],
   ['Secovi-SP','https://www.secovi.com.br/feed/'],
-  ['CBIC','https://cbic.org.br/feed/'],
-  ['SindusCon-SP','https://sindusconsp.com.br/feed/'],
+  ['CBIC','https://cbic.org.br/feed/', 'obra'],           // feed institucional: só o que for de mercado, crédito, regulação ou obra
+  ['SindusCon-SP','https://sindusconsp.com.br/feed/', 'obra'],
   ['Exame','https://exame.com/feed/', true]   // feed geral: só entra o que casar com as palavras do setor
 ];
+const OBRA=/imobili|incorporad|loteament|constru[çc][ãa]o|funding|fgts|cr[ée]dito|financiamento|habita|selic|minha casa|\bobras?\b|tribut|licen[çc]|regula|\blei\b|decreto|infraestrutura|saneamento|custo|\bcub\b|inadimpl/i;
 const SETOR=/imobili|im[óo]ve|loteament|incorporad|incorpora[çc][ãa]o|\bvgv\b|cr[ée]dito imobili|financiamento imobili|aluguel|\bfiis?\b|minha casa|habita[çc]/i;
 const PESO=[/selic|juro|cr[ée]dito|financiamento|funding|\bcri\b/i,/reforma tribut|\bibs\b|\bcbs\b|decreto|\blei\b|regula/i,/lançament|vgv|vendas|estoque|pre[çc]o|vac[âa]ncia/i,/loteament|urbanis|bairro planejado|condom[íi]nio/i];
 const LIXO=/ingresso|desconto|inscri[çc][õo]es|patrocinad|webinar|podcast/i;
@@ -27,7 +28,8 @@ for(const [fonte,url,filtrar] of FEEDS){
       const titulo=tag(it,'title'), link=(tag(it,'link')||(it.match(/<link>([^<]+)/)||[])[1]||'').trim(), pub=new Date(tag(it,'pubDate')), desc=tag(it,'description');
       if(!titulo||!link||isNaN(pub)) continue;
       const texto=titulo+' '+desc;
-      if(filtrar&&!SETOR.test(texto)) continue;
+      if(filtrar===true&&!SETOR.test(texto)) continue;
+      if(filtrar==='obra'&&!OBRA.test(texto)) continue;
       if(LIXO.test(titulo)) continue;
       const peso=PESO.reduce((n,r,i)=>n+(r.test(texto)?(4-i):0),0);
       // primeira frase da descrição, sem o boilerplate de "o post apareceu primeiro"
