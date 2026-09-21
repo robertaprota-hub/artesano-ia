@@ -6,6 +6,8 @@ const FEEDS = [
   ['Portal VGV','https://www.portalvgv.com.br/feed/'],
   ['InfoMoney','https://www.infomoney.com.br/tudo-sobre/mercado-imobiliario/feed/'],
   ['Secovi-SP','https://www.secovi.com.br/feed/'],
+  ['CBIC','https://cbic.org.br/feed/'],
+  ['SindusCon-SP','https://sindusconsp.com.br/feed/'],
   ['Exame','https://exame.com/feed/', true]   // feed geral: só entra o que casar com as palavras do setor
 ];
 const SETOR=/imobili|im[óo]ve|loteament|incorporad|incorpora[çc][ãa]o|\bvgv\b|cr[ée]dito imobili|financiamento imobili|aluguel|\bfiis?\b|minha casa|habita[çc]/i;

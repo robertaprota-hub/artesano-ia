@@ -1,11 +1,41 @@
 {
- "atualizado": "21/09 10h08",
+ "atualizado": "21/09 10h10",
  "janela": 3,
  "resumo": {
   "data": "21/09/2026",
-  "hora": "10h08",
+  "hora": "10h10",
   "periodo": "sexta a domingo",
   "itens": [
+   {
+    "titulo": "Mercado, funding, FGTS e locação acessível pautam debates no Encontro CBIC Construtores e Incorporadores Nordeste",
+    "texto": "Mercado imobiliário, cenário econômico e político, financiamento, FGTS e locação acessível foram os temas dos painéis realizados nesta sexta-feira (18), no Recife (PE), durante o Encontro CBIC de Incorporadores e Construtores Nordeste.",
+    "fontes": [
+     {
+      "nome": "CBIC",
+      "url": "https://cbic.org.br/mercado-funding-fgts-e-locacao-acessivel-pautam-debates-no-encontro-cbic-construtores-e-incorporadores-nordeste/"
+     }
+    ]
+   },
+   {
+    "titulo": "Encontro CBIC de Incorporadores e Construtores debate setor e desenvolvimento habitacional no Nordeste",
+    "texto": "Os desafios para ampliar o desenvolvimento habitacional e as oportunidades para o mercado imobiliário no Nordeste estiveram no centro das discussões do Encontro CBIC de Incorporadores e Construtores Nordeste, realizado nesta sexta-feira (18), no Recife (PE).",
+    "fontes": [
+     {
+      "nome": "CBIC",
+      "url": "https://cbic.org.br/encontro-cbic-de-incorporadores-e-construtores-debate-setor-e-desenvolvimento-habitacional-no-nordeste/"
+     }
+    ]
+   },
+   {
+    "titulo": "Seconci-DF: Primavera acende alerta para alergias oculares: trabalhadores devem redobrar cuidados",
+    "texto": "Serviço de oftalmologia do Seconci-DF oferece atendimento gratuito aos trabalhadores da construção civil Com a chegada da primavera, prevista para 22 de setembro, as mudanças de temperatura, umidade…",
+    "fontes": [
+     {
+      "nome": "CBIC",
+      "url": "https://cbic.org.br/seconci-df-primavera-acende-alerta-para-alergias-oculares-trabalhadores-devem-redobrar-cuidados/"
+     }
+    ]
+   },
    {
     "titulo": "Airbnb movimentou R$ 113,2 bilhões em 2025 no Brasil",
     "texto": "Em Curitiba, parceria com incorporadoras incorpora mais de 2 mil unidades à plataforma Um relatório elaborado pela FGV mensura os impactos econômicos do Airbnb no Brasil durante o ano de 2025.",
@@ -18,5 +48,12 @@
    }
   ]
  },
- "itens": []
+ "itens": [
+  {
+   "fonte": "SindusCon-SP",
+   "titulo": "Um profundo mal-estar cívico",
+   "url": "https://sindusconsp.com.br/um-profundo-mal-estar-civico/",
+   "data": "18/09"
+  }
+ ]
 }
