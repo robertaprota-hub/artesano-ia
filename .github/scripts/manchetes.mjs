@@ -13,7 +13,7 @@ const FEEDS = [
 const OBRA=/imobili|incorporad|loteament|constru[çc][ãa]o|funding|fgts|cr[ée]dito|financiamento|habita|selic|minha casa|\bobras?\b|tribut|licen[çc]|regula|\blei\b|decreto|infraestrutura|saneamento|custo|\bcub\b|inadimpl/i;
 const SETOR=/imobili|im[óo]ve|loteament|incorporad|incorpora[çc][ãa]o|\bvgv\b|cr[ée]dito imobili|financiamento imobili|aluguel|\bfiis?\b|minha casa|habita[çc]/i;
 const PESO=[/selic|juro|cr[ée]dito|financiamento|funding|\bcri\b/i,/reforma tribut|\bibs\b|\bcbs\b|decreto|\blei\b|regula/i,/lançament|vgv|vendas|estoque|pre[çc]o|vac[âa]ncia/i,/loteament|urbanis|bairro planejado|condom[íi]nio/i];
-const LIXO=/ingresso|desconto|inscri[çc][õo]es|patrocinad|webinar|podcast/i;
+const LIXO=/ingresso|desconto|inscri[çc][õo]es|patrocinad|webinar|podcast|seconci|sa[úu]de|alergi|vacina|campanha|homenag|falecim|premia[çc]/i;
 const limpa=t=>t.replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g,'$1').replace(/<[^>]+>/g,' ').replace(/&amp;/g,'&').replace(/&#8217;|&rsquo;|&#8216;/g,'’').replace(/&#8220;|&#8221;|&quot;/g,'"').replace(/&#8211;|&ndash;/g,'–').replace(/&nbsp;/g,' ').replace(/\s+/g,' ').trim();
 const tag=(x,t)=>{const m=x.match(new RegExp(`<${t}[^>]*>([\\s\\S]*?)</${t}>`));return m?limpa(m[1]):'';};
 const spNow=new Date(new Date().toLocaleString('en-US',{timeZone:'America/Sao_Paulo'}));
