@@ -1,9 +1,9 @@
 {
- "atualizado": "22/09 14h37",
+ "atualizado": "22/09 16h42",
  "janela": 1,
  "resumo": {
   "data": "22/09/2026",
-  "hora": "14h37",
+  "hora": "16h42",
   "periodo": "ontem",
   "itens": [
    {
@@ -37,18 +37,24 @@
     ]
    },
    {
-    "titulo": "Encontro das Imobiliárias debate conversão e eficiência comercial",
-    "texto": "Evento do Secovi-SP reúne profissionais do setor para discutir estratégias capazes de transformar leads em resultados, com atenção à capacitação, aos processos e à gestão financeira.",
+    "titulo": "Mercado imobiliário brasileiro avança em ritmos diferentes",
+    "texto": "Mercado imobiliário brasileiro cresce em ritmos diferentes pelo Brasil em 2026.",
     "fontes": [
      {
-      "nome": "Secovi-SP",
-      "url": "https://secovi.com.br/encontro-das-imobiliarias-debate-conversao-e-eficiencia-comercial/"
+      "nome": "Portal VGV",
+      "url": "https://www.portalvgv.com.br/mercado-imobiliario-brasileiro-diferentes/"
      }
     ]
    }
   ]
  },
  "itens": [
+  {
+   "fonte": "Secovi-SP",
+   "titulo": "Encontro das Imobiliárias debate conversão e eficiência comercial",
+   "url": "https://secovi.com.br/encontro-das-imobiliarias-debate-conversao-e-eficiencia-comercial/",
+   "data": "21/09"
+  },
   {
    "fonte": "SindusCon-SP",
    "titulo": "Construção lamenta desmoronamento de prédio",
