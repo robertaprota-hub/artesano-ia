@@ -143,6 +143,14 @@
   .ok .icon{width:16px;height:16px;stroke-width:2.6}
   .aula.soon,.file.soon{opacity:.62}
   .file .num{width:40px;height:40px;font-size:14px}
+  .aula-mat{display:flex;flex-direction:column;gap:10px}
+  .aula-mat.soon{opacity:.62}
+  .mat-rows{display:flex;flex-direction:column;margin-left:58px;border-top:1px solid var(--line)}
+  .mat-row{display:flex;align-items:center;gap:12px;min-height:48px;padding:6px 0;border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink);font-weight:500;font-size:15px}
+  .mat-row:last-child{border-bottom:0}
+  .mat-row .icon{color:var(--steel)}
+  .mat-row.off{color:var(--ink-3)}
+  a.mat-row:hover{color:var(--terra-deep)}
   .check{width:28px;height:28px;border-radius:50%;border:1.5px solid var(--terra);display:flex;align-items:center;justify-content:center;color:transparent;flex:0 0 auto}
   .check.on{background:var(--terra);color:#fff}
   .check .icon{width:15px;height:15px;stroke-width:2.5}
@@ -278,10 +286,8 @@
         <p>Tudo da sua turma numa pasta só, no Drive: <b>01 - apresentações</b>, <b>02 - gravações</b> e <b>03 - arquivos</b>. Cada aula ganha o link direto aqui depois de publicada.</p>
         <div class="row" style="gap:12px;flex-wrap:wrap"><a class="btn primary" id="driveBtn" href="#" target="_blank" rel="noopener">Abrir no Drive</a><button class="btn ghost on-dark" data-copy="drive">copiar link</button></div>
       </div>
-      <div class="section-label"><span class="kicker">apresentações</span><small>pdf por aula</small></div>
-      <div class="card" style="padding-top:2px;padding-bottom:2px" id="pdfList"></div>
-      <div class="section-label"><span class="kicker">arquivos por aula</span><small>planilhas, modelos e exercícios</small></div>
-      <div class="card" style="padding-top:2px;padding-bottom:2px" id="arqList"></div>
+      <div class="section-label"><span class="kicker">por aula</span><small>apresentação e materiais</small></div>
+      <div id="pdfList" style="display:flex;flex-direction:column;gap:12px"></div>
       <div class="credit">programa conduzido por prota.ia</div>
     </div>
   </section>
@@ -383,7 +389,7 @@ function setTurma(slug){
   $('#meetBtn').href=turma.meet; $('#driveBtn').href=turma.drive||PROGRAMA.drive;
   $$('.opt').forEach(o=>o.classList.toggle('sel',o.dataset.slug===turma.slug));
   document.documentElement.style.setProperty('--turma',turma.cor);
-  renderAulas(); renderPdfs(); renderArquivos(); renderAgenda();
+  renderAulas(); renderPdfs(); renderAgenda();
 }
 function salvarAssistidas(){ls.set('artesano-ia:'+turma.slug+':assistidas',JSON.stringify(assistidas));}
 
@@ -408,20 +414,21 @@ function renderAulas(){
 }
 function renderPdfs(){
   const box=$('#pdfList'); box.innerHTML='';
-  AULAS.forEach(a=>{const link=a.pdf[turma.slug]||'', d=dataAula(a), p=partes(d), futura=d>hojeISO, ok=!!link||(d<hojeISO);
-    const el=document.createElement('a'); el.className='file'+(ok?'':' soon'); el.href=ok?(link||turma.pastaApresentacoes||turma.drive):'#';
-    if(ok){el.target='_blank';el.rel='noopener';} else el.onclick=()=>{toast('disponível após a aula');return false;};
-    el.innerHTML=`<div class="num">${a.num}</div><div class="grow"><div class="title" style="font-size:15px">${a.titulo}</div><div class="meta">${ok?'apresentação da aula':'disponível após '+String(p.d).padStart(2,'0')+'/'+String(p.m).padStart(2,'0')}</div></div>${ok?'<span class="ok" aria-label="disponível"><svg class="icon"><use href="#i-check"/></svg></span>':'<span class="pill breve">em breve</span>'}`;
-    box.appendChild(el);
-  });
-}
-function renderArquivos(){
-  const box=$('#arqList'); box.innerHTML='';
-  AULAS.forEach((a,i)=>{const ok=ARQUIVOS_LIBERADOS.includes(a.num), link=(ARQUIVOS[turma.slug]||[])[i];
-    const el=document.createElement('a'); el.className='file'+(ok?'':' soon'); el.href=ok?link:'#';
-    if(ok){el.target='_blank';el.rel='noopener';} else el.onclick=()=>{toast('arquivos disponíveis em breve');return false;};
-    el.innerHTML=`<div class="num">${a.num}</div><div class="grow"><div class="title" style="font-size:15px">${a.titulo}</div><div class="meta">${ok?'arquivos da aula · abrir pasta':'arquivos da aula'}</div></div>${ok?'<span class="ok" aria-label="disponível"><svg class="icon"><use href="#i-check"/></svg></span>':'<span class="pill breve">em breve</span>'}`;
-    box.appendChild(el);
+  AULAS.forEach((a,i)=>{
+    const d=dataAula(a), p=partes(d), pdf=a.pdf[turma.slug]||'', pdfOk=!!pdf||d<hojeISO;
+    const arqOk=ARQUIVOS_LIBERADOS.includes(a.num), arq=(ARQUIVOS[turma.slug]||[])[i];
+    const nada=!pdfOk&&!arqOk;
+    const card=document.createElement('div'); card.className='card aula-mat'+(nada?' soon':'');
+    const dia=String(p.d).padStart(2,'0')+'/'+String(p.m).padStart(2,'0');
+    let rows='';
+    if(!nada){
+      rows+= pdfOk
+        ? `<a class="mat-row" href="${pdf||turma.pastaApresentacoes||turma.drive}" target="_blank" rel="noopener"><svg class="icon"><use href="#i-file"/></svg><span class="grow">Apresentação</span><span class="ok"><svg class="icon"><use href="#i-check"/></svg></span></a>`
+        : `<div class="mat-row off"><svg class="icon"><use href="#i-file"/></svg><span class="grow">Apresentação</span><span class="pill breve">após a aula</span></div>`;
+      if(arqOk) rows+=`<a class="mat-row" href="${arq}" target="_blank" rel="noopener"><svg class="icon"><use href="#i-folder"/></svg><span class="grow">Materiais</span><span class="ok"><svg class="icon"><use href="#i-check"/></svg></span></a>`;
+    }
+    card.innerHTML=`<div class="row"><div class="num">${a.num}</div><div class="grow"><div class="title">${a.titulo}</div><div class="meta">${p.dow}, ${dia}</div></div>${nada?'<span class="pill breve">em breve</span>':''}</div>${rows?`<div class="mat-rows">${rows}</div>`:''}`;
+    box.appendChild(card);
   });
 }
 function renderAgenda(){
