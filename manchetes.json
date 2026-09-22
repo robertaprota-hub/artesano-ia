@@ -1,52 +1,65 @@
 {
- "atualizado": "21/09 13h21",
- "janela": 3,
+ "atualizado": "22/09 07h26",
+ "janela": 1,
  "resumo": {
-  "data": "21/09/2026",
-  "hora": "13h21",
-  "periodo": "sexta a domingo",
+  "data": "22/09/2026",
+  "hora": "07h26",
+  "periodo": "ontem",
   "itens": [
    {
-    "titulo": "Mercado, funding, FGTS e locação acessível pautam debates no Encontro CBIC Construtores e Incorporadores Nordeste",
-    "texto": "Mercado imobiliário, cenário econômico e político, financiamento, FGTS e locação acessível foram os temas dos painéis realizados nesta sexta-feira (18), no Recife (PE), durante o Encontro CBIC de Incorporadores e Construtores Nordeste.",
+    "titulo": "Semana CANPAT Construção reúne setor para discutir prevenção e segurança nos canteiros",
+    "texto": "De 5 a 9 de outubro, a construção civil terá uma programação dedicada à prevenção de acidentes e à promoção da segurança e saúde nos ambientes de trabalho.",
     "fontes": [
      {
       "nome": "CBIC",
-      "url": "https://cbic.org.br/mercado-funding-fgts-e-locacao-acessivel-pautam-debates-no-encontro-cbic-construtores-e-incorporadores-nordeste/"
+      "url": "https://cbic.org.br/semana-canpat-construcao-reune-setor-para-discutir-prevencao-e-seguranca-nos-canteiros/"
      }
     ]
    },
    {
-    "titulo": "Encontro CBIC de Incorporadores e Construtores debate setor e desenvolvimento habitacional no Nordeste",
-    "texto": "Os desafios para ampliar o desenvolvimento habitacional e as oportunidades para o mercado imobiliário no Nordeste estiveram no centro das discussões do Encontro CBIC de Incorporadores e Construtores Nordeste, realizado nesta sexta-feira (18), no Recife (PE).",
+    "titulo": "CNI: intenção de investir da indústria é a menor em seis anos",
+    "texto": "O índice que mede a intenção de investimento da indústria caiu 1,3 ponto em setembro, de 52,6 pontos para 51,3 pontos, menor valor para o indicador desde agosto de 2020, durante a pandemia de Covid-19.",
     "fontes": [
      {
       "nome": "CBIC",
-      "url": "https://cbic.org.br/encontro-cbic-de-incorporadores-e-construtores-debate-setor-e-desenvolvimento-habitacional-no-nordeste/"
+      "url": "https://cbic.org.br/cni-intencao-de-investir-da-industria-e-a-menor-em-seis-anos/"
      }
     ]
    },
    {
-    "titulo": "Workshop da CBIC em Fortaleza debate futuro das cidades, baixo carbono e novos métodos construtivos",
-    "texto": "Os caminhos para tornar as cidades mais inteligentes, sustentáveis e resilientes estarão em pauta no workshop “Construção do Amanhã: Sustentabilidade, Inovação e Novos Métodos Construtivos – O Futuro da Minha Cidade”, que será realizado na próxima segunda-feira (21), em Fortaleza.",
-    "fontes": [
-     {
-      "nome": "CBIC",
-      "url": "https://cbic.org.br/workshop-da-cbic-em-fortaleza-debate-futuro-das-cidades-baixo-carbono-e-novos-metodos-construtivos/"
-     }
-    ]
-   },
-   {
-    "titulo": "Airbnb movimentou R$ 113,2 bilhões em 2025 no Brasil",
-    "texto": "Em Curitiba, parceria com incorporadoras incorpora mais de 2 mil unidades à plataforma Um relatório elaborado pela FGV mensura os impactos econômicos do Airbnb no Brasil durante o ano de 2025.",
+    "titulo": "Estudo do QuintoAndar revela que arbitragem é 7x mais rápida que despejo",
+    "texto": "O processo de arbitragem usado para resolver impasses na desocupação de imóveis durante o contrato de locação é mais rápido e menos custoso que o despejo tradicional e tem o potencial de gerar uma redução no preço do aluguel no Brasil.",
     "fontes": [
      {
       "nome": "Imobi Report",
-      "url": "https://imobireport.com.br/imobiliario/airbnb-movimentou-r-1132-bilhoes-em-2025-no-brasil/"
+      "url": "https://imobireport.com.br/imobiliario/estudo-do-quintoandar-revela-que-arbitragem-e-7x-mais-rapida-que-despejo/"
+     }
+    ]
+   },
+   {
+    "titulo": "Mercado imobiliário brasileiro avança em ritmos diferentes",
+    "texto": "Mercado imobiliário brasileiro cresce em ritmos diferentes pelo Brasil em 2026.",
+    "fontes": [
+     {
+      "nome": "Portal VGV",
+      "url": "https://www.portalvgv.com.br/mercado-imobiliario-brasileiro-diferentes/"
      }
     ]
    }
   ]
  },
- "itens": []
+ "itens": [
+  {
+   "fonte": "Secovi-SP",
+   "titulo": "Encontro das Imobiliárias debate conversão e eficiência comercial",
+   "url": "https://secovi.com.br/encontro-das-imobiliarias-debate-conversao-e-eficiencia-comercial/",
+   "data": "21/09"
+  },
+  {
+   "fonte": "SindusCon-SP",
+   "titulo": "Construção lamenta desmoronamento de prédio",
+   "url": "https://sindusconsp.com.br/construcao-lamenta-desmoronamento-de-predio/",
+   "data": "21/09"
+  }
+ ]
 }
