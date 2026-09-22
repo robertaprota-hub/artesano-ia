@@ -1,10 +1,19 @@
 name: manchetes do dia
 on:
   schedule:
-    - cron: '0 10 * * *'
+    - cron: '20 8 * * *'
+    - cron: '40 8 * * *'
+    - cron: '10 9 * * *'
+    - cron: '40 9 * * *'
+    - cron: '10 10 * * *'
+    - cron: '10 11 * * *'
+    - cron: '10 13 * * *'
+    - cron: '10 16 * * *'
+    - cron: '10 20 * * *'
   workflow_dispatch:
 permissions:
   contents: write
+concurrency: manchetes
 jobs:
   manchetes:
     runs-on: ubuntu-latest
@@ -17,5 +26,7 @@ jobs:
           git config user.name "artesano-ia bot"
           git config user.email "noreply@protaia.com.br"
           git add manchetes.json
-          git diff --cached --quiet || git commit -m "manchetes $(date -u +%Y-%m-%d)"
-          git push
+          git diff --cached --quiet && exit 0
+          git commit -m "manchetes $(date -u +%Y-%m-%dT%H:%M)"
+          for i in 1 2 3; do git pull --rebase -X theirs origin main && git push && exit 0; sleep 10; done
+          exit 1
