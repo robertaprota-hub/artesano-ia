@@ -275,16 +275,13 @@
       <div class="card drive">
         <div class="kicker">pasta da turma</div>
         <div class="title">Gravações e apresentações</div>
-        <p>Tudo da sua turma numa pasta só, no Drive: <b>01 - apresentações</b> e <b>02 - gravações</b>. Cada aula ganha o link direto aqui depois de publicada.</p>
+        <p>Tudo da sua turma numa pasta só, no Drive: <b>01 - apresentações</b>, <b>02 - gravações</b> e <b>03 - arquivos</b>. Cada aula ganha o link direto aqui depois de publicada.</p>
         <div class="row" style="gap:12px;flex-wrap:wrap"><a class="btn primary" id="driveBtn" href="#" target="_blank" rel="noopener">Abrir no Drive</a><button class="btn ghost on-dark" data-copy="drive">copiar link</button></div>
       </div>
       <div class="section-label"><span class="kicker">apresentações</span><small>pdf por aula</small></div>
       <div class="card" style="padding-top:2px;padding-bottom:2px" id="pdfList"></div>
-      <div class="section-label"><span class="kicker">regras da casa</span></div>
-      <div class="card" style="padding-top:2px;padding-bottom:2px">
-        <a class="file soon" href="#" onclick="return false"><svg class="icon"><use href="#i-file"/></svg><div class="grow"><div class="title" style="font-size:15px">Segurança e governança no Claude</div><div class="meta">o que pode e o que não pode entrar</div></div><span class="pill breve">em breve</span></a>
-        <a class="file soon" href="#" onclick="return false"><svg class="icon"><use href="#i-file"/></svg><div class="grow"><div class="title" style="font-size:15px">Como instalar o Claude no Excel, Word e PowerPoint</div><div class="meta">passo a passo com a TI</div></div><span class="pill breve">em breve</span></a>
-      </div>
+      <div class="section-label"><span class="kicker">arquivos por aula</span><small>planilhas, modelos e exercícios</small></div>
+      <div class="card" style="padding-top:2px;padding-bottom:2px" id="arqList"></div>
       <div class="credit">programa conduzido por prota.ia</div>
     </div>
   </section>
@@ -355,6 +352,16 @@ const AULAS = [
   { num:'04', titulo:'Claude no Office e rotinas',       sub:'arquivo aberto no Office, planilha ao slide e rotinas agendadas', gravacao:{}, pdf:{} }
 ].map((a,i)=>({ ...a, datas:{ 'bairro-artesano':TER[i], 'londrina':TER[i], 'praia-do-paiva':QUI[i], 'sjc':QUI[i] } }));
 
+/* pasta de arquivos de cada aula, por turma (Drive: turma/03 - arquivos/Aula NN) */
+const ARQUIVOS = {
+  'bairro-artesano': ['https://drive.google.com/drive/folders/1qQ3eT4qpMbY0HWAfV2jZSplx1vJJJpxy', 'https://drive.google.com/drive/folders/1_P1TMZ1Vv6v76dzbDKYHAc17K6BmxlZE', 'https://drive.google.com/drive/folders/1jqINAtvkv2CUqo3D9W9aFiZq09a9IDNX', 'https://drive.google.com/drive/folders/1m4USaYpCwEAUYsDP3LhCM80UyscgX36K'],
+  'londrina': ['https://drive.google.com/drive/folders/1l1kFWiqG7NqPeFcgU0AnMhEigvNTVszR', 'https://drive.google.com/drive/folders/1yYmNagRGi1HV1I88pqsth6C2VCZ6BNaq', 'https://drive.google.com/drive/folders/1L5h7cWFXrNCU_rwGSU2LNr_yoACO0MjC', 'https://drive.google.com/drive/folders/1-t8w2jYvGbtJIj9OfBE3RXPIJFdSWnfK'],
+  'praia-do-paiva': ['https://drive.google.com/drive/folders/1buXVElHpHBnZhTAic8Ie9BGIpx84zCH0', 'https://drive.google.com/drive/folders/1Y5hrr8-zji6NztuPshWtD64TUuFAzRg_', 'https://drive.google.com/drive/folders/1Wi4_YgUXytnqso53mkn6B2qld8okoOrq', 'https://drive.google.com/drive/folders/1tHRH7docWb0ubmaC0n1KFIiqwiMugx-G'],
+  'sjc': ['https://drive.google.com/drive/folders/1Zyi8rJ7EHArJjlXGAWEgcp9hsup-msGy', 'https://drive.google.com/drive/folders/19iQ8F01CFCj-qtuYckjQ3qzZVyjp0QRY', 'https://drive.google.com/drive/folders/1hXFVeP88rpXcgF6j6AMxZpdy1ANJlzs9', 'https://drive.google.com/drive/folders/1ExoeU_J6duGkdtfaYyKPGX84pEgETJOR'],
+};
+/* aulas com arquivos já publicados (todas as turmas). Acrescente o número quando subir os arquivos. */
+const ARQUIVOS_LIBERADOS = ['02'];
+
 /* ===== estado ===== */
 const KEY_TURMA='artesano-ia:turma';
 const MESES=['jan','fev','mar','abr','mai','jun','jul','ago','set','out','nov','dez'];
@@ -376,7 +383,7 @@ function setTurma(slug){
   $('#meetBtn').href=turma.meet; $('#driveBtn').href=turma.drive||PROGRAMA.drive;
   $$('.opt').forEach(o=>o.classList.toggle('sel',o.dataset.slug===turma.slug));
   document.documentElement.style.setProperty('--turma',turma.cor);
-  renderAulas(); renderPdfs(); renderAgenda();
+  renderAulas(); renderPdfs(); renderArquivos(); renderAgenda();
 }
 function salvarAssistidas(){ls.set('artesano-ia:'+turma.slug+':assistidas',JSON.stringify(assistidas));}
 
@@ -405,6 +412,15 @@ function renderPdfs(){
     const el=document.createElement('a'); el.className='file'+(ok?'':' soon'); el.href=ok?(link||turma.pastaApresentacoes||turma.drive):'#';
     if(ok){el.target='_blank';el.rel='noopener';} else el.onclick=()=>{toast('disponível após a aula');return false;};
     el.innerHTML=`<div class="num">${a.num}</div><div class="grow"><div class="title" style="font-size:15px">${a.titulo}</div><div class="meta">${ok?'apresentação da aula':'disponível após '+String(p.d).padStart(2,'0')+'/'+String(p.m).padStart(2,'0')}</div></div>${ok?'<span class="ok" aria-label="disponível"><svg class="icon"><use href="#i-check"/></svg></span>':'<span class="pill breve">em breve</span>'}`;
+    box.appendChild(el);
+  });
+}
+function renderArquivos(){
+  const box=$('#arqList'); box.innerHTML='';
+  AULAS.forEach((a,i)=>{const ok=ARQUIVOS_LIBERADOS.includes(a.num), link=(ARQUIVOS[turma.slug]||[])[i];
+    const el=document.createElement('a'); el.className='file'+(ok?'':' soon'); el.href=ok?link:'#';
+    if(ok){el.target='_blank';el.rel='noopener';} else el.onclick=()=>{toast('arquivos disponíveis em breve');return false;};
+    el.innerHTML=`<div class="num">${a.num}</div><div class="grow"><div class="title" style="font-size:15px">${a.titulo}</div><div class="meta">${ok?'arquivos da aula · abrir pasta':'arquivos da aula'}</div></div>${ok?'<span class="ok" aria-label="disponível"><svg class="icon"><use href="#i-check"/></svg></span>':'<span class="pill breve">em breve</span>'}`;
     box.appendChild(el);
   });
 }
