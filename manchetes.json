@@ -1,48 +1,48 @@
 {
- "atualizado": "23/09 19h54",
+ "atualizado": "24/09 10h37",
  "janela": 1,
  "resumo": {
-  "data": "23/09/2026",
-  "hora": "19h54",
+  "data": "24/09/2026",
+  "hora": "10h37",
   "periodo": "ontem",
   "itens": [
    {
-    "titulo": "Reforma Tributária e Simples Nacional: prazo para escolha termina em 30 de setembro",
-    "texto": "Empresas optantes pelo Simples Nacional têm até 30 de setembro para decidir como vão recolher o Imposto sobre Bens e Serviços (IBS) e a Contribuição sobre Bens e Serviços (CBS), novos tributos criados pela Reforma Tributária do Consumo.",
+    "titulo": "CBIC participa de seminário “Pense nas Pequenas Primeiro” promovido pela CNI e o Sebrae",
+    "texto": "A Confederação Nacional da Indústria (CNI), em parceria com o Serviço Brasileiro de Apoio às Micro e Pequenas Empresas (Sebrae), realizou nesta quarta-feira (23) a 10ª edição do Seminário “Pense nas Pequenas Primeiro” em Brasília.",
     "fontes": [
      {
       "nome": "CBIC",
-      "url": "https://cbic.org.br/reforma-tributaria-e-simples-nacional-prazo-para-escolha-termina-em-30-de-setembro/"
+      "url": "https://cbic.org.br/cbic-participa-de-seminario-pense-nas-pequenas-primeiro-promovido-pela-cni-e-o-sebrae/"
      }
     ]
    },
    {
-    "titulo": "Inmetro abre consulta pública sobre novos procedimentos para inspeção de empreendimentos de infraestrutura",
-    "texto": "O Inmetro propõe novos procedimentos para avaliar a conformidade de empreendimentos de infraestrutura em diferentes etapas, dos projetos e estudos à execução das obras e à operação.",
+    "titulo": "PDCA reforça gestão contínua dos riscos ocupacionais nas empresas",
+    "texto": "A adoção de uma gestão contínua dos riscos ocupacionais pode contribuir para o fortalecimento das ações de prevenção e para o aprimoramento das condições de Segurança e Saúde no Trabalho (SST).",
     "fontes": [
      {
       "nome": "CBIC",
-      "url": "https://cbic.org.br/inmetro-abre-consulta-publica-sobre-novos-procedimentos-para-inspecao-de-empreendimentos-de-infraestrutura/"
+      "url": "https://cbic.org.br/pdca-reforca-gestao-continua-dos-riscos-ocupacionais-nas-empresas/"
      }
     ]
    },
    {
-    "titulo": "Estudo indica que arbitragem poderia devolver até 100 mil imóveis para a locação",
-    "texto": "Restam poucos dias para o CUPOLA Aluguel Day.",
+    "titulo": "Aluguel consignado acompanha a evolução do mercado",
+    "texto": "Ao facilitar o acesso à locação residencial, modelo favorece a moradia e a redução do déficit habitacional O Projeto de Lei 462/2011, aprovado pela Câmara dos Deputados, surge como uma [&#8230;]",
     "fontes": [
      {
-      "nome": "Imobi Report",
-      "url": "https://imobireport.com.br/newsletter-do-imobi/estudo-indica-que-arbitragem-poderia-devolver-ate-100-mil-imoveis-para-a-locacao/"
+      "nome": "Secovi-SP",
+      "url": "https://secovi.com.br/aluguel-consignado-acompanha-a-evolucao-do-mercado/"
      }
     ]
    },
    {
-    "titulo": "Três décadas depois, a arbitragem brasileira precisa deixar de ser exceção",
-    "texto": "Em 23 de setembro, a Lei nº 9.307/1996 completa 30 anos.",
+    "titulo": "Redução da jornada de trabalho pode exigir quase 300 mil novos trabalhadores na construção",
+    "texto": "A votação no Plenário do Senado da proposta que prevê o fim da escala 6x1 e a redução da jornada semanal de 44 para 40 horas foi adiada e deverá ocorrer após as eleições.",
     "fontes": [
      {
-      "nome": "Imobi Report",
-      "url": "https://imobireport.com.br/imobi-report-opiniao/tres-decadas-depois-a-arbitragem-brasileira-precisa-deixar-de-ser-excecao/"
+      "nome": "CBIC",
+      "url": "https://cbic.org.br/reducao-da-jornada-de-trabalho-pode-exigir-quase-300-mil-novos-trabalhadores-na-construcao/"
      }
     ]
    }
@@ -50,28 +50,16 @@
  },
  "itens": [
   {
-   "fonte": "Portal VGV",
-   "titulo": "Grande ABC volta a reunir o mercado imobiliário em outubro",
-   "url": "https://www.portalvgv.com.br/mercado-imobiliario-grande-abc-outubro/",
-   "data": "22/09"
-  },
-  {
-   "fonte": "CBIC",
-   "titulo": "Workshop debate planejamento urbano e aproxima visões dos setores público e privado sobre o futuro das cidades",
-   "url": "https://cbic.org.br/workshop-debate-planejamento-urbano-e-aproxima-visoes-dos-setores-publico-e-privado-sobre-o-futuro-das-cidades/",
-   "data": "22/09"
-  },
-  {
-   "fonte": "Secovi-SP",
-   "titulo": "Reunião executiva da vice-presidência de Gestão Patrimonial e Locação discute avanços da locação social no mercado imobiliário",
-   "url": "https://secovi.com.br/reuniao-executiva-da-vice-presidencia-de-gestao-patrimonial-e-locacao-discute-avancos-da-locacao-social-no-mercado-imobiliario/",
-   "data": "22/09"
+   "fonte": "SindusCon-SP",
+   "titulo": "Seminário de Legalização teve recorde de público",
+   "url": "https://sindusconsp.com.br/seminario-de-legalizacao-teve-recorde-de-publico/",
+   "data": "23/09"
   },
   {
    "fonte": "SindusCon-SP",
-   "titulo": "ConstruSer 2026 oferecerá serviços gratuitos e lazer a trabalhadores da construção",
-   "url": "https://sindusconsp.com.br/construser-2026-oferecera-servicos-gratuitos-e-lazer-a-trabalhadores-da-construcao/",
-   "data": "22/09"
+   "titulo": "Evento debate desafios ao licenciamento",
+   "url": "https://sindusconsp.com.br/evento-debate-desafios-ao-licenciamento/",
+   "data": "23/09"
   }
  ]
 }
