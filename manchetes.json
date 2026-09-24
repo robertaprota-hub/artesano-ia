@@ -1,9 +1,9 @@
 {
- "atualizado": "24/09 16h57",
+ "atualizado": "24/09 20h10",
  "janela": 1,
  "resumo": {
   "data": "24/09/2026",
-  "hora": "16h57",
+  "hora": "20h10",
   "periodo": "ontem",
   "itens": [
    {
@@ -48,18 +48,5 @@
    }
   ]
  },
- "itens": [
-  {
-   "fonte": "SindusCon-SP",
-   "titulo": "Seminário de Legalização teve recorde de público",
-   "url": "https://sindusconsp.com.br/seminario-de-legalizacao-teve-recorde-de-publico/",
-   "data": "23/09"
-  },
-  {
-   "fonte": "SindusCon-SP",
-   "titulo": "Evento debate desafios ao licenciamento",
-   "url": "https://sindusconsp.com.br/evento-debate-desafios-ao-licenciamento/",
-   "data": "23/09"
-  }
- ]
+ "itens": []
 }
