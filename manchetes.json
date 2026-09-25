@@ -1,52 +1,101 @@
 {
- "atualizado": "24/09 20h10",
+ "atualizado": "25/09 10h56",
  "janela": 1,
  "resumo": {
-  "data": "24/09/2026",
-  "hora": "20h10",
+  "data": "25/09/2026",
+  "hora": "10h56",
   "periodo": "ontem",
   "itens": [
    {
-    "titulo": "CBIC participa de seminário “Pense nas Pequenas Primeiro” promovido pela CNI e o Sebrae",
-    "texto": "A Confederação Nacional da Indústria (CNI), em parceria com o Serviço Brasileiro de Apoio às Micro e Pequenas Empresas (Sebrae), realizou nesta quarta-feira (23) a 10ª edição do Seminário “Pense nas Pequenas Primeiro” em Brasília.",
-    "fontes": [
-     {
-      "nome": "CBIC",
-      "url": "https://cbic.org.br/cbic-participa-de-seminario-pense-nas-pequenas-primeiro-promovido-pela-cni-e-o-sebrae/"
-     }
-    ]
-   },
-   {
-    "titulo": "PDCA reforça gestão contínua dos riscos ocupacionais nas empresas",
-    "texto": "A adoção de uma gestão contínua dos riscos ocupacionais pode contribuir para o fortalecimento das ações de prevenção e para o aprimoramento das condições de Segurança e Saúde no Trabalho (SST).",
-    "fontes": [
-     {
-      "nome": "CBIC",
-      "url": "https://cbic.org.br/pdca-reforca-gestao-continua-dos-riscos-ocupacionais-nas-empresas/"
-     }
-    ]
-   },
-   {
-    "titulo": "Aluguel consignado acompanha a evolução do mercado",
-    "texto": "Ao facilitar o acesso à locação residencial, modelo favorece a moradia e a redução do déficit habitacional O Projeto de Lei 462/2011, aprovado pela Câmara dos Deputados, surge como uma [&#8230;]",
+    "titulo": "Secovi-SP e SindusCon-SP unem forças e mostram mercado imobiliário do interior resiliente à taxa de juros, mas à espera de definições eleitoral e tributária",
+    "texto": "Em parceria entre as duas entidades, webinar trimestral apresentou dados de lançamentos e vendas verticais e horizontais em 42 cidades do interior paulista e da Baixada Santista; taxa Selic…",
     "fontes": [
      {
       "nome": "Secovi-SP",
-      "url": "https://secovi.com.br/aluguel-consignado-acompanha-a-evolucao-do-mercado/"
+      "url": "https://secovi.com.br/secovi-sp-e-sinduscon-sp-unem-forcas-e-mostram-mercado-imobiliario-do-interior-resiliente-a-taxa-de-juros-mas-a-espera-de-definicoes-eleitoral-e-tributaria/"
      }
     ]
    },
    {
-    "titulo": "Redução da jornada de trabalho pode exigir quase 300 mil novos trabalhadores na construção",
-    "texto": "A votação no Plenário do Senado da proposta que prevê o fim da escala 6x1 e a redução da jornada semanal de 44 para 40 horas foi adiada e deverá ocorrer após as eleições.",
+    "titulo": "CBIC apresenta soluções para obras paralisadas em reunião do Programa Destrava, do CNJ",
+    "texto": "A Câmara Brasileira da Indústria da Construção (CBIC) participou, nesta quinta-feira (24), pela primeira vez, como convidada, da reunião do Comitê Executivo Nacional do Programa Destrava.",
     "fontes": [
      {
       "nome": "CBIC",
-      "url": "https://cbic.org.br/reducao-da-jornada-de-trabalho-pode-exigir-quase-300-mil-novos-trabalhadores-na-construcao/"
+      "url": "https://cbic.org.br/cbic-apresenta-solucoes-para-obras-paralisadas-em-reuniao-do-programa-destrava-do-cnj/"
+     }
+    ]
+   },
+   {
+    "titulo": "Programa gratuito capacita profissionais para atuar com construção industrializada",
+    "texto": "Profissionais da construção, gestores públicos e privados, estudantes e demais interessados já podem se inscrever gratuitamente no Programa de Capacitação em Construção Industrializada, oferecido pelo Ministério do Desenvolvimento, Indústria, Comércio e Serviços (MDIC).",
+    "fontes": [
+     {
+      "nome": "CBIC",
+      "url": "https://cbic.org.br/programa-gratuito-capacita-profissionais-para-atuar-com-construcao-industrializada/"
+     }
+    ]
+   },
+   {
+    "titulo": "Riscos psicossociais: multas voltam a ser suspensas",
+    "texto": "STF prorroga a medida por mais 90 dias O ministro André Mendonça, do STF, prorrogou por mais 90 dias a suspensão das multas e sanções administrativas por descumprimento das exigências da Norma…",
+    "fontes": [
+     {
+      "nome": "SindusCon-SP",
+      "url": "https://sindusconsp.com.br/riscos-psicossociais-voltam-as-multas/"
      }
     ]
    }
   ]
  },
- "itens": []
+ "itens": [
+  {
+   "fonte": "CBIC",
+   "titulo": "Minha Casa, Minha Vida: ministério prorroga prazo para conclusão e entrega de moradias",
+   "url": "https://cbic.org.br/minha-casa-minha-vida-ministerio-prorroga-prazo-para-conclusao-e-entrega-de-moradias/",
+   "data": "24/09"
+  },
+  {
+   "fonte": "SindusCon-SP",
+   "titulo": "Secretaria dá destaque ao Seminário de Legalização",
+   "url": "https://sindusconsp.com.br/secretaria-da-destaque-ao-seminario-de-legalizacao/",
+   "data": "24/09"
+  },
+  {
+   "fonte": "Secovi-SP",
+   "titulo": "Setor imobiliário debate soluções baseadas na natureza para enfrentar mudanças climáticas nas cidades",
+   "url": "https://secovi.com.br/setor-imobiliario-debate-solucoes-baseadas-na-natureza-para-enfrentar-mudancas-climaticas-nas-cidades/",
+   "data": "24/09"
+  },
+  {
+   "fonte": "SindusCon-SP",
+   "titulo": "Senai-SP e Sesi-SP abrem licitações",
+   "url": "https://sindusconsp.com.br/senai-sp-e-sesi-sp-abrem-licitacoes-3/",
+   "data": "24/09"
+  },
+  {
+   "fonte": "Secovi-SP",
+   "titulo": "Secovi-SP debate conversão no mercado imobiliário em novo Encontro das Imobiliárias",
+   "url": "https://secovi.com.br/secovi-sp-debate-conversao-no-mercado-imobiliario-em-novo-encontro-das-imobiliarias/",
+   "data": "24/09"
+  },
+  {
+   "fonte": "Imobi Report",
+   "titulo": "Garantias pagas crescem mais de nove vezes e ajudam a conter inadimplência de aluguel no Brasil",
+   "url": "https://imobireport.com.br/aluguel/garantias-pagas-crescem-mais-de-nove-vezes-e-ajudam-a-conter-inadimplencia-de-aluguel-no-brasil/",
+   "data": "24/09"
+  },
+  {
+   "fonte": "InfoMoney",
+   "titulo": "SP saturada? Plano&#038;Plano aposta em Goiânia para crescer no MCMV",
+   "url": "https://www.infomoney.com.br/business/sp-saturada-planoplano-aposta-em-goiania-para-crescer-no-mcmv/",
+   "data": "24/09"
+  },
+  {
+   "fonte": "Imobi Report",
+   "titulo": "Como a OSPA usa inteligência artificial no desenvolvimento imobiliário e na sua própria gestão",
+   "url": "https://imobireport.com.br/inovacao/como-a-ospa-usa-inteligencia-artificial-no-desenvolvimento-imobiliario-e-na-sua-propria-gestao/",
+   "data": "24/09"
+  }
+ ]
 }
