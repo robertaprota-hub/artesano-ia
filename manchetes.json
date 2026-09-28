@@ -1,10 +1,10 @@
 {
- "atualizado": "27/09 19h58",
- "janela": 1,
+ "atualizado": "28/09 05h28",
+ "janela": 3,
  "resumo": {
-  "data": "27/09/2026",
-  "hora": "19h58",
-  "periodo": "ontem",
+  "data": "28/09/2026",
+  "hora": "05h28",
+  "periodo": "sexta a domingo",
   "itens": [
    {
     "titulo": "Greve na Caixa: sem o \"motor do setor imobiliário\", a conta vai para as construtoras",
@@ -13,6 +13,26 @@
      {
       "nome": "InfoMoney",
       "url": "https://www.infomoney.com.br/business/greve-na-caixa-sem-o-motor-do-setor-imobiliario-a-conta-vai-para-as-construtoras/"
+     }
+    ]
+   },
+   {
+    "titulo": "SindusCon-SP: entidade debateu desafios do licenciamento em São Paulo",
+    "texto": "13º Seminário de Legalização reuniu público recorde e representantes do setor da construção e do poder público O SindusCon-SP realizou, nos dias 21 e 22 de setembro, o 13º Seminário de Legalização de Empreendimentos no Município de São Paulo, que reuniu público recorde.",
+    "fontes": [
+     {
+      "nome": "CBIC",
+      "url": "https://cbic.org.br/sinduscon-sp-entidade-debateu-desafios-do-licenciamento-em-sao-paulo/"
+     }
+    ]
+   },
+   {
+    "titulo": "Reforma Tributária: Receita aprova documentos técnicos do split payment",
+    "texto": "A documentação técnica que vai orientar o funcionamento do split payment na Reforma Tributária foi aprovada pela Receita Federal e pelo Comitê Gestor do IBS.",
+    "fontes": [
+     {
+      "nome": "CBIC",
+      "url": "https://cbic.org.br/reforma-tributaria-receita-aprova-documentos-tecnicos-do-split-payment/"
      }
     ]
    },
@@ -28,5 +48,24 @@
    }
   ]
  },
- "itens": []
+ "itens": [
+  {
+   "fonte": "CBIC",
+   "titulo": "Workshop da CBIC aborda estratégias e práticas para negociações coletivas na construção",
+   "url": "https://cbic.org.br/workshop-da-cbic-aborda-estrategias-e-praticas-para-negociacoes-coletivas-na-construcao/",
+   "data": "25/09"
+  },
+  {
+   "fonte": "SindusCon-SP",
+   "titulo": "Atualizações em resíduos da construção",
+   "url": "https://sindusconsp.com.br/atualizacoes-em-residuos-da-construcao/",
+   "data": "25/09"
+  },
+  {
+   "fonte": "SindusCon-SP",
+   "titulo": "ABCD recebeu o Road Show das Trilhas Profissionais da Construção",
+   "url": "https://sindusconsp.com.br/abcd-recebeu-o-road-show-das-trilhas-profissionais-da-construcao/",
+   "data": "25/09"
+  }
+ ]
 }
