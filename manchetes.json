@@ -1,11 +1,21 @@
 {
- "atualizado": "29/09 17h40",
+ "atualizado": "29/09 20h39",
  "janela": 1,
  "resumo": {
   "data": "29/09/2026",
-  "hora": "17h40",
+  "hora": "20h39",
   "periodo": "ontem",
   "itens": [
+   {
+    "titulo": "Cenário econômico 2027: o que muda para incorporadoras",
+    "texto": "Cenário econômico 2027: juros, crédito, funding, demanda e custos podem mudar as decisões das incorporadoras.",
+    "fontes": [
+     {
+      "nome": "Portal VGV",
+      "url": "https://www.portalvgv.com.br/cenario-economico-2027-incorporadoras/"
+     }
+    ]
+   },
    {
     "titulo": "Radar Trabalhista: Relator prorroga suspensão de sanções sobre riscos psicossociais no trabalho",
     "texto": "O ministro André Mendonça, do Supremo Tribunal Federal (STF), prorrogou por mais 90 dias a suspensão da aplicação de multas e outras sanções ligadas à inclusão de fatores de riscos psicossociais nas regras de gerenciamento de riscos no ambiente de trabalho.",
@@ -35,18 +45,27 @@
       "url": "https://cbic.org.br/curso-da-cbic-apresenta-praticas-de-gestao-compartilhada-para-grandes-obras/"
      }
     ]
-   },
-   {
-    "titulo": "STF prorroga por mais 90 dias suspensão de sanções da NR-1 sobre riscos psicossociais",
-    "texto": "O Supremo Tribunal Federal (STF) prorrogou por mais 90 dias a suspensão cautelar de multas e outras sanções administrativas relacionadas às regras da NR-1 sobre riscos psicossociais no trabalho.",
-    "fontes": [
-     {
-      "nome": "CBIC",
-      "url": "https://cbic.org.br/stf-prorroga-por-mais-90-dias-suspensao-de-sancoes-da-nr-1-sobre-riscos-psicossociais/"
-     }
-    ]
    }
   ]
  },
- "itens": []
+ "itens": [
+  {
+   "fonte": "CBIC",
+   "titulo": "STF prorroga por mais 90 dias suspensão de sanções da NR-1 sobre riscos psicossociais",
+   "url": "https://cbic.org.br/stf-prorroga-por-mais-90-dias-suspensao-de-sancoes-da-nr-1-sobre-riscos-psicossociais/",
+   "data": "28/09"
+  },
+  {
+   "fonte": "SindusCon-SP",
+   "titulo": "16º ConstruSer reúne 4mil profissionais da construção e suas famílias no Sesi Votorantim",
+   "url": "https://sindusconsp.com.br/16o-construser-reune-4mil-profissionais-da-construcao-e-suas-familias-no-sesi-votorantim/",
+   "data": "28/09"
+  },
+  {
+   "fonte": "SindusCon-SP",
+   "titulo": "ConstruSer reuniu em Campinas mais de 1,5 mil, em evento social da construção paulista",
+   "url": "https://sindusconsp.com.br/construser-reuniu-em-campinas-mais-de-15-mil-em-evento-social-da-construcao-paulista/",
+   "data": "28/09"
+  }
+ ]
 }
