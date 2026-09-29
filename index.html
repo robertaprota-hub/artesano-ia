@@ -354,7 +354,7 @@ const TER = ['2026-09-15','2026-09-22','2026-09-29','2026-10-06'], QUI = ['2026-
 const AULAS = [
   { num:'01', titulo:'Fundamentos e prompts',           sub:'camadas da IA, ciclo 4D e prompt em cinco passos', obs:{ 'bairro-artesano':'gravação da turma das 15h30' }, gravacao:{ 'bairro-artesano':'https://drive.google.com/file/d/1F5UpKPJe7M1erMY4gWXMhBJNUBDfXXfZ/view', 'praia-do-paiva':'https://drive.google.com/file/d/1TgD8MuzRevHAAA22NluUDnJmvp7dDtF9/view', 'londrina':'https://drive.google.com/file/d/1WEJcGi6XdLnXtzyayThBBHh3bIMB7MAG/view', 'sjc':'https://drive.google.com/file/d/1cGgSkf42ZTkLgZBARuqEFQt_SONC_jOV/view' }, pdf:{ 'bairro-artesano':'https://drive.google.com/file/d/1JslSaAxhZT7zo66bvLyM1vdumsekWSQc/view', 'londrina':'https://drive.google.com/file/d/194BF_Hf1dNiw_dTJvxSNhcm6oVfCXr_N/view', 'praia-do-paiva':'https://drive.google.com/file/d/1m8ZjrDNHeViy7dQI0tkhBBf56-RkghF7/view', 'sjc':'https://drive.google.com/file/d/1JcRqBRTS-tHPdSfIbd4g-ZDdEo4a10EZ/view' } },
   { num:'02', titulo:'Projetos, Markdown, Artifacts',    sub:'contexto fixo em .md, iterar em Artifacts e dados na fonte', gravacao:{ 'bairro-artesano':'https://drive.google.com/file/d/1lu1i5DBvsRiZaTdJJkK8jXgaCVwnJWwb/view', 'londrina':'https://drive.google.com/file/d/1huWR7xAvqO9Itiw-lhtY-lez-hujbomD/view', 'praia-do-paiva':'https://drive.google.com/file/d/15FytfpUVamrEo8gA3Z-dvJRp9Iti313p/view', 'sjc':'https://drive.google.com/file/d/14czUBkyeXX29a8DLl-etxd3kWfNtuFq2/view' }, obs:{ 'sjc':'gravação em 2 partes: o começo está na parte 1, na pasta de gravações' }, pdf:{ 'bairro-artesano':'https://drive.google.com/file/d/19fFV8K5A-EHDiAfi4wEDY9W8Djs90J3c/view', 'londrina':'https://drive.google.com/file/d/1fjgVRbentXT6uk0N-xPO6eyWCoIqUg6E/view', 'praia-do-paiva':'https://drive.google.com/file/d/1XwnHlEPilnbMt0V4l8TejoZb43XKRSt7/view', 'sjc':'https://drive.google.com/file/d/1TO8VuXsq7faUNwL5jbgki-9FlZ4md7op/view' } },
-  { num:'03', titulo:'Skills',                           sub:'quando criar, estrutura da skill e criação sem código', gravacao:{}, pdf:{} },
+  { num:'03', titulo:'Skills',                           sub:'quando criar, estrutura da skill e criação sem código', gravacao:{}, pdf:{ 'bairro-artesano':'https://drive.google.com/file/d/1MCynZootyYXDrLhKUulGsE8BQEE97VfS/view', 'londrina':'https://drive.google.com/file/d/1QD0iwDUi9UIM0GC8jXTC-aQirGIWfhBX/view' } },
   { num:'04', titulo:'Claude no Office e rotinas',       sub:'arquivo aberto no Office, planilha ao slide e rotinas agendadas', gravacao:{}, pdf:{} }
 ].map((a,i)=>({ ...a, datas:{ 'bairro-artesano':TER[i], 'londrina':TER[i], 'praia-do-paiva':QUI[i], 'sjc':QUI[i] } }));
 
@@ -365,8 +365,8 @@ const ARQUIVOS = {
   'praia-do-paiva': ['https://drive.google.com/drive/folders/1xw22UmCS4ZcdAF7XvXFqorWNCvR0DiF3', 'https://drive.google.com/drive/folders/17s834YG6lmgDD1M8VeHaj5UaqS8Zg8Ap', 'https://drive.google.com/drive/folders/13nAZ5sb4L17QAx0-4NVofarpIqpp8DGe', 'https://drive.google.com/drive/folders/1ppPaf_Z2wXZ4Ifc5tKQiqKW_Scl-iK2U'],
   'sjc': ['https://drive.google.com/drive/folders/1jTBDcxxWG0OmtM7d1yCt1fXRzsx83XHq', 'https://drive.google.com/drive/folders/1iydf8RwZbw1TmKH0M4CUjhUiDsQr7OFA', 'https://drive.google.com/drive/folders/1qPJoGjEwNjhZ70tNSqBsQeIS5ppEeDlr', 'https://drive.google.com/drive/folders/1w2OMPhwvHhYPdDFlSzBAOZdMU-dsb7Yy'],
 };
-/* aulas com arquivos já publicados (todas as turmas). Acrescente o número quando subir os arquivos. */
-const ARQUIVOS_LIBERADOS = ['02'];
+/* aulas com arquivos já publicados, por turma. Acrescente o número quando subir os arquivos. */
+const ARQUIVOS_LIBERADOS = { 'bairro-artesano':['02','03'], 'londrina':['02','03'], 'praia-do-paiva':['02'], 'sjc':['02'] };
 
 /* ===== estado ===== */
 const KEY_TURMA='artesano-ia:turma';
@@ -416,7 +416,7 @@ function renderPdfs(){
   const box=$('#pdfList'); box.innerHTML='';
   AULAS.forEach((a,i)=>{
     const d=dataAula(a), p=partes(d), pdf=a.pdf[turma.slug]||'', pdfOk=!!pdf||d<hojeISO;
-    const arqOk=ARQUIVOS_LIBERADOS.includes(a.num), arq=(ARQUIVOS[turma.slug]||[])[i];
+    const arqOk=(ARQUIVOS_LIBERADOS[turma.slug]||[]).includes(a.num), arq=(ARQUIVOS[turma.slug]||[])[i];
     const nada=!pdfOk&&!arqOk;
     const card=document.createElement('div'); card.className='card aula-mat'+(nada?' soon':'');
     const dia=String(p.d).padStart(2,'0')+'/'+String(p.m).padStart(2,'0');
