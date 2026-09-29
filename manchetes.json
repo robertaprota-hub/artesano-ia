@@ -1,48 +1,48 @@
 {
- "atualizado": "28/09 21h19",
- "janela": 3,
+ "atualizado": "29/09 11h53",
+ "janela": 1,
  "resumo": {
-  "data": "28/09/2026",
-  "hora": "21h19",
-  "periodo": "sexta a domingo",
+  "data": "29/09/2026",
+  "hora": "11h53",
+  "periodo": "ontem",
   "itens": [
    {
-    "titulo": "Greve na Caixa: sem o \"motor do setor imobiliário\", a conta vai para as construtoras",
-    "texto": "A Caixa Econômica Federal é o motor por trás do setor imobiliário, respondendo por dois terços dos financiamentos habitacionais do País The post Greve na Caixa: sem o \"motor do setor imobiliário\", a conta vai para as construtoras appeared first on InfoMoney .",
+    "titulo": "Cenário econômico 2027: o que muda para incorporadoras",
+    "texto": "Cenário econômico 2027: juros, crédito, funding, demanda e custos podem mudar as decisões das incorporadoras.",
     "fontes": [
      {
-      "nome": "InfoMoney",
-      "url": "https://www.infomoney.com.br/business/greve-na-caixa-sem-o-motor-do-setor-imobiliario-a-conta-vai-para-as-construtoras/"
+      "nome": "Portal VGV",
+      "url": "https://www.portalvgv.com.br/cenario-economico-2027-incorporadoras/"
      }
     ]
    },
    {
-    "titulo": "SindusCon-SP: entidade debateu desafios do licenciamento em São Paulo",
-    "texto": "13º Seminário de Legalização reuniu público recorde e representantes do setor da construção e do poder público O SindusCon-SP realizou, nos dias 21 e 22 de setembro, o 13º Seminário de Legalização de Empreendimentos no Município de São Paulo, que reuniu público recorde.",
+    "titulo": "Radar Trabalhista: Relator prorroga suspensão de sanções sobre riscos psicossociais no trabalho",
+    "texto": "O ministro André Mendonça, do Supremo Tribunal Federal (STF), prorrogou por mais 90 dias a suspensão da aplicação de multas e outras sanções ligadas à inclusão de fatores de riscos psicossociais nas regras de gerenciamento de riscos no ambiente de trabalho.",
     "fontes": [
      {
       "nome": "CBIC",
-      "url": "https://cbic.org.br/sinduscon-sp-entidade-debateu-desafios-do-licenciamento-em-sao-paulo/"
+      "url": "https://cbic.org.br/radar-trabalhista-relator-prorroga-suspensao-de-sancoes-sobre-riscos-psicossociais-no-trabalho/"
      }
     ]
    },
    {
-    "titulo": "Reforma Tributária: Receita aprova documentos técnicos do split payment",
-    "texto": "A documentação técnica que vai orientar o funcionamento do split payment na Reforma Tributária foi aprovada pela Receita Federal e pelo Comitê Gestor do IBS.",
+    "titulo": "Vender o que ainda não existe: o case Tonino Lamborghini Residence de Chapecó (SC)",
+    "texto": "Plantas e renders explicam um empreendimento.",
+    "fontes": [
+     {
+      "nome": "Imobi Report",
+      "url": "https://imobireport.com.br/imobi-report-opiniao/vender-o-que-ainda-nao-existe-o-case-tonino-lamborghini-residence-de-chapeco-sc/"
+     }
+    ]
+   },
+   {
+    "titulo": "Curso da CBIC apresenta práticas de gestão compartilhada para grandes obras",
+    "texto": "Para aumentar a eficiência em grandes obras, integrar equipes e aprimorar a produtividade, a Câmara Brasileira da Indústria da Construção (CBIC), por meio da Comissão de Obras Industriais e Corporativas (COIC), desenvolveu o Curso EAD de Gestão Compartilhada.",
     "fontes": [
      {
       "nome": "CBIC",
-      "url": "https://cbic.org.br/reforma-tributaria-receita-aprova-documentos-tecnicos-do-split-payment/"
-     }
-    ]
-   },
-   {
-    "titulo": "Leilão de alto padrão: duplex com piscina no Morumbi e mansão pela metade do preço",
-    "texto": "Os imóveis serão leiloados pela plataforma de Leilão Judicial Eletrônico (LEJE) The post Leilão de alto padrão: duplex com piscina no Morumbi e mansão pela metade do preço appeared first on InfoMoney .",
-    "fontes": [
-     {
-      "nome": "InfoMoney",
-      "url": "https://www.infomoney.com.br/minhas-financas/leilao-de-alto-padrao-duplex-com-piscina-no-morumbi-e-mansao-pela-metade-do-preco/"
+      "url": "https://cbic.org.br/curso-da-cbic-apresenta-praticas-de-gestao-compartilhada-para-grandes-obras/"
      }
     ]
    }
@@ -51,21 +51,21 @@
  "itens": [
   {
    "fonte": "CBIC",
-   "titulo": "Workshop da CBIC aborda estratégias e práticas para negociações coletivas na construção",
-   "url": "https://cbic.org.br/workshop-da-cbic-aborda-estrategias-e-praticas-para-negociacoes-coletivas-na-construcao/",
-   "data": "25/09"
+   "titulo": "STF prorroga por mais 90 dias suspensão de sanções da NR-1 sobre riscos psicossociais",
+   "url": "https://cbic.org.br/stf-prorroga-por-mais-90-dias-suspensao-de-sancoes-da-nr-1-sobre-riscos-psicossociais/",
+   "data": "28/09"
   },
   {
    "fonte": "SindusCon-SP",
-   "titulo": "Atualizações em resíduos da construção",
-   "url": "https://sindusconsp.com.br/atualizacoes-em-residuos-da-construcao/",
-   "data": "25/09"
+   "titulo": "16º ConstruSer reúne 4mil profissionais da construção e suas famílias no Sesi Votorantim",
+   "url": "https://sindusconsp.com.br/16o-construser-reune-4mil-profissionais-da-construcao-e-suas-familias-no-sesi-votorantim/",
+   "data": "28/09"
   },
   {
    "fonte": "SindusCon-SP",
-   "titulo": "ABCD recebeu o Road Show das Trilhas Profissionais da Construção",
-   "url": "https://sindusconsp.com.br/abcd-recebeu-o-road-show-das-trilhas-profissionais-da-construcao/",
-   "data": "25/09"
+   "titulo": "ConstruSer reuniu em Campinas mais de 1,5 mil, em evento social da construção paulista",
+   "url": "https://sindusconsp.com.br/construser-reuniu-em-campinas-mais-de-15-mil-em-evento-social-da-construcao-paulista/",
+   "data": "28/09"
   }
  ]
 }
