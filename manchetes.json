@@ -1,21 +1,11 @@
 {
- "atualizado": "30/09 13h03",
+ "atualizado": "30/09 13h23",
  "janela": 1,
  "resumo": {
   "data": "30/09/2026",
-  "hora": "13h03",
+  "hora": "13h23",
   "periodo": "ontem",
   "itens": [
-   {
-    "titulo": "CBIC leva à Fazenda e ao Banco Central propostas de aprimoramento do SBPE",
-    "texto": "O presidente da Câmara Brasileira da Indústria da Construção (CBIC), Eduardo Aroeira, e o vice-presidente da Comissão da Indústria Imobiliária (CII), Ely Wertheim, cumpriram agendas nesta terça-feira…",
-    "fontes": [
-     {
-      "nome": "CBIC",
-      "url": "https://cbic.org.br/cbic-leva-a-fazenda-e-ao-banco-central-propostas-de-aprimoramento-do-sbpe/"
-     }
-    ]
-   },
    {
     "titulo": "China amplia crédito barato para infraestrutura, tecnologia e compra de imóveis",
     "texto": "Pacote inclui redução de juros, expansão de linhas de financiamento e subsídios a hipotecas para estimular uma economia que dá sinais de desaceleração The post China amplia crédito barato para infraestrutura, tecnologia e compra de imóveis appeared first on InfoMoney .",
@@ -23,16 +13,6 @@
      {
       "nome": "InfoMoney",
       "url": "https://www.infomoney.com.br/mercados/china-amplia-credito-barato-para-infraestrutura-tecnologia-e-compra-de-imoveis/"
-     }
-    ]
-   },
-   {
-    "titulo": "Reforma Tributária: prazo para opção pelo Simples Nacional e regime regular do IBS e da CBS é prorrogado",
-    "texto": "Empresas que precisam definir o regime tributário para 2027 ganharam mais tempo para fazer a escolha.",
-    "fontes": [
-     {
-      "nome": "CBIC",
-      "url": "https://cbic.org.br/reforma-tributaria-prazo-para-opcao-pelo-simples-nacional-e-regime-regular-do-ibs-e-da-cbs-e-prorrogado/"
      }
     ]
    },
@@ -45,38 +25,34 @@
       "url": "https://secovi.com.br/secovi-sp-abre-seminario-sobre-solucoes-baseadas-na-natureza-no-desenvolvimento-urbano-com-poder-publico-e-entidades-do-setor/"
      }
     ]
+   },
+   {
+    "titulo": "Novas Referências Técnicas para Projeto e Aprovação: painel detalha guia que orienta o uso de soluções baseadas na natureza em loteamentos e condomínios",
+    "texto": "O painel \"Novas Referências Técnicas para Projeto e Aprovação\", primeiro da programação técnica do seminário sobre soluções baseadas na natureza (SBN) no desenvolvimento urbano, detalhou o guia…",
+    "fontes": [
+     {
+      "nome": "Secovi-SP",
+      "url": "https://secovi.com.br/novas-referencias-tecnicas-para-projeto-e-aprovacao-painel-detalha-guia-que-orienta-o-uso-de-solucoes-baseadas-na-natureza-em-loteamentos-e-condominios/"
+     }
+    ]
+   },
+   {
+    "titulo": "Secovi-SP lança Guia SBN em parceria com entidades",
+    "texto": "Publicação reúne orientações e boas práticas para qualificação de áreas verdes e sistemas de lazer em parcelamentos do solo e condomínios O Secovi-SP, em parceria com a Câmara Ambiental da [&#8230;]",
+    "fontes": [
+     {
+      "nome": "Secovi-SP",
+      "url": "https://secovi.com.br/secovi-sp-lanca-guia-sbn-em-parceria-com-entidades/"
+     }
+    ]
    }
   ]
  },
  "itens": [
   {
-   "fonte": "Secovi-SP",
-   "titulo": "Novas Referências Técnicas para Projeto e Aprovação: painel detalha guia que orienta o uso de soluções baseadas na natureza em loteamentos e condomínios",
-   "url": "https://secovi.com.br/novas-referencias-tecnicas-para-projeto-e-aprovacao-painel-detalha-guia-que-orienta-o-uso-de-solucoes-baseadas-na-natureza-em-loteamentos-e-condominios/",
-   "data": "29/09"
-  },
-  {
-   "fonte": "Secovi-SP",
-   "titulo": "Secovi-SP lança Guia SBN em parceria com entidades",
-   "url": "https://secovi.com.br/secovi-sp-lanca-guia-sbn-em-parceria-com-entidades/",
-   "data": "29/09"
-  },
-  {
-   "fonte": "CBIC",
-   "titulo": "CHIS promove Rodada de Negócios da Habitação em 15 de outubro",
-   "url": "https://cbic.org.br/chis-promove-rodada-de-negocios-da-habitacao-em-15-de-outubro/",
-   "data": "29/09"
-  },
-  {
-   "fonte": "SindusCon-SP",
-   "titulo": "INCC-M sobe 0,25% em setembro",
-   "url": "https://sindusconsp.com.br/incc-m-sobe-025-em-setembro/",
-   "data": "29/09"
-  },
-  {
-   "fonte": "SindusCon-SP",
-   "titulo": "Confiança da Construção recua em setembro",
-   "url": "https://sindusconsp.com.br/confianca-da-construcao-recua-em-setembro/",
+   "fonte": "Imobi Report",
+   "titulo": "As reações no imobiliário à proibição das bets no Brasil",
+   "url": "https://imobireport.com.br/newsletter-do-imobi/as-reacoes-no-imobiliario-a-proibicao-das-bets-no-brasil/",
    "data": "29/09"
   }
  ]
