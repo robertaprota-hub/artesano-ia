@@ -1,11 +1,31 @@
 {
- "atualizado": "01/10 13h40",
+ "atualizado": "01/10 14h00",
  "janela": 1,
  "resumo": {
   "data": "01/10/2026",
-  "hora": "13h40",
+  "hora": "14h00",
   "periodo": "ontem",
   "itens": [
+   {
+    "titulo": "Reforma Tributária é tema de encontro de empresários da cadeia produtiva da construção civil potiguar",
+    "texto": "Empresários, especialistas e representantes da cadeia produtiva da construção civil se reuniram nesta terça-feira (29), no Auditório Albano Franco, na Casa da Indústria, em Natal, para discutir os impactos da Reforma Tributária sobre o setor no Rio Grande do Norte.",
+    "fontes": [
+     {
+      "nome": "CBIC",
+      "url": "https://cbic.org.br/reforma-tributaria-e-tema-de-encontro-de-empresarios-da-cadeia-produtiva-da-construcao-civil-potiguar/"
+     }
+    ]
+   },
+   {
+    "titulo": "Sustentabilidade passa a ser também questão de competitividade e acesso a capital, aponta Nilson Sarti",
+    "texto": "“O futuro da construção será cada vez mais baseado em produtividade, industrialização, inovação, eficiência no uso de recursos, baixo carbono e resiliência.” A avaliação é de Nilson Sarti, Vice-Presidente de Meio ambiente e Sustentabilidade da Câmara Brasileira da Indústria da Construção (CBIC).",
+    "fontes": [
+     {
+      "nome": "CBIC",
+      "url": "https://cbic.org.br/sustentabilidade-passa-a-ser-tambem-questao-de-competitividade-e-acesso-a-capital-aponta-nilson-sarti/"
+     }
+    ]
+   },
    {
     "titulo": "SBN na Prática \"parte 2\" traz cases de espaço público, condomínios e de um bairro planejado em Bertioga com soluções baseadas na natureza",
     "texto": "A segunda etapa do painel \"SBN na prática: Experiências e Aplicações\", no seminário sobre soluções baseadas na natureza (SBN) no desenvolvimento urbano, reuniu casos de regularização fundiária,…",
@@ -17,38 +37,36 @@
     ]
    },
    {
-    "titulo": "Painel sobre Financiamento e Viabilidade Econômica das SBN mostra linhas de crédito, certificações e indicadores que abrem caminho ao investimento em soluções baseadas na natureza",
-    "texto": "O painel \"Financiamento e Viabilidade Econômica das SBN\" tratou, no seminário correalizado pelo Secovi-SP, pela Aelo, pelo SindusCon-SP e pela Câmara Ambiental da Indústria da Construção da Cetesb,…",
+    "titulo": "Construção gera mais de 200 mil novos empregos formais em 2026",
+    "texto": "A construção segue apresentando resultados positivos no mercado de trabalho.",
     "fontes": [
      {
-      "nome": "Secovi-SP",
-      "url": "https://secovi.com.br/painel-sobre-financiamento-e-viabilidade-economica-das-sbn-mostra-linhas-de-credito-certificacoes-e-indicadores-que-abrem-caminho-ao-investimento-em-solucoes-baseadas-na-natureza/"
-     }
-    ]
-   },
-   {
-    "titulo": "Self Storage: o novo impulso do urbanismo moderno",
-    "texto": "Taxa média de ocupação das unidades para armazenamento mostra-se aquecida e com tendência de crescimento O mercado de self storage no Brasil encontra- se em fase de expansão, consolidando- se…",
-    "fontes": [
-     {
-      "nome": "Secovi-SP",
-      "url": "https://secovi.com.br/self-storage-o-novo-impulso-do-urbanismo-moderno/"
-     }
-    ]
-   },
-   {
-    "titulo": "Trilhas Profissionais da Construção padroniza as carreiras no setor",
-    "texto": "Programa prevê atualização de nomenclaturas tradicionalmente utilizadas pelo setor, substituindo termos como ‘servente’ e ‘pedreiro’, por denominações alinhadas às competências profissionais, como…",
-    "fontes": [
-     {
-      "nome": "SindusCon-SP",
-      "url": "https://sindusconsp.com.br/trilhas-profissionais-da-construcao-padroniza-as-carreiras-no-setor/"
+      "nome": "CBIC",
+      "url": "https://cbic.org.br/construcao-gera-mais-de-200-mil-novos-empregos-formais-em-2026/"
      }
     ]
    }
   ]
  },
  "itens": [
+  {
+   "fonte": "Secovi-SP",
+   "titulo": "Painel sobre Financiamento e Viabilidade Econômica das SBN mostra linhas de crédito, certificações e indicadores que abrem caminho ao investimento em soluções baseadas na natureza",
+   "url": "https://secovi.com.br/painel-sobre-financiamento-e-viabilidade-economica-das-sbn-mostra-linhas-de-credito-certificacoes-e-indicadores-que-abrem-caminho-ao-investimento-em-solucoes-baseadas-na-natureza/",
+   "data": "30/09"
+  },
+  {
+   "fonte": "Secovi-SP",
+   "titulo": "Self Storage: o novo impulso do urbanismo moderno",
+   "url": "https://secovi.com.br/self-storage-o-novo-impulso-do-urbanismo-moderno/",
+   "data": "30/09"
+  },
+  {
+   "fonte": "SindusCon-SP",
+   "titulo": "Trilhas Profissionais da Construção padroniza as carreiras no setor",
+   "url": "https://sindusconsp.com.br/trilhas-profissionais-da-construcao-padroniza-as-carreiras-no-setor/",
+   "data": "30/09"
+  },
   {
    "fonte": "SindusCon-SP",
    "titulo": "COI discute INCC para obras não residenciais",
