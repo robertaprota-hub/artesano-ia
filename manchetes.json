@@ -1,48 +1,48 @@
 {
- "atualizado": "01/10 20h51",
+ "atualizado": "02/10 11h47",
  "janela": 1,
  "resumo": {
-  "data": "01/10/2026",
-  "hora": "20h51",
+  "data": "02/10/2026",
+  "hora": "11h47",
   "periodo": "ontem",
   "itens": [
    {
-    "titulo": "Reforma Tributária é tema de encontro de empresários da cadeia produtiva da construção civil potiguar",
-    "texto": "Empresários, especialistas e representantes da cadeia produtiva da construção civil se reuniram nesta terça-feira (29), no Auditório Albano Franco, na Casa da Indústria, em Natal, para discutir os impactos da Reforma Tributária sobre o setor no Rio Grande do Norte.",
+    "titulo": "Mercado imobiliário do Interior segue resiliente",
+    "texto": "Segmento sofre pressão crescente de juros e custos SindusCon-SP e Secovi-SP (Sindicato da Habitação) realizaram nesta semana a primeira edição conjunta do tradicional webinar trimestral de pesquisa…",
     "fontes": [
      {
-      "nome": "CBIC",
-      "url": "https://cbic.org.br/reforma-tributaria-e-tema-de-encontro-de-empresarios-da-cadeia-produtiva-da-construcao-civil-potiguar/"
+      "nome": "SindusCon-SP",
+      "url": "https://sindusconsp.com.br/mercado-imobiliario-do-interior-segue-resiliente/"
      }
     ]
    },
    {
-    "titulo": "Sustentabilidade passa a ser também questão de competitividade e acesso a capital, aponta Nilson Sarti",
-    "texto": "“O futuro da construção será cada vez mais baseado em produtividade, industrialização, inovação, eficiência no uso de recursos, baixo carbono e resiliência.” A avaliação é de Nilson Sarti, Vice-Presidente de Meio ambiente e Sustentabilidade da Câmara Brasileira da Indústria da Construção (CBIC).",
+    "titulo": "Encontro CBIC de Construtores e Incorporadores reúne setor da construção em Goiânia",
+    "texto": "Representantes da construção civil e do mercado imobiliário estarão reunidos, nos dias 27 e 28 de outubro, em Goiânia (GO), para o Encontro CBIC de Construtores e Incorporadores Centro-Oeste.",
     "fontes": [
      {
       "nome": "CBIC",
-      "url": "https://cbic.org.br/sustentabilidade-passa-a-ser-tambem-questao-de-competitividade-e-acesso-a-capital-aponta-nilson-sarti/"
+      "url": "https://cbic.org.br/encontro-cbic-de-construtores-e-incorporadores-reune-setor-da-construcao-em-goiania/"
      }
     ]
    },
    {
-    "titulo": "SBN na Prática \"parte 2\" traz cases de espaço público, condomínios e de um bairro planejado em Bertioga com soluções baseadas na natureza",
-    "texto": "A segunda etapa do painel \"SBN na prática: Experiências e Aplicações\", no seminário sobre soluções baseadas na natureza (SBN) no desenvolvimento urbano, reuniu casos de regularização fundiária,…",
+    "titulo": "A estratégia da Crédito Real para ampliar o acesso à moradia",
+    "texto": "À frente das locações, Keli Queiroz vê no aluguel popular uma oportunidade de conciliar acesso, segurança e rentabilidade.",
     "fontes": [
      {
-      "nome": "Secovi-SP",
-      "url": "https://secovi.com.br/sbn-na-pratica-parte-2-traz-cases-de-espaco-publico-condominios-e-de-um-bairro-planejado-em-bertioga-com-solucoes-baseadas-na-natureza/"
+      "nome": "Imobi Report",
+      "url": "https://imobireport.com.br/aluguel/a-estrategia-da-credito-real-para-ampliar-o-acesso-a-moradia/"
      }
     ]
    },
    {
-    "titulo": "Construção gera mais de 200 mil novos empregos formais em 2026",
-    "texto": "A construção segue apresentando resultados positivos no mercado de trabalho.",
+    "titulo": "Sinduscon-CE: Mercado imobiliário de Fortaleza e RMF movimenta R$ 5,811 bilhões até agosto",
+    "texto": "Dados do Sinduscon Ceará indicam que 11.610 imóveis foram comercializados entre janeiro e agosto de 2026 na Capital e Região Metropolitana, com 1.522 unidades apenas no oitavo mês do ano.",
     "fontes": [
      {
       "nome": "CBIC",
-      "url": "https://cbic.org.br/construcao-gera-mais-de-200-mil-novos-empregos-formais-em-2026/"
+      "url": "https://cbic.org.br/sinduscon-ce-mercado-imobiliario-de-fortaleza-e-rmf-movimenta-r-5811-bilhoes-ate-agosto/"
      }
     ]
    }
@@ -50,16 +50,28 @@
  },
  "itens": [
   {
-   "fonte": "Secovi-SP",
-   "titulo": "Painel sobre Financiamento e Viabilidade Econômica das SBN mostra linhas de crédito, certificações e indicadores que abrem caminho ao investimento em soluções baseadas na natureza",
-   "url": "https://secovi.com.br/painel-sobre-financiamento-e-viabilidade-economica-das-sbn-mostra-linhas-de-credito-certificacoes-e-indicadores-que-abrem-caminho-ao-investimento-em-solucoes-baseadas-na-natureza/",
-   "data": "30/09"
+   "fonte": "CBIC",
+   "titulo": "CBIC participa de reunião da FIIC sobre desafios da construção na América Latina",
+   "url": "https://cbic.org.br/cbic-participa-de-reuniao-da-fiic-sobre-desafios-da-construcao-na-america-latina/",
+   "data": "01/10"
   },
   {
-   "fonte": "Secovi-SP",
-   "titulo": "Self Storage: o novo impulso do urbanismo moderno",
-   "url": "https://secovi.com.br/self-storage-o-novo-impulso-do-urbanismo-moderno/",
-   "data": "30/09"
+   "fonte": "Imobi Report",
+   "titulo": "O papel do líder na implementação de inteligência artificial na imobiliária",
+   "url": "https://imobireport.com.br/aluguel/o-papel-do-lider-na-implementacao-de-inteligencia-artificial-na-imobiliaria/",
+   "data": "01/10"
+  },
+  {
+   "fonte": "SindusCon-SP",
+   "titulo": "Senai-SP, Sesi-SP e CDHU abrem licitações",
+   "url": "https://sindusconsp.com.br/senai-sp-sesi-sp-e-cdhu-abrem-licitacoes-11/",
+   "data": "01/10"
+  },
+  {
+   "fonte": "SindusCon-SP",
+   "titulo": "CUB paulista sobe 0,13% em setembro",
+   "url": "https://sindusconsp.com.br/cub-paulista-sobe-013-em-setembro/",
+   "data": "01/10"
   }
  ]
 }
