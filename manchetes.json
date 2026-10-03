@@ -1,77 +1,52 @@
 {
- "atualizado": "02/10 20h43",
+ "atualizado": "03/10 10h30",
  "janela": 1,
  "resumo": {
-  "data": "02/10/2026",
-  "hora": "20h43",
+  "data": "03/10/2026",
+  "hora": "10h30",
   "periodo": "ontem",
   "itens": [
    {
-    "titulo": "Mercado imobiliário do Interior segue resiliente",
-    "texto": "Segmento sofre pressão crescente de juros e custos SindusCon-SP e Secovi-SP (Sindicato da Habitação) realizaram nesta semana a primeira edição conjunta do tradicional webinar trimestral de pesquisa…",
+    "titulo": "Quinto decreto de programação orçamentária define limites para despesas discricionárias em 2026",
+    "texto": "Foi publicado no Diário Oficial da União (DOU) o Decreto nº 13.130, de 30 de setembro de 2026, que estabelece a quinta programação orçamentária e financeira do exercício.",
+    "fontes": [
+     {
+      "nome": "CBIC",
+      "url": "https://cbic.org.br/quinto-decreto-de-programacao-orcamentaria-define-limites-para-despesas-discricionarias-em-2026/"
+     }
+    ]
+   },
+   {
+    "titulo": "CBIC cobra mudanças no Compras.gov.br para adequação da lei de licitações",
+    "texto": "A Câmara Brasileira da Indústria da Construção (CBIC) enviou duas cartas ao Ministério da Gestão e da Inovação em Serviços Públicos (MGI) e ao Tribunal de Contas da União (TCU), para requerer mais segurança e compromisso nas disputas por obras públicas.",
+    "fontes": [
+     {
+      "nome": "CBIC",
+      "url": "https://cbic.org.br/cbic-cobra-mudancas-no-compras-gov-br-para-adequacao-da-lei-de-licitacoes/"
+     }
+    ]
+   },
+   {
+    "titulo": "CBIC debate cenário, desafios e oportunidades para 2027",
+    "texto": "A Câmara Brasileira da Indústria da Construção (CBIC) vai reunir especialistas para avaliar o cenário econômico nacional e discutir as perspectivas para 2027.",
+    "fontes": [
+     {
+      "nome": "CBIC",
+      "url": "https://cbic.org.br/cbic-debate-cenario-desafios-e-oportunidades-para-2027/"
+     }
+    ]
+   },
+   {
+    "titulo": "Construção tende à desaceleração",
+    "texto": "Fatores como o fim da 6&#215;1 e custos crescentes inibem o emprego A indústria da construção abriu 20.848 novos empregos no país em agosto, e 91.410 no acumulado de 12 meses até aquele mês, segundo o Cadastro Geral de Emprego e Desemprego do Ministério do Trabalho e Emprego.",
     "fontes": [
      {
       "nome": "SindusCon-SP",
-      "url": "https://sindusconsp.com.br/mercado-imobiliario-do-interior-segue-resiliente/"
-     }
-    ]
-   },
-   {
-    "titulo": "Encontro CBIC de Construtores e Incorporadores reúne setor da construção em Goiânia",
-    "texto": "Representantes da construção civil e do mercado imobiliário estarão reunidos, nos dias 27 e 28 de outubro, em Goiânia (GO), para o Encontro CBIC de Construtores e Incorporadores Centro-Oeste.",
-    "fontes": [
-     {
-      "nome": "CBIC",
-      "url": "https://cbic.org.br/encontro-cbic-de-construtores-e-incorporadores-reune-setor-da-construcao-em-goiania/"
-     }
-    ]
-   },
-   {
-    "titulo": "A estratégia da Crédito Real para ampliar o acesso à moradia",
-    "texto": "À frente das locações, Keli Queiroz vê no aluguel popular uma oportunidade de conciliar acesso, segurança e rentabilidade.",
-    "fontes": [
-     {
-      "nome": "Imobi Report",
-      "url": "https://imobireport.com.br/aluguel/a-estrategia-da-credito-real-para-ampliar-o-acesso-a-moradia/"
-     }
-    ]
-   },
-   {
-    "titulo": "Sinduscon-CE: Mercado imobiliário de Fortaleza e RMF movimenta R$ 5,811 bilhões até agosto",
-    "texto": "Dados do Sinduscon Ceará indicam que 11.610 imóveis foram comercializados entre janeiro e agosto de 2026 na Capital e Região Metropolitana, com 1.522 unidades apenas no oitavo mês do ano.",
-    "fontes": [
-     {
-      "nome": "CBIC",
-      "url": "https://cbic.org.br/sinduscon-ce-mercado-imobiliario-de-fortaleza-e-rmf-movimenta-r-5811-bilhoes-ate-agosto/"
+      "url": "https://sindusconsp.com.br/construcao-tende-a-desaceleracao/"
      }
     ]
    }
   ]
  },
- "itens": [
-  {
-   "fonte": "CBIC",
-   "titulo": "CBIC participa de reunião da FIIC sobre desafios da construção na América Latina",
-   "url": "https://cbic.org.br/cbic-participa-de-reuniao-da-fiic-sobre-desafios-da-construcao-na-america-latina/",
-   "data": "01/10"
-  },
-  {
-   "fonte": "Imobi Report",
-   "titulo": "O papel do líder na implementação de inteligência artificial na imobiliária",
-   "url": "https://imobireport.com.br/aluguel/o-papel-do-lider-na-implementacao-de-inteligencia-artificial-na-imobiliaria/",
-   "data": "01/10"
-  },
-  {
-   "fonte": "SindusCon-SP",
-   "titulo": "Senai-SP, Sesi-SP e CDHU abrem licitações",
-   "url": "https://sindusconsp.com.br/senai-sp-sesi-sp-e-cdhu-abrem-licitacoes-11/",
-   "data": "01/10"
-  },
-  {
-   "fonte": "SindusCon-SP",
-   "titulo": "CUB paulista sobe 0,13% em setembro",
-   "url": "https://sindusconsp.com.br/cub-paulista-sobe-013-em-setembro/",
-   "data": "01/10"
-  }
- ]
+ "itens": []
 }
