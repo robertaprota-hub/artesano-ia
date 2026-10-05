@@ -1,10 +1,10 @@
 {
- "atualizado": "04/10 20h01",
- "janela": 1,
+ "atualizado": "05/10 14h13",
+ "janela": 3,
  "resumo": {
-  "data": "04/10/2026",
-  "hora": "20h01",
-  "periodo": "ontem",
+  "data": "05/10/2026",
+  "hora": "14h13",
+  "periodo": "sexta a domingo",
   "itens": [
    {
     "titulo": "Dezenas de milhares de pessoas protestam em toda a Espanha contra crise imobiliária",
@@ -13,6 +13,16 @@
      {
       "nome": "InfoMoney",
       "url": "https://www.infomoney.com.br/mundo/dezenas-de-milhares-de-pessoas-protestam-em-toda-a-espanha-contra-crise-imobiliaria/"
+     }
+    ]
+   },
+   {
+    "titulo": "Construção tende à desaceleração",
+    "texto": "Fatores como o fim da 6&#215;1 e custos crescentes inibem o emprego A indústria da construção abriu 20.848 novos empregos no país em agosto, e 91.410 no acumulado de 12 meses até aquele mês, segundo o Cadastro Geral de Emprego e Desemprego do Ministério do Trabalho e Emprego.",
+    "fontes": [
+     {
+      "nome": "SindusCon-SP",
+      "url": "https://sindusconsp.com.br/construcao-tende-a-desaceleracao/"
      }
     ]
    }
