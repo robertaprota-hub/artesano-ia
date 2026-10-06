@@ -1,48 +1,48 @@
 {
- "atualizado": "05/10 22h16",
- "janela": 3,
+ "atualizado": "06/10 12h17",
+ "janela": 1,
  "resumo": {
-  "data": "05/10/2026",
-  "hora": "22h16",
-  "periodo": "sexta a domingo",
+  "data": "06/10/2026",
+  "hora": "12h17",
+  "periodo": "ontem",
   "itens": [
    {
-    "titulo": "Quinto decreto de programação orçamentária define limites para despesas discricionárias em 2026",
-    "texto": "Foi publicado no Diário Oficial da União (DOU) o Decreto nº 13.130, de 30 de setembro de 2026, que estabelece a quinta programação orçamentária e financeira do exercício.",
+    "titulo": "Mercado imobiliário do interior de SP vende mais do que lança",
+    "texto": "Menos lançamentos não significam ausência de comprador O mercado imobiliário do interior de SP atravessa um momento curioso.",
     "fontes": [
      {
-      "nome": "CBIC",
-      "url": "https://cbic.org.br/quinto-decreto-de-programacao-orcamentaria-define-limites-para-despesas-discricionarias-em-2026/"
+      "nome": "Portal VGV",
+      "url": "https://www.portalvgv.com.br/mercado-imobiliario-do-interior-de-sp/"
      }
     ]
    },
    {
-    "titulo": "CBIC cobra mudanças no Compras.gov.br para adequação da lei de licitações",
-    "texto": "A Câmara Brasileira da Indústria da Construção (CBIC) enviou duas cartas ao Ministério da Gestão e da Inovação em Serviços Públicos (MGI) e ao Tribunal de Contas da União (TCU), para requerer mais segurança e compromisso nas disputas por obras públicas.",
+    "titulo": "Por que o mercado imobiliário insiste em dizer que esse é o melhor momento para comprar imóvel?",
+    "texto": "Procura enfraquecida por imóveis tem ampliado o poder de barganha do comprador, enquanto a possibilidade de portabilidade pode reduzir o custo do financiamento adiante.",
     "fontes": [
      {
-      "nome": "CBIC",
-      "url": "https://cbic.org.br/cbic-cobra-mudancas-no-compras-gov-br-para-adequacao-da-lei-de-licitacoes/"
+      "nome": "Imobi Report",
+      "url": "https://imobireport.com.br/vendas/por-que-o-mercado-imobiliario-insiste-em-dizer-que-esse-e-o-melhor-momento-para-comprar-imovel/"
      }
     ]
    },
    {
-    "titulo": "CBIC debate cenário, desafios e oportunidades para 2027",
-    "texto": "A Câmara Brasileira da Indústria da Construção (CBIC) vai reunir especialistas para avaliar o cenário econômico nacional e discutir as perspectivas para 2027.",
+    "titulo": "Semana CANPAT da Construção 2026 debate mudanças na capacitação previstas na nova NR 10",
+    "texto": "As mudanças previstas na Norma Regulamentadora nº 10 (NR 10) e seus impactos na capacitação dos trabalhadores da construção foram tema do primeiro painel da Semana CANPAT Construção 2026, realizado nesta segunda-feira (5).",
     "fontes": [
      {
       "nome": "CBIC",
-      "url": "https://cbic.org.br/cbic-debate-cenario-desafios-e-oportunidades-para-2027/"
+      "url": "https://cbic.org.br/semana-canpat-da-construcao-2026-debate-mudancas-na-capacitacao-previstas-na-nova-nr-10/"
      }
     ]
    },
    {
-    "titulo": "Dezenas de milhares de pessoas protestam em toda a Espanha contra crise imobiliária",
-    "texto": "População intensifica demandas conforme medidas governo são rejeitadas pela oposição The post Dezenas de milhares de pessoas protestam em toda a Espanha contra crise imobiliária appeared first on InfoMoney .",
+    "titulo": "Redução da jornada de trabalho volta ao debate no Senado",
+    "texto": "O Senado inicia nesta terça-feira (6) a discussão da proposta que prevê o fim da escala 6x1 e a redução da jornada máxima de trabalho de 44 para 40 horas semanais.",
     "fontes": [
      {
-      "nome": "InfoMoney",
-      "url": "https://www.infomoney.com.br/mundo/dezenas-de-milhares-de-pessoas-protestam-em-toda-a-espanha-contra-crise-imobiliaria/"
+      "nome": "CBIC",
+      "url": "https://cbic.org.br/reducao-da-jornada-de-trabalho-volta-ao-debate-no-senado/"
      }
     ]
    }
@@ -50,10 +50,22 @@
  },
  "itens": [
   {
+   "fonte": "CBIC",
+   "titulo": "SINDUSCON Joinville: vendas superam lançamentos no mercado imobiliário da cidade",
+   "url": "https://cbic.org.br/sinduscon-joinville-vendas-superam-lancamentos-no-mercado-imobiliario-da-cidade/",
+   "data": "05/10"
+  },
+  {
    "fonte": "SindusCon-SP",
-   "titulo": "Construção tende à desaceleração",
-   "url": "https://sindusconsp.com.br/construcao-tende-a-desaceleracao/",
-   "data": "02/10"
+   "titulo": "Detecção precoce do câncer de mama aumenta chance de cura",
+   "url": "https://sindusconsp.com.br/deteccao-precoce-do-cancer-de-mama-aumenta-chance-de-cura/",
+   "data": "05/10"
+  },
+  {
+   "fonte": "SindusCon-SP",
+   "titulo": "Construção abre 20,8 mil empregos em agosto, mas confiança do setor recua",
+   "url": "https://sindusconsp.com.br/construcao-abre-208-mil-empregos-em-agosto-mas-confianca-do-setor-recua/",
+   "data": "05/10"
   }
  ]
 }
