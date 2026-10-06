@@ -1,11 +1,21 @@
 {
- "atualizado": "06/10 12h25",
+ "atualizado": "06/10 12h52",
  "janela": 1,
  "resumo": {
   "data": "06/10/2026",
-  "hora": "12h25",
+  "hora": "12h52",
   "periodo": "ontem",
   "itens": [
+   {
+    "titulo": "Mercado imobiliário do interior de SP vende mais do que lança",
+    "texto": "Menos lançamentos não significam ausência de comprador O mercado imobiliário do interior de SP atravessa um momento curioso.",
+    "fontes": [
+     {
+      "nome": "Portal VGV",
+      "url": "https://www.portalvgv.com.br/mercado-imobiliario-do-interior-de-sp/"
+     }
+    ]
+   },
    {
     "titulo": "Por que o mercado imobiliário insiste em dizer que esse é o melhor momento para comprar imóvel?",
     "texto": "Procura enfraquecida por imóveis tem ampliado o poder de barganha do comprador, enquanto a possibilidade de portabilidade pode reduzir o custo do financiamento adiante.",
@@ -35,18 +45,27 @@
       "url": "https://cbic.org.br/reducao-da-jornada-de-trabalho-volta-ao-debate-no-senado/"
      }
     ]
-   },
-   {
-    "titulo": "SINDUSCON Joinville: vendas superam lançamentos no mercado imobiliário da cidade",
-    "texto": "O mercado imobiliário de Joinville registrou mais vendas do que lançamentos no primeiro semestre de 2026.",
-    "fontes": [
-     {
-      "nome": "CBIC",
-      "url": "https://cbic.org.br/sinduscon-joinville-vendas-superam-lancamentos-no-mercado-imobiliario-da-cidade/"
-     }
-    ]
    }
   ]
  },
- "itens": []
+ "itens": [
+  {
+   "fonte": "CBIC",
+   "titulo": "SINDUSCON Joinville: vendas superam lançamentos no mercado imobiliário da cidade",
+   "url": "https://cbic.org.br/sinduscon-joinville-vendas-superam-lancamentos-no-mercado-imobiliario-da-cidade/",
+   "data": "05/10"
+  },
+  {
+   "fonte": "SindusCon-SP",
+   "titulo": "Detecção precoce do câncer de mama aumenta chance de cura",
+   "url": "https://sindusconsp.com.br/deteccao-precoce-do-cancer-de-mama-aumenta-chance-de-cura/",
+   "data": "05/10"
+  },
+  {
+   "fonte": "SindusCon-SP",
+   "titulo": "Construção abre 20,8 mil empregos em agosto, mas confiança do setor recua",
+   "url": "https://sindusconsp.com.br/construcao-abre-208-mil-empregos-em-agosto-mas-confianca-do-setor-recua/",
+   "data": "05/10"
+  }
+ ]
 }
