@@ -1,31 +1,11 @@
 {
- "atualizado": "07/10 12h37",
+ "atualizado": "07/10 12h44",
  "janela": 1,
  "resumo": {
   "data": "07/10/2026",
-  "hora": "12h37",
+  "hora": "12h44",
   "periodo": "ontem",
   "itens": [
-   {
-    "titulo": "Artigo: Crédito do Trabalhador: a rescisão exige outro cuidado na construção",
-    "texto": "Clovis Veloso de Queiroz Neto, advogado e consultor técnico da CBIC O encerramento de uma etapa da obra costuma trazer uma sequência de decisões: remanejar equipes, organizar documentos e, quando necessário, concluir desligamentos.",
-    "fontes": [
-     {
-      "nome": "CBIC",
-      "url": "https://cbic.org.br/artigo-credito-do-trabalhador-a-rescisao-exige-outro-cuidado-na-construcao/"
-     }
-    ]
-   },
-   {
-    "titulo": "CBIC e Abrace Energia discutem agendas comuns e ampliam diálogo institucional",
-    "texto": "A Câmara Brasileira da Indústria da Construção (CBIC) recebeu, nesta terça-feira (6), na sede da entidade, em Brasília, representantes da Abrace Energia para uma visita institucional.",
-    "fontes": [
-     {
-      "nome": "CBIC",
-      "url": "https://cbic.org.br/cbic-e-abrace-energia-discutem-agendas-comuns-e-ampliam-dialogo-institucional/"
-     }
-    ]
-   },
    {
     "titulo": "Financiamentos imobiliários crescem em agosto",
     "texto": "Mas créditos com recursos livres caem, diz a Abecip Os financiamentos imobiliários com recursos das cadernetas do Sistema Brasileiro de Poupança e Empréstimo (SBPE) alcançaram R$ 16,97 bilhões em agosto, o terceiro melhor resultado para um este mês nos últimos 25 anos.",
@@ -45,28 +25,30 @@
       "url": "https://imobireport.com.br/newsletter-do-imobi/credito-imobiliario-cresce-apesar-dos-saques-de-poupanca-e-fgts/"
      }
     ]
+   },
+   {
+    "titulo": "Negócios e inovação aproximam construção e fornecedores em Rio Preto",
+    "texto": "Rodada promovida pelo SindusCon-SP reuniu 12 construtoras e 10 fornecedores e abriu espaço para parcerias, soluções tecnológicas e mais produtividade Do encontro entre quem constrói e quem fornece…",
+    "fontes": [
+     {
+      "nome": "SindusCon-SP",
+      "url": "https://sindusconsp.com.br/negocios-e-inovacao-aproximam-construcao-e-fornecedores-em-rio-preto/"
+     }
+    ]
+   },
+   {
+    "titulo": "INCC-M desacelera: o que muda no orçamento de uma obra?",
+    "texto": "Custos da construção subiram 0,25% em setembro, mas acumulam alta de 6,61% em 12 meses.",
+    "fontes": [
+     {
+      "nome": "Portal VGV",
+      "url": "https://www.portalvgv.com.br/incc-m-orcamento-obra/"
+     }
+    ]
    }
   ]
  },
  "itens": [
-  {
-   "fonte": "CBIC",
-   "titulo": "Semana CANPAT Construção: painel reforça importância do planejamento das instalações elétricas nos canteiros",
-   "url": "https://cbic.org.br/semana-canpat-construcao-2026-painel-alerta-para-riscos-e-reforca-importancia-do-planejamento-das-instalacoes-eletricas-nos-canteiros/",
-   "data": "06/10"
-  },
-  {
-   "fonte": "SindusCon-SP",
-   "titulo": "Negócios e inovação aproximam construção e fornecedores em Rio Preto",
-   "url": "https://sindusconsp.com.br/negocios-e-inovacao-aproximam-construcao-e-fornecedores-em-rio-preto/",
-   "data": "06/10"
-  },
-  {
-   "fonte": "Portal VGV",
-   "titulo": "INCC-M desacelera: o que muda no orçamento de uma obra?",
-   "url": "https://www.portalvgv.com.br/incc-m-orcamento-obra/",
-   "data": "06/10"
-  },
   {
    "fonte": "Secovi-SP",
    "titulo": "SindExpert debate a experiência do morador após a entrega do empreendimento",
