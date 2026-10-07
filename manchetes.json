@@ -1,48 +1,48 @@
 {
- "atualizado": "06/10 20h45",
+ "atualizado": "07/10 12h37",
  "janela": 1,
  "resumo": {
-  "data": "06/10/2026",
-  "hora": "20h45",
+  "data": "07/10/2026",
+  "hora": "12h37",
   "periodo": "ontem",
   "itens": [
    {
-    "titulo": "Por que o mercado imobiliário insiste em dizer que esse é o melhor momento para comprar imóvel?",
-    "texto": "Procura enfraquecida por imóveis tem ampliado o poder de barganha do comprador, enquanto a possibilidade de portabilidade pode reduzir o custo do financiamento adiante.",
+    "titulo": "Artigo: Crédito do Trabalhador: a rescisão exige outro cuidado na construção",
+    "texto": "Clovis Veloso de Queiroz Neto, advogado e consultor técnico da CBIC O encerramento de uma etapa da obra costuma trazer uma sequência de decisões: remanejar equipes, organizar documentos e, quando necessário, concluir desligamentos.",
+    "fontes": [
+     {
+      "nome": "CBIC",
+      "url": "https://cbic.org.br/artigo-credito-do-trabalhador-a-rescisao-exige-outro-cuidado-na-construcao/"
+     }
+    ]
+   },
+   {
+    "titulo": "CBIC e Abrace Energia discutem agendas comuns e ampliam diálogo institucional",
+    "texto": "A Câmara Brasileira da Indústria da Construção (CBIC) recebeu, nesta terça-feira (6), na sede da entidade, em Brasília, representantes da Abrace Energia para uma visita institucional.",
+    "fontes": [
+     {
+      "nome": "CBIC",
+      "url": "https://cbic.org.br/cbic-e-abrace-energia-discutem-agendas-comuns-e-ampliam-dialogo-institucional/"
+     }
+    ]
+   },
+   {
+    "titulo": "Financiamentos imobiliários crescem em agosto",
+    "texto": "Mas créditos com recursos livres caem, diz a Abecip Os financiamentos imobiliários com recursos das cadernetas do Sistema Brasileiro de Poupança e Empréstimo (SBPE) alcançaram R$ 16,97 bilhões em agosto, o terceiro melhor resultado para um este mês nos últimos 25 anos.",
+    "fontes": [
+     {
+      "nome": "SindusCon-SP",
+      "url": "https://sindusconsp.com.br/financiamentos-imobiliarios-crescem-em-agosto/"
+     }
+    ]
+   },
+   {
+    "titulo": "Crédito imobiliário cresce apesar dos saques de poupança e FGTS",
+    "texto": "A Imersão CUPOLA Aluguel foi pensada para identificar gargalos, ampliar referências e encontrar novas possibilidades para a evolução das imobiliárias de locação.",
     "fontes": [
      {
       "nome": "Imobi Report",
-      "url": "https://imobireport.com.br/vendas/por-que-o-mercado-imobiliario-insiste-em-dizer-que-esse-e-o-melhor-momento-para-comprar-imovel/"
-     }
-    ]
-   },
-   {
-    "titulo": "Semana CANPAT Construção 2026 debate mudanças na capacitação previstas na nova NR 10",
-    "texto": "As mudanças previstas na Norma Regulamentadora nº 10 (NR 10) e seus impactos na capacitação dos trabalhadores da construção foram tema do primeiro painel da Semana CANPAT Construção 2026, realizado nesta segunda-feira (5).",
-    "fontes": [
-     {
-      "nome": "CBIC",
-      "url": "https://cbic.org.br/semana-canpat-da-construcao-2026-debate-mudancas-na-capacitacao-previstas-na-nova-nr-10/"
-     }
-    ]
-   },
-   {
-    "titulo": "Redução da jornada de trabalho volta ao debate no Senado",
-    "texto": "O Senado inicia nesta terça-feira (6) a discussão da proposta que prevê o fim da escala 6x1 e a redução da jornada máxima de trabalho de 44 para 40 horas semanais.",
-    "fontes": [
-     {
-      "nome": "CBIC",
-      "url": "https://cbic.org.br/reducao-da-jornada-de-trabalho-volta-ao-debate-no-senado/"
-     }
-    ]
-   },
-   {
-    "titulo": "SINDUSCON Joinville: vendas superam lançamentos no mercado imobiliário da cidade",
-    "texto": "O mercado imobiliário de Joinville registrou mais vendas do que lançamentos no primeiro semestre de 2026.",
-    "fontes": [
-     {
-      "nome": "CBIC",
-      "url": "https://cbic.org.br/sinduscon-joinville-vendas-superam-lancamentos-no-mercado-imobiliario-da-cidade/"
+      "url": "https://imobireport.com.br/newsletter-do-imobi/credito-imobiliario-cresce-apesar-dos-saques-de-poupanca-e-fgts/"
      }
     ]
    }
@@ -50,22 +50,28 @@
  },
  "itens": [
   {
+   "fonte": "CBIC",
+   "titulo": "Semana CANPAT Construção: painel reforça importância do planejamento das instalações elétricas nos canteiros",
+   "url": "https://cbic.org.br/semana-canpat-construcao-2026-painel-alerta-para-riscos-e-reforca-importancia-do-planejamento-das-instalacoes-eletricas-nos-canteiros/",
+   "data": "06/10"
+  },
+  {
    "fonte": "SindusCon-SP",
-   "titulo": "Detecção precoce do câncer de mama aumenta chance de cura",
-   "url": "https://sindusconsp.com.br/deteccao-precoce-do-cancer-de-mama-aumenta-chance-de-cura/",
-   "data": "05/10"
+   "titulo": "Negócios e inovação aproximam construção e fornecedores em Rio Preto",
+   "url": "https://sindusconsp.com.br/negocios-e-inovacao-aproximam-construcao-e-fornecedores-em-rio-preto/",
+   "data": "06/10"
   },
   {
    "fonte": "Portal VGV",
-   "titulo": "Mercado imobiliário do interior de SP vende mais do que lança",
-   "url": "https://www.portalvgv.com.br/mercado-imobiliario-do-interior-de-sp/",
-   "data": "05/10"
+   "titulo": "INCC-M desacelera: o que muda no orçamento de uma obra?",
+   "url": "https://www.portalvgv.com.br/incc-m-orcamento-obra/",
+   "data": "06/10"
   },
   {
-   "fonte": "SindusCon-SP",
-   "titulo": "Construção abre 20,8 mil empregos em agosto, mas confiança do setor recua",
-   "url": "https://sindusconsp.com.br/construcao-abre-208-mil-empregos-em-agosto-mas-confianca-do-setor-recua/",
-   "data": "05/10"
+   "fonte": "Secovi-SP",
+   "titulo": "SindExpert debate a experiência do morador após a entrega do empreendimento",
+   "url": "https://secovi.com.br/sindexpert-debate-a-experiencia-do-morador-apos-a-entrega-do-empreendimento/",
+   "data": "06/10"
   }
  ]
 }
