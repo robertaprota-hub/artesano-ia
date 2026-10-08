@@ -1,48 +1,48 @@
 {
- "atualizado": "07/10 21h07",
+ "atualizado": "08/10 12h42",
  "janela": 1,
  "resumo": {
-  "data": "07/10/2026",
-  "hora": "21h07",
+  "data": "08/10/2026",
+  "hora": "12h42",
   "periodo": "ontem",
   "itens": [
    {
-    "titulo": "Artigo: Crédito do Trabalhador: a rescisão exige outro cuidado na construção",
-    "texto": "Clovis Veloso de Queiroz Neto, advogado e consultor técnico da CBIC O encerramento de uma etapa da obra costuma trazer uma sequência de decisões: remanejar equipes, organizar documentos e, quando necessário, concluir desligamentos.",
-    "fontes": [
-     {
-      "nome": "CBIC",
-      "url": "https://cbic.org.br/artigo-credito-do-trabalhador-a-rescisao-exige-outro-cuidado-na-construcao/"
-     }
-    ]
-   },
-   {
-    "titulo": "CBIC e Abrace Energia discutem agendas comuns e ampliam diálogo institucional",
-    "texto": "A Câmara Brasileira da Indústria da Construção (CBIC) recebeu, nesta terça-feira (6), na sede da entidade, em Brasília, representantes da Abrace Energia para uma visita institucional.",
-    "fontes": [
-     {
-      "nome": "CBIC",
-      "url": "https://cbic.org.br/cbic-e-abrace-energia-discutem-agendas-comuns-e-ampliam-dialogo-institucional/"
-     }
-    ]
-   },
-   {
-    "titulo": "Financiamentos imobiliários crescem em agosto",
-    "texto": "Mas créditos com recursos livres caem, diz a Abecip Os financiamentos imobiliários com recursos das cadernetas do Sistema Brasileiro de Poupança e Empréstimo (SBPE) alcançaram R$ 16,97 bilhões em agosto, o terceiro melhor resultado para um este mês nos últimos 25 anos.",
+    "titulo": "Crédito habitacional pode enfraquecer",
+    "texto": "Artigo analisa consequências do novo SBPE A Resolução do Conselho Monetário Nacional 5.255/2025 redesenhou o funcionamento do SBPE (Sistema Brasileiro de Poupança e Empréstimo).",
     "fontes": [
      {
       "nome": "SindusCon-SP",
-      "url": "https://sindusconsp.com.br/financiamentos-imobiliarios-crescem-em-agosto/"
+      "url": "https://sindusconsp.com.br/credito-habitacional-pode-enfraquecer/"
      }
     ]
    },
    {
-    "titulo": "Crédito imobiliário cresce apesar dos saques de poupança e FGTS",
-    "texto": "A Imersão CUPOLA Aluguel foi pensada para identificar gargalos, ampliar referências e encontrar novas possibilidades para a evolução das imobiliárias de locação.",
+    "titulo": "Sinduscon-RR: entidade empossa nova diretoria para o triênio 2026-2029 e celebra quase quatro décadas de história",
+    "texto": "Evento realizado no Tapiri do SESI reuniu lideranças empresariais, representantes do Sistema FIER e do Sebrae para marcar a renovação do mandato e o aniversário do sindicato.",
+    "fontes": [
+     {
+      "nome": "CBIC",
+      "url": "https://cbic.org.br/sinduscon-rr-entidade-empossa-nova-diretoria-para-o-trienio-2026-2029-e-celebra-quase-quatro-decadas-de-historia/"
+     }
+    ]
+   },
+   {
+    "titulo": "Reforma Tributária: a administração profissional de imóveis passa a ser essencial para o locador",
+    "texto": "A possibilidade de o proprietário pessoa física se tornar contribuinte de IBS e CBS, a partir de critérios que podem mudar de um ano para outro, tende a deslocar o mercado da locação direta para a locação administrada.",
     "fontes": [
      {
       "nome": "Imobi Report",
-      "url": "https://imobireport.com.br/newsletter-do-imobi/credito-imobiliario-cresce-apesar-dos-saques-de-poupanca-e-fgts/"
+      "url": "https://imobireport.com.br/aluguel/reforma-tributaria-a-administracao-profissional-de-imoveis-passa-a-ser-essencial-para-o-locador/"
+     }
+    ]
+   },
+   {
+    "titulo": "Semana CANPAT Construção: painel debate riscos e modernização dos equipamentos na construção",
+    "texto": "Os riscos relacionados ao uso de máquinas e equipamentos nos canteiros de obras foram discutidos nesta quarta-feira (7), durante o painel “Panorama dos Equipamentos na Construção Civil: Riscos, Inovações e Desafios Regulatório-Operacionais”, da Semana CANPAT Construção 2026.",
+    "fontes": [
+     {
+      "nome": "CBIC",
+      "url": "https://cbic.org.br/semana-canpat-construcao-painel-debate-riscos-e-modernizacao-dos-equipamentos-na-construcao/"
      }
     ]
    }
@@ -51,21 +51,39 @@
  "itens": [
   {
    "fonte": "CBIC",
-   "titulo": "Semana CANPAT Construção: painel reforça importância do planejamento das instalações elétricas nos canteiros",
-   "url": "https://cbic.org.br/semana-canpat-construcao-2026-painel-alerta-para-riscos-e-reforca-importancia-do-planejamento-das-instalacoes-eletricas-nos-canteiros/",
-   "data": "06/10"
-  },
-  {
-   "fonte": "Portal VGV",
-   "titulo": "INCC-M desacelera: o que muda no orçamento de uma obra?",
-   "url": "https://www.portalvgv.com.br/incc-m-orcamento-obra/",
-   "data": "06/10"
+   "titulo": "Sinduscon Oeste completa 39 anos de história e contribuição para o desenvolvimento regional",
+   "url": "https://cbic.org.br/sinduscon-oeste-completa-39-anos-de-historia-e-contribuicao-para-o-desenvolvimento-regional/",
+   "data": "07/10"
   },
   {
    "fonte": "Secovi-SP",
-   "titulo": "SindExpert debate a experiência do morador após a entrega do empreendimento",
-   "url": "https://secovi.com.br/sindexpert-debate-a-experiencia-do-morador-apos-a-entrega-do-empreendimento/",
-   "data": "06/10"
+   "titulo": "Secovi-SP reúne diretores das regionais do Interior e debate mercado de loteamentos e pauta legislativa",
+   "url": "https://secovi.com.br/secovi-sp-reune-diretores-das-regionais-do-interior-e-debate-mercado-de-loteamentos-e-pauta-legislativa/",
+   "data": "07/10"
+  },
+  {
+   "fonte": "Secovi-SP",
+   "titulo": "Secovi-SP promove Condo Meeting em São José do Rio Preto para debater governança colaborativa e longevidade nos condomínios",
+   "url": "https://secovi.com.br/secovi-sp-promove-condo-meeting-em-sao-jose-do-rio-preto-para-debater-governanca-colaborativa-e-longevidade-nos-condominios/",
+   "data": "07/10"
+  },
+  {
+   "fonte": "SindusCon-SP",
+   "titulo": "SST requer mudança de cultura",
+   "url": "https://sindusconsp.com.br/sst-requer-mudanca-de-cultura/",
+   "data": "07/10"
+  },
+  {
+   "fonte": "SindusCon-SP",
+   "titulo": "Construção volta a gerar empregos no estado de SP",
+   "url": "https://sindusconsp.com.br/construcao-volta-a-gerar-empregos-no-estado-de-sp/",
+   "data": "07/10"
+  },
+  {
+   "fonte": "Secovi-SP",
+   "titulo": "Secovi-SP lança Núcleo de Infraestrutura e Logística",
+   "url": "https://secovi.com.br/secovi-sp-lanca-nucleo-de-infraestrutura-e-logistica-2/",
+   "data": "07/10"
   }
  ]
 }
