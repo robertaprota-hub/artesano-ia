@@ -1,48 +1,48 @@
 {
- "atualizado": "08/10 21h16",
+ "atualizado": "09/10 12h22",
  "janela": 1,
  "resumo": {
-  "data": "08/10/2026",
-  "hora": "21h16",
+  "data": "09/10/2026",
+  "hora": "12h22",
   "periodo": "ontem",
   "itens": [
    {
-    "titulo": "Crédito habitacional pode enfraquecer",
-    "texto": "Artigo analisa consequências do novo SBPE A Resolução do Conselho Monetário Nacional 5.255/2025 redesenhou o funcionamento do SBPE (Sistema Brasileiro de Poupança e Empréstimo).",
-    "fontes": [
-     {
-      "nome": "SindusCon-SP",
-      "url": "https://sindusconsp.com.br/credito-habitacional-pode-enfraquecer/"
-     }
-    ]
-   },
-   {
-    "titulo": "Sinduscon-RR: entidade empossa nova diretoria para o triênio 2026-2029 e celebra quase quatro décadas de história",
-    "texto": "Evento realizado no Tapiri do SESI reuniu lideranças empresariais, representantes do Sistema FIER e do Sebrae para marcar a renovação do mandato e o aniversário do sindicato.",
+    "titulo": "CNI: Faturamento da indústria cai 3,5% em agosto",
+    "texto": "O faturamento da indústria de transformação recuou pelo segundo mês consecutivo.",
     "fontes": [
      {
       "nome": "CBIC",
-      "url": "https://cbic.org.br/sinduscon-rr-entidade-empossa-nova-diretoria-para-o-trienio-2026-2029-e-celebra-quase-quatro-decadas-de-historia/"
+      "url": "https://cbic.org.br/cni-faturamento-da-industria-cai-35-em-agosto/"
      }
     ]
    },
    {
-    "titulo": "Reforma Tributária: a administração profissional de imóveis passa a ser essencial para o locador",
-    "texto": "A possibilidade de o proprietário pessoa física se tornar contribuinte de IBS e CBS, a partir de critérios que podem mudar de um ano para outro, tende a deslocar o mercado da locação direta para a locação administrada.",
+    "titulo": "Secovi-SP apresenta diagnóstico das imobiliárias brasileiras no Encontro das Imobiliárias",
+    "texto": "O Secovi-SP realizou, em 8 de outubro, na sede da entidade, o Encontro das Imobiliárias, com o tema “Benchmark Imobiliário: Diagnóstico das Imobiliárias Brasileiras”.",
     "fontes": [
      {
-      "nome": "Imobi Report",
-      "url": "https://imobireport.com.br/aluguel/reforma-tributaria-a-administracao-profissional-de-imoveis-passa-a-ser-essencial-para-o-locador/"
+      "nome": "Secovi-SP",
+      "url": "https://secovi.com.br/secovi-sp-apresenta-diagnostico-das-imobiliarias-brasileiras-no-encontro-das-imobiliarias/"
      }
     ]
    },
    {
-    "titulo": "Semana CANPAT Construção: painel debate riscos e modernização dos equipamentos na construção",
-    "texto": "Os riscos relacionados ao uso de máquinas e equipamentos nos canteiros de obras foram discutidos nesta quarta-feira (7), durante o painel “Panorama dos Equipamentos na Construção Civil: Riscos, Inovações e Desafios Regulatório-Operacionais”, da Semana CANPAT Construção 2026.",
+    "titulo": "Secovi-SP e Insper discutem agenda comum em pesquisa, dados e desenvolvimento urbano",
+    "texto": "O Secovi-SP recebeu, nesta quinta-feira (8/10), em sua sede, pesquisadores do Centro de Estudos das Cidades do Insper (Laboratório Arq.Futuro) para uma reunião executiva da cice-presidência de Empreendedorismo e Inovação (VPEI).",
+    "fontes": [
+     {
+      "nome": "Secovi-SP",
+      "url": "https://secovi.com.br/secovi-sp-e-insper-discutem-agenda-comum-em-pesquisa-dados-e-desenvolvimento-urbano/"
+     }
+    ]
+   },
+   {
+    "titulo": "CII realiza Rodada de Negócios do Mercado Imobiliário em São Paulo",
+    "texto": "A Câmara Brasileira da Indústria da Construção (CBIC), por meio da Comissão da Indústria Imobiliária (CII), realiza, no dia 22 de outubro, em São Paulo, a Rodada de Negócios do Mercado Imobiliário.",
     "fontes": [
      {
       "nome": "CBIC",
-      "url": "https://cbic.org.br/semana-canpat-construcao-painel-debate-riscos-e-modernizacao-dos-equipamentos-na-construcao/"
+      "url": "https://cbic.org.br/cii-realiza-rodada-de-negocios-do-mercado-imobiliario-em-sao-paulo/"
      }
     ]
    }
@@ -50,34 +50,40 @@
  },
  "itens": [
   {
+   "fonte": "SindusCon-SP",
+   "titulo": "Elevação da produtividade une SindusCon-SP e Fiesp",
+   "url": "https://sindusconsp.com.br/elevacao-da-produtividade-une-sinduscon-sp-e-fiesp/",
+   "data": "08/10"
+  },
+  {
    "fonte": "CBIC",
-   "titulo": "Sinduscon Oeste completa 39 anos de história e contribuição para o desenvolvimento regional",
-   "url": "https://cbic.org.br/sinduscon-oeste-completa-39-anos-de-historia-e-contribuicao-para-o-desenvolvimento-regional/",
-   "data": "07/10"
+   "titulo": "CBIC recebe proposta para aderir Programa Destrava e contribuir com retomada de obras públicas",
+   "url": "https://cbic.org.br/cbic-recebe-proposta-para-aderir-programa-destrava-e-contribuir-com-retomada-de-obras-publicas/",
+   "data": "08/10"
   },
   {
-   "fonte": "Secovi-SP",
-   "titulo": "Secovi-SP reúne diretores das regionais do Interior e debate mercado de loteamentos e pauta legislativa",
-   "url": "https://secovi.com.br/secovi-sp-reune-diretores-das-regionais-do-interior-e-debate-mercado-de-loteamentos-e-pauta-legislativa/",
-   "data": "07/10"
-  },
-  {
-   "fonte": "Secovi-SP",
-   "titulo": "Secovi-SP promove Condo Meeting em São José do Rio Preto para debater governança colaborativa e longevidade nos condomínios",
-   "url": "https://secovi.com.br/secovi-sp-promove-condo-meeting-em-sao-jose-do-rio-preto-para-debater-governanca-colaborativa-e-longevidade-nos-condominios/",
-   "data": "07/10"
+   "fonte": "Imobi Report",
+   "titulo": "O futuro das imobiliárias passa pelo equilíbrio entre digital e presencial",
+   "url": "https://imobireport.com.br/imobi-report-opiniao/o-futuro-das-imobiliarias-passa-pelo-equilibrio-entre-digital-e-presencial/",
+   "data": "08/10"
   },
   {
    "fonte": "SindusCon-SP",
-   "titulo": "SST requer mudança de cultura",
-   "url": "https://sindusconsp.com.br/sst-requer-mudanca-de-cultura/",
-   "data": "07/10"
+   "titulo": "Senai-SP, Sesi-SP e CDHU abrem licitações",
+   "url": "https://sindusconsp.com.br/senai-sp-sesi-sp-e-cdhu-abrem-licitacoes-12/",
+   "data": "08/10"
   },
   {
-   "fonte": "Secovi-SP",
-   "titulo": "Secovi-SP lança Núcleo de Infraestrutura e Logística",
-   "url": "https://secovi.com.br/secovi-sp-lanca-nucleo-de-infraestrutura-e-logistica-2/",
-   "data": "07/10"
+   "fonte": "SindusCon-SP",
+   "titulo": "CTQ debate alvenaria estrutural em edifícios altos",
+   "url": "https://sindusconsp.com.br/ctq-debate-alvenaria-estrutural-em-edificios-altos/",
+   "data": "08/10"
+  },
+  {
+   "fonte": "Imobi Report",
+   "titulo": "As propostas para habitação de Lula e Flávio Bolsonaro",
+   "url": "https://imobireport.com.br/imobiliario/as-propostas-para-habitacao-de-lula-e-flavio-bolsonaro/",
+   "data": "08/10"
   }
  ]
 }
