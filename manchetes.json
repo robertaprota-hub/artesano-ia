@@ -1,48 +1,48 @@
 {
- "atualizado": "09/10 20h58",
+ "atualizado": "10/10 11h31",
  "janela": 1,
  "resumo": {
-  "data": "09/10/2026",
-  "hora": "20h58",
+  "data": "10/10/2026",
+  "hora": "11h31",
   "periodo": "ontem",
   "itens": [
    {
-    "titulo": "CNI: Faturamento da indústria cai 3,5% em agosto",
-    "texto": "O faturamento da indústria de transformação recuou pelo segundo mês consecutivo.",
+    "titulo": "Na nova gestão da CBIC, Clausens Duarte defende recursos permanentes para habitação de interesse social",
+    "texto": "A ampliação da habitação de interesse social no Brasil exige recursos permanentes, previsibilidade nos investimentos e medidas que garantam condições de acesso à moradia para as famílias de baixa renda.",
     "fontes": [
      {
       "nome": "CBIC",
-      "url": "https://cbic.org.br/cni-faturamento-da-industria-cai-35-em-agosto/"
+      "url": "https://cbic.org.br/na-nova-gestao-da-cbic-clausens-duarte-defende-recursos-permanentes-para-habitacao-de-interesse-social/"
      }
     ]
    },
    {
-    "titulo": "Secovi-SP apresenta diagnóstico das imobiliárias brasileiras no Encontro das Imobiliárias",
-    "texto": "O Secovi-SP realizou, em 8 de outubro, na sede da entidade, o Encontro das Imobiliárias, com o tema “Benchmark Imobiliário: Diagnóstico das Imobiliárias Brasileiras”.",
-    "fontes": [
-     {
-      "nome": "Secovi-SP",
-      "url": "https://secovi.com.br/secovi-sp-apresenta-diagnostico-das-imobiliarias-brasileiras-no-encontro-das-imobiliarias/"
-     }
-    ]
-   },
-   {
-    "titulo": "Secovi-SP e Insper discutem agenda comum em pesquisa, dados e desenvolvimento urbano",
-    "texto": "O Secovi-SP recebeu, nesta quinta-feira (8/10), em sua sede, pesquisadores do Centro de Estudos das Cidades do Insper (Laboratório Arq.Futuro) para uma reunião executiva da cice-presidência de Empreendedorismo e Inovação (VPEI).",
-    "fontes": [
-     {
-      "nome": "Secovi-SP",
-      "url": "https://secovi.com.br/secovi-sp-e-insper-discutem-agenda-comum-em-pesquisa-dados-e-desenvolvimento-urbano/"
-     }
-    ]
-   },
-   {
-    "titulo": "CII realiza Rodada de Negócios do Mercado Imobiliário em São Paulo",
-    "texto": "A Câmara Brasileira da Indústria da Construção (CBIC), por meio da Comissão da Indústria Imobiliária (CII), realiza, no dia 22 de outubro, em São Paulo, a Rodada de Negócios do Mercado Imobiliário.",
+    "titulo": "CNI: 76% das indústrias que tiveram dificuldade para obter crédito apontam os juros como o maior vilão",
+    "texto": "As taxas de juros seguem como o principal obstáculo para o acesso ao crédito pela indústria, mostra a Sondagem Especial nº 107 - Condições de Acesso ao Crédito em 2026 , divulgada pela Confederação Nacional da Indústria (CNI) nesta sexta-feira (9).",
     "fontes": [
      {
       "nome": "CBIC",
-      "url": "https://cbic.org.br/cii-realiza-rodada-de-negocios-do-mercado-imobiliario-em-sao-paulo/"
+      "url": "https://cbic.org.br/cni-76-das-industrias-que-tiveram-dificuldade-para-obter-credito-apontam-os-juros-como-o-maior-vilao/"
+     }
+    ]
+   },
+   {
+    "titulo": "CBIC reúne Conselho de Administração para discutir agenda estratégica do setor",
+    "texto": "Os impactos da redução da jornada de trabalho, a implementação da reforma tributária e os desdobramentos da Taxonomia Sustentável Brasileira são alguns dos temas na pauta que empresários e dirigentes…",
+    "fontes": [
+     {
+      "nome": "CBIC",
+      "url": "https://cbic.org.br/cbic-reune-conselho-de-administracao-para-discutir-agenda-estrategica-do-setor/"
+     }
+    ]
+   },
+   {
+    "titulo": "Secovi-SP reúne gigantes do varejo e do setor imobiliário para debater o futuro dos pontos comerciais",
+    "texto": "Com foco em inteligência artificial, impactos da Reforma Tributária e novos modelos de atração de público, evento no dia 15 de outubro mapeia estratégias de expansão e locação para a [&#8230;]",
+    "fontes": [
+     {
+      "nome": "Secovi-SP",
+      "url": "https://secovi.com.br/secovi-sp-reune-gigantes-do-varejo-e-do-setor-imobiliario-para-debater-o-futuro-dos-pontos-comerciais/"
      }
     ]
    }
@@ -50,40 +50,10 @@
  },
  "itens": [
   {
-   "fonte": "SindusCon-SP",
-   "titulo": "Elevação da produtividade une SindusCon-SP e Fiesp",
-   "url": "https://sindusconsp.com.br/elevacao-da-produtividade-une-sinduscon-sp-e-fiesp/",
-   "data": "08/10"
-  },
-  {
-   "fonte": "CBIC",
-   "titulo": "CBIC recebe proposta para aderir Programa Destrava e contribuir com retomada de obras públicas",
-   "url": "https://cbic.org.br/cbic-recebe-proposta-para-aderir-programa-destrava-e-contribuir-com-retomada-de-obras-publicas/",
-   "data": "08/10"
-  },
-  {
-   "fonte": "Imobi Report",
-   "titulo": "O futuro das imobiliárias passa pelo equilíbrio entre digital e presencial",
-   "url": "https://imobireport.com.br/imobi-report-opiniao/o-futuro-das-imobiliarias-passa-pelo-equilibrio-entre-digital-e-presencial/",
-   "data": "08/10"
-  },
-  {
-   "fonte": "SindusCon-SP",
-   "titulo": "Senai-SP, Sesi-SP e CDHU abrem licitações",
-   "url": "https://sindusconsp.com.br/senai-sp-sesi-sp-e-cdhu-abrem-licitacoes-12/",
-   "data": "08/10"
-  },
-  {
-   "fonte": "SindusCon-SP",
-   "titulo": "CTQ debate alvenaria estrutural em edifícios altos",
-   "url": "https://sindusconsp.com.br/ctq-debate-alvenaria-estrutural-em-edificios-altos/",
-   "data": "08/10"
-  },
-  {
-   "fonte": "Imobi Report",
-   "titulo": "As propostas para habitação de Lula e Flávio Bolsonaro",
-   "url": "https://imobireport.com.br/imobiliario/as-propostas-para-habitacao-de-lula-e-flavio-bolsonaro/",
-   "data": "08/10"
+   "fonte": "Portal VGV",
+   "titulo": "Marketing imobiliário: o valor de estar perto da operação",
+   "url": "https://www.portalvgv.com.br/marketing-imobiliario-perto-da-operacao/",
+   "data": "09/10"
   }
  ]
 }
