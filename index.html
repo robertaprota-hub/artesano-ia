@@ -307,7 +307,7 @@
     </header>
     <div class="content">
       <div class="card next" style="background:var(--petrol);color:var(--sand);border:0">
-        <div class="kicker" style="color:var(--terra)">próxima aula</div>
+        <div class="kicker" style="color:var(--terra)" id="nextKicker">próximo encontro</div>
         <div class="title" style="color:var(--sand);font-size:19px" id="nextTitle">Aula 01 · Fundamentos e prompts</div>
         <div class="when" style="color:var(--head-muted)" id="nextWhen">quinta, 17 de setembro · 14h00 às 15h00</div>
         <div class="row" style="gap:10px;flex-wrap:wrap;margin-top:4px">
@@ -315,12 +315,16 @@
           <span class="btn ghost on-dark" style="cursor:default"><svg class="icon"><use href="#i-pin"/></svg>Sala 104</span>
         </div>
       </div>
-      <button class="btn ghost full" id="icsAll"><svg class="icon"><use href="#i-cal"/></svg>adicionar as 4 aulas à minha agenda</button>
-      <div class="card" style="padding-top:2px;padding-bottom:2px" id="agendaList"></div>
+      <div class="section-label"><span class="kicker">mentorias do hackathon</span><small id="mentInfo"></small></div>
+      <button class="btn ghost full" id="icsAll"><svg class="icon"><use href="#i-cal"/></svg>adicionar as mentorias à minha agenda</button>
+      <div class="card" style="padding-top:2px;padding-bottom:2px" id="mentList"></div>
       <div class="card hack">
-        <div class="kicker" style="color:var(--terra-deep)">fase 2 · hackathon</div>
-        <div class="title" style="margin-top:4px">Mentorias de 13/10 a 05/11 · workshop final em 09/11</div>
-        <div class="meta" style="color:var(--terra-deep)">edital, critérios e entregas entram aqui em outubro</div>
+        <div class="kicker" style="color:var(--terra-deep)">hackathon</div>
+        <div class="title" style="margin-top:4px">Quinta, 12 de novembro · 9h00</div>
+        <div class="meta" style="color:var(--terra-deep)">apresentação dos projetos de todas as turmas</div>
+      </div>
+      <div class="section-label"><span class="kicker">aulas</span><small>concluídas</small></div>
+      <div class="card" style="padding-top:2px;padding-bottom:2px" id="agendaList"></div>
       </div>
       <div class="credit">programa conduzido por prota.ia</div>
     </div>
@@ -354,6 +358,9 @@ const TURMAS = [
   { slug:'sjc', drive:'https://drive.google.com/drive/folders/1KN-Qcy80LqB73bFy9GAmP1eJpAO4tIBf', pastaApresentacoes:'https://drive.google.com/drive/folders/1R-Z5NF6zaks0ZgOXhs3MoxLF6QjrJjst', pastaGravacoes:'https://drive.google.com/drive/folders/112ahC6Z9H4ThVQMR_pv576V7oKetUryI',             cor:'#296F93', nome:'SJC',             dia:'quintas', diaCurto:'qui', hora:'10h30', h:10, m:30, meet:'https://meet.google.com/znq-vkxf-pro', areas:'Comercial, Marketing, Experiência do Cliente, Jurídico, Instituto' }
 ];
 const TER = ['2026-09-15','2026-09-22','2026-09-29','2026-10-06'], QUI = ['2026-09-17','2026-09-24','2026-10-01','2026-10-08'];
+/* fase 2: mentorias no horário de cada turma (mesmo Meet e sala) e hackathon */
+const MENT_TER = ['2026-10-13','2026-10-20','2026-10-27','2026-11-03'], MENT_QUI = ['2026-10-15','2026-10-22','2026-10-29','2026-11-05'];
+const HACKATHON = { data:'2026-11-12', hora:'9h00' };
 const AULAS = [
   { num:'01', titulo:'Fundamentos e prompts',           sub:'camadas da IA, ciclo 4D e prompt em cinco passos', obs:{ 'bairro-artesano':'gravação da turma das 15h30' }, gravacao:{ 'bairro-artesano':'https://drive.google.com/file/d/1F5UpKPJe7M1erMY4gWXMhBJNUBDfXXfZ/view', 'praia-do-paiva':'https://drive.google.com/file/d/1TgD8MuzRevHAAA22NluUDnJmvp7dDtF9/view', 'londrina':'https://drive.google.com/file/d/1WEJcGi6XdLnXtzyayThBBHh3bIMB7MAG/view', 'sjc':'https://drive.google.com/file/d/1cGgSkf42ZTkLgZBARuqEFQt_SONC_jOV/view' }, pdf:{ 'bairro-artesano':'https://drive.google.com/file/d/1JslSaAxhZT7zo66bvLyM1vdumsekWSQc/view', 'londrina':'https://drive.google.com/file/d/194BF_Hf1dNiw_dTJvxSNhcm6oVfCXr_N/view', 'praia-do-paiva':'https://drive.google.com/file/d/1m8ZjrDNHeViy7dQI0tkhBBf56-RkghF7/view', 'sjc':'https://drive.google.com/file/d/1JcRqBRTS-tHPdSfIbd4g-ZDdEo4a10EZ/view' } },
   { num:'02', titulo:'Projetos, Markdown, Artifacts',    sub:'contexto fixo em .md, iterar em Artifacts e dados na fonte', gravacao:{ 'bairro-artesano':'https://drive.google.com/file/d/1lu1i5DBvsRiZaTdJJkK8jXgaCVwnJWwb/view', 'londrina':'https://drive.google.com/file/d/1huWR7xAvqO9Itiw-lhtY-lez-hujbomD/view', 'praia-do-paiva':'https://drive.google.com/file/d/15FytfpUVamrEo8gA3Z-dvJRp9Iti313p/view', 'sjc':['https://drive.google.com/file/d/1vG5eNkZSxxUCmScReGTOkDyCifayue6N/view', 'https://drive.google.com/file/d/14czUBkyeXX29a8DLl-etxd3kWfNtuFq2/view'] }, pdf:{ 'bairro-artesano':'https://drive.google.com/file/d/19fFV8K5A-EHDiAfi4wEDY9W8Djs90J3c/view', 'londrina':'https://drive.google.com/file/d/1fjgVRbentXT6uk0N-xPO6eyWCoIqUg6E/view', 'praia-do-paiva':'https://drive.google.com/file/d/1XwnHlEPilnbMt0V4l8TejoZb43XKRSt7/view', 'sjc':'https://drive.google.com/file/d/1TO8VuXsq7faUNwL5jbgki-9FlZ4md7op/view' } },
@@ -437,9 +444,19 @@ function renderPdfs(){
 }
 function renderAgenda(){
   const box=$('#agendaList'); box.innerHTML='';
-  const prox=AULAS.find(a=>dataAula(a)>=hojeISO)||AULAS[AULAS.length-1]; const pp=partes(dataAula(prox));
-  $('#nextTitle').textContent='Aula '+prox.num+' · '+prox.titulo;
-  $('#nextWhen').textContent=pp.dow+', '+String(pp.d).padStart(2,'0')+' de '+pp.mesL+' · '+turma.hora+' às '+horaFim();
+  const ment=mentorias();
+  const linha=[...AULAS.map(a=>({rot:'Aula '+a.num+' · '+a.titulo,data:dataAula(a),quando:turma.hora+' às '+horaFim()})),...ment.map(m=>({rot:m.titulo,data:m.data,quando:turma.hora+' às '+horaFim()})),{rot:'Hackathon',data:HACKATHON.data,quando:HACKATHON.hora}].sort((x,y)=>x.data<y.data?-1:1);
+  const prox=linha.find(e=>e.data>=hojeISO)||linha[linha.length-1]; const pp=partes(prox.data);
+  $('#nextTitle').textContent=prox.rot;
+  $('#nextWhen').textContent=pp.dow+', '+String(pp.d).padStart(2,'0')+' de '+pp.mesL+' · '+prox.quando;
+  $('#mentInfo').textContent=turma.dia+' · '+turma.hora;
+  const mb=$('#mentList'); mb.innerHTML='';
+  ment.forEach(m=>{const p=partes(m.data),live=m.data===hojeISO,passou=m.data<hojeISO;
+    const el=document.createElement('div'); el.className='ev'; if(passou) el.style.opacity='.55';
+    el.innerHTML=`<div class="date ${live?'live':''}"><div class="m">${p.mes}</div><div class="d">${String(p.d).padStart(2,'0')}</div></div><div class="grow"><div class="title" style="font-size:15px">${m.titulo}</div><div class="meta">${p.dow} · ${turma.hora}${live?' · hoje':''}</div></div>${passou?'':'<button class="btn ghost">agendar</button>'}`;
+    const b=el.querySelector('button'); if(b) b.addEventListener('click',()=>baixarIcs([m],'artesano-ia-'+turma.slug+'-mentoria-'+m.num));
+    mb.appendChild(el);
+  });
   AULAS.forEach(a=>{const d=dataAula(a),p=partes(d),live=d===hojeISO;
     const el=document.createElement('div'); el.className='ev';
     el.innerHTML=`<div class="date ${live?'live':''}"><div class="m">${p.mes}</div><div class="d">${String(p.d).padStart(2,'0')}</div></div><div class="grow"><div class="title" style="font-size:15px">${a.titulo}</div><div class="meta">${p.dow} · ${turma.hora}${live?' · hoje':''}</div></div><button class="btn ghost" data-ics="${a.num}">agendar</button>`;
@@ -447,14 +464,15 @@ function renderAgenda(){
     box.appendChild(el);
   });
 }
+function mentorias(){ const ds=(turma.dia==='terças')?MENT_TER:MENT_QUI; return ds.map((d,i)=>({num:'m'+(i+1),titulo:'Mentoria '+(i+1),data:d,resumo:'mentoria '+(i+1)+' do hackathon'})); }
 function horaFim(){const h=turma.h+PROGRAMA.duracaoHoras;return h+'h'+String(turma.m).padStart(2,'0');}
 
 /* ===== .ics (UTC; São Paulo é UTC-3 o ano todo) ===== */
-function bloco(a){const {y,m,d}=partes(dataAula(a)); const utc=(hh,mm)=>new Date(Date.UTC(y,m-1,d,hh+3,mm,0)).toISOString().replace(/[-:]/g,'').split('.')[0]+'Z';
-  return ['BEGIN:VEVENT','UID:artesano-ia-'+turma.slug+'-'+a.num+'@protaia.com.br','DTSTAMP:'+new Date().toISOString().replace(/[-:]/g,'').split('.')[0]+'Z','DTSTART:'+utc(turma.h,turma.m),'DTEND:'+utc(turma.h+PROGRAMA.duracaoHoras,turma.m),'SUMMARY:Artesano · IA · aula '+a.num+': '+a.titulo,'LOCATION:'+PROGRAMA.sala+' / Google Meet','URL:'+turma.meet,'DESCRIPTION:Turma '+turma.nome+'. Meet: '+turma.meet,'BEGIN:VALARM','TRIGGER:-PT30M','ACTION:DISPLAY','DESCRIPTION:Aula da Artesano · IA começa em 30 minutos','END:VALARM','END:VEVENT'].join('\r\n');}
+function bloco(a){const {y,m,d}=partes(a.data||dataAula(a)); const utc=(hh,mm)=>new Date(Date.UTC(y,m-1,d,hh+3,mm,0)).toISOString().replace(/[-:]/g,'').split('.')[0]+'Z';
+  return ['BEGIN:VEVENT','UID:artesano-ia-'+turma.slug+'-'+a.num+'@protaia.com.br','DTSTAMP:'+new Date().toISOString().replace(/[-:]/g,'').split('.')[0]+'Z','DTSTART:'+utc(turma.h,turma.m),'DTEND:'+utc(turma.h+PROGRAMA.duracaoHoras,turma.m),'SUMMARY:Artesano · IA · '+(a.resumo||('aula '+a.num+': '+a.titulo)),'LOCATION:'+PROGRAMA.sala+' / Google Meet','URL:'+turma.meet,'DESCRIPTION:Turma '+turma.nome+'. Meet: '+turma.meet,'BEGIN:VALARM','TRIGGER:-PT30M','ACTION:DISPLAY','DESCRIPTION:Aula da Artesano · IA começa em 30 minutos','END:VALARM','END:VEVENT'].join('\r\n');}
 function baixarIcs(lista,nome){const txt=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//prota.ia//Artesano IA//PT-BR','CALSCALE:GREGORIAN','METHOD:PUBLISH',...lista.map(bloco),'END:VCALENDAR'].join('\r\n');
   const url=URL.createObjectURL(new Blob([txt],{type:'text/calendar;charset=utf-8'})); const a=document.createElement('a'); a.href=url; a.download=nome+'.ics'; document.body.appendChild(a); a.click(); a.remove(); setTimeout(()=>URL.revokeObjectURL(url),2000); toast('evento baixado');}
-$('#icsAll').addEventListener('click',()=>baixarIcs(AULAS,'artesano-ia-'+turma.slug));
+$('#icsAll').addEventListener('click',()=>baixarIcs(mentorias().filter(m=>m.data>=hojeISO),'artesano-ia-'+turma.slug+'-mentorias'));
 
 /* ===== UI ===== */
 function toast(msg){const t=$('#toast');t.textContent=msg;t.classList.add('show');clearTimeout(t._t);t._t=setTimeout(()=>t.classList.remove('show'),1800);}
