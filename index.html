@@ -320,8 +320,9 @@
       <div class="card" style="padding-top:2px;padding-bottom:2px" id="mentList"></div>
       <div class="card hack">
         <div class="kicker" style="color:var(--terra-deep)">hackathon</div>
-        <div class="title" style="margin-top:4px">Quinta, 12 de novembro · 9h00</div>
-        <div class="meta" style="color:var(--terra-deep)">apresentação dos projetos de todas as turmas</div>
+        <div class="title" style="margin-top:4px">Quinta, 12 de novembro · 9h00 às 16h00</div>
+        <div class="meta" style="color:var(--terra-deep)">no escritório da Artesano · todas as turmas</div>
+        <button class="btn ghost" id="icsHack" style="margin-top:12px;border-color:var(--terra);color:var(--terra-deep)"><svg class="icon"><use href="#i-cal"/></svg>adicionar à minha agenda</button>
       </div>
       <div class="section-label"><span class="kicker">aulas</span><small>concluídas</small></div>
       <div class="card" style="padding-top:2px;padding-bottom:2px" id="agendaList"></div>
@@ -360,7 +361,7 @@ const TURMAS = [
 const TER = ['2026-09-15','2026-09-22','2026-09-29','2026-10-06'], QUI = ['2026-09-17','2026-09-24','2026-10-01','2026-10-08'];
 /* fase 2: mentorias no horário de cada turma (mesmo Meet e sala) e hackathon */
 const MENT_TER = ['2026-10-13','2026-10-20','2026-10-27','2026-11-03'], MENT_QUI = ['2026-10-15','2026-10-22','2026-10-29','2026-11-05'];
-const HACKATHON = { data:'2026-11-12', hora:'9h00' };
+const HACKATHON = { data:'2026-11-12', hora:'9h00 às 16h00', h:9, fim:16, local:'Escritório da Artesano' };
 const AULAS = [
   { num:'01', titulo:'Fundamentos e prompts',           sub:'camadas da IA, ciclo 4D e prompt em cinco passos', obs:{ 'bairro-artesano':'gravação da turma das 15h30' }, gravacao:{ 'bairro-artesano':'https://drive.google.com/file/d/1F5UpKPJe7M1erMY4gWXMhBJNUBDfXXfZ/view', 'praia-do-paiva':'https://drive.google.com/file/d/1TgD8MuzRevHAAA22NluUDnJmvp7dDtF9/view', 'londrina':'https://drive.google.com/file/d/1WEJcGi6XdLnXtzyayThBBHh3bIMB7MAG/view', 'sjc':'https://drive.google.com/file/d/1cGgSkf42ZTkLgZBARuqEFQt_SONC_jOV/view' }, pdf:{ 'bairro-artesano':'https://drive.google.com/file/d/1JslSaAxhZT7zo66bvLyM1vdumsekWSQc/view', 'londrina':'https://drive.google.com/file/d/194BF_Hf1dNiw_dTJvxSNhcm6oVfCXr_N/view', 'praia-do-paiva':'https://drive.google.com/file/d/1m8ZjrDNHeViy7dQI0tkhBBf56-RkghF7/view', 'sjc':'https://drive.google.com/file/d/1JcRqBRTS-tHPdSfIbd4g-ZDdEo4a10EZ/view' } },
   { num:'02', titulo:'Projetos, Markdown, Artifacts',    sub:'contexto fixo em .md, iterar em Artifacts e dados na fonte', gravacao:{ 'bairro-artesano':'https://drive.google.com/file/d/1lu1i5DBvsRiZaTdJJkK8jXgaCVwnJWwb/view', 'londrina':'https://drive.google.com/file/d/1huWR7xAvqO9Itiw-lhtY-lez-hujbomD/view', 'praia-do-paiva':'https://drive.google.com/file/d/15FytfpUVamrEo8gA3Z-dvJRp9Iti313p/view', 'sjc':['https://drive.google.com/file/d/1vG5eNkZSxxUCmScReGTOkDyCifayue6N/view', 'https://drive.google.com/file/d/14czUBkyeXX29a8DLl-etxd3kWfNtuFq2/view'] }, pdf:{ 'bairro-artesano':'https://drive.google.com/file/d/19fFV8K5A-EHDiAfi4wEDY9W8Djs90J3c/view', 'londrina':'https://drive.google.com/file/d/1fjgVRbentXT6uk0N-xPO6eyWCoIqUg6E/view', 'praia-do-paiva':'https://drive.google.com/file/d/1XwnHlEPilnbMt0V4l8TejoZb43XKRSt7/view', 'sjc':'https://drive.google.com/file/d/1TO8VuXsq7faUNwL5jbgki-9FlZ4md7op/view' } },
@@ -472,6 +473,11 @@ function bloco(a){const {y,m,d}=partes(a.data||dataAula(a)); const utc=(hh,mm)=>
   return ['BEGIN:VEVENT','UID:artesano-ia-'+turma.slug+'-'+a.num+'@protaia.com.br','DTSTAMP:'+new Date().toISOString().replace(/[-:]/g,'').split('.')[0]+'Z','DTSTART:'+utc(turma.h,turma.m),'DTEND:'+utc(turma.h+PROGRAMA.duracaoHoras,turma.m),'SUMMARY:Artesano · IA · '+(a.resumo||('aula '+a.num+': '+a.titulo)),'LOCATION:'+PROGRAMA.sala+' / Google Meet','URL:'+turma.meet,'DESCRIPTION:Turma '+turma.nome+'. Meet: '+turma.meet,'BEGIN:VALARM','TRIGGER:-PT30M','ACTION:DISPLAY','DESCRIPTION:Aula da Artesano · IA começa em 30 minutos','END:VALARM','END:VEVENT'].join('\r\n');}
 function baixarIcs(lista,nome){const txt=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//prota.ia//Artesano IA//PT-BR','CALSCALE:GREGORIAN','METHOD:PUBLISH',...lista.map(bloco),'END:VCALENDAR'].join('\r\n');
   const url=URL.createObjectURL(new Blob([txt],{type:'text/calendar;charset=utf-8'})); const a=document.createElement('a'); a.href=url; a.download=nome+'.ics'; document.body.appendChild(a); a.click(); a.remove(); setTimeout(()=>URL.revokeObjectURL(url),2000); toast('evento baixado');}
+$('#icsHack').addEventListener('click',()=>{
+  const [y,m,d]=HACKATHON.data.split('-').map(Number), utc=h=>new Date(Date.UTC(y,m-1,d,h+3,0,0)).toISOString().replace(/[-:]/g,'').split('.')[0]+'Z';
+  const txt=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//prota.ia//Artesano IA//PT-BR','CALSCALE:GREGORIAN','METHOD:PUBLISH','BEGIN:VEVENT','UID:artesano-ia-hackathon@protaia.com.br','DTSTAMP:'+new Date().toISOString().replace(/[-:]/g,'').split('.')[0]+'Z','DTSTART:'+utc(HACKATHON.h),'DTEND:'+utc(HACKATHON.fim),'SUMMARY:Artesano · IA · Hackathon','LOCATION:'+HACKATHON.local,'BEGIN:VALARM','TRIGGER:-PT30M','ACTION:DISPLAY','DESCRIPTION:Hackathon começa em 30 minutos','END:VALARM','END:VEVENT','END:VCALENDAR'].join('\r\n');
+  const url=URL.createObjectURL(new Blob([txt],{type:'text/calendar;charset=utf-8'})); const a=document.createElement('a'); a.href=url; a.download='artesano-ia-hackathon.ics'; document.body.appendChild(a); a.click(); a.remove(); setTimeout(()=>URL.revokeObjectURL(url),2000); toast('evento baixado');
+});
 $('#icsAll').addEventListener('click',()=>baixarIcs(mentorias().filter(m=>m.data>=hojeISO),'artesano-ia-'+turma.slug+'-mentorias'));
 
 /* ===== UI ===== */
