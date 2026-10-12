@@ -1,11 +1,59 @@
 {
- "atualizado": "11/10 20h37",
- "janela": 1,
+ "atualizado": "12/10 15h02",
+ "janela": 3,
  "resumo": {
-  "data": "11/10/2026",
-  "hora": "20h37",
-  "periodo": "ontem",
-  "itens": []
+  "data": "12/10/2026",
+  "hora": "15h02",
+  "periodo": "sexta a domingo",
+  "itens": [
+   {
+    "titulo": "Na nova gestão da CBIC, Clausens Duarte defende recursos permanentes para habitação de interesse social",
+    "texto": "A ampliação da habitação de interesse social no Brasil exige recursos permanentes, previsibilidade nos investimentos e medidas que garantam condições de acesso à moradia para as famílias de baixa renda.",
+    "fontes": [
+     {
+      "nome": "CBIC",
+      "url": "https://cbic.org.br/na-nova-gestao-da-cbic-clausens-duarte-defende-recursos-permanentes-para-habitacao-de-interesse-social/"
+     }
+    ]
+   },
+   {
+    "titulo": "CNI: 76% das indústrias que tiveram dificuldade para obter crédito apontam os juros como o maior vilão",
+    "texto": "As taxas de juros seguem como o principal obstáculo para o acesso ao crédito pela indústria, mostra a Sondagem Especial nº 107 - Condições de Acesso ao Crédito em 2026 , divulgada pela Confederação Nacional da Indústria (CNI) nesta sexta-feira (9).",
+    "fontes": [
+     {
+      "nome": "CBIC",
+      "url": "https://cbic.org.br/cni-76-das-industrias-que-tiveram-dificuldade-para-obter-credito-apontam-os-juros-como-o-maior-vilao/"
+     }
+    ]
+   },
+   {
+    "titulo": "CBIC reúne Conselho de Administração para discutir agenda estratégica do setor",
+    "texto": "Os impactos da redução da jornada de trabalho, a implementação da reforma tributária e os desdobramentos da Taxonomia Sustentável Brasileira são alguns dos temas na pauta que empresários e dirigentes…",
+    "fontes": [
+     {
+      "nome": "CBIC",
+      "url": "https://cbic.org.br/cbic-reune-conselho-de-administracao-para-discutir-agenda-estrategica-do-setor/"
+     }
+    ]
+   },
+   {
+    "titulo": "Secovi-SP reúne gigantes do varejo e do setor imobiliário para debater o futuro dos pontos comerciais",
+    "texto": "Com foco em inteligência artificial, impactos da Reforma Tributária e novos modelos de atração de público, evento no dia 15 de outubro mapeia estratégias de expansão e locação para a [&#8230;]",
+    "fontes": [
+     {
+      "nome": "Secovi-SP",
+      "url": "https://secovi.com.br/secovi-sp-reune-gigantes-do-varejo-e-do-setor-imobiliario-para-debater-o-futuro-dos-pontos-comerciais/"
+     }
+    ]
+   }
+  ]
  },
- "itens": []
+ "itens": [
+  {
+   "fonte": "Portal VGV",
+   "titulo": "Marketing imobiliário: o valor de estar perto da operação",
+   "url": "https://www.portalvgv.com.br/marketing-imobiliario-perto-da-operacao/",
+   "data": "09/10"
+  }
+ ]
 }
