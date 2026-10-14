@@ -1,22 +1,65 @@
 {
- "atualizado": "13/10 20h42",
+ "atualizado": "14/10 10h51",
  "janela": 1,
  "resumo": {
-  "data": "13/10/2026",
-  "hora": "20h42",
+  "data": "14/10/2026",
+  "hora": "10h51",
   "periodo": "ontem",
   "itens": [
    {
-    "titulo": "Dia das Crianças: quem vai cantar a música da sua marca daqui a 30 anos?",
-    "texto": "Curitiba é normalmente reconhecida como uma cidade limpa e organizada.",
+    "titulo": "Reforma Tributária: entenda o Cadastro Imobiliário Brasileiro (CIB) e os impactos para a construção",
+    "texto": "Conhecido como o “CPF dos imóveis”, o Cadastro Imobiliário Brasileiro (CIB) vai padronizar a identificação de imóveis urbanos e rurais em todo o país e terá papel importante na implementação da Reforma Tributária.",
+    "fontes": [
+     {
+      "nome": "CBIC",
+      "url": "https://cbic.org.br/reforma-tributaria-entenda-o-cadastro-imobiliario-brasileiro-cib-e-os-impactos-para-a-construcao/"
+     }
+    ]
+   },
+   {
+    "titulo": "Radar Trabalhista: “Lista Suja” do trabalho análogo à escravidão é atualizada com 82 novos empregadores",
+    "texto": "O Ministério do Trabalho e Emprego (MTE) publicou nesta terça-feira (6) a atualização do Cadastro de Empregadores que tenham submetido trabalhadores a condições análogas à escravidão , conhecido como “ Lista Suja ”.",
+    "fontes": [
+     {
+      "nome": "CBIC",
+      "url": "https://cbic.org.br/radar-trabalhista-lista-suja-do-trabalho-analogo-a-escravidao-e-atualizada-com-82-novos-empregadores/"
+     }
+    ]
+   },
+   {
+    "titulo": "Secovi-SP faz balanço de normas, regulação e projetos de 2026 em reunião da VP de Tecnologia e Sustentabilidade",
+    "texto": "A vice-presidência de Tecnologia e Sustentabilidade do Secovi-SP realizou, nesta terça-feira (13), reunião para apresentar o andamento de normas técnicas, projetos de lei e regulamentações…",
+    "fontes": [
+     {
+      "nome": "Secovi-SP",
+      "url": "https://secovi.com.br/secovi-sp-faz-balanco-de-normas-regulacao-e-projetos-de-2026-em-reuniao-da-vp-de-tecnologia-e-sustentabilidade/"
+     }
+    ]
+   },
+   {
+    "titulo": "Com Lula ou Flávio, CBS entra em vigor em janeiro",
+    "texto": "Uma desinformação passou a circular nos últimos dias: a possível vitória de Flávio Bolsonaro (PL) no 2º turno das eleições poderia levar à revogação da Reforma Tributária.",
     "fontes": [
      {
       "nome": "Imobi Report",
-      "url": "https://imobireport.com.br/imobi-report-opiniao/dia-das-criancas-quem-vai-cantar-a-musica-da-sua-marca-daqui-a-30-anos/"
+      "url": "https://imobireport.com.br/newsletter-do-imobi/com-lula-oou-flavio-cbs-entra-em-vigor-em-janeiro/"
      }
     ]
    }
   ]
  },
- "itens": []
+ "itens": [
+  {
+   "fonte": "CBIC",
+   "titulo": "CBIC reúne setor da construção em Goiânia para debater cenário econômico, habitação e investimentos no Centro-Oeste",
+   "url": "https://cbic.org.br/cbic-reune-setor-da-construcao-em-goiania-para-debater-cenario-economico-habitacao-e-investimentos-no-centro-oeste/",
+   "data": "13/10"
+  },
+  {
+   "fonte": "Imobi Report",
+   "titulo": "Netimóveis inaugura primeira unidade nos EUA em parceria com a Elite International Realty",
+   "url": "https://imobireport.com.br/imobiliario/netimoveis-inaugura-primeira-unidade-nos-eua-em-parceria-com-a-elite-international-realty/",
+   "data": "13/10"
+  }
+ ]
 }
