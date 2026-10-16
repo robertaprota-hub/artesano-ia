@@ -1,48 +1,48 @@
 {
- "atualizado": "15/10 20h00",
+ "atualizado": "16/10 10h20",
  "janela": 1,
  "resumo": {
-  "data": "15/10/2026",
-  "hora": "20h00",
+  "data": "16/10/2026",
+  "hora": "10h20",
   "periodo": "ontem",
   "itens": [
    {
-    "titulo": "CBIC debate temas estratégicos e cenários para o setor em reunião do Conselho Administrativo",
-    "texto": "A conjuntura econômica, as mudanças regulatórias e as perspectivas de negócios para a construção estiveram entre os temas da reunião do Conselho de Administração da Câmara Brasileira da Indústria da Construção (CBIC), realizada nesta quarta-feira (14), na sede do Sinduscon-DF, em Brasília.",
+    "titulo": "Após convite do CNJ, CBIC passa a integrar Programa Destrava para retomada de obras públicas paralisadas",
+    "texto": "A participação da Câmara Brasileira da Indústria da Construção (CBIC) no Programa Destrava foi oficializada com a publicação do extrato do termo de adesão ao Acordo de Cooperação Técnica nº 026/2026 no Diário Oficial da União desta quinta-feira (15).",
     "fontes": [
      {
       "nome": "CBIC",
-      "url": "https://cbic.org.br/cbic-debate-temas-estrategicos-e-cenarios-para-o-setor-em-reuniao-do-conselho-administrativo/"
+      "url": "https://cbic.org.br/apos-convite-do-cnj-cbic-passa-a-integrar-programa-destrava-para-retomada-de-obras-publicas-paralisadas/"
      }
     ]
    },
    {
-    "titulo": "Ademi-AL: Immobi Connection acontece nesta quinta e reúne especialistas do mercado imobiliário em Maceió",
-    "texto": "Evento promovido pela Ademi-AL e pelo Creci-AL, com correalização do Sinduscon-AL, terá palestras sobre tendências, inovação, vendas, comunicação e novas oportunidades de negócios Maceió recebe,…",
-    "fontes": [
-     {
-      "nome": "CBIC",
-      "url": "https://cbic.org.br/ademi-al-immobi-connection-acontece-nesta-quinta-e-reune-especialistas-do-mercado-imobiliario-em-maceio/"
-     }
-    ]
-   },
-   {
-    "titulo": "Aluguel desacelera, mas continua acima da inflação em 12 meses, aponta FipeZAP",
-    "texto": "Preços de locação sobem 0,52% em setembro, menor ritmo desde abril, mas acumulam alta de 9,13% em 12 meses, contra inflação de 4,58% The post Aluguel desacelera, mas continua acima da inflação em 12 meses, aponta FipeZAP appeared first on InfoMoney .",
-    "fontes": [
-     {
-      "nome": "InfoMoney",
-      "url": "https://www.infomoney.com.br/minhas-financas/aluguel-desacelera-mas-continua-acima-da-inflacao-em-12-meses-aponta-fipezap/"
-     }
-    ]
-   },
-   {
-    "titulo": "Secovi-SP debate governança colaborativa e longevidade em condomínios durante o Condo Meeting em São José do Rio Preto",
-    "texto": "O avanço das transformações demográficas e o rápido envelhecimento da população vêm exigindo novas soluções para a gestão, a arquitetura e o convívio no mercado imobiliário.",
+    "titulo": "Secovi-SP aponta disputa por terrenos e custo de ocupação como principais desafios imobiliários do varejo",
+    "texto": "Em apresentação no evento voltado ao setor, Stephany Matsuda, diretora da entidade, citou juros altos, regras de uso do solo e gestão de contratos como pontos de atenção para a [&#8230;]",
     "fontes": [
      {
       "nome": "Secovi-SP",
-      "url": "https://secovi.com.br/secovi-sp-promove-condo-meeting-em-sao-jose-do-rio-preto-para-debater-governanca-colaborativa-e-longevidade-nos-condominios/"
+      "url": "https://secovi.com.br/secovi-sp-aponta-disputa-por-terrenos-e-custo-de-ocupacao-como-principais-desafios-imobiliarios-do-varejo/"
+     }
+    ]
+   },
+   {
+    "titulo": "CBIC e MMA discutem ações para fortalecer sustentabilidade e resiliência climática na construção",
+    "texto": "A ampliação da reciclagem de resíduos da construção civil, a adaptação das cidades às mudanças climáticas e o acesso a financiamento para projetos sustentáveis estiveram na pauta de reunião entre a…",
+    "fontes": [
+     {
+      "nome": "CBIC",
+      "url": "https://cbic.org.br/cbic-e-mma-discutem-acoes-para-fortalecer-sustentabilidade-e-resiliencia-climatica-na-construcao/"
+     }
+    ]
+   },
+   {
+    "titulo": "Escassez de terrenos, legalização e margens apertadas desafiam a expansão do varejo, apontam executivos em evento do Secovi-SP",
+    "texto": "Em painel sobre varejo e mercado imobiliário, representantes de Carrefour, Fleury, Bauducco, Shopee e CBRE falaram de aluguel, regularização e mudanças no consumo Escassez de terrenos, margens…",
+    "fontes": [
+     {
+      "nome": "Secovi-SP",
+      "url": "https://secovi.com.br/escassez-de-terrenos-legalizacao-e-margens-apertadas-desafiam-a-expansao-do-varejo-apontam-executivos-em-evento-do-secovi-sp/"
      }
     ]
    }
@@ -50,28 +50,46 @@
  },
  "itens": [
   {
-   "fonte": "CBIC",
-   "titulo": "16º Roadshow COIC debate oportunidades em grandes projetos industriais no Centro-Oeste",
-   "url": "https://cbic.org.br/16o-roadshow-coic-debate-oportunidades-em-grandes-projetos-industriais-no-centro-oeste/",
-   "data": "14/10"
-  },
-  {
-   "fonte": "SindusCon-SP",
-   "titulo": "Imprensa da região de Campinas destaca ConstruSer e Trilhas Profissionais",
-   "url": "https://sindusconsp.com.br/imprensa-da-regiao-de-campinas-destaca-construser-e-trilhas-profissionais/",
-   "data": "14/10"
-  },
-  {
-   "fonte": "SindusCon-SP",
-   "titulo": "PIB da construção crescerá entre 0,5% e 1%",
-   "url": "https://sindusconsp.com.br/pib-da-construcao-crescera-entre-05-e-1/",
-   "data": "14/10"
-  },
-  {
    "fonte": "Secovi-SP",
-   "titulo": "Atualização do SBPE produz resultados",
-   "url": "https://secovi.com.br/atualizacao-do-sbpe-produz-resultados/",
-   "data": "14/10"
+   "titulo": "Reforma tributária exige revisão de contratos de locação, alertam especialistas em evento do Secovi-SP",
+   "url": "https://secovi.com.br/reforma-tributaria-exige-revisao-de-contratos-de-locacao-alertam-especialistas-em-evento-do-secovi-sp/",
+   "data": "15/10"
+  },
+  {
+   "fonte": "CBIC",
+   "titulo": "Redução da jornada: para CBIC, regulamentação pode mitigar efeitos negativos sobre o setor",
+   "url": "https://cbic.org.br/reducao-da-jornada-para-cbic-regulamentacao-pode-mitigar-efeitos-negativos-sobre-o-setor/",
+   "data": "15/10"
+  },
+  {
+   "fonte": "InfoMoney",
+   "titulo": "Preços dos imóveis em São Paulo crescem em 80% dos bairros, puxados pela periferia",
+   "url": "https://www.infomoney.com.br/minhas-financas/precos-dos-imoveis-em-sao-paulo-crescem-em-80-dos-bairros-puxados-pela-periferia/",
+   "data": "15/10"
+  },
+  {
+   "fonte": "Imobi Report",
+   "titulo": "De Mudança: Rodolfo Santos assume como diretor comercial adjunto do Grupo Patrimar",
+   "url": "https://imobireport.com.br/imobi-report-de-mudanca/de-mudanca-rodolfo-santos-assume-como-diretor-comercial-adjunto-do-grupo-patrimar/",
+   "data": "15/10"
+  },
+  {
+   "fonte": "Portal VGV",
+   "titulo": "Relacionamento com imobiliárias: ele pertence à incorporadora ou ao seu gestor comercial? – por Ramon Porto",
+   "url": "https://www.portalvgv.com.br/gestao-de-canais-imobiliarios/",
+   "data": "15/10"
+  },
+  {
+   "fonte": "InfoMoney",
+   "titulo": "SLS mira nos brasileiros para disputar espaço em Punta del Este com Fasano e Cipriani",
+   "url": "https://www.infomoney.com.br/business/sls-mira-nos-brasileiros-para-disputar-espaco-em-punta-del-este-com-fasano-e-cipriani/",
+   "data": "15/10"
+  },
+  {
+   "fonte": "SindusCon-SP",
+   "titulo": "Senai-SP e CDHU abrem licitações",
+   "url": "https://sindusconsp.com.br/senai-sp-e-cdhu-abrem-licitacoes-3/",
+   "data": "15/10"
   }
  ]
 }
