@@ -1,21 +1,11 @@
 {
- "atualizado": "16/10 10h30",
+ "atualizado": "16/10 10h54",
  "janela": 1,
  "resumo": {
   "data": "16/10/2026",
-  "hora": "10h30",
+  "hora": "10h54",
   "periodo": "ontem",
   "itens": [
-   {
-    "titulo": "Após convite do CNJ, CBIC passa a integrar Programa Destrava para retomada de obras públicas paralisadas",
-    "texto": "A participação da Câmara Brasileira da Indústria da Construção (CBIC) no Programa Destrava foi oficializada com a publicação do extrato do termo de adesão ao Acordo de Cooperação Técnica nº 026/2026 no Diário Oficial da União desta quinta-feira (15).",
-    "fontes": [
-     {
-      "nome": "CBIC",
-      "url": "https://cbic.org.br/apos-convite-do-cnj-cbic-passa-a-integrar-programa-destrava-para-retomada-de-obras-publicas-paralisadas/"
-     }
-    ]
-   },
    {
     "titulo": "Secovi-SP aponta disputa por terrenos e custo de ocupação como principais desafios imobiliários do varejo",
     "texto": "Em apresentação no evento voltado ao setor, Stephany Matsuda, diretora da entidade, citou juros altos, regras de uso do solo e gestão de contratos como pontos de atenção para a [&#8230;]",
@@ -23,16 +13,6 @@
      {
       "nome": "Secovi-SP",
       "url": "https://secovi.com.br/secovi-sp-aponta-disputa-por-terrenos-e-custo-de-ocupacao-como-principais-desafios-imobiliarios-do-varejo/"
-     }
-    ]
-   },
-   {
-    "titulo": "CBIC e MMA discutem ações para fortalecer sustentabilidade e resiliência climática na construção",
-    "texto": "A ampliação da reciclagem de resíduos da construção civil, a adaptação das cidades às mudanças climáticas e o acesso a financiamento para projetos sustentáveis estiveram na pauta de reunião entre a…",
-    "fontes": [
-     {
-      "nome": "CBIC",
-      "url": "https://cbic.org.br/cbic-e-mma-discutem-acoes-para-fortalecer-sustentabilidade-e-resiliencia-climatica-na-construcao/"
      }
     ]
    },
@@ -45,28 +25,30 @@
       "url": "https://secovi.com.br/escassez-de-terrenos-legalizacao-e-margens-apertadas-desafiam-a-expansao-do-varejo-apontam-executivos-em-evento-do-secovi-sp/"
      }
     ]
+   },
+   {
+    "titulo": "Reforma tributária exige revisão de contratos de locação, alertam especialistas em evento do Secovi-SP",
+    "texto": "Em painel sobre o ponto de vista dos varejistas, consultor, advogada e executiva do Mercado Livre apontaram impactos da CBS e do IBS no aluguel e recomendaram renegociar e detalhar [&#8230;]",
+    "fontes": [
+     {
+      "nome": "Secovi-SP",
+      "url": "https://secovi.com.br/reforma-tributaria-exige-revisao-de-contratos-de-locacao-alertam-especialistas-em-evento-do-secovi-sp/"
+     }
+    ]
+   },
+   {
+    "titulo": "Preços dos imóveis em São Paulo crescem em 80% dos bairros, puxados pela periferia",
+    "texto": "Levantamento da Loft do 3º trimestre de 2026 mostra que o aumento médio de preços na capital foi de 4,3%, superando a desvalorização na casa dos 10% em bairros nobres da cidade The post Preços dos imóveis em São Paulo crescem em 80% dos bairros, puxados pela periferia appeared first on InfoMoney .",
+    "fontes": [
+     {
+      "nome": "InfoMoney",
+      "url": "https://www.infomoney.com.br/minhas-financas/precos-dos-imoveis-em-sao-paulo-crescem-em-80-dos-bairros-puxados-pela-periferia/"
+     }
+    ]
    }
   ]
  },
  "itens": [
-  {
-   "fonte": "Secovi-SP",
-   "titulo": "Reforma tributária exige revisão de contratos de locação, alertam especialistas em evento do Secovi-SP",
-   "url": "https://secovi.com.br/reforma-tributaria-exige-revisao-de-contratos-de-locacao-alertam-especialistas-em-evento-do-secovi-sp/",
-   "data": "15/10"
-  },
-  {
-   "fonte": "CBIC",
-   "titulo": "Redução da jornada: para CBIC, regulamentação pode mitigar efeitos negativos sobre o setor",
-   "url": "https://cbic.org.br/reducao-da-jornada-para-cbic-regulamentacao-pode-mitigar-efeitos-negativos-sobre-o-setor/",
-   "data": "15/10"
-  },
-  {
-   "fonte": "InfoMoney",
-   "titulo": "Preços dos imóveis em São Paulo crescem em 80% dos bairros, puxados pela periferia",
-   "url": "https://www.infomoney.com.br/minhas-financas/precos-dos-imoveis-em-sao-paulo-crescem-em-80-dos-bairros-puxados-pela-periferia/",
-   "data": "15/10"
-  },
   {
    "fonte": "Imobi Report",
    "titulo": "De Mudança: Rodolfo Santos assume como diretor comercial adjunto do Grupo Patrimar",
