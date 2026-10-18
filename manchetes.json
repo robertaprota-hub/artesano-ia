@@ -1,71 +1,22 @@
 {
- "atualizado": "17/10 19h12",
+ "atualizado": "18/10 09h39",
  "janela": 1,
  "resumo": {
-  "data": "17/10/2026",
-  "hora": "19h12",
+  "data": "18/10/2026",
+  "hora": "09h39",
   "periodo": "ontem",
   "itens": [
    {
-    "titulo": "Artigo: A \"Farra\" do Crédito Consignado na Construção Civil: Impactos, Desafios Operacionais e o Cuidado nas Rescisões Trabalhistas",
-    "texto": "David Fratel, vice-presidente da Área de Política de Relações Trabalhistas e presidente da Comissão de Política de Relações Trabalhistas (CPRT) da Câmara Brasileira da Indústria da Construção (CBIC) A “farra” do crédito consignado na construção civil, tornou-se um tema crítico para o setor.",
+    "titulo": "Wellness 360º: mercado de bem-estar movimenta US$ 6,8 trilhões",
+    "texto": "Mudanças nos hábitos de consumo ampliam oportunidades em setores como fitness, alimentação, tecnologia e mercado imobiliário The post Wellness 360º: mercado de bem-estar movimenta US$ 6,8 trilhões appeared first on InfoMoney .",
     "fontes": [
      {
-      "nome": "CBIC",
-      "url": "https://cbic.org.br/artigo-a-farra-do-credito-consignado-na-construcao-civil-impactos-desafios-operacionais-e-o-cuidado-nas-rescisoes-trabalhistas/"
-     }
-    ]
-   },
-   {
-    "titulo": "CBIC debate cenário econômico com Joaquim Levy e Filipe Pontual",
-    "texto": "Inflação, contas públicas, crédito. Fatores determinantes para o desempenho da economia brasileira e para a decisão por novos investimentos, estão na pauta do Economia e construção: perspectivas para…",
-    "fontes": [
-     {
-      "nome": "CBIC",
-      "url": "https://cbic.org.br/cbic-debate-cenario-economico-com-joaquim-levy-e-filipe-pontual/"
-     }
-    ]
-   },
-   {
-    "titulo": "CONJUR debate impactos jurídicos para a construção civil e o mercado imobiliário em reunião em Goiânia",
-    "texto": "O Conselho Jurídico (CONJUR) da Câmara Brasileira da Indústria da Construção (CBIC) realizará, no dia 26 de outubro, sua 46ª reunião ordinária, em Goiânia.",
-    "fontes": [
-     {
-      "nome": "CBIC",
-      "url": "https://cbic.org.br/conjur-debate-impactos-juridicos-para-a-construcao-civil-e-o-mercado-imobiliario-em-reuniao-em-goiania/"
-     }
-    ]
-   },
-   {
-    "titulo": "Fim da escala 6&#215;1: impactos indiretos e oportunidades para o mercado imobiliário",
-    "texto": "O Senado aprovou nesta quarta (14), por 75 votos a 1, a PEC que extingue a escala 6&#215;1.",
-    "fontes": [
-     {
-      "nome": "Imobi Report",
-      "url": "https://imobireport.com.br/imobiliario/fim-da-escala-6x1-impactos-indiretos-e-oportunidades-para-o-mercado-imobiliario/"
+      "nome": "InfoMoney",
+      "url": "https://www.infomoney.com.br/colunistas/rodrigo-sangion/wellness-360o-mercado-de-bem-estar-movimenta-us-68-trilhoes/"
      }
     ]
    }
   ]
  },
- "itens": [
-  {
-   "fonte": "SindusCon-SP",
-   "titulo": "Superando desafios à construção",
-   "url": "https://sindusconsp.com.br/superando-desafios-a-construcao/",
-   "data": "16/10"
-  },
-  {
-   "fonte": "Portal VGV",
-   "titulo": "Lead barato significa venda mais eficiente na incorporadora?",
-   "url": "https://www.portalvgv.com.br/lead-barato-incorporadora/",
-   "data": "16/10"
-  },
-  {
-   "fonte": "Secovi-SP",
-   "titulo": "MasterClass apresenta insights dos projetos vencedores do Prêmio Master Imobiliário",
-   "url": "https://secovi.com.br/masterclass-apresenta-insights-dos-projetos-vencedores-do-premio-master-imobiliario-2/",
-   "data": "16/10"
-  }
- ]
+ "itens": []
 }
