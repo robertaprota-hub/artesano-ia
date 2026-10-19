@@ -444,10 +444,11 @@ const MENT_EQUIPES = [
   { id:'ba6', turma:'bairro-artesano', nome:'Clara e Micaelle', projeto:'Fluxo de pagamento de notas' },
   { id:'lo1', turma:'londrina', nome:'Renata, Cid e Mayara', projeto:'Ferramenta de parametrização' },
   { id:'lo2', turma:'londrina', nome:'Fernanda RB, Arthur e Zé', projeto:'Gestão de Obras Artesano' },
-  { id:'lo3', turma:'londrina', nome:'Gustavo, André e Denise', projeto:'Parametrização da curva de obras' },
+  { id:'lo3', turma:'londrina', nome:'Gustavo e André', projeto:'Parametrização da curva de obras' },
   { id:'lo4', turma:'londrina', nome:'Mari, Fernanda e Schimming', projeto:'Ferramenta de gestão físico-financeira' },
+  { id:'lo5', turma:'londrina', nome:'Schimming, Vitor e Denise', projeto:'Processo de contratação' },
   { id:'pp1', turma:'praia-do-paiva', nome:'Vini e Leandro', projeto:'Gestão de inadimplência' },
-  { id:'pp2', turma:'praia-do-paiva', nome:'Raquel, Heloísa e Mariana Cacace', projeto:'Gestão de RH e facilities' },
+  { id:'pp2', turma:'praia-do-paiva', nome:'Raquel e Heloísa', projeto:'Gestão de RH e facilities' },
   { id:'pp3', turma:'praia-do-paiva', nome:'Vitor e Matheus', projeto:'Controle de gastos de projetos (ex-obra)' },
   { id:'pp4', turma:'praia-do-paiva', nome:'Guilherme e Thaís', projeto:'Projeto a definir' },
   { id:'sj1', turma:'sjc', nome:'Sassi, Ana e Vini', projeto:'Publicidade Artesano' },
@@ -704,7 +705,10 @@ function mIcs(r){ if(!r) return; const j=mJanela(r.janela), eq=mEquipe(r.equipe)
 
 /* ===== UI ===== */
 function toast(msg){const t=$('#toast');t.textContent=msg;t.classList.add('show');clearTimeout(t._t);t._t=setTimeout(()=>t.classList.remove('show'),1800);}
-function abrirAba(nome){const b=$$('.tab').find(x=>x.dataset.tab===nome); if(!b) return; $$('.tab').forEach(x=>x.classList.toggle('active',x===b));$$('.view').forEach(v=>v.classList.toggle('active',v.dataset.view===nome));$('.view.active').scrollTop=0; if(nome==='mentoria') mCarregar();}
+let mAuto=null;
+function mAutoAtualizar(on){ clearInterval(mAuto); mAuto=null; if(on) mAuto=setInterval(()=>{ if(!document.hidden&&!mBusy&&!mSel) mCarregar(); },20000); }
+document.addEventListener('visibilitychange',()=>{ if(!document.hidden&&$('.view.active')?.dataset.view==='mentoria') mCarregar(); });
+function abrirAba(nome){const b=$$('.tab').find(x=>x.dataset.tab===nome); if(!b) return; $$('.tab').forEach(x=>x.classList.toggle('active',x===b));$$('.view').forEach(v=>v.classList.toggle('active',v.dataset.view===nome));$('.view.active').scrollTop=0; if(nome==='mentoria') mCarregar(); mAutoAtualizar(nome==='mentoria');}
 $$('.tab').forEach(b=>b.addEventListener('click',()=>abrirAba(b.dataset.tab)));
 $$('[data-open-sheet]').forEach(b=>b.addEventListener('click',()=>$('#sheet').classList.add('open')));
 $('#sheet').addEventListener('click',e=>{if(e.target===e.currentTarget&&turma)$('#sheet').classList.remove('open');});
