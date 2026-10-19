@@ -64,14 +64,14 @@
   .shell{position:fixed;inset:0;max-width:520px;margin:0 auto;display:flex;flex-direction:column;background:var(--ground);overflow:hidden}
   .view{flex:1;min-height:0;overflow-y:auto;overflow-x:hidden;display:none;flex-direction:column}
   .view.active{display:flex}
-  .head{flex:0 0 auto;padding:calc(env(safe-area-inset-top,20px) + 22px) 22px 20px;background:var(--head);color:var(--head-text);position:relative;overflow:hidden}
+  .head{flex:0 0 auto;padding:calc(env(safe-area-inset-top,20px) + 14px) 22px 14px;background:var(--head);color:var(--head-text);position:relative;overflow:hidden}
   .head::after{content:"";position:absolute;right:-90px;top:-90px;width:300px;height:300px;background:radial-gradient(circle at center, rgba(195,143,112,.18), transparent 62%);pointer-events:none}
   .head.light::after{display:none}
-  .head-inner{position:relative;display:flex;flex-direction:column;gap:12px}
+  .head-inner{position:relative;display:flex;flex-direction:column;gap:8px}
   .brand{display:flex;align-items:center;gap:16px;color:var(--head-text)}
-  .brand .lockup{height:64px;width:auto;flex:0 0 auto}
-  .brand .sep{width:1px;height:40px;background:var(--line-on-dark);flex:0 0 auto}
-  .brand .prota{width:130px;height:48px;background:var(--prota-on-dark) no-repeat center/contain;flex:0 0 auto}
+  .brand .lockup{height:46px;width:auto;flex:0 0 auto}
+  .brand .sep{width:1px;height:30px;background:var(--line-on-dark);flex:0 0 auto}
+  .brand .prota{width:104px;height:38px;background:var(--prota-on-dark) no-repeat center/contain;flex:0 0 auto}
   .head.light .brand,.sheet .brand{color:var(--brand-light)}
   .head.light .sep,.sheet .sep{background:var(--line-strong)}
   .head.light .prota,.sheet .prota{background-image:var(--prota-on-light)}
@@ -313,7 +313,7 @@
 
   <!-- MATERIAIS -->
   <section class="view" data-view="materiais">
-    <header class="head light" style="background:var(--card-2)">
+    <header class="head">
       <div class="head-inner">
         <div class="brand"><svg class="lockup" viewBox="0 0 626 602" role="img" aria-label="Artesano Urbanismo"><use href="#logoAll"/></svg><span class="sep"></span><span class="prota" role="img" aria-label="prota.ia"></span></div>
         <div class="kicker">material da turma</div>
@@ -336,7 +336,7 @@
 
   <!-- AGENDA -->
   <section class="view" data-view="agenda">
-    <header class="head light" style="background:var(--card-2)">
+    <header class="head">
       <div class="head-inner">
         <div class="brand"><svg class="lockup" viewBox="0 0 626 602" role="img" aria-label="Artesano Urbanismo"><use href="#logoAll"/></svg><span class="sep"></span><span class="prota" role="img" aria-label="prota.ia"></span></div>
         <div class="kicker">fase 1 · treinamento · fase 2 · hackathon</div>
@@ -359,17 +359,13 @@
         <div class="brand"><svg class="lockup" viewBox="0 0 626 602" role="img" aria-label="Artesano Urbanismo"><use href="#logoAll"/></svg><span class="sep"></span><span class="prota" role="img" aria-label="prota.ia"></span></div>
         <div class="kicker">hackathon · 20 min por equipe</div>
         <h1>Mentoria</h1>
-        <p style="margin:6px 0 0;color:var(--head-muted);font-size:14px;line-height:1.45">Cada equipe marca uma janela por semana, presencial ou online.</p>
+        <p style="margin:2px 0 0;color:var(--head-muted);font-size:14px;line-height:1.45">Agendamento por equipe, presencial ou online.</p>
       </div>
     </header>
     <div class="content">
-      <div class="card" style="background:var(--petrol);color:var(--sand);border:0">
-        <div class="kicker" style="color:var(--terra)">um link só</div>
-        <div class="title" style="color:var(--sand);margin-top:4px">Quem fizer online entra sempre pelo mesmo Meet</div>
-        <div class="row" style="gap:10px;flex-wrap:wrap;margin-top:12px">
-          <a class="btn primary" id="mMeet" href="#" target="_blank" rel="noopener"><svg class="icon"><use href="#i-video"/></svg>Entrar no Meet</a>
-          <span class="btn ghost on-dark" style="cursor:default"><svg class="icon"><use href="#i-pin"/></svg>Escritório da Artesano</span>
-        </div>
+      <div class="card row" style="gap:12px;flex-wrap:wrap;justify-content:space-between">
+        <div class="title" style="font-size:15px">Link mentoria Meet</div>
+        <a class="btn primary" id="mMeet" href="#" target="_blank" rel="noopener"><svg class="icon"><use href="#i-video"/></svg>Entrar no Meet</a>
       </div>
       <div class="section-label"><span class="kicker">1 · sua equipe</span><small id="mContagem"></small></div>
       <div class="card">
@@ -388,7 +384,7 @@
         <div class="kicker" style="color:var(--steel)">horário reservado</div>
         <div class="title" style="margin-top:4px" id="mFeitoTxt"></div>
         <p class="tr-sub">Fica salvo na planilha da mentoria. Quando abrir esta aba e escolher a equipe, o horário aparece no passo 1. Para ter o lembrete, salve na sua agenda.</p>
-        <div class="row"><a class="btn primary" id="mFeitoOutlook" href="#" target="_blank" rel="noopener"><svg class="icon"><use href="#i-cal"/></svg>salvar no Outlook</a><button class="btn ghost" id="mFeitoIcs">baixar convite .ics</button><button class="btn ghost" id="mFeitoOk">ok</button></div>
+        <div class="row"><a class="btn primary" id="mFeitoOutlook" href="#" target="_blank" rel="noopener"><svg class="icon"><use href="#i-cal"/></svg>salvar no Outlook</a><button class="btn ghost" id="mFeitoOk">ok</button></div>
       </div>
       <div id="mDias" style="display:flex;flex-direction:column;gap:12px"></div>
       <div id="mConfirm" class="card m-confirm" hidden>
@@ -624,9 +620,8 @@ function renderMentoria(){
   if(eq){
     const minhas=mRes.filter(r=>r.equipe===eq.id).map(r=>({r,j:mJanela(r.janela)})).filter(x=>x.j);
     mb.innerHTML=sem.map(s=>{const x=minhas.find(m=>m.j.semana===s);
-      return x?`<div class="m-minha"><div class="grow"><b>Semana ${s} · ${x.j.nome.toLowerCase()}, ${mDM(x.j.data)}, ${x.j.ini}</b><div class="meta">${x.r.modalidade} · até ${x.j.fim}</div></div><a class="btn ghost" href="${mOutlookUrl(x.r)}" target="_blank" rel="noopener">Outlook</a><button class="btn ghost" data-ics="${x.r.janela}">.ics</button>${x.j.data>=hojeISO?`<button class="btn ghost" data-lib="${x.r.janela}">liberar</button>`:''}</div>`
+      return x?`<div class="m-minha"><div class="grow"><b>Semana ${s} · ${x.j.nome.toLowerCase()}, ${mDM(x.j.data)}, ${x.j.ini}</b><div class="meta">${x.r.modalidade} · até ${x.j.fim}</div></div><a class="btn ghost" href="${mOutlookUrl(x.r)}" target="_blank" rel="noopener">Outlook</a>${x.j.data>=hojeISO?`<button class="btn ghost" data-lib="${x.r.janela}">liberar</button>`:''}</div>`
               :`<div class="meta" style="margin-top:10px">Semana ${s}: sua equipe ainda não marcou.</div>`;}).join('');
-    mb.querySelectorAll('[data-ics]').forEach(b=>b.addEventListener('click',()=>mIcs(mRes.find(r=>r.equipe===eq.id&&r.janela===b.dataset.ics))));
     mb.querySelectorAll('[data-lib]').forEach(b=>b.addEventListener('click',()=>mEnviar({acao:'liberar',equipe:eq.id,janela:b.dataset.lib})));
   } else mb.innerHTML='';
   const box=$('#mDias'); box.innerHTML='';
@@ -659,7 +654,7 @@ function renderMentoria(){
   const f=$('#mFeito'), ult=eq&&mUltima&&mRes.find(r=>r.equipe===eq.id&&r.janela===mUltima);
   if(ult){const j=mJanela(ult.janela); f.hidden=false;
     $('#mFeitoTxt').textContent=`${eq.nome}: ${j.nome.toLowerCase()}, ${mDM(j.data)}, ${j.ini} às ${j.fim}, ${ult.modalidade}.`;
-    $('#mFeitoOutlook').href=mOutlookUrl(ult); $('#mFeitoIcs').onclick=()=>mIcs(ult);
+    $('#mFeitoOutlook').href=mOutlookUrl(ult);
   } else f.hidden=true;
   const c=$('#mConfirm');
   if(mSel&&eq){const j=mJanela(mSel), antes=mDaSemana(eq.id,j.semana); c.hidden=false;
