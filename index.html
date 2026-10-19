@@ -184,7 +184,7 @@
   .hack .title{color:var(--terra-deep)}
 
   /* tab bar */
-  .tabs{flex:0 0 auto;display:grid;grid-template-columns:repeat(5,1fr);gap:4px;padding:8px 10px calc(env(safe-area-inset-bottom,10px) + 10px);background:var(--card);border-top:1px solid var(--line)}
+  .tabs{flex:0 0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:4px;padding:8px 10px calc(env(safe-area-inset-bottom,10px) + 10px);background:var(--card);border-top:1px solid var(--line)}
   .tab{display:flex;flex-direction:column;align-items:center;gap:4px;min-height:48px;padding:6px 4px;border-radius:12px;color:var(--ink-3);font-family:var(--font-mono);font-size:11.5px;letter-spacing:.06em;text-transform:uppercase}
   .tab .icon{width:22px;height:22px}
   .tab.active{color:var(--brand-light);background:var(--steel-soft)}
@@ -236,6 +236,29 @@
   .m-confirm p{margin:0 0 10px;font-size:14.5px;line-height:1.4}
   .m-confirm .row{gap:10px;flex-wrap:wrap}
   .m-aviso{font-size:13.5px;color:var(--ink-2);padding:10px 14px;border-radius:12px;background:var(--terra-soft)}
+  /* ===== trilha ===== */
+  .tr-fase{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin:14px 0 4px}
+  .tr-fase b{font-family:var(--font-display);font-size:18px;color:var(--ink)}
+  .tr-fase .kicker{color:var(--steel)}
+  .tr-marco{position:relative;display:grid;grid-template-columns:38px 1fr;gap:12px;padding-bottom:12px}
+  .tr-marco::before{content:"";position:absolute;left:18px;top:38px;bottom:0;width:2px;background:var(--line-strong)}
+  .tr-marco.feito::before{background:var(--terra)}
+  .tr-marco.chegada::before{display:none}
+  .tr-dot{position:relative;z-index:1;width:38px;height:38px;border-radius:50%;border:2px solid var(--line-strong);background:var(--card);color:var(--ink-2);display:flex;align-items:center;justify-content:center;font-family:var(--font-mono);font-size:12px;font-weight:600}
+  .tr-dot .icon{width:18px;height:18px;stroke-width:2.6}
+  .tr-marco.feito .tr-dot{background:var(--terra);border-color:var(--terra);color:#fff}
+  .tr-marco.agora .tr-dot{border-color:var(--terra);color:var(--terra-deep);box-shadow:0 0 0 5px var(--terra-soft)}
+  .tr-marco.chegada .tr-dot{background:var(--petrol);border-color:var(--petrol);color:var(--sand)}
+  .tr-card{padding:12px 14px}
+  .tr-marco.feito .tr-card .title{text-decoration:line-through;text-decoration-color:var(--terra);text-decoration-thickness:2px}
+  .tr-marco.feito .tr-card{opacity:.82}
+  .tr-marco.chegada .tr-card{background:var(--petrol);border-color:var(--petrol)}
+  .tr-marco.chegada .title{color:var(--sand)} .tr-marco.chegada .meta,.tr-marco.chegada .tr-sub{color:var(--head-muted)}
+  .tr-sub{margin:6px 0 0;font-size:13.5px;line-height:1.4;color:var(--ink-2)}
+  .tr-ir{font-family:var(--font-mono);font-size:12.5px;border-radius:99px;padding:6px 12px;min-height:32px;background:var(--terra);color:#fff}
+  .m-feito{background:var(--steel-soft);border-color:var(--steel)}
+  .m-feito .row{gap:10px;flex-wrap:wrap;margin-top:10px}
+  .m-feito .btn{min-height:40px;font-size:13.5px}
 </style>
 </head>
 <body>
@@ -254,6 +277,7 @@
     <symbol id="i-video" viewBox="0 0 24 24"><rect x="3" y="7" width="13" height="10" rx="2"/><path d="M16 11l5-3v8l-5-3z"/></symbol>
     <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-6-5.3-6-10a6 6 0 0 1 12 0c0 4.7-6 10-6 10z"/><circle cx="12" cy="11" r="2.2"/></symbol>
     <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></symbol>
+    <symbol id="i-flag" viewBox="0 0 24 24"><path d="M5 21V4"/><path d="M5 4h12l-2.5 4L17 12H5"/></symbol>
   </defs>
 </svg>
 
@@ -286,22 +310,6 @@
   </section>
 
   <!-- AULAS -->
-  <section class="view" data-view="aulas">
-    <header class="head">
-      <div class="head-inner">
-        <div class="brand"><svg class="lockup" viewBox="0 0 626 602" role="img" aria-label="Artesano Urbanismo"><use href="#logoAll"/></svg><span class="sep"></span><span class="prota" role="img" aria-label="prota.ia"></span></div>
-        <div class="kicker">treinamento · 4 aulas</div>
-        <h1>Claude Estruturado</h1>
-        <p class="editorial">Gravações</p>
-        <button class="turma-chip" data-open-sheet><span class="dot"></span><b data-turma-nome>Praia do Paiva</b><span data-turma-quando>qui · 14h00</span><em>trocar</em></button>
-      </div>
-    </header>
-    <div class="content">
-      <div class="progress"><div class="lbl"><span>aulas disponíveis</span><b id="progLabel">0/4</b></div><div class="track"><i id="progBar" style="width:0%"></i></div></div>
-      <div id="aulasList" style="display:flex;flex-direction:column;gap:12px"></div>
-      <p class="note">Toque na aula disponível para assistir a gravação.</p>
-    </div>
-  </section>
 
   <!-- MATERIAIS -->
   <section class="view" data-view="materiais">
@@ -320,7 +328,7 @@
         <p>Tudo da sua turma numa pasta só, no Drive: <b>01 - apresentações</b>, <b>02 - gravações</b> e <b>03 - arquivos</b>. Cada aula ganha o link direto aqui depois de publicada.</p>
         <div class="row" style="gap:12px;flex-wrap:wrap"><a class="btn primary" id="driveBtn" href="#" target="_blank" rel="noopener">Abrir no Drive</a><button class="btn ghost on-dark" data-copy="drive">copiar link</button></div>
       </div>
-      <div class="section-label"><span class="kicker">por aula</span><small>apresentação e materiais</small></div>
+      <div class="section-label"><span class="kicker">por aula</span><small>gravação, apresentação e materiais</small></div>
       <div id="pdfList" style="display:flex;flex-direction:column;gap:12px"></div>
       <div class="credit">programa conduzido por prota.ia</div>
     </div>
@@ -331,34 +339,15 @@
     <header class="head light" style="background:var(--card-2)">
       <div class="head-inner">
         <div class="brand"><svg class="lockup" viewBox="0 0 626 602" role="img" aria-label="Artesano Urbanismo"><use href="#logoAll"/></svg><span class="sep"></span><span class="prota" role="img" aria-label="prota.ia"></span></div>
-        <div class="kicker" id="agendaKicker">quintas · 14h00 · 1h · híbrido</div>
-        <h1>Agenda</h1>
+        <div class="kicker">fase 1 · treinamento · fase 2 · hackathon</div>
+        <h1>Trilha de adoção de IA</h1>
         <button class="turma-chip" data-open-sheet><span class="dot"></span><b data-turma-nome>Praia do Paiva</b><span data-turma-quando>qui · 14h00</span><em>trocar</em></button>
       </div>
     </header>
     <div class="content">
-      <div class="card next" style="background:var(--petrol);color:var(--sand);border:0">
-        <div class="kicker" style="color:var(--terra)" id="nextKicker">próximo encontro</div>
-        <div class="title" style="color:var(--sand);font-size:19px" id="nextTitle">Aula 01 · Fundamentos e prompts</div>
-        <div class="when" style="color:var(--head-muted)" id="nextWhen">quinta, 17 de setembro · 14h00 às 15h00</div>
-        <div class="row" style="gap:10px;flex-wrap:wrap;margin-top:4px">
-          <a class="btn primary" id="meetBtn" href="#" target="_blank" rel="noopener"><svg class="icon"><use href="#i-video"/></svg>Entrar no Meet</a>
-          <span class="btn ghost on-dark" style="cursor:default"><svg class="icon"><use href="#i-pin"/></svg>Sala 104</span>
-        </div>
-      </div>
-      <div class="section-label"><span class="kicker">mentorias do hackathon</span><small id="mentInfo"></small></div>
-      <button class="btn ghost full" id="mentIr"><svg class="icon"><use href="#i-clock"/></svg>marcar a janela da minha equipe</button>
-      <button id="icsAll" hidden></button>
-      <div id="mentList" hidden></div>
-      <div class="card hack">
-        <div class="kicker" style="color:var(--terra-deep)">hackathon</div>
-        <div class="title" style="margin-top:4px">Quinta, 12 de novembro · 9h00 às 16h00</div>
-        <div class="meta" style="color:var(--terra-deep)">no escritório da Artesano · todas as turmas</div>
-        <div class="partes" style="margin-top:10px"><a id="hackDeck" target="_blank" rel="noopener">apresentação do lançamento</a><a id="hackGrav" target="_blank" rel="noopener">gravação do lançamento</a><a id="hackPasta" target="_blank" rel="noopener">pasta do hackathon</a></div>
-        <button class="btn ghost" id="icsHack" style="margin-top:12px;border-color:var(--terra);color:var(--terra-deep)"><svg class="icon"><use href="#i-cal"/></svg>adicionar à minha agenda</button>
-      </div>
-      <div class="section-label"><span class="kicker">aulas</span><small>concluídas</small></div>
-      <div class="card" style="padding-top:2px;padding-bottom:2px" id="agendaList"></div>
+      <div class="progress"><div class="lbl"><span>marcos cumpridos</span><b id="trProgLabel">0/9</b></div><div class="track"><i id="trProgBar" style="width:0%"></i></div></div>
+      <div id="trilhaList" style="display:flex;flex-direction:column"></div>
+      <p class="note">Cada marco cumprido fica riscado.</p>
       <div class="credit">programa conduzido por prota.ia</div>
     </div>
   </section>
@@ -368,7 +357,7 @@
     <header class="head">
       <div class="head-inner">
         <div class="brand"><svg class="lockup" viewBox="0 0 626 602" role="img" aria-label="Artesano Urbanismo"><use href="#logoAll"/></svg><span class="sep"></span><span class="prota" role="img" aria-label="prota.ia"></span></div>
-        <div class="kicker">hackathon · 25 min por equipe</div>
+        <div class="kicker">hackathon · 20 min por equipe</div>
         <h1>Mentoria</h1>
         <p style="margin:6px 0 0;color:var(--head-muted);font-size:14px;line-height:1.45">Cada equipe marca uma janela por semana, presencial ou online.</p>
       </div>
@@ -395,6 +384,12 @@
       </div>
       <div class="section-label"><span class="kicker">3 · escolha a janela</span><small>toque numa janela livre</small></div>
       <div id="mAviso" class="m-aviso" hidden></div>
+      <div id="mFeito" class="card m-feito" hidden role="status">
+        <div class="kicker" style="color:var(--steel)">horário reservado</div>
+        <div class="title" style="margin-top:4px" id="mFeitoTxt"></div>
+        <p class="tr-sub">Fica salvo na planilha da mentoria. Quando abrir esta aba e escolher a equipe, o horário aparece no passo 1. Para ter o lembrete, salve na sua agenda.</p>
+        <div class="row"><a class="btn primary" id="mFeitoOutlook" href="#" target="_blank" rel="noopener"><svg class="icon"><use href="#i-cal"/></svg>salvar no Outlook</a><button class="btn ghost" id="mFeitoIcs">baixar convite .ics</button><button class="btn ghost" id="mFeitoOk">ok</button></div>
+      </div>
       <div id="mDias" style="display:flex;flex-direction:column;gap:12px"></div>
       <div id="mConfirm" class="card m-confirm" hidden>
         <p id="mConfirmTxt"></p>
@@ -406,9 +401,8 @@
 
   <nav class="tabs" aria-label="seções">
     <button class="tab active" data-tab="noticias"><svg class="icon"><use href="#i-news"/></svg>notícias</button>
-    <button class="tab" data-tab="aulas"><svg class="icon"><use href="#i-play"/></svg>aulas</button>
     <button class="tab" data-tab="materiais"><svg class="icon"><use href="#i-folder"/></svg>materiais</button>
-    <button class="tab" data-tab="agenda"><svg class="icon"><use href="#i-cal"/></svg>agenda</button>
+    <button class="tab" data-tab="agenda"><svg class="icon"><use href="#i-flag"/></svg>trilha IA</button>
     <button class="tab" data-tab="mentoria"><svg class="icon"><use href="#i-clock"/></svg>mentoria</button>
   </nav>
 
@@ -438,7 +432,7 @@ const MENT_TER = ['2026-10-13','2026-10-20','2026-10-27','2026-11-03'], MENT_QUI
 /* gravações das mentorias, por turma */
 const MENT_GRAV = {};
 const HACK_MATERIAL = { pasta:'https://drive.google.com/drive/folders/1yoSfxJ2ljNshx2vf9ZK_j2f4oTBd3_aO', deck:'https://drive.google.com/file/d/1pvgVbqolxR41MEX3fjM-yqFeBw4rTLDH/view', gravacao:'https://drive.google.com/file/d/1UjJxiCuVXgAoPLdc6cK0OmS2R7TMaMvr/view' };
-const HACKATHON = { data:'2026-11-12', hora:'9h00 às 16h00', h:9, fim:16, local:'Escritório da Artesano' };
+const HACKATHON = { data:'2026-11-12', hora:'9h30 às 18h00', h:9, fim:18, local:'Escritório da Artesano' };
 /* ===== mentorias presenciais/online (reservas na planilha da Roberta via Apps Script) ===== */
 const MENT_API = 'https://script.google.com/macros/s/AKfycbwFbpnZZlhOoy8xvkJwEwGfzwAu_kUiUmsjMlxTLVsKGzp59kG6WgRej43x8Q9rTpf1/exec'; /* URL do app da web do Apps Script (termina em /exec) */
 const MENT_MEET = 'https://meet.google.com/wzc-pjqg-ktw';
@@ -462,19 +456,19 @@ const MENT_EQUIPES = [
   { id:'sj2', turma:'sjc', nome:'Flavio, Alice e Gabi', projeto:'Base de conhecimento jurídico' },
   { id:'sj3', turma:'sjc', nome:'Tiago, Fernanda e Leo', projeto:'Gestão de TI e Comercial' }
 ];
-/* 25 min por equipe. Cada equipe marca uma janela por semana (não é horário fixo).
+/* 20 min por equipe. Cada equipe marca uma janela por semana (não é horário fixo).
    Grade "cedo" começa 9:30; grade "rodizio" começa 10:30 (quinta é o rodízio da Roberta). Pausas só para exibir. */
 const MENT_GRADES = {
   cedo: [
-    ['0930','9:30','9:55'],['1000','10:00','10:25'],['1030','10:30','10:55'],['p','11:00','11:15','lanche'],
-    ['1115','11:15','11:40'],['1145','11:45','12:10'],['p','12:30','14:00','almoço'],
-    ['1400','14:00','14:25'],['1430','14:30','14:55'],['p','15:00','15:15','lanche'],
-    ['1515','15:15','15:40'],['1545','15:45','16:10'] ],
+    ['0930','9:30','9:50'],['1000','10:00','10:20'],['1030','10:30','10:50'],['p','11:00','11:15','intervalo'],
+    ['1115','11:15','11:35'],['1145','11:45','12:05'],['p','12:30','14:00','almoço'],
+    ['1400','14:00','14:20'],['1430','14:30','14:50'],['p','15:00','15:15','intervalo'],
+    ['1515','15:15','15:35'],['1545','15:45','16:05'] ],
   rodizio: [
-    ['1030','10:30','10:55'],['1100','11:00','11:25'],['1130','11:30','11:55'],['1200','12:00','12:25'],
+    ['1030','10:30','10:50'],['1100','11:00','11:20'],['1130','11:30','11:50'],['1200','12:00','12:20'],
     ['p','12:30','14:00','almoço'],
-    ['1400','14:00','14:25'],['1430','14:30','14:55'],['1500','15:00','15:25'],['p','15:30','15:45','lanche'],
-    ['1545','15:45','16:10'] ]
+    ['1400','14:00','14:20'],['1430','14:30','14:50'],['1500','15:00','15:20'],['p','15:30','15:45','intervalo'],
+    ['1545','15:45','16:05'] ]
 };
 /* Dias de mentoria. Para acrescentar uma semana, inclua as datas aqui (e no Code.gs). */
 const MENT_DIAS = [
@@ -518,43 +512,26 @@ function setTurma(slug){
   try{assistidas=JSON.parse(ls.get('artesano-ia:'+turma.slug+':assistidas')||'[]')}catch(e){assistidas=[]}
   $$('[data-turma-nome]').forEach(e=>e.textContent=turma.nome);
   $$('[data-turma-quando]').forEach(e=>e.textContent=turma.diaCurto+' · '+turma.hora);
-  $('#agendaKicker').textContent=turma.dia+' · '+turma.hora+' · 1h · híbrido';
-  $('#meetBtn').href=turma.meet; $('#driveBtn').href=turma.drive||PROGRAMA.drive;
+  $('#driveBtn').href=turma.drive||PROGRAMA.drive;
   $$('.opt').forEach(o=>o.classList.toggle('sel',o.dataset.slug===turma.slug));
   document.documentElement.style.setProperty('--turma',turma.cor);
-  renderAulas(); renderPdfs(); renderAgenda(); renderMentoria();
+  renderPdfs(); renderAgenda(); renderMentoria();
 }
 function salvarAssistidas(){ls.set('artesano-ia:'+turma.slug+':assistidas',JSON.stringify(assistidas));}
 
-function renderAulas(){
-  const box=$('#aulasList'); box.innerHTML='';
-  let disp=0;
-  AULAS.forEach(a=>{
-    const d=dataAula(a), p=partes(d), g=a.gravacao[turma.slug], gp=Array.isArray(g)?g:(g?[g]:[]), link=gp[0]||'', live=d===hojeISO&&!link, futura=d>hojeISO, ok=!!link||(d<hojeISO);
-    if(ok) disp++;
-    const el=document.createElement('div'); el.className='card aula row'+(futura?' soon':''); el.setAttribute('role','button'); el.tabIndex=0;
-    el.innerHTML=`<div class="num ${live?'live':''}">${a.num}</div>
-      <div class="grow"><div class="title">${a.titulo}</div><div class="meta">${p.dow}, ${String(p.d).padStart(2,'0')} ${p.mes} · ${turma.hora} · ${a.sub}${(a.obs&&a.obs[turma.slug])?' · '+a.obs[turma.slug]:''}</div>${gp.length>1?`<div class="partes">${gp.map((u,i)=>`<a href="${u}" target="_blank" rel="noopener">parte ${i+1}</a>`).join('')}</div>`:''}</div>
-      ${live?'<span class="pill hoje">hoje</span>':futura?'<span class="pill breve">em breve</span>':'<span class="play" aria-hidden="true"><svg class="icon"><use href="#i-playfill"/></svg></span><span class="ok" aria-label="disponível"><svg class="icon"><use href="#i-check"/></svg></span>'}`;
-    el.addEventListener('click',e=>{
-      if(e.target.closest('.partes a')) return;
-      if(live) window.open(turma.meet,'_blank');
-      else if(futura) toast('disponível após a aula');
-      else window.open(link||turma.pastaGravacoes||turma.drive,'_blank');
-    });
-    box.appendChild(el);
-  });
-  $('#progLabel').textContent=disp+'/'+AULAS.length; $('#progBar').style.width=(100*disp/AULAS.length)+'%';
-}
 function renderPdfs(){
   const box=$('#pdfList'); box.innerHTML='';
   AULAS.forEach((a,i)=>{
     const d=dataAula(a), p=partes(d), pdf=a.pdf[turma.slug]||'', pdfOk=!!pdf||d<hojeISO;
     const arqOk=(ARQUIVOS_LIBERADOS[turma.slug]||[]).includes(a.num), arq=(ARQUIVOS[turma.slug]||[])[i];
-    const nada=!pdfOk&&!arqOk;
+    const nada=!pdfOk&&!arqOk&&!(a.gravacao[turma.slug]);
     const card=document.createElement('div'); card.className='card aula-mat'+(nada?' soon':'');
     const dia=String(p.d).padStart(2,'0')+'/'+String(p.m).padStart(2,'0');
+    const g=a.gravacao[turma.slug], gp=Array.isArray(g)?g:(g?[g]:[]), gravOk=gp.length>0;
     let rows='';
+    rows+= gravOk
+      ? gp.map((u,k)=>`<a class="mat-row" href="${u}" target="_blank" rel="noopener"><svg class="icon"><use href="#i-play"/></svg><span class="grow">Gravação${gp.length>1?' · parte '+(k+1):''}</span><span class="ok"><svg class="icon"><use href="#i-check"/></svg></span></a>`).join('')
+      : (d<hojeISO?`<a class="mat-row" href="${turma.pastaGravacoes||turma.drive}" target="_blank" rel="noopener"><svg class="icon"><use href="#i-play"/></svg><span class="grow">Gravação</span><span class="pill breve">na pasta</span></a>`:`<div class="mat-row off"><svg class="icon"><use href="#i-play"/></svg><span class="grow">Gravação</span><span class="pill breve">após a aula</span></div>`);
     if(!nada){
       rows+= pdfOk
         ? `<a class="mat-row" href="${pdf||turma.pastaApresentacoes||turma.drive}" target="_blank" rel="noopener"><svg class="icon"><use href="#i-file"/></svg><span class="grow">Apresentação</span><span class="ok"><svg class="icon"><use href="#i-check"/></svg></span></a>`
@@ -565,25 +542,37 @@ function renderPdfs(){
     box.appendChild(card);
   });
 }
+/* ===== trilha de adoção de IA ===== */
+function trilhaMarcos(){
+  const ment1=turma.dia==='terças'?'2026-10-13':'2026-10-15';
+  const aulas=AULAS.map(a=>{const g=a.gravacao[turma.slug], gp=Array.isArray(g)?g:(g?[g]:[]); return {fase:1, num:a.num, titulo:'Aula '+a.num+' · '+a.titulo, data:dataAula(a), fim:dataAula(a), sub:a.sub, obs:(a.obs&&a.obs[turma.slug])||'', grav:gp};});
+  return [...aulas,
+    {fase:2, num:'M1', titulo:'Mentoria 1 · lançamento do hackathon', data:ment1, fim:ment1, sub:'edital, critérios e escolha dos projetos', links:[['apresentação do lançamento',HACK_MATERIAL.deck],['gravação do lançamento',HACK_MATERIAL.gravacao],['pasta do hackathon',HACK_MATERIAL.pasta]]},
+    {fase:2, num:'M2', titulo:'Mentoria 2', data:'2026-10-20', fim:'2026-10-22', quando:'terça 20/10 ou quinta 22/10', sub:'20 min por equipe, presencial ou online'},
+    {fase:2, num:'M3', titulo:'Mentoria 3', fim:'2026-10-27', quando:'em breve'},
+    {fase:2, num:'M4', titulo:'Mentoria 4', fim:'2026-11-05', quando:'em breve'},
+    {fase:2, num:'fim', titulo:'Hackathon', data:HACKATHON.data, fim:HACKATHON.data, quando:'quinta, 12 de novembro · '+HACKATHON.hora, sub:'linha de chegada · apresentação dos projetos no escritório da Artesano', chegada:true}];
+}
 function renderAgenda(){
-  const box=$('#agendaList'); box.innerHTML='';
-  const ment=mentorias();
-  const linha=[...AULAS.map(a=>({rot:'Aula '+a.num+' · '+a.titulo,data:dataAula(a),quando:turma.hora+' às '+horaFim()})),...MENT_DIAS.map(d=>({rot:'Mentoria do hackathon',data:d.data,quando:'janela marcada na aba mentoria'})),{rot:'Hackathon',data:HACKATHON.data,quando:HACKATHON.hora}].sort((x,y)=>x.data<y.data?-1:1);
-  const prox=linha.find(e=>e.data>=hojeISO)||linha[linha.length-1]; const pp=partes(prox.data);
-  $('#nextTitle').textContent=prox.rot;
-  $('#nextWhen').textContent=pp.dow+', '+String(pp.d).padStart(2,'0')+' de '+pp.mesL+' · '+prox.quando;
-  $('#mentInfo').textContent='25 min por equipe · você escolhe a janela';
-  const mb=$('#mentList'); mb.innerHTML='';
-  ment.forEach(m=>{const p=partes(m.data),live=m.data===hojeISO,passou=m.data<hojeISO;
-    const el=document.createElement('div'); el.className='ev'; if(passou&&!(MENT_GRAV[turma.slug]||{})[m.num]) el.style.opacity='.55';
-    el.innerHTML=`<div class="date ${live?'live':''}"><div class="m">${p.mes}</div><div class="d">${String(p.d).padStart(2,'0')}</div></div><div class="grow"><div class="title" style="font-size:15px">${m.titulo}</div><div class="meta">${p.dow} · ${turma.hora}${live?' · hoje':''}</div></div>${(MENT_GRAV[turma.slug]||{})[m.num]?`<a class="play" href="${MENT_GRAV[turma.slug][m.num]}" target="_blank" rel="noopener" aria-label="assistir ${m.titulo}"><svg class="icon"><use href="#i-playfill"/></svg></a>`:(passou?'':'<button class="btn ghost">agendar</button>')}`;
-    const b=el.querySelector('button'); if(b) b.addEventListener('click',()=>baixarIcs([m],'artesano-ia-'+turma.slug+'-mentoria-'+m.num));
-    mb.appendChild(el);
-  });
-  AULAS.forEach(a=>{const d=dataAula(a),p=partes(d),live=d===hojeISO;
-    const el=document.createElement('div'); el.className='ev';
-    el.innerHTML=`<div class="date ${live?'live':''}"><div class="m">${p.mes}</div><div class="d">${String(p.d).padStart(2,'0')}</div></div><div class="grow"><div class="title" style="font-size:15px">${a.titulo}</div><div class="meta">${p.dow} · ${turma.hora}${live?' · hoje':''}</div></div>${d<hojeISO?'':`<button class="btn ghost" data-ics="${a.num}">agendar</button>`}`;
-    const bi=el.querySelector('[data-ics]'); if(bi) bi.addEventListener('click',()=>baixarIcs([a],'artesano-ia-'+turma.slug+'-aula-'+a.num));
+  const box=$('#trilhaList'); box.innerHTML='';
+  const ms=trilhaMarcos(); const feito=m=>m.fim<hojeISO; const atual=ms.find(m=>!feito(m));
+  const nFeitos=ms.filter(feito).length;
+  $('#trProgLabel').textContent=nFeitos+'/'+ms.length; $('#trProgBar').style.width=(100*nFeitos/ms.length)+'%';
+  const fases={1:['Fase 1','Treinamento'],2:['Fase 2','Hackathon']};
+  let faseAtual=0;
+  ms.forEach(m=>{
+    if(m.fase!==faseAtual){faseAtual=m.fase; const daFase=ms.filter(x=>x.fase===m.fase), ok=daFase.every(feito);
+      const h=document.createElement('div'); h.className='tr-fase'; h.innerHTML=`<span class="kicker">${fases[m.fase][0]}</span><b>${fases[m.fase][1]}</b>${ok?'<span class="pill breve">concluída</span>':(daFase.some(feito)?'<span class="pill hoje">em andamento</span>':'')}`; box.appendChild(h);}
+    const done=feito(m), agora=m===atual;
+    const el=document.createElement('div'); el.className='tr-marco'+(done?' feito':'')+(agora?' agora':'')+(m.chegada?' chegada':'');
+    const p=m.data?partes(m.data):null;
+    const quando=m.quando||(p?`${p.dow}, ${String(p.d).padStart(2,'0')} ${p.mes}`+(m.fase===1?' · '+turma.hora:''):'');
+    const rec='';
+    const links=(m.links||[]).map(([t,u])=>`<a href="${u}" target="_blank" rel="noopener">${t}</a>`).join('');
+    el.innerHTML=`<div class="tr-dot" aria-hidden="true">${done?'<svg class="icon"><use href="#i-check"/></svg>':m.chegada?'<svg class="icon"><use href="#i-flag"/></svg>':m.num.replace(/^0/,'')}</div>
+      <div class="card tr-card"><div class="row" style="gap:10px;align-items:flex-start"><div class="grow"><div class="title">${m.titulo}</div><div class="meta">${quando}${done?' · cumprido':''}</div></div>${agora&&!m.chegada?'<span class="pill hoje">'+(m.data&&m.data<=hojeISO?'agora':'próximo')+'</span>':''}</div>
+      ${m.sub?`<p class="tr-sub">${m.sub}${m.obs?' · '+m.obs:''}</p>`:''}
+      ${(links)?`<div class="partes">${rec}${links}</div>`:''}</div>`;
     box.appendChild(el);
   });
 }
@@ -595,17 +584,9 @@ function bloco(a){const {y,m,d}=partes(a.data||dataAula(a)); const utc=(hh,mm)=>
   return ['BEGIN:VEVENT','UID:artesano-ia-'+turma.slug+'-'+a.num+'@protaia.com.br','DTSTAMP:'+new Date().toISOString().replace(/[-:]/g,'').split('.')[0]+'Z','DTSTART:'+utc(turma.h,turma.m),'DTEND:'+utc(turma.h+PROGRAMA.duracaoHoras,turma.m),'SUMMARY:Artesano · IA · '+(a.resumo||('aula '+a.num+': '+a.titulo)),'LOCATION:'+PROGRAMA.sala+' / Google Meet','URL:'+turma.meet,'DESCRIPTION:Turma '+turma.nome+'. Meet: '+turma.meet,'BEGIN:VALARM','TRIGGER:-PT30M','ACTION:DISPLAY','DESCRIPTION:Aula da Artesano · IA começa em 30 minutos','END:VALARM','END:VEVENT'].join('\r\n');}
 function baixarIcs(lista,nome){const txt=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//prota.ia//Artesano IA//PT-BR','CALSCALE:GREGORIAN','METHOD:PUBLISH',...lista.map(bloco),'END:VCALENDAR'].join('\r\n');
   const url=URL.createObjectURL(new Blob([txt],{type:'text/calendar;charset=utf-8'})); const a=document.createElement('a'); a.href=url; a.download=nome+'.ics'; document.body.appendChild(a); a.click(); a.remove(); setTimeout(()=>URL.revokeObjectURL(url),2000); toast('evento baixado');}
-$('#hackDeck').href=HACK_MATERIAL.deck; $('#hackGrav').href=HACK_MATERIAL.gravacao; $('#hackPasta').href=HACK_MATERIAL.pasta;
-$('#icsHack').addEventListener('click',()=>{
-  const [y,m,d]=HACKATHON.data.split('-').map(Number), utc=h=>new Date(Date.UTC(y,m-1,d,h+3,0,0)).toISOString().replace(/[-:]/g,'').split('.')[0]+'Z';
-  const txt=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//prota.ia//Artesano IA//PT-BR','CALSCALE:GREGORIAN','METHOD:PUBLISH','BEGIN:VEVENT','UID:artesano-ia-hackathon@protaia.com.br','DTSTAMP:'+new Date().toISOString().replace(/[-:]/g,'').split('.')[0]+'Z','DTSTART:'+utc(HACKATHON.h),'DTEND:'+utc(HACKATHON.fim),'SUMMARY:Artesano · IA · Hackathon','LOCATION:'+HACKATHON.local,'BEGIN:VALARM','TRIGGER:-PT30M','ACTION:DISPLAY','DESCRIPTION:Hackathon começa em 30 minutos','END:VALARM','END:VEVENT','END:VCALENDAR'].join('\r\n');
-  const url=URL.createObjectURL(new Blob([txt],{type:'text/calendar;charset=utf-8'})); const a=document.createElement('a'); a.href=url; a.download='artesano-ia-hackathon.ics'; document.body.appendChild(a); a.click(); a.remove(); setTimeout(()=>URL.revokeObjectURL(url),2000); toast('evento baixado');
-});
-$('#mentIr').addEventListener('click',()=>abrirAba('mentoria'));
-$('#icsAll').addEventListener('click',()=>baixarIcs(mentorias().filter(m=>m.data>=hojeISO),'artesano-ia-'+turma.slug+'-mentorias'));
 
 /* ===== mentoria: reservas ===== */
-let mRes=[], mEq=ls.get('artesano-ia:mentoria:equipe')||'', mMod=ls.get('artesano-ia:mentoria:modalidade')||'presencial', mSel=null, mBusy=false, mMontado=false;
+let mRes=[], mEq=ls.get('artesano-ia:mentoria:equipe')||'', mMod=ls.get('artesano-ia:mentoria:modalidade')||'presencial', mSel=null, mBusy=false, mMontado=false, mUltima=null;
 const mEsc=t=>String(t??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const mEquipe=id=>MENT_EQUIPES.find(e=>e.id===id);
 const mDM=iso=>{const p=partes(iso);return String(p.d).padStart(2,'0')+'/'+String(p.m).padStart(2,'0');};
@@ -619,7 +600,8 @@ function mMontar(){
   $('#mMeet').href=MENT_MEET;
   const s=$('#mEquipe');
   $$('.seg button').forEach(b=>b.addEventListener('click',()=>{mMod=b.dataset.mod; ls.set('artesano-ia:mentoria:modalidade',mMod); renderMentoria();}));
-  s.addEventListener('change',()=>{mEq=s.value; ls.set('artesano-ia:mentoria:equipe',mEq); mSel=null; mAviso(''); renderMentoria();});
+  s.addEventListener('change',()=>{mEq=s.value; ls.set('artesano-ia:mentoria:equipe',mEq); mSel=null; mUltima=null; mAviso(''); renderMentoria();});
+  $('#mFeitoOk').addEventListener('click',()=>{mUltima=null; renderMentoria();});
   $('#mCancel').addEventListener('click',()=>{mSel=null; renderMentoria();});
   $('#mOk').addEventListener('click',()=>{ if(mSel) mEnviar({acao:'reservar',equipe:mEq,janela:mSel,modalidade:mMod}); });
 }
@@ -640,7 +622,7 @@ function renderMentoria(){
   if(eq){
     const minhas=mRes.filter(r=>r.equipe===eq.id).map(r=>({r,j:mJanela(r.janela)})).filter(x=>x.j);
     mb.innerHTML=sem.map(s=>{const x=minhas.find(m=>m.j.semana===s);
-      return x?`<div class="m-minha"><div class="grow"><b>Semana ${s} · ${x.j.nome.toLowerCase()}, ${mDM(x.j.data)}, ${x.j.ini}</b><div class="meta">${x.r.modalidade} · até ${x.j.fim}</div></div><button class="btn ghost" data-ics="${x.r.janela}">agenda</button>${x.j.data>=hojeISO?`<button class="btn ghost" data-lib="${x.r.janela}">liberar</button>`:''}</div>`
+      return x?`<div class="m-minha"><div class="grow"><b>Semana ${s} · ${x.j.nome.toLowerCase()}, ${mDM(x.j.data)}, ${x.j.ini}</b><div class="meta">${x.r.modalidade} · até ${x.j.fim}</div></div><a class="btn ghost" href="${mOutlookUrl(x.r)}" target="_blank" rel="noopener">Outlook</a><button class="btn ghost" data-ics="${x.r.janela}">.ics</button>${x.j.data>=hojeISO?`<button class="btn ghost" data-lib="${x.r.janela}">liberar</button>`:''}</div>`
               :`<div class="meta" style="margin-top:10px">Semana ${s}: sua equipe ainda não marcou.</div>`;}).join('');
     mb.querySelectorAll('[data-ics]').forEach(b=>b.addEventListener('click',()=>mIcs(mRes.find(r=>r.equipe===eq.id&&r.janela===b.dataset.ics))));
     mb.querySelectorAll('[data-lib]').forEach(b=>b.addEventListener('click',()=>mEnviar({acao:'liberar',equipe:eq.id,janela:b.dataset.lib})));
@@ -672,6 +654,11 @@ function renderMentoria(){
       box.appendChild(card);
     });
   });
+  const f=$('#mFeito'), ult=eq&&mUltima&&mRes.find(r=>r.equipe===eq.id&&r.janela===mUltima);
+  if(ult){const j=mJanela(ult.janela); f.hidden=false;
+    $('#mFeitoTxt').textContent=`${eq.nome}: ${j.nome.toLowerCase()}, ${mDM(j.data)}, ${j.ini} às ${j.fim}, ${ult.modalidade}.`;
+    $('#mFeitoOutlook').href=mOutlookUrl(ult); $('#mFeitoIcs').onclick=()=>mIcs(ult);
+  } else f.hidden=true;
   const c=$('#mConfirm');
   if(mSel&&eq){const j=mJanela(mSel), antes=mDaSemana(eq.id,j.semana); c.hidden=false;
     $('#mConfirmTxt').textContent=`${eq.nome}: ${j.nome.toLowerCase()}, ${mDM(j.data)}, ${j.ini} às ${j.fim}, ${mMod}.`+(antes&&antes.janela!==mSel?' A janela que a equipe tinha nesta semana fica livre.':'');
@@ -688,10 +675,13 @@ async function mEnviar(body){
   if(mBusy) return; mBusy=true; renderMentoria();
   try{const r=await fetch(MENT_API,{method:'POST',body:JSON.stringify(body)}); const j=await r.json();
     if(Array.isArray(j.reservas)) mRes=j.reservas;
-    if(j.ok){mSel=null; mAviso(''); toast(body.acao==='liberar'?'janela liberada':'janela reservada');} else mAviso(j.erro||'Não consegui salvar. Tente de novo.');
+    if(j.ok){mSel=null; mAviso(''); mUltima=body.acao==='reservar'?body.janela:null; toast(body.acao==='liberar'?'janela liberada':'janela reservada');} else mAviso(j.erro||'Não consegui salvar. Tente de novo.');
   }catch(e){mAviso('Não consegui salvar. Confira a internet e tente de novo.');}
   mBusy=false; renderMentoria();
 }
+function mOutlookUrl(r){const j=mJanela(r.janela), eq=mEquipe(r.equipe); const dt=h=>j.data+'T'+h.padStart(5,'0')+':00-03:00';
+  const q={path:'/calendar/action/compose',rru:'addevent',subject:'Mentoria do hackathon · '+eq.nome,startdt:dt(j.ini),enddt:dt(j.fim),location:r.modalidade==='online'?MENT_MEET:'Escritório da Artesano',body:'Mentoria do Hackathon IA Artesano ('+r.modalidade+'). Meet: '+MENT_MEET};
+  return 'https://outlook.office.com/calendar/0/deeplink/compose?'+Object.entries(q).map(([k,v])=>k+'='+encodeURIComponent(v)).join('&');}
 function mIcs(r){ if(!r) return; const j=mJanela(r.janela), eq=mEquipe(r.equipe), [hi,mi]=j.ini.split(':').map(Number), [hf,mf]=j.fim.split(':').map(Number);
   const {y,m,d}=partes(j.data), u=(hh,mm)=>new Date(Date.UTC(y,m-1,d,hh+3,mm,0)).toISOString().replace(/[-:]/g,'').split('.')[0]+'Z';
   const ev=['BEGIN:VEVENT','UID:artesano-ia-mentoria-'+eq.id+'-'+r.janela+'@protaia.com.br','DTSTAMP:'+new Date().toISOString().replace(/[-:]/g,'').split('.')[0]+'Z','DTSTART:'+u(hi,mi),'DTEND:'+u(hf,mf),'SUMMARY:Artesano · IA · mentoria do hackathon ('+eq.nome+')','LOCATION:'+(r.modalidade==='online'?MENT_MEET:'Escritório da Artesano'),'URL:'+MENT_MEET,'DESCRIPTION:'+r.modalidade+'. Meet: '+MENT_MEET,'BEGIN:VALARM','TRIGGER:-PT15M','ACTION:DISPLAY','DESCRIPTION:Mentoria em 15 minutos','END:VALARM','END:VEVENT'].join('\r\n');
