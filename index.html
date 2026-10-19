@@ -213,6 +213,7 @@
   .seg button:focus-visible,.slot:focus-visible,.m-select:focus-visible{outline:2px solid var(--terra);outline-offset:2px}
   .m-select{width:100%;min-height:48px;border-radius:12px;border:1px solid var(--line-strong);background:var(--card);color:var(--ink);font:500 15px var(--font-body);padding:0 12px}
   .m-minha{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:12px;padding:12px 14px;border-radius:12px;background:var(--steel-soft)}
+  .m-minha .grow{flex:1 1 200px}
   .m-minha b{font-family:var(--font-display);font-size:15px;color:var(--ink)}
   .m-minha .meta{margin-top:2px}
   .m-minha .btn{min-height:38px;padding:0 12px;font-size:13px}
@@ -369,7 +370,7 @@
         <div class="brand"><svg class="lockup" viewBox="0 0 626 602" role="img" aria-label="Artesano Urbanismo"><use href="#logoAll"/></svg><span class="sep"></span><span class="prota" role="img" aria-label="prota.ia"></span></div>
         <div class="kicker">hackathon · 25 min por equipe</div>
         <h1>Mentoria</h1>
-        <p style="margin:6px 0 0;color:var(--head-muted);font-size:14px;line-height:1.45">Escolha a janela da sua equipe. Ela vale para as três semanas até a final.</p>
+        <p style="margin:6px 0 0;color:var(--head-muted);font-size:14px;line-height:1.45">Cada equipe marca uma janela por semana, presencial ou online.</p>
       </div>
     </header>
     <div class="content">
@@ -443,39 +444,45 @@ const MENT_API = ''; /* URL do app da web do Apps Script (termina em /exec) */
 const MENT_MEET = 'https://meet.google.com/wzc-pjqg-ktw';
 /* Mentorias do hackathon: equipes e janelas. Mesmo bloco no app (index.html) e no script da planilha (Code.gs). */
 const MENT_EQUIPES = [
-  { id:'ba1', turma:'bairro-artesano', dia:'ter', nome:'Giovanna e Tifany', projeto:'Automação de Novos Negócios' },
-  { id:'ba2', turma:'bairro-artesano', dia:'ter', nome:'Nina e Julia', projeto:'Compatibilização de projetos' },
-  { id:'ba3', turma:'bairro-artesano', dia:'ter', nome:'Maira e Larissa', projeto:'Orçamento de paisagismo' },
-  { id:'ba4', turma:'bairro-artesano', dia:'ter', nome:'Laís e Carol', projeto:'Gestão ambiental' },
-  { id:'ba5', turma:'bairro-artesano', dia:'ter', nome:'Beatriz e Isabel', projeto:'PPA · Painel Parceiros Artesano' },
-  { id:'ba6', turma:'bairro-artesano', dia:'ter', nome:'Clara e Micaelle', projeto:'Fluxo de pagamento de notas' },
-  { id:'lo1', turma:'londrina', dia:'ter', nome:'Renata, Cid e Mayara', projeto:'Ferramenta de parametrização' },
-  { id:'lo2', turma:'londrina', dia:'ter', nome:'Fernanda RB, Arthur e Zé', projeto:'Gestão de Obras Artesano' },
-  { id:'lo3', turma:'londrina', dia:'ter', nome:'Gustavo, André e Denise', projeto:'Parametrização da curva de obras' },
-  { id:'lo4', turma:'londrina', dia:'ter', nome:'Mari, Fernanda e Schimming', projeto:'Ferramenta de gestão físico-financeira' },
-  { id:'pp1', turma:'praia-do-paiva', dia:'qui', nome:'Vini e Leandro', projeto:'Gestão de inadimplência' },
-  { id:'pp2', turma:'praia-do-paiva', dia:'qui', nome:'Raquel, Heloísa e Mariana Cacace', projeto:'Gestão de RH e facilities' },
-  { id:'pp3', turma:'praia-do-paiva', dia:'qui', nome:'Vitor e Matheus', projeto:'Controle de gastos de projetos (ex-obra)' },
-  { id:'pp4', turma:'praia-do-paiva', dia:'qui', nome:'Guilherme e Thaís', projeto:'Projeto a definir' },
-  { id:'sj1', turma:'sjc', dia:'qui', nome:'Sassi, Ana e Vini', projeto:'Publicidade Artesano' },
-  { id:'sj2', turma:'sjc', dia:'qui', nome:'Flavio, Alice e Gabi', projeto:'Base de conhecimento jurídico' },
-  { id:'sj3', turma:'sjc', dia:'qui', nome:'Tiago, Fernanda e Leo', projeto:'Gestão de TI e Comercial' }
+  { id:'ba1', turma:'bairro-artesano', nome:'Giovanna e Tifany', projeto:'Automação de Novos Negócios' },
+  { id:'ba2', turma:'bairro-artesano', nome:'Nina e Julia', projeto:'Compatibilização de projetos' },
+  { id:'ba3', turma:'bairro-artesano', nome:'Maira e Larissa', projeto:'Orçamento de paisagismo' },
+  { id:'ba4', turma:'bairro-artesano', nome:'Laís e Carol', projeto:'Gestão ambiental' },
+  { id:'ba5', turma:'bairro-artesano', nome:'Beatriz e Isabel', projeto:'PPA · Painel Parceiros Artesano' },
+  { id:'ba6', turma:'bairro-artesano', nome:'Clara e Micaelle', projeto:'Fluxo de pagamento de notas' },
+  { id:'lo1', turma:'londrina', nome:'Renata, Cid e Mayara', projeto:'Ferramenta de parametrização' },
+  { id:'lo2', turma:'londrina', nome:'Fernanda RB, Arthur e Zé', projeto:'Gestão de Obras Artesano' },
+  { id:'lo3', turma:'londrina', nome:'Gustavo, André e Denise', projeto:'Parametrização da curva de obras' },
+  { id:'lo4', turma:'londrina', nome:'Mari, Fernanda e Schimming', projeto:'Ferramenta de gestão físico-financeira' },
+  { id:'pp1', turma:'praia-do-paiva', nome:'Vini e Leandro', projeto:'Gestão de inadimplência' },
+  { id:'pp2', turma:'praia-do-paiva', nome:'Raquel, Heloísa e Mariana Cacace', projeto:'Gestão de RH e facilities' },
+  { id:'pp3', turma:'praia-do-paiva', nome:'Vitor e Matheus', projeto:'Controle de gastos de projetos (ex-obra)' },
+  { id:'pp4', turma:'praia-do-paiva', nome:'Guilherme e Thaís', projeto:'Projeto a definir' },
+  { id:'sj1', turma:'sjc', nome:'Sassi, Ana e Vini', projeto:'Publicidade Artesano' },
+  { id:'sj2', turma:'sjc', nome:'Flavio, Alice e Gabi', projeto:'Base de conhecimento jurídico' },
+  { id:'sj3', turma:'sjc', nome:'Tiago, Fernanda e Leo', projeto:'Gestão de TI e Comercial' }
 ];
-/* 25 min por equipe. Terça a partir de 9:30; quinta a partir de 10:30 (rodízio). Pausas só para exibir. */
-const MENT_DIAS = {
-  ter: { nome:'Terça', datas:['2026-10-20','2026-10-27','2026-11-03'], grade:[
-    ['ter-0930','9:30','9:55'],['ter-1000','10:00','10:25'],['ter-1030','10:30','10:55'],['p','11:00','11:15','lanche'],
-    ['ter-1115','11:15','11:40'],['ter-1145','11:45','12:10'],['p','12:30','14:00','almoço'],
-    ['ter-1400','14:00','14:25'],['ter-1430','14:30','14:55'],['p','15:00','15:15','lanche'],
-    ['ter-1515','15:15','15:40'],['ter-1545','15:45','16:10'] ] },
-  qui: { nome:'Quinta', datas:['2026-10-22','2026-10-29','2026-11-05'], grade:[
-    ['qui-1030','10:30','10:55'],['qui-1100','11:00','11:25'],['qui-1130','11:30','11:55'],['qui-1200','12:00','12:25'],
+/* 25 min por equipe. Cada equipe marca uma janela por semana (não é horário fixo).
+   Grade "cedo" começa 9:30; grade "rodizio" começa 10:30 (quinta é o rodízio da Roberta). Pausas só para exibir. */
+const MENT_GRADES = {
+  cedo: [
+    ['0930','9:30','9:55'],['1000','10:00','10:25'],['1030','10:30','10:55'],['p','11:00','11:15','lanche'],
+    ['1115','11:15','11:40'],['1145','11:45','12:10'],['p','12:30','14:00','almoço'],
+    ['1400','14:00','14:25'],['1430','14:30','14:55'],['p','15:00','15:15','lanche'],
+    ['1515','15:15','15:40'],['1545','15:45','16:10'] ],
+  rodizio: [
+    ['1030','10:30','10:55'],['1100','11:00','11:25'],['1130','11:30','11:55'],['1200','12:00','12:25'],
     ['p','12:30','14:00','almoço'],
-    ['qui-1400','14:00','14:25'],['qui-1430','14:30','14:55'],['qui-1500','15:00','15:25'],['p','15:30','15:45','lanche'],
-    ['qui-1545','15:45','16:10'] ] }
+    ['1400','14:00','14:25'],['1430','14:30','14:55'],['1500','15:00','15:25'],['p','15:30','15:45','lanche'],
+    ['1545','15:45','16:10'] ]
 };
-/* Equipes de terça podem usar no máximo esta quantidade de janelas da quinta (8 janelas para 7 equipes de quinta). */
-const MENT_TER_NA_QUI = 1;
+/* Dias de mentoria. Para acrescentar uma semana, inclua as datas aqui (e no Code.gs). */
+const MENT_DIAS = [
+  { data:'2026-10-20', nome:'Terça',   semana:1, grade:'cedo' },
+  { data:'2026-10-22', nome:'Quinta',  semana:1, grade:'rodizio' },
+  { data:'2026-10-26', nome:'Segunda', semana:2, grade:'cedo' },
+  { data:'2026-10-27', nome:'Terça',   semana:2, grade:'cedo' }
+];
 
 const AULAS = [
   { num:'01', titulo:'Fundamentos e prompts',           sub:'camadas da IA, ciclo 4D e prompt em cinco passos', obs:{ 'bairro-artesano':'gravação da turma das 15h30' }, gravacao:{ 'bairro-artesano':'https://drive.google.com/file/d/1F5UpKPJe7M1erMY4gWXMhBJNUBDfXXfZ/view', 'praia-do-paiva':'https://drive.google.com/file/d/1TgD8MuzRevHAAA22NluUDnJmvp7dDtF9/view', 'londrina':'https://drive.google.com/file/d/1WEJcGi6XdLnXtzyayThBBHh3bIMB7MAG/view', 'sjc':'https://drive.google.com/file/d/1cGgSkf42ZTkLgZBARuqEFQt_SONC_jOV/view' }, pdf:{ 'bairro-artesano':'https://drive.google.com/file/d/1JslSaAxhZT7zo66bvLyM1vdumsekWSQc/view', 'londrina':'https://drive.google.com/file/d/194BF_Hf1dNiw_dTJvxSNhcm6oVfCXr_N/view', 'praia-do-paiva':'https://drive.google.com/file/d/1m8ZjrDNHeViy7dQI0tkhBBf56-RkghF7/view', 'sjc':'https://drive.google.com/file/d/1JcRqBRTS-tHPdSfIbd4g-ZDdEo4a10EZ/view' } },
@@ -561,11 +568,11 @@ function renderPdfs(){
 function renderAgenda(){
   const box=$('#agendaList'); box.innerHTML='';
   const ment=mentorias();
-  const linha=[...AULAS.map(a=>({rot:'Aula '+a.num+' · '+a.titulo,data:dataAula(a),quando:turma.hora+' às '+horaFim()})),...ment.filter(m=>m.data>='2026-10-20').map(m=>({rot:m.titulo,data:m.data,quando:'horário marcado na aba mentoria'})),{rot:'Hackathon',data:HACKATHON.data,quando:HACKATHON.hora}].sort((x,y)=>x.data<y.data?-1:1);
+  const linha=[...AULAS.map(a=>({rot:'Aula '+a.num+' · '+a.titulo,data:dataAula(a),quando:turma.hora+' às '+horaFim()})),...MENT_DIAS.map(d=>({rot:'Mentoria do hackathon',data:d.data,quando:'janela marcada na aba mentoria'})),{rot:'Hackathon',data:HACKATHON.data,quando:HACKATHON.hora}].sort((x,y)=>x.data<y.data?-1:1);
   const prox=linha.find(e=>e.data>=hojeISO)||linha[linha.length-1]; const pp=partes(prox.data);
   $('#nextTitle').textContent=prox.rot;
   $('#nextWhen').textContent=pp.dow+', '+String(pp.d).padStart(2,'0')+' de '+pp.mesL+' · '+prox.quando;
-  $('#mentInfo').textContent='terças e quintas · 25 min por equipe';
+  $('#mentInfo').textContent='25 min por equipe · você escolhe a janela';
   const mb=$('#mentList'); mb.innerHTML='';
   ment.forEach(m=>{const p=partes(m.data),live=m.data===hojeISO,passou=m.data<hojeISO;
     const el=document.createElement('div'); el.className='ev'; if(passou&&!(MENT_GRAV[turma.slug]||{})[m.num]) el.style.opacity='.55';
@@ -601,26 +608,18 @@ $('#icsAll').addEventListener('click',()=>baixarIcs(mentorias().filter(m=>m.data
 let mRes=[], mEq=ls.get('artesano-ia:mentoria:equipe')||'', mMod=ls.get('artesano-ia:mentoria:modalidade')||'presencial', mSel=null, mBusy=false, mMontado=false;
 const mEsc=t=>String(t??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const mEquipe=id=>MENT_EQUIPES.find(e=>e.id===id);
-const mDiaDe=j=>j.slice(0,3);
-const mDatas=d=>MENT_DIAS[d].datas.map(x=>{const p=partes(x);return String(p.d).padStart(2,'0')+'/'+String(p.m).padStart(2,'0');}).join(', ');
-const mJanela=id=>{for(const d of Object.keys(MENT_DIAS)){const g=MENT_DIAS[d].grade.find(x=>x[0]===id);if(g)return {dia:d,ini:g[1],fim:g[2]};}return null;};
-function mPode(janela,eq){
-  if(!eq) return {ok:false,motivo:'escolha a equipe'};
-  const d=mDiaDe(janela);
-  if(eq.dia==='qui'&&d==='ter') return {ok:false,motivo:'só equipes de terça'};
-  if(eq.dia==='ter'&&d==='qui'){
-    const usadas=mRes.filter(r=>r.equipe!==eq.id&&mDiaDe(r.janela)==='qui'&&(mEquipe(r.equipe)||{}).dia==='ter').length;
-    if(usadas>=MENT_TER_NA_QUI) return {ok:false,motivo:'vaga de terça na quinta já usada'};
-  }
-  return {ok:true};
-}
+const mDM=iso=>{const p=partes(iso);return String(p.d).padStart(2,'0')+'/'+String(p.m).padStart(2,'0');};
+const mJanela=id=>{for(const D of MENT_DIAS){const g=MENT_GRADES[D.grade].find(x=>x[0]!=='p'&&D.data+'-'+x[0]===id);if(g)return {...D,ini:g[1],fim:g[2]};}return null;};
+const mSemanas=()=>[...new Set(MENT_DIAS.map(d=>d.semana))];
+const mDiasDa=s=>MENT_DIAS.filter(d=>d.semana===s);
+const mDaSemana=(eqId,s)=>mRes.find(r=>r.equipe===eqId&&(mJanela(r.janela)||{}).semana===s);
 function mAviso(t){const a=$('#mAviso'); a.textContent=t||''; a.hidden=!t;}
 function mMontar(){
   if(mMontado) return; mMontado=true;
   $('#mMeet').href=MENT_MEET;
   const s=$('#mEquipe');
   $$('.seg button').forEach(b=>b.addEventListener('click',()=>{mMod=b.dataset.mod; ls.set('artesano-ia:mentoria:modalidade',mMod); renderMentoria();}));
-  s.addEventListener('change',()=>{mEq=s.value; ls.set('artesano-ia:mentoria:equipe',mEq); mSel=null; renderMentoria();});
+  s.addEventListener('change',()=>{mEq=s.value; ls.set('artesano-ia:mentoria:equipe',mEq); mSel=null; mAviso(''); renderMentoria();});
   $('#mCancel').addEventListener('click',()=>{mSel=null; renderMentoria();});
   $('#mOk').addEventListener('click',()=>{ if(mSel) mEnviar({acao:'reservar',equipe:mEq,janela:mSel,modalidade:mMod}); });
 }
@@ -632,36 +631,50 @@ function mOpcoes(){
 }
 function renderMentoria(){
   if(!turma) return; mMontar(); mOpcoes();
-  const eq=mEquipe(mEq), minha=eq&&mRes.find(r=>r.equipe===eq.id);
+  const eq=mEquipe(mEq);
   $('#mPres').setAttribute('aria-pressed',mMod==='presencial'); $('#mOn').setAttribute('aria-pressed',mMod==='online');
-  $('#mContagem').textContent=mRes.length+' de '+MENT_EQUIPES.length+' equipes marcaram';
+  const sem=mSemanas(), atual=sem.find(s=>mDiasDa(s).some(d=>d.data>=hojeISO))||sem[sem.length-1];
+  const marcaram=new Set(mRes.filter(r=>(mJanela(r.janela)||{}).semana===atual).map(r=>r.equipe)).size;
+  $('#mContagem').textContent=marcaram+' de '+MENT_EQUIPES.length+' equipes marcaram na semana '+atual;
   const mb=$('#mMinha');
-  if(minha){const j=mJanela(minha.janela);
-    mb.innerHTML=`<div class="m-minha"><div class="grow"><b>${MENT_DIAS[j.dia].nome} · ${j.ini} às ${j.fim}</b><div class="meta">${minha.modalidade} · ${mDatas(j.dia)}</div></div><button class="btn ghost" id="mIcs">agenda</button><button class="btn ghost" id="mLib">liberar</button></div>`;
-    $('#mIcs').addEventListener('click',()=>mIcs(minha)); $('#mLib').addEventListener('click',()=>mEnviar({acao:'liberar',equipe:eq.id}));
-  } else mb.innerHTML=eq?'<div class="meta" style="margin-top:10px">Sua equipe ainda não tem janela.</div>':'';
+  if(eq){
+    const minhas=mRes.filter(r=>r.equipe===eq.id).map(r=>({r,j:mJanela(r.janela)})).filter(x=>x.j);
+    mb.innerHTML=sem.map(s=>{const x=minhas.find(m=>m.j.semana===s);
+      return x?`<div class="m-minha"><div class="grow"><b>Semana ${s} · ${x.j.nome.toLowerCase()}, ${mDM(x.j.data)}, ${x.j.ini}</b><div class="meta">${x.r.modalidade} · até ${x.j.fim}</div></div><button class="btn ghost" data-ics="${x.r.janela}">agenda</button>${x.j.data>=hojeISO?`<button class="btn ghost" data-lib="${x.r.janela}">liberar</button>`:''}</div>`
+              :`<div class="meta" style="margin-top:10px">Semana ${s}: sua equipe ainda não marcou.</div>`;}).join('');
+    mb.querySelectorAll('[data-ics]').forEach(b=>b.addEventListener('click',()=>mIcs(mRes.find(r=>r.equipe===eq.id&&r.janela===b.dataset.ics))));
+    mb.querySelectorAll('[data-lib]').forEach(b=>b.addEventListener('click',()=>mEnviar({acao:'liberar',equipe:eq.id,janela:b.dataset.lib})));
+  } else mb.innerHTML='';
   const box=$('#mDias'); box.innerHTML='';
-  Object.keys(MENT_DIAS).forEach(d=>{const D=MENT_DIAS[d];
-    const card=document.createElement('div'); card.className='card m-day';
-    card.innerHTML=`<h3>${D.nome}</h3><div class="meta">${mDatas(d)}${d==='qui'?' · começa às 10h30':''}</div>`;
-    D.grade.forEach(g=>{
-      if(g[0]==='p'){const el=document.createElement('div'); el.className='slot pausa'; el.innerHTML=`<span class="hr">${g[1]} às ${g[2]}</span><span class="who">${g[3]}</span>`; card.appendChild(el); return;}
-      const r=mRes.find(x=>x.janela===g[0]), dono=r&&mEquipe(r.equipe);
-      const el=document.createElement('button'); el.type='button'; el.className='slot';
-      let who, tag;
-      if(r&&eq&&r.equipe===eq.id){el.classList.add('minha'); who=`<b>sua equipe</b>`; tag=r.modalidade;}
-      else if(r){who=`${mEsc(dono?dono.nome:'equipe')}<small>${mEsc(dono?dono.projeto:'')}</small>`; tag=r.modalidade; el.disabled=true;}
-      else {const pode=mPode(g[0],eq); el.classList.add('livre'); who=pode.ok?'':`<small>${pode.motivo}</small>`; tag='livre'; if(!pode.ok){el.classList.add('fora'); el.disabled=true;}}
-      if(mSel===g[0]) el.classList.add('sel');
-      el.innerHTML=`<span class="hr">${g[1]} às ${g[2]}</span><span class="who">${who}</span><span class="tag">${tag}</span>`;
-      if(!el.disabled&&!(r&&eq&&r.equipe===eq.id&&r.modalidade===mMod)) el.addEventListener('click',()=>{ if(!MENT_API){mAviso('As reservas abrem em instantes.');return;} mSel=g[0]; renderMentoria(); $('#mConfirm').scrollIntoView({block:'nearest',behavior:'smooth'}); });
-      card.appendChild(el);
+  sem.forEach(s=>{
+    const dias=mDiasDa(s);
+    const lab=document.createElement('div'); lab.className='section-label'; lab.innerHTML=`<span class="kicker">semana ${s}</span><small>uma janela por equipe</small>`; box.appendChild(lab);
+    dias.forEach(D=>{
+      const passou=D.data<hojeISO;
+      const card=document.createElement('div'); card.className='card m-day'; if(passou) card.style.opacity='.55';
+      card.innerHTML=`<h3>${D.nome}, ${mDM(D.data)}</h3><div class="meta">${passou?'já passou':(D.data===hojeISO?'hoje · ':'')+'começa às '+MENT_GRADES[D.grade].find(g=>g[0]!=='p')[1]}</div>`;
+      MENT_GRADES[D.grade].forEach(g=>{
+        if(g[0]==='p'){const el=document.createElement('div'); el.className='slot pausa'; el.innerHTML=`<span class="hr">${g[1]} às ${g[2]}</span><span class="who">${g[3]}</span>`; card.appendChild(el); return;}
+        const id=D.data+'-'+g[0], r=mRes.find(x=>x.janela===id), dono=r&&mEquipe(r.equipe);
+        const el=document.createElement('button'); el.type='button'; el.className='slot';
+        let who, tag;
+        if(r&&eq&&r.equipe===eq.id){el.classList.add('minha'); who='<b>sua equipe</b>'; tag=r.modalidade;}
+        else if(r){who=`${mEsc(dono?dono.nome:'equipe')}<small>${mEsc(dono?dono.projeto:'')}</small>`; tag=r.modalidade; el.disabled=true;}
+        else {el.classList.add('livre'); who=''; tag='livre'; if(passou){el.classList.add('fora'); el.disabled=true; tag='encerrada';}}
+        if(mSel===id) el.classList.add('sel');
+        el.innerHTML=`<span class="hr">${g[1]} às ${g[2]}</span><span class="who">${who}</span><span class="tag">${tag}</span>`;
+        if(!el.disabled&&!(r&&eq&&r.equipe===eq.id&&r.modalidade===mMod)) el.addEventListener('click',()=>{
+          if(!MENT_API){mAviso('As reservas abrem em instantes.');return;}
+          if(!eq){mAviso('Escolha primeiro a sua equipe, no passo 1.'); $('#mEquipe').focus(); return;}
+          mAviso(''); mSel=id; renderMentoria(); $('#mConfirm').scrollIntoView({block:'nearest',behavior:'smooth'}); });
+        card.appendChild(el);
+      });
+      box.appendChild(card);
     });
-    box.appendChild(card);
   });
   const c=$('#mConfirm');
-  if(mSel&&eq){const j=mJanela(mSel); c.hidden=false;
-    $('#mConfirmTxt').textContent=`${eq.nome}: ${MENT_DIAS[j.dia].nome.toLowerCase()}, ${j.ini} às ${j.fim}, ${mMod}.`+(minha&&minha.janela!==mSel?' A janela atual da equipe fica livre.':'');
+  if(mSel&&eq){const j=mJanela(mSel), antes=mDaSemana(eq.id,j.semana); c.hidden=false;
+    $('#mConfirmTxt').textContent=`${eq.nome}: ${j.nome.toLowerCase()}, ${mDM(j.data)}, ${j.ini} às ${j.fim}, ${mMod}.`+(antes&&antes.janela!==mSel?' A janela que a equipe tinha nesta semana fica livre.':'');
     $('#mOk').disabled=mBusy; $('#mOk').textContent=mBusy?'salvando...':'confirmar';
   } else c.hidden=true;
 }
@@ -679,11 +692,10 @@ async function mEnviar(body){
   }catch(e){mAviso('Não consegui salvar. Confira a internet e tente de novo.');}
   mBusy=false; renderMentoria();
 }
-function mIcs(r){const j=mJanela(r.janela), eq=mEquipe(r.equipe), [hi,mi]=j.ini.split(':').map(Number), [hf,mf]=j.fim.split(':').map(Number);
-  const st=new Date().toISOString().replace(/[-:]/g,'').split('.')[0]+'Z';
-  const ev=MENT_DIAS[j.dia].datas.map((x,i)=>{const {y,m,d}=partes(x); const u=(hh,mm)=>new Date(Date.UTC(y,m-1,d,hh+3,mm,0)).toISOString().replace(/[-:]/g,'').split('.')[0]+'Z';
-    return ['BEGIN:VEVENT','UID:artesano-ia-mentoria-'+eq.id+'-'+(i+1)+'@protaia.com.br','DTSTAMP:'+st,'DTSTART:'+u(hi,mi),'DTEND:'+u(hf,mf),'SUMMARY:Artesano · IA · mentoria do hackathon ('+eq.nome+')','LOCATION:'+(r.modalidade==='online'?MENT_MEET:'Escritório da Artesano'),'URL:'+MENT_MEET,'DESCRIPTION:'+r.modalidade+'. Meet: '+MENT_MEET,'BEGIN:VALARM','TRIGGER:-PT15M','ACTION:DISPLAY','DESCRIPTION:Mentoria em 15 minutos','END:VALARM','END:VEVENT'].join('\r\n');});
-  const txt=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//prota.ia//Artesano IA//PT-BR','CALSCALE:GREGORIAN','METHOD:PUBLISH',...ev,'END:VCALENDAR'].join('\r\n');
+function mIcs(r){ if(!r) return; const j=mJanela(r.janela), eq=mEquipe(r.equipe), [hi,mi]=j.ini.split(':').map(Number), [hf,mf]=j.fim.split(':').map(Number);
+  const {y,m,d}=partes(j.data), u=(hh,mm)=>new Date(Date.UTC(y,m-1,d,hh+3,mm,0)).toISOString().replace(/[-:]/g,'').split('.')[0]+'Z';
+  const ev=['BEGIN:VEVENT','UID:artesano-ia-mentoria-'+eq.id+'-'+r.janela+'@protaia.com.br','DTSTAMP:'+new Date().toISOString().replace(/[-:]/g,'').split('.')[0]+'Z','DTSTART:'+u(hi,mi),'DTEND:'+u(hf,mf),'SUMMARY:Artesano · IA · mentoria do hackathon ('+eq.nome+')','LOCATION:'+(r.modalidade==='online'?MENT_MEET:'Escritório da Artesano'),'URL:'+MENT_MEET,'DESCRIPTION:'+r.modalidade+'. Meet: '+MENT_MEET,'BEGIN:VALARM','TRIGGER:-PT15M','ACTION:DISPLAY','DESCRIPTION:Mentoria em 15 minutos','END:VALARM','END:VEVENT'].join('\r\n');
+  const txt=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//prota.ia//Artesano IA//PT-BR','CALSCALE:GREGORIAN','METHOD:PUBLISH',ev,'END:VCALENDAR'].join('\r\n');
   const url=URL.createObjectURL(new Blob([txt],{type:'text/calendar;charset=utf-8'})); const a=document.createElement('a'); a.href=url; a.download='artesano-ia-mentoria.ics'; document.body.appendChild(a); a.click(); a.remove(); setTimeout(()=>URL.revokeObjectURL(url),2000); toast('evento baixado');}
 
 /* ===== UI ===== */
