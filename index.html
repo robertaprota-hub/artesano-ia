@@ -477,6 +477,8 @@ const MENT_DIAS = [
   { data:'2026-10-26', nome:'Segunda', semana:2, grade:'cedo' },
   { data:'2026-10-27', nome:'Terça',   semana:2, grade:'cedo' }
 ];
+/* Semanas que aparecem no app. A semana 2 (26 e 27/10) fica fechada até a Roberta anunciar. */
+const MENT_SEMANAS_ABERTAS = [1];
 
 const AULAS = [
   { num:'01', titulo:'Fundamentos e prompts',           sub:'camadas da IA, ciclo 4D e prompt em cinco passos', obs:{ 'bairro-artesano':'gravação da turma das 15h30' }, gravacao:{ 'bairro-artesano':'https://drive.google.com/file/d/1F5UpKPJe7M1erMY4gWXMhBJNUBDfXXfZ/view', 'praia-do-paiva':'https://drive.google.com/file/d/1TgD8MuzRevHAAA22NluUDnJmvp7dDtF9/view', 'londrina':'https://drive.google.com/file/d/1WEJcGi6XdLnXtzyayThBBHh3bIMB7MAG/view', 'sjc':'https://drive.google.com/file/d/1cGgSkf42ZTkLgZBARuqEFQt_SONC_jOV/view' }, pdf:{ 'bairro-artesano':'https://drive.google.com/file/d/1JslSaAxhZT7zo66bvLyM1vdumsekWSQc/view', 'londrina':'https://drive.google.com/file/d/194BF_Hf1dNiw_dTJvxSNhcm6oVfCXr_N/view', 'praia-do-paiva':'https://drive.google.com/file/d/1m8ZjrDNHeViy7dQI0tkhBBf56-RkghF7/view', 'sjc':'https://drive.google.com/file/d/1JcRqBRTS-tHPdSfIbd4g-ZDdEo4a10EZ/view' } },
@@ -591,7 +593,7 @@ const mEsc=t=>String(t??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&
 const mEquipe=id=>MENT_EQUIPES.find(e=>e.id===id);
 const mDM=iso=>{const p=partes(iso);return String(p.d).padStart(2,'0')+'/'+String(p.m).padStart(2,'0');};
 const mJanela=id=>{for(const D of MENT_DIAS){const g=MENT_GRADES[D.grade].find(x=>x[0]!=='p'&&D.data+'-'+x[0]===id);if(g)return {...D,ini:g[1],fim:g[2]};}return null;};
-const mSemanas=()=>[...new Set(MENT_DIAS.map(d=>d.semana))];
+const mSemanas=()=>[...new Set(MENT_DIAS.map(d=>d.semana))].filter(s=>MENT_SEMANAS_ABERTAS.includes(s));
 const mDiasDa=s=>MENT_DIAS.filter(d=>d.semana===s);
 const mDaSemana=(eqId,s)=>mRes.find(r=>r.equipe===eqId&&(mJanela(r.janela)||{}).semana===s);
 function mAviso(t){const a=$('#mAviso'); a.textContent=t||''; a.hidden=!t;}
