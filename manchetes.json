@@ -1,48 +1,48 @@
 {
- "atualizado": "20/10 20h08",
+ "atualizado": "21/10 10h56",
  "janela": 1,
  "resumo": {
-  "data": "20/10/2026",
-  "hora": "20h08",
+  "data": "21/10/2026",
+  "hora": "10h56",
   "periodo": "ontem",
   "itens": [
    {
-    "titulo": "CBIC reúne lideranças para debater cenários e oportunidades do mercado imobiliário",
-    "texto": "As perspectivas econômicas, o financiamento habitacional e os impactos da Reforma Tributária estarão em pauta na Rodada de Negócios do Mercado Imobiliário da Câmara Brasileira da Indústria da Construção (CBIC), nesta quinta-feira (22), em São Paulo.",
+    "titulo": "Sinduscon-RS debate cenário político e econômico do Brasil",
+    "texto": "O cenário político e econômico brasileiro e as perspectivas para 2026 pautaram a reunião almoço do Sinduscon-RS, realizada nesta segunda-feira (19), na sede da entidade, em Porto Alegre.",
     "fontes": [
      {
       "nome": "CBIC",
-      "url": "https://cbic.org.br/cbic-reune-liderancas-para-debater-cenarios-e-oportunidades-do-mercado-imobiliario/"
+      "url": "https://cbic.org.br/sinduscon-rs-debate-cenario-politico-e-economico-do-brasil/"
      }
     ]
    },
    {
-    "titulo": "CBIC alerta empresas sobre impactos do fim da escala 6&#215;1 nos contratos de obras públicas",
-    "texto": "A aprovação da Proposta de Emenda à Constituição (PEC) 221/2019 pelo Senado Federal exige atenção das empresas da construção e de infraestrutura que atuam em obras públicas.",
+    "titulo": "CBIC debate cenário econômico e perspectivas para do setor para 2027",
+    "texto": "Inflação, juros, crédito e contas públicas estarão no centro do debate sobre as perspectivas da economia brasileira e os impactos para a construção civil em 2027.",
     "fontes": [
      {
       "nome": "CBIC",
-      "url": "https://cbic.org.br/cbic-alerta-empresas-sobre-impactos-do-fim-da-escala-6x1-nos-contratos-de-obras-publicas/"
+      "url": "https://cbic.org.br/cbic-debate-cenario-economico-e-perspectivas-para-do-setor-para-2027/"
      }
     ]
    },
    {
-    "titulo": "CBIC apresenta à FIIC o Prêmio CBIC de Inovação e Sustentabilidade",
-    "texto": "Nesta segunda-feira (19), a Comissão de Materiais, Tecnologia, Qualidade e Produtividade (COMAT) da Câmara Brasileira da Indústria da Construção (CBIC) participou da reunião de outubro da Comissão de…",
-    "fontes": [
-     {
-      "nome": "CBIC",
-      "url": "https://cbic.org.br/cbic-apresenta-a-fiic-o-premio-de-inovacao-e-sustentabilidade/"
-     }
-    ]
-   },
-   {
-    "titulo": "A imobiliária que nasceu de um \"não\" e transformou a recusa em estratégia para elevar o ticket médio",
-    "texto": "Após pedido de aumento salarial negado dar origem à Delta Imóveis em 1988, empresa de Uberlândia adota critérios de seleção, taxas diferenciadas e recusa a leilões de preço para focar na rentabilidade da carteira de locação.",
+    "titulo": "REMAX alcança R$ 10,9 bilhões em vendas e cresce 11,4% mesmo com juros elevados",
+    "texto": "Comissões avançam para R$ 502 milhões, enquanto o faturamento médio das imobiliárias da rede cresce 15% nos primeiros nove meses de 2026 ; rede projeta superar R$ 15,5 bilhões em vendas até o fim de…",
     "fontes": [
      {
       "nome": "Imobi Report",
-      "url": "https://imobireport.com.br/gestao/a-imobiliaria-que-nasceu-de-um-nao-e-transformou-a-recusa-em-estrategia-para-elevar-o-ticket-medio/"
+      "url": "https://imobireport.com.br/vendas/remax-alcanca-r-109-bilhoes-em-vendas-e-cresce-114-mesmo-com-juros-elevados/"
+     }
+    ]
+   },
+   {
+    "titulo": "Encontro CBIC de Incorporadores e Construtores Centro-Oeste reúne especialistas em Goiânia na próxima semana",
+    "texto": "O futuro do FGTS, as perspectivas para o mercado imobiliário e as oportunidades de investimentos em infraestrutura estarão no centro dos debates do Encontro CBIC de Incorporadores e Construtores Centro-Oeste, nos dias 27 e 28 de outubro, em Goiânia (GO).",
+    "fontes": [
+     {
+      "nome": "CBIC",
+      "url": "https://cbic.org.br/109379-2/"
      }
     ]
    }
@@ -50,16 +50,34 @@
  },
  "itens": [
   {
-   "fonte": "SindusCon-SP",
-   "titulo": "SindusCon-SP discute consequências da redução da 6&#215;1",
-   "url": "https://sindusconsp.com.br/sinduscon-sp-discute-consequencias-da-reducao-da-6x1/",
-   "data": "19/10"
+   "fonte": "Portal VGV",
+   "titulo": "Agro e mercado imobiliário: como o desempenho do campo chega às cidades",
+   "url": "https://www.portalvgv.com.br/agro-e-mercado-imobiliario/",
+   "data": "20/10"
+  },
+  {
+   "fonte": "Imobi Report",
+   "titulo": "85% das Imobiliárias brasileiras atuam simultaneamente em vendas e locação",
+   "url": "https://imobireport.com.br/newsletter-do-imobi/85-das-imobiliarias-brasileiras-atuam-simultaneamente-em-vendas-e-locacao/",
+   "data": "20/10"
   },
   {
    "fonte": "Secovi-SP",
-   "titulo": "Benchmark imobiliário: Diagnóstico das Imobiliárias Brasileiras &#124; Secovi-SP &#038; Universal Software",
-   "url": "https://secovi.com.br/benchmark-imobiliario-diagnostico-das-imobiliarias-brasileiras/",
-   "data": "19/10"
+   "titulo": "Secovi-SP lança consórcios de inovação para robotização de canteiros, automação de notas fiscais e uso corporativo de IA",
+   "url": "https://secovi.com.br/secovi-sp-lanca-consorcios-de-inovacao-para-robotizacao-de-canteiros-automacao-de-notas-fiscais-e-uso-corporativo-de-ia/",
+   "data": "20/10"
+  },
+  {
+   "fonte": "SindusCon-SP",
+   "titulo": "SindusCon-SP sugere disponibilizar laudos pré-vistoria",
+   "url": "https://sindusconsp.com.br/sinduscon-sp-sugere-disponibilizar-laudos-pre-vistoria/",
+   "data": "20/10"
+  },
+  {
+   "fonte": "Secovi-SP",
+   "titulo": "Redução da jornada e fim da escala 6&#215;1",
+   "url": "https://secovi.com.br/reducao-da-jornada-e-fim-da-escala-6x1/",
+   "data": "20/10"
   }
  ]
 }
