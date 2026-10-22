@@ -441,12 +441,12 @@ const MENT_EQUIPES = [
   { id:'ba3', turma:'bairro-artesano', nome:'Maira e Larissa', projeto:'Orçamento de paisagismo' },
   { id:'ba4', turma:'bairro-artesano', nome:'Laís e Carol', projeto:'Gestão ambiental' },
   { id:'ba5', turma:'bairro-artesano', nome:'Beatriz e Isabel', projeto:'PPA · Painel Parceiros Artesano' },
-  { id:'ba6', turma:'bairro-artesano', nome:'Clara e Micaelle', projeto:'Fluxo de pagamento de notas' },
+  { id:'ba6', turma:'bairro-artesano', nome:'Clara, Micaelle e Matheus', projeto:'Fluxo de pagamento de notas' },
   { id:'lo1', turma:'londrina', nome:'Renata, Cid e Mayara', projeto:'Ferramenta de parametrização' },
   { id:'lo2', turma:'londrina', nome:'Fernanda RB, Arthur e Zé', projeto:'Gestão de Obras Artesano' },
   { id:'lo3', turma:'londrina', nome:'Gustavo e André', projeto:'Parametrização da curva de obras' },
-  { id:'lo4', turma:'londrina', nome:'Mari, Fernanda e Schimming', projeto:'Ferramenta de gestão físico-financeira' },
-  { id:'lo5', turma:'londrina', nome:'Schimming, Vitor e Denise', projeto:'Processo de contratação' },
+  { id:'lo4', turma:'londrina', nome:'Mari e Fernanda', projeto:'Ferramenta de gestão físico-financeira' },
+  { id:'lo5', turma:'londrina', nome:'Schimming, Vitor e Denise', projeto:'Sistema de inteligência em compras' },
   { id:'pp1', turma:'praia-do-paiva', nome:'Vini e Leandro', projeto:'Gestão de inadimplência' },
   { id:'pp2', turma:'praia-do-paiva', nome:'Raquel e Heloísa', projeto:'Gestão de RH e facilities' },
   { id:'pp3', turma:'praia-do-paiva', nome:'Vitor e Matheus', projeto:'Controle de gastos de projetos (ex-obra)' },
@@ -491,8 +491,8 @@ const MENT_DIAS = [
   { data:'2026-10-26', nome:'Segunda', semana:2, grade:'cedo' },
   { data:'2026-10-27', nome:'Terça',   semana:2, grade:'cedo' }
 ];
-/* Semanas que aparecem no app. A semana 2 (26 e 27/10) fica fechada até a Roberta anunciar. */
-const MENT_SEMANAS_ABERTAS = [1];
+/* Semanas que aparecem no app. Semana 2 (26 e 27/10) aberta em 22/10; a semana 1 já passou. */
+const MENT_SEMANAS_ABERTAS = [2];
 
 const AULAS = [
   { num:'01', titulo:'Fundamentos e prompts',           sub:'camadas da IA, ciclo 4D e prompt em cinco passos', obs:{ 'bairro-artesano':'gravação da turma das 15h30' }, gravacao:{ 'bairro-artesano':'https://drive.google.com/file/d/1F5UpKPJe7M1erMY4gWXMhBJNUBDfXXfZ/view', 'praia-do-paiva':'https://drive.google.com/file/d/1TgD8MuzRevHAAA22NluUDnJmvp7dDtF9/view', 'londrina':'https://drive.google.com/file/d/1WEJcGi6XdLnXtzyayThBBHh3bIMB7MAG/view', 'sjc':'https://drive.google.com/file/d/1cGgSkf42ZTkLgZBARuqEFQt_SONC_jOV/view' }, pdf:{ 'bairro-artesano':'https://drive.google.com/file/d/1JslSaAxhZT7zo66bvLyM1vdumsekWSQc/view', 'londrina':'https://drive.google.com/file/d/194BF_Hf1dNiw_dTJvxSNhcm6oVfCXr_N/view', 'praia-do-paiva':'https://drive.google.com/file/d/1m8ZjrDNHeViy7dQI0tkhBBf56-RkghF7/view', 'sjc':'https://drive.google.com/file/d/1JcRqBRTS-tHPdSfIbd4g-ZDdEo4a10EZ/view' } },
@@ -565,7 +565,7 @@ function trilhaMarcos(){
   return [...aulas,
     {fase:2, num:'M1', titulo:'Mentoria 1 · lançamento do hackathon', data:ment1, fim:ment1, sub:'edital, critérios e escolha dos projetos', links:[['apresentação do lançamento',HACK_MATERIAL.deck],['gravação do lançamento',HACK_MATERIAL.gravacao],['pasta do hackathon',HACK_MATERIAL.pasta]]},
     {fase:2, num:'M2', titulo:'Mentoria 2', data:'2026-10-20', fim:'2026-10-22', quando:'terça 20/10 ou quinta 22/10', sub:'20 min por equipe, presencial ou online'},
-    {fase:2, num:'M3', titulo:'Mentoria 3', fim:'2026-10-27', quando:'em breve'},
+    {fase:2, num:'M3', titulo:'Mentoria 3', data:'2026-10-26', fim:'2026-10-27', quando:'segunda 26/10 ou terça 27/10', sub:'20 min por equipe, presencial ou online'},
     {fase:2, num:'M4', titulo:'Mentoria 4', fim:'2026-11-05', quando:'em breve'},
     {fase:2, num:'fim', titulo:'Hackathon', data:HACKATHON.data, fim:HACKATHON.data, quando:'quinta, 12 de novembro · '+HACKATHON.hora, sub:'linha de chegada · apresentação dos projetos no escritório da Artesano', chegada:true}];
 }
