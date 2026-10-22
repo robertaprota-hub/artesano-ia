@@ -333,7 +333,7 @@
       <div class="card">
         <div class="kicker">hackathon · final 12/11</div>
         <div class="title">Pitch da final</div>
-        <p>O modelo que cada equipe preenche, em PowerPoint, com a fala de cada bloco nas anotações. E o guia com tempo, dicas, critérios e checklist. Envio até 10/11.</p>
+        <p>O modelo que cada equipe preenche, em PowerPoint, com a fala de cada bloco nas anotações. E o guia com tempo, dicas, critérios e checklist. Entrega até 06/11, sexta.</p>
         <div class="row" style="gap:12px;flex-wrap:wrap"><a class="btn primary" href="https://drive.google.com/file/d/1s2f_Tk3YkEi0s9Fq0QbflKrSU9By_H91/view" target="_blank" rel="noopener">Baixar o modelo</a><a class="btn ghost" href="https://drive.google.com/file/d/1rCVRmsC6HDnBVOLWiKFmvDZb6c8bQDId/view" target="_blank" rel="noopener">Como montar o pitch</a></div>
       </div>
       <div class="section-label"><span class="kicker">por aula</span><small>gravação, apresentação e materiais</small></div>
@@ -578,14 +578,15 @@ function trilhaMarcos(){
   const aulas=AULAS.map(a=>{const g=a.gravacao[turma.slug], gp=Array.isArray(g)?g:(g?[g]:[]); return {fase:1, num:a.num, titulo:'Aula '+a.num+' · '+a.titulo, data:dataAula(a), fim:dataAula(a), sub:a.sub, obs:(a.obs&&a.obs[turma.slug])||'', grav:gp};});
   return [...aulas,
     {fase:2, num:'M1', titulo:'Mentoria 1 · lançamento do hackathon', data:ment1, fim:ment1, sub:'edital, critérios e escolha dos projetos', links:[['apresentação do lançamento',HACK_MATERIAL.deck],['gravação do lançamento',HACK_MATERIAL.gravacao],['pasta do hackathon',HACK_MATERIAL.pasta]]},
-    {fase:2, num:'M2', titulo:'Mentoria 2', data:'2026-10-20', fim:'2026-10-22', quando:'terça 20/10 ou quinta 22/10', sub:'20 min por equipe, presencial ou online'},
+    {fase:2, num:'M2', titulo:'Mentoria 2', data:'2026-10-20', fim:'2026-10-22', feito:true, quando:'terça 20/10 ou quinta 22/10', sub:'20 min por equipe, presencial ou online'},
     {fase:2, num:'M3', titulo:'Mentoria 3', data:'2026-10-26', fim:'2026-10-27', quando:'segunda 26/10 ou terça 27/10', sub:'20 min por equipe, presencial ou online'},
     {fase:2, num:'M4', titulo:'Mentoria 4', fim:'2026-11-05', quando:'em breve'},
+    {fase:2, num:'E', titulo:'Entrega da apresentação do pitch', data:'2026-11-06', fim:'2026-11-06', quando:'sexta, 06 de novembro', sub:'apresentação no modelo oficial, enviada pela equipe', links:[['modelo do pitch',HACK_MATERIAL.modelo],['como montar o pitch',HACK_MATERIAL.guia]]},
     {fase:2, num:'fim', titulo:'Hackathon', data:HACKATHON.data, fim:HACKATHON.data, quando:'quinta, 12 de novembro · '+HACKATHON.hora, sub:'linha de chegada · apresentação dos projetos no escritório da Artesano', chegada:true, links:[['modelo do pitch',HACK_MATERIAL.modelo],['como montar o pitch',HACK_MATERIAL.guia]]}];
 }
 function renderAgenda(){
   const box=$('#trilhaList'); box.innerHTML='';
-  const ms=trilhaMarcos(); const feito=m=>m.fim<hojeISO; const atual=ms.find(m=>!feito(m));
+  const ms=trilhaMarcos(); const feito=m=>m.feito||m.fim<hojeISO; const atual=ms.find(m=>!feito(m));
   const nFeitos=ms.filter(feito).length;
   $('#trProgLabel').textContent=nFeitos+'/'+ms.length; $('#trProgBar').style.width=(100*nFeitos/ms.length)+'%';
   const fases={1:['Fase 1','Treinamento'],2:['Fase 2','Hackathon']};
