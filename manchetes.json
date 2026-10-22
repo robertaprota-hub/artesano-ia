@@ -1,48 +1,48 @@
 {
- "atualizado": "21/10 20h12",
+ "atualizado": "22/10 10h54",
  "janela": 1,
  "resumo": {
-  "data": "21/10/2026",
-  "hora": "20h12",
+  "data": "22/10/2026",
+  "hora": "10h54",
   "periodo": "ontem",
   "itens": [
    {
-    "titulo": "Sinduscon-RS debate cenário político e econômico do Brasil",
-    "texto": "O cenário político e econômico brasileiro e as perspectivas para 2026 pautaram a reunião almoço do Sinduscon-RS, realizada nesta segunda-feira (19), na sede da entidade, em Porto Alegre.",
+    "titulo": "\"Brasil não está na beira do precipício\", avalia Joaquim Levy sobre situação fiscal do Brasil em evento da CBIC",
+    "texto": "Para debater o cenário econômico e fiscal brasileiro e como ele impacta o setor da construção, a Câmara Brasileira da Indústria da Construção (CBIC) promoveu nesta quarta-feira (21), um encontro com especialistas no seu canal no YouTube.",
     "fontes": [
      {
       "nome": "CBIC",
-      "url": "https://cbic.org.br/sinduscon-rs-debate-cenario-politico-e-economico-do-brasil/"
+      "url": "https://cbic.org.br/brasil-nao-esta-na-beira-do-precipicio-avalia-joaquim-levy-sobre-situacao-fiscal-do-brasil-em-evento-da-cbic/"
      }
     ]
    },
    {
-    "titulo": "CBIC debate cenário econômico e perspectivas para do setor para 2027",
-    "texto": "Inflação, juros, crédito e contas públicas estarão no centro do debate sobre as perspectivas da economia brasileira e os impactos para a construção civil em 2027.",
+    "titulo": "CNI: Brasil pode conciliar conservação ambiental e progresso econômico",
+    "texto": "Detentor de uma das maiores biodiversidades do mundo, o Brasil tem potencial para liderar, pelo exemplo, a busca por soluções equilibradas que conciliem a conservação ambiental e o progresso econômico.",
     "fontes": [
      {
       "nome": "CBIC",
-      "url": "https://cbic.org.br/cbic-debate-cenario-economico-e-perspectivas-para-do-setor-para-2027/"
+      "url": "https://cbic.org.br/cni-brasil-pode-conciliar-conservacao-ambiental-e-progresso-economico/"
      }
     ]
    },
    {
-    "titulo": "REMAX alcança R$ 10,9 bilhões em vendas e cresce 11,4% mesmo com juros elevados",
-    "texto": "Comissões avançam para R$ 502 milhões, enquanto o faturamento médio das imobiliárias da rede cresce 15% nos primeiros nove meses de 2026 ; rede projeta superar R$ 15,5 bilhões em vendas até o fim de…",
+    "titulo": "CBIC debate soluções para ampliar a segurança hídrica e fortalecer cidades resilientes",
+    "texto": "A adoção de soluções baseadas na natureza (SbN), o reúso de água e a dessalinização estiveram no centro das discussões da 14ª Reunião Ordinária do Grupo de Trabalho (GT) de Segurança Hídrica e…",
     "fontes": [
      {
-      "nome": "Imobi Report",
-      "url": "https://imobireport.com.br/vendas/remax-alcanca-r-109-bilhoes-em-vendas-e-cresce-114-mesmo-com-juros-elevados/"
+      "nome": "CBIC",
+      "url": "https://cbic.org.br/cbic-debate-solucoes-para-ampliar-a-seguranca-hidrica-e-fortalecer-cidades-resilientes/"
      }
     ]
    },
    {
-    "titulo": "Encontro CBIC de Incorporadores e Construtores Centro-Oeste reúne especialistas em Goiânia na próxima semana",
-    "texto": "O futuro do FGTS, as perspectivas para o mercado imobiliário e as oportunidades de investimentos em infraestrutura estarão no centro dos debates do Encontro CBIC de Incorporadores e Construtores Centro-Oeste, nos dias 27 e 28 de outubro, em Goiânia (GO).",
+    "titulo": "Aluguel comercial sobe 11,18% em 12 meses: o que incorporadoras precisam avaliar",
+    "texto": "Aluguel comercial sobe 11,18% em 12 meses.",
     "fontes": [
      {
-      "nome": "CBIC",
-      "url": "https://cbic.org.br/109379-2/"
+      "nome": "Portal VGV",
+      "url": "https://www.portalvgv.com.br/fipezap-comercial-setembro-2026/"
      }
     ]
    }
@@ -50,34 +50,22 @@
  },
  "itens": [
   {
-   "fonte": "Portal VGV",
-   "titulo": "Agro e mercado imobiliário: como o desempenho do campo chega às cidades",
-   "url": "https://www.portalvgv.com.br/agro-e-mercado-imobiliario/",
-   "data": "20/10"
-  },
-  {
-   "fonte": "Imobi Report",
-   "titulo": "85% das Imobiliárias brasileiras atuam simultaneamente em vendas e locação",
-   "url": "https://imobireport.com.br/newsletter-do-imobi/85-das-imobiliarias-brasileiras-atuam-simultaneamente-em-vendas-e-locacao/",
-   "data": "20/10"
-  },
-  {
-   "fonte": "Secovi-SP",
-   "titulo": "Secovi-SP lança consórcios de inovação para robotização de canteiros, automação de notas fiscais e uso corporativo de IA",
-   "url": "https://secovi.com.br/secovi-sp-lanca-consorcios-de-inovacao-para-robotizacao-de-canteiros-automacao-de-notas-fiscais-e-uso-corporativo-de-ia/",
-   "data": "20/10"
+   "fonte": "SindusCon-SP",
+   "titulo": "Expectativas melhoram no mercado financeiro",
+   "url": "https://sindusconsp.com.br/expectativas-melhoram-no-mercado-financeiro/",
+   "data": "21/10"
   },
   {
    "fonte": "SindusCon-SP",
-   "titulo": "SindusCon-SP sugere disponibilizar laudos pré-vistoria",
-   "url": "https://sindusconsp.com.br/sinduscon-sp-sugere-disponibilizar-laudos-pre-vistoria/",
-   "data": "20/10"
+   "titulo": "COI discute maior equilíbrio nos contratos",
+   "url": "https://sindusconsp.com.br/coi-discute-maior-equilibrio-nos-contratos/",
+   "data": "21/10"
   },
   {
    "fonte": "Secovi-SP",
-   "titulo": "Redução da jornada e fim da escala 6&#215;1",
-   "url": "https://secovi.com.br/reducao-da-jornada-e-fim-da-escala-6x1/",
-   "data": "20/10"
+   "titulo": "Regra única desconsidera realidades diferentes",
+   "url": "https://secovi.com.br/regra-unica-desconsidera-realidades-diferentes/",
+   "data": "21/10"
   }
  ]
 }
