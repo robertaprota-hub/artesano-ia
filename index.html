@@ -448,9 +448,7 @@ const MENT_EQUIPES = [
   { id:'lo4', turma:'londrina', nome:'Mari e Fernanda', projeto:'Ferramenta de gestão físico-financeira' },
   { id:'lo5', turma:'londrina', nome:'Schimming, Vitor e Denise', projeto:'Sistema de inteligência em compras' },
   { id:'pp1', turma:'praia-do-paiva', nome:'Vini e Leandro', projeto:'Gestão de inadimplência' },
-  { id:'pp2', turma:'praia-do-paiva', nome:'Raquel e Heloísa', projeto:'Gestão de RH e facilities' },
-  { id:'pp3', turma:'praia-do-paiva', nome:'Vitor e Matheus', projeto:'Controle de gastos de projetos (ex-obra)' },
-  { id:'pp4', turma:'praia-do-paiva', nome:'Guilherme e Thaís', projeto:'Projeto a definir' },
+  { id:'pp4', turma:'praia-do-paiva', nome:'Guilherme e Thaís', projeto:'Gestão e benchmark contábil e financeiro' },
   { id:'sj1', turma:'sjc', nome:'Sassi, Ana e Vini', projeto:'Publicidade Artesano' },
   { id:'sj2', turma:'sjc', nome:'Flavio, Alice e Gabi', projeto:'Base de conhecimento jurídico' },
   { id:'sj3', turma:'sjc', nome:'Tiago, Fernanda e Leo', projeto:'Gestão de TI e Comercial' }
@@ -458,6 +456,17 @@ const MENT_EQUIPES = [
 /* 20 min por equipe. Cada equipe marca uma janela por semana (não é horário fixo).
    Grade "cedo" começa 9:30; grade "rodizio" começa 10:30 (quinta é o rodízio da Roberta). Pausas ('p') e blocos da turma ('b') só para exibir. */
 const MENT_GRADES = {
+  /* segunda 26/10: 9 equipes a partir das 10h */
+  seg26: [
+    ['1000','10:00','10:20'],['1030','10:30','10:50'],['1100','11:00','11:20'],['p','11:30','11:45','intervalo'],
+    ['1145','11:45','12:05'],['1215','12:15','12:35'],['p','12:45','14:00','almoço'],
+    ['1400','14:00','14:20'],['1430','14:30','14:50'],['p','15:00','15:15','intervalo'],
+    ['1515','15:15','15:35'],['1545','15:45','16:05'] ],
+  /* terça 27/10: 7 equipes, termina antes das 16h */
+  ter27: [
+    ['0930','9:30','9:50'],['1000','10:00','10:20'],['1030','10:30','10:50'],['p','11:00','11:15','intervalo'],
+    ['1115','11:15','11:35'],['1145','11:45','12:05'],['p','12:30','14:00','almoço'],
+    ['1400','14:00','14:20'],['1430','14:30','14:50'] ],
   /* terça 20/10: blocos da turma inteira (estrutura do pitch) no horário antigo da mentoria */
   ter20: [
     ['0930','9:30','9:50'],['1000','10:00','10:20'],['1030','10:30','10:50'],['p','11:00','11:15','intervalo'],
@@ -488,8 +497,8 @@ const MENT_GRADES = {
 const MENT_DIAS = [
   { data:'2026-10-20', nome:'Terça',   semana:1, grade:'ter20' },
   { data:'2026-10-22', nome:'Quinta',  semana:1, grade:'qui22' },
-  { data:'2026-10-26', nome:'Segunda', semana:2, grade:'cedo' },
-  { data:'2026-10-27', nome:'Terça',   semana:2, grade:'cedo' }
+  { data:'2026-10-26', nome:'Segunda', semana:2, grade:'seg26' },
+  { data:'2026-10-27', nome:'Terça',   semana:2, grade:'ter27' }
 ];
 /* Semanas que aparecem no app. Semana 2 (26 e 27/10) aberta em 22/10; a semana 1 já passou. */
 const MENT_SEMANAS_ABERTAS = [2];
