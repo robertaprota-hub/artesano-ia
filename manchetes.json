@@ -1,21 +1,11 @@
 {
- "atualizado": "22/10 12h51",
+ "atualizado": "22/10 14h57",
  "janela": 1,
  "resumo": {
   "data": "22/10/2026",
-  "hora": "12h51",
+  "hora": "14h57",
   "periodo": "ontem",
   "itens": [
-   {
-    "titulo": "\"Brasil não está na beira do precipício\", avalia Joaquim Levy sobre situação fiscal do Brasil em evento da CBIC",
-    "texto": "Para debater o cenário econômico e fiscal brasileiro e como ele impacta o setor da construção, a Câmara Brasileira da Indústria da Construção (CBIC) promoveu nesta quarta-feira (21), um encontro com especialistas no seu canal no YouTube.",
-    "fontes": [
-     {
-      "nome": "CBIC",
-      "url": "https://cbic.org.br/brasil-nao-esta-na-beira-do-precipicio-avalia-joaquim-levy-sobre-situacao-fiscal-do-brasil-em-evento-da-cbic/"
-     }
-    ]
-   },
    {
     "titulo": "CNI: Brasil pode conciliar conservação ambiental e progresso econômico",
     "texto": "Detentor de uma das maiores biodiversidades do mundo, o Brasil tem potencial para liderar, pelo exemplo, a busca por soluções equilibradas que conciliem a conservação ambiental e o progresso econômico.",
@@ -43,6 +33,16 @@
      {
       "nome": "Portal VGV",
       "url": "https://www.portalvgv.com.br/fipezap-comercial-setembro-2026/"
+     }
+    ]
+   },
+   {
+    "titulo": "CBIC participa de Mesa Nacional de Diálogo para a Promoção do Trabalho Decente na Indústria da Construção",
+    "texto": "A Câmara Brasileira da Indústria da Construção (CBIC) vai integrar a Mesa Nacional de Diálogo para a Promoção do Trabalho Decente na Indústria da Construção, instituída pelo Ministério do Trabalho e Emprego (MTE).",
+    "fontes": [
+     {
+      "nome": "CBIC",
+      "url": "https://cbic.org.br/cbic-participa-de-mesa-nacional-de-dialogo-para-a-promocao-do-trabalho-decente-na-industria-da-construcao/"
      }
     ]
    }
