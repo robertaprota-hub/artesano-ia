@@ -332,9 +332,9 @@
       </div>
       <div class="card">
         <div class="kicker">hackathon · final 12/11</div>
-        <div class="title">Modelo do pitch</div>
-        <p>A apresentação que cada equipe preenche para a final, em PowerPoint: sete blocos, com a fala de cada um nas anotações. Envio até 10/11.</p>
-        <div class="row" style="gap:12px;flex-wrap:wrap"><a class="btn primary" href="https://drive.google.com/file/d/1s2f_Tk3YkEi0s9Fq0QbflKrSU9By_H91/view" target="_blank" rel="noopener">Baixar o modelo</a></div>
+        <div class="title">Pitch da final</div>
+        <p>O modelo que cada equipe preenche, em PowerPoint, com a fala de cada bloco nas anotações. E o guia com tempo, dicas, critérios e checklist. Envio até 10/11.</p>
+        <div class="row" style="gap:12px;flex-wrap:wrap"><a class="btn primary" href="https://drive.google.com/file/d/1s2f_Tk3YkEi0s9Fq0QbflKrSU9By_H91/view" target="_blank" rel="noopener">Baixar o modelo</a><a class="btn ghost" href="https://drive.google.com/file/d/1rCVRmsC6HDnBVOLWiKFmvDZb6c8bQDId/view" target="_blank" rel="noopener">Como montar o pitch</a></div>
       </div>
       <div class="section-label"><span class="kicker">por aula</span><small>gravação, apresentação e materiais</small></div>
       <div id="pdfList" style="display:flex;flex-direction:column;gap:12px"></div>
@@ -435,7 +435,7 @@ const TER = ['2026-09-15','2026-09-22','2026-09-29','2026-10-06'], QUI = ['2026-
 const MENT_TER = ['2026-10-13','2026-10-20','2026-10-27','2026-11-03'], MENT_QUI = ['2026-10-15','2026-10-22','2026-10-29','2026-11-05'];
 /* gravações das mentorias, por turma */
 const MENT_GRAV = {};
-const HACK_MATERIAL = { pasta:'https://drive.google.com/drive/folders/1yoSfxJ2ljNshx2vf9ZK_j2f4oTBd3_aO', deck:'https://drive.google.com/file/d/1pvgVbqolxR41MEX3fjM-yqFeBw4rTLDH/view', gravacao:'https://drive.google.com/file/d/1UjJxiCuVXgAoPLdc6cK0OmS2R7TMaMvr/view', modelo:'https://drive.google.com/file/d/1s2f_Tk3YkEi0s9Fq0QbflKrSU9By_H91/view' };
+const HACK_MATERIAL = { pasta:'https://drive.google.com/drive/folders/1yoSfxJ2ljNshx2vf9ZK_j2f4oTBd3_aO', deck:'https://drive.google.com/file/d/1pvgVbqolxR41MEX3fjM-yqFeBw4rTLDH/view', gravacao:'https://drive.google.com/file/d/1UjJxiCuVXgAoPLdc6cK0OmS2R7TMaMvr/view', modelo:'https://drive.google.com/file/d/1s2f_Tk3YkEi0s9Fq0QbflKrSU9By_H91/view', guia:'https://drive.google.com/file/d/1rCVRmsC6HDnBVOLWiKFmvDZb6c8bQDId/view' };
 const HACKATHON = { data:'2026-11-12', hora:'9h30 às 18h00', h:9, fim:18, local:'Escritório da Artesano' };
 /* ===== mentorias presenciais/online (reservas na planilha da Roberta via Apps Script) ===== */
 const MENT_API = 'https://script.google.com/macros/s/AKfycbwFbpnZZlhOoy8xvkJwEwGfzwAu_kUiUmsjMlxTLVsKGzp59kG6WgRej43x8Q9rTpf1/exec'; /* URL do app da web do Apps Script (termina em /exec) */
@@ -581,7 +581,7 @@ function trilhaMarcos(){
     {fase:2, num:'M2', titulo:'Mentoria 2', data:'2026-10-20', fim:'2026-10-22', quando:'terça 20/10 ou quinta 22/10', sub:'20 min por equipe, presencial ou online'},
     {fase:2, num:'M3', titulo:'Mentoria 3', data:'2026-10-26', fim:'2026-10-27', quando:'segunda 26/10 ou terça 27/10', sub:'20 min por equipe, presencial ou online'},
     {fase:2, num:'M4', titulo:'Mentoria 4', fim:'2026-11-05', quando:'em breve'},
-    {fase:2, num:'fim', titulo:'Hackathon', data:HACKATHON.data, fim:HACKATHON.data, quando:'quinta, 12 de novembro · '+HACKATHON.hora, sub:'linha de chegada · apresentação dos projetos no escritório da Artesano', chegada:true, links:[['modelo do pitch',HACK_MATERIAL.modelo]]}];
+    {fase:2, num:'fim', titulo:'Hackathon', data:HACKATHON.data, fim:HACKATHON.data, quando:'quinta, 12 de novembro · '+HACKATHON.hora, sub:'linha de chegada · apresentação dos projetos no escritório da Artesano', chegada:true, links:[['modelo do pitch',HACK_MATERIAL.modelo],['como montar o pitch',HACK_MATERIAL.guia]]}];
 }
 function renderAgenda(){
   const box=$('#trilhaList'); box.innerHTML='';
