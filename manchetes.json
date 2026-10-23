@@ -1,9 +1,9 @@
 {
- "atualizado": "23/10 14h52",
+ "atualizado": "23/10 16h55",
  "janela": 1,
  "resumo": {
   "data": "23/10/2026",
-  "hora": "14h52",
+  "hora": "16h55",
   "periodo": "ontem",
   "itens": [
    {
@@ -27,16 +27,6 @@
     ]
    },
    {
-    "titulo": "Prefeitura de São Paulo dispõe sobre ISS",
-    "texto": "Decreto também aborda emissão de NFe-N A Prefeitura de São Paulo publicou o Decreto 65.628, de 19/10/2026 (DOU de 20/10/2026), para dispor, entre outras questões, sobre geração de crédito do ISS e a emissão de Nota Fiscal Eletrônica de Padrão Nacional.",
-    "fontes": [
-     {
-      "nome": "SindusCon-SP",
-      "url": "https://sindusconsp.com.br/prefeitura-de-sao-paulo-dispoe-sobre-iss/"
-     }
-    ]
-   },
-   {
     "titulo": "CBIC debate inflação, crédito imobiliário e os impactos para a construção em 2027",
     "texto": "Para debater o cenário econômico e seus impactos sobre o setor da construção, a Câmara Brasileira da Indústria da Construção (CBIC) promoveu, nesta quarta-feira (21), a live “Economia e construção: perspectivas para 2027”, com especialistas em crédito imobiliário e índices de preços.",
     "fontes": [
@@ -45,26 +35,24 @@
       "url": "https://cbic.org.br/cbic-debate-inflacao-credito-imobiliario-e-os-impactos-para-a-construcao-em-2027/"
      }
     ]
+   },
+   {
+    "titulo": "Campinas aprova nova regra de outorga onerosa, ponto central para a retomada de lançamentos no setor",
+    "texto": "Os vereadores de Campinas aprovaram, na quarta-feira (14), o Projeto de Lei Complementar (PLC) nº 42/2026, de autoria do Executivo, que altera a Lei de Parcelamento, Ocupação e Uso do [&#8230;]",
+    "fontes": [
+     {
+      "nome": "Secovi-SP",
+      "url": "https://secovi.com.br/campinas-aprova-nova-regra-de-outorga-onerosa-ponto-central-para-a-retomada-de-lancamentos-no-setor/"
+     }
+    ]
    }
   ]
  },
  "itens": [
   {
    "fonte": "Secovi-SP",
-   "titulo": "Campinas aprova nova regra de outorga onerosa, ponto central para a retomada de lançamentos no setor",
-   "url": "https://secovi.com.br/campinas-aprova-nova-regra-de-outorga-onerosa-ponto-central-para-a-retomada-de-lancamentos-no-setor/",
-   "data": "22/10"
-  },
-  {
-   "fonte": "Secovi-SP",
    "titulo": "Case do BLV.Alti mostra a industrialização na prática, da decisão da incorporação à obra",
    "url": "https://secovi.com.br/case-do-blv-alti-mostra-a-industrializacao-na-pratica-da-decisao-da-incorporacao-a-obra/",
-   "data": "22/10"
-  },
-  {
-   "fonte": "SindusCon-SP",
-   "titulo": "Congresso Jurídico ajudará a esclarecer dúvidas",
-   "url": "https://sindusconsp.com.br/congresso-juridico-ajudara-a-esclarecer-duvidas/",
    "data": "22/10"
   },
   {
@@ -74,21 +62,9 @@
    "data": "22/10"
   },
   {
-   "fonte": "Portal VGV",
-   "titulo": "Desenvolvimento imobiliário: o que define o sucesso de um lançamento?",
-   "url": "https://www.portalvgv.com.br/desenvolvimento-imobiliario-nogueira/",
-   "data": "22/10"
-  },
-  {
    "fonte": "Secovi-SP",
    "titulo": "Painel aponta indução do poder público, formação profissional e planejamento antecipado como caminhos para ampliar a industrialização da construção",
    "url": "https://secovi.com.br/painel-aponta-inducao-do-poder-publico-formacao-profissional-e-planejamento-antecipado-como-caminhos-para-ampliar-a-industrializacao-da-construcao/",
-   "data": "22/10"
-  },
-  {
-   "fonte": "SindusCon-SP",
-   "titulo": "Senai-SP, Sesi-SP e CDHU abrem licitações",
-   "url": "https://sindusconsp.com.br/senai-sp-sesi-sp-e-cdhu-abrem-licitacoes-13/",
    "data": "22/10"
   }
  ]
