@@ -1,52 +1,95 @@
 {
- "atualizado": "22/10 20h15",
+ "atualizado": "23/10 10h35",
  "janela": 1,
  "resumo": {
-  "data": "22/10/2026",
-  "hora": "20h15",
+  "data": "23/10/2026",
+  "hora": "10h35",
   "periodo": "ontem",
   "itens": [
    {
-    "titulo": "CNI: Brasil pode conciliar conservação ambiental e progresso econômico",
-    "texto": "Detentor de uma das maiores biodiversidades do mundo, o Brasil tem potencial para liderar, pelo exemplo, a busca por soluções equilibradas que conciliem a conservação ambiental e o progresso econômico.",
+    "titulo": "CII debate financiamento habitacional, Reforma Tributária e perspectivas do mercado imobiliário",
+    "texto": "A Câmara Brasileira da Indústria da Construção (CBIC) realizou, nesta quinta-feira (22), em São Paulo, a Rodada de Negócios do Mercado Imobiliário, com representantes do setor para discutir o cenário político e econômico, os impactos da Reforma Tributária e os desafios do financiamento habitacional.",
     "fontes": [
      {
       "nome": "CBIC",
-      "url": "https://cbic.org.br/cni-brasil-pode-conciliar-conservacao-ambiental-e-progresso-economico/"
+      "url": "https://cbic.org.br/cii-debate-financiamento-habitacional-reforma-tributaria-e-perspectivas-do-mercado-imobiliario/"
      }
     ]
    },
    {
-    "titulo": "CBIC debate soluções para ampliar a segurança hídrica e fortalecer cidades resilientes",
-    "texto": "A adoção de soluções baseadas na natureza (SbN), o reúso de água e a dessalinização estiveram no centro das discussões da 14ª Reunião Ordinária do Grupo de Trabalho (GT) de Segurança Hídrica e…",
+    "titulo": "CBIC apresenta ao TCU visão do setor sobre os efeitos da Reforma Tributária nas obras públicas",
+    "texto": "A Câmara Brasileira da Indústria da Construção (CBIC) apresentou ao Tribunal de Contas da União (TCU), nesta quarta-feira (21), as preocupações do setor com os impactos da Reforma Tributária nos contratos de obras públicas.",
     "fontes": [
      {
       "nome": "CBIC",
-      "url": "https://cbic.org.br/cbic-debate-solucoes-para-ampliar-a-seguranca-hidrica-e-fortalecer-cidades-resilientes/"
+      "url": "https://cbic.org.br/cbic-apresenta-ao-tcu-visao-do-setor-sobre-os-efeitos-da-reforma-tributaria-nas-obras-publicas/"
      }
     ]
    },
    {
-    "titulo": "CBIC participa de Mesa Nacional de Diálogo para a Promoção do Trabalho Decente na Indústria da Construção",
-    "texto": "A Câmara Brasileira da Indústria da Construção (CBIC) vai integrar a Mesa Nacional de Diálogo para a Promoção do Trabalho Decente na Indústria da Construção, instituída pelo Ministério do Trabalho e Emprego (MTE).",
+    "titulo": "Prefeitura de São Paulo dispõe sobre ISS",
+    "texto": "Decreto também aborda emissão de NFe-N A Prefeitura de São Paulo publicou o Decreto 65.628, de 19/10/2026 (DOU de 20/10/2026), para dispor, entre outras questões, sobre geração de crédito do ISS e a emissão de Nota Fiscal Eletrônica de Padrão Nacional.",
     "fontes": [
      {
-      "nome": "CBIC",
-      "url": "https://cbic.org.br/cbic-participa-de-mesa-nacional-de-dialogo-para-a-promocao-do-trabalho-decente-na-industria-da-construcao/"
+      "nome": "SindusCon-SP",
+      "url": "https://sindusconsp.com.br/prefeitura-de-sao-paulo-dispoe-sobre-iss/"
      }
     ]
    },
    {
-    "titulo": "Regra única desconsidera realidades diferentes",
-    "texto": "Ao fixar a mesma jornada para todas as atividades, mudança aprovada pelo Congresso traz riscos à construção e à moradia O fim da escala 6&#215;1, aprovado pelo Congresso Nacional em [&#8230;]",
+    "titulo": "CBIC debate inflação, crédito imobiliário e os impactos para a construção em 2027",
+    "texto": "Para debater o cenário econômico e seus impactos sobre o setor da construção, a Câmara Brasileira da Indústria da Construção (CBIC) promoveu, nesta quarta-feira (21), a live “Economia e construção: perspectivas para 2027”, com especialistas em crédito imobiliário e índices de preços.",
     "fontes": [
      {
-      "nome": "Secovi-SP",
-      "url": "https://secovi.com.br/regra-unica-desconsidera-realidades-diferentes/"
+      "nome": "CBIC",
+      "url": "https://cbic.org.br/cbic-debate-inflacao-credito-imobiliario-e-os-impactos-para-a-construcao-em-2027/"
      }
     ]
    }
   ]
  },
- "itens": []
+ "itens": [
+  {
+   "fonte": "Secovi-SP",
+   "titulo": "Campinas aprova nova regra de outorga onerosa, ponto central para a retomada de lançamentos no setor",
+   "url": "https://secovi.com.br/campinas-aprova-nova-regra-de-outorga-onerosa-ponto-central-para-a-retomada-de-lancamentos-no-setor/",
+   "data": "22/10"
+  },
+  {
+   "fonte": "Secovi-SP",
+   "titulo": "Case do BLV.Alti mostra a industrialização na prática, da decisão da incorporação à obra",
+   "url": "https://secovi.com.br/case-do-blv-alti-mostra-a-industrializacao-na-pratica-da-decisao-da-incorporacao-a-obra/",
+   "data": "22/10"
+  },
+  {
+   "fonte": "SindusCon-SP",
+   "titulo": "Congresso Jurídico ajudará a esclarecer dúvidas",
+   "url": "https://sindusconsp.com.br/congresso-juridico-ajudara-a-esclarecer-duvidas/",
+   "data": "22/10"
+  },
+  {
+   "fonte": "Imobi Report",
+   "titulo": "Esquema e Pilar anunciam parceria no imobiliário de alto padrão em SP",
+   "url": "https://imobireport.com.br/vendas/esquema-e-pilar-anunciam-parceria-no-imobiliario-de-alto-padrao-em-sp/",
+   "data": "22/10"
+  },
+  {
+   "fonte": "Portal VGV",
+   "titulo": "Desenvolvimento imobiliário: o que define o sucesso de um lançamento?",
+   "url": "https://www.portalvgv.com.br/desenvolvimento-imobiliario-nogueira/",
+   "data": "22/10"
+  },
+  {
+   "fonte": "Secovi-SP",
+   "titulo": "Painel aponta indução do poder público, formação profissional e planejamento antecipado como caminhos para ampliar a industrialização da construção",
+   "url": "https://secovi.com.br/painel-aponta-inducao-do-poder-publico-formacao-profissional-e-planejamento-antecipado-como-caminhos-para-ampliar-a-industrializacao-da-construcao/",
+   "data": "22/10"
+  },
+  {
+   "fonte": "SindusCon-SP",
+   "titulo": "Senai-SP, Sesi-SP e CDHU abrem licitações",
+   "url": "https://sindusconsp.com.br/senai-sp-sesi-sp-e-cdhu-abrem-licitacoes-13/",
+   "data": "22/10"
+  }
+ ]
 }
