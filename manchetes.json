@@ -1,48 +1,48 @@
 {
- "atualizado": "23/10 20h03",
+ "atualizado": "24/10 09h46",
  "janela": 1,
  "resumo": {
-  "data": "23/10/2026",
-  "hora": "20h03",
+  "data": "24/10/2026",
+  "hora": "09h46",
   "periodo": "ontem",
   "itens": [
    {
-    "titulo": "CII debate financiamento habitacional, Reforma Tributária e perspectivas do mercado imobiliário",
-    "texto": "A Câmara Brasileira da Indústria da Construção (CBIC) realizou, nesta quinta-feira (22), em São Paulo, a Rodada de Negócios do Mercado Imobiliário, com representantes do setor para discutir o cenário político e econômico, os impactos da Reforma Tributária e os desafios do financiamento habitacional.",
+    "titulo": "Em agenda estratégica, CBIC aponta medidas para os primeiros 100 dias do próximo governo",
+    "texto": "A Agenda da Indústria da Construção aos Presidenciáveis – Eleições 2026 reúne prioridades do setor da construção para ampliar investimentos, gerar mais empregos e impulsionar o crescimento econômico sustentado do país.",
     "fontes": [
      {
       "nome": "CBIC",
-      "url": "https://cbic.org.br/cii-debate-financiamento-habitacional-reforma-tributaria-e-perspectivas-do-mercado-imobiliario/"
+      "url": "https://cbic.org.br/em-agenda-estrategica-cbic-aponta-medidas-para-os-primeiros-100-dias-do-proximo-governo/"
      }
     ]
    },
    {
-    "titulo": "CBIC apresenta ao TCU visão do setor sobre os efeitos da Reforma Tributária nas obras públicas",
-    "texto": "A Câmara Brasileira da Indústria da Construção (CBIC) apresentou ao Tribunal de Contas da União (TCU), nesta quarta-feira (21), as preocupações do setor com os impactos da Reforma Tributária nos contratos de obras públicas.",
+    "titulo": "CBIC e MGI avançam na implementação de mudanças no Compras.gov.br",
+    "texto": "O Ministério da Gestão e da Inovação em Serviços Públicos (MGI) prevê implementar a inversão de fases nas licitações do Compras.gov.br até o primeiro trimestre de 2027.",
     "fontes": [
      {
       "nome": "CBIC",
-      "url": "https://cbic.org.br/cbic-apresenta-ao-tcu-visao-do-setor-sobre-os-efeitos-da-reforma-tributaria-nas-obras-publicas/"
+      "url": "https://cbic.org.br/cbic-e-mgi-avancam-na-implementacao-de-mudancas-no-compras-gov-br/"
      }
     ]
    },
    {
-    "titulo": "Prefeitura de São Paulo dispõe sobre ISS",
-    "texto": "Decreto também aborda emissão de NFe-N A Prefeitura de São Paulo publicou o Decreto 65.628, de 19/10/2026 (DOU de 20/10/2026), para dispor, entre outras questões, sobre geração de crédito do ISS e a emissão de Nota Fiscal Eletrônica de Padrão Nacional.",
+    "titulo": "16º Roadshow COIC debate como infraestrutura e indústria ampliam oportunidades para a construção no Centro-Oeste",
+    "texto": "A infraestrutura logística e os projetos industriais em implantação no Centro-Oeste ampliam as oportunidades para as empresas de construção da região.",
     "fontes": [
      {
-      "nome": "SindusCon-SP",
-      "url": "https://sindusconsp.com.br/prefeitura-de-sao-paulo-dispoe-sobre-iss/"
+      "nome": "CBIC",
+      "url": "https://cbic.org.br/16o-roadshow-coic-debate-como-infraestrutura-e-industria-ampliam-oportunidades-para-a-construcao-no-centro-oeste/"
      }
     ]
    },
    {
-    "titulo": "CBIC debate inflação, crédito imobiliário e os impactos para a construção em 2027",
-    "texto": "Para debater o cenário econômico e seus impactos sobre o setor da construção, a Câmara Brasileira da Indústria da Construção (CBIC) promoveu, nesta quarta-feira (21), a live “Economia e construção: perspectivas para 2027”, com especialistas em crédito imobiliário e índices de preços.",
+    "titulo": "Congresso em Rio Preto debate segurança jurídica no setor imobiliário",
+    "texto": "Evento na OAB de São José do Rio Preto reuniu especialistas para discutir garantias locatícias, leilões, usucapião extrajudicial e incorporação imobiliária Realizado em 23 de outubro, na sede da OAB…",
     "fontes": [
      {
-      "nome": "CBIC",
-      "url": "https://cbic.org.br/cbic-debate-inflacao-credito-imobiliario-e-os-impactos-para-a-construcao-em-2027/"
+      "nome": "Secovi-SP",
+      "url": "https://secovi.com.br/congresso-em-rio-preto-debate-seguranca-juridica-no-setor-imobiliario/"
      }
     ]
    }
@@ -50,46 +50,10 @@
  },
  "itens": [
   {
-   "fonte": "Secovi-SP",
-   "titulo": "Campinas aprova nova regra de outorga onerosa, ponto central para a retomada de lançamentos no setor",
-   "url": "https://secovi.com.br/campinas-aprova-nova-regra-de-outorga-onerosa-ponto-central-para-a-retomada-de-lancamentos-no-setor/",
-   "data": "22/10"
-  },
-  {
-   "fonte": "Secovi-SP",
-   "titulo": "Case do BLV.Alti mostra a industrialização na prática, da decisão da incorporação à obra",
-   "url": "https://secovi.com.br/case-do-blv-alti-mostra-a-industrializacao-na-pratica-da-decisao-da-incorporacao-a-obra/",
-   "data": "22/10"
-  },
-  {
-   "fonte": "SindusCon-SP",
-   "titulo": "Congresso Jurídico ajudará a esclarecer dúvidas",
-   "url": "https://sindusconsp.com.br/congresso-juridico-ajudara-a-esclarecer-duvidas/",
-   "data": "22/10"
-  },
-  {
    "fonte": "Imobi Report",
-   "titulo": "Esquema e Pilar anunciam parceria no imobiliário de alto padrão em SP",
-   "url": "https://imobireport.com.br/vendas/esquema-e-pilar-anunciam-parceria-no-imobiliario-de-alto-padrao-em-sp/",
-   "data": "22/10"
-  },
-  {
-   "fonte": "Portal VGV",
-   "titulo": "Desenvolvimento imobiliário: o que define o sucesso de um lançamento?",
-   "url": "https://www.portalvgv.com.br/desenvolvimento-imobiliario-nogueira/",
-   "data": "22/10"
-  },
-  {
-   "fonte": "Secovi-SP",
-   "titulo": "Painel aponta indução do poder público, formação profissional e planejamento antecipado como caminhos para ampliar a industrialização da construção",
-   "url": "https://secovi.com.br/painel-aponta-inducao-do-poder-publico-formacao-profissional-e-planejamento-antecipado-como-caminhos-para-ampliar-a-industrializacao-da-construcao/",
-   "data": "22/10"
-  },
-  {
-   "fonte": "SindusCon-SP",
-   "titulo": "Senai-SP, Sesi-SP e CDHU abrem licitações",
-   "url": "https://sindusconsp.com.br/senai-sp-sesi-sp-e-cdhu-abrem-licitacoes-13/",
-   "data": "22/10"
+   "titulo": "Sete especialistas apontam os problemas ocultos das imobiliárias de locação",
+   "url": "https://imobireport.com.br/aluguel/sete-especialistas-apontam-os-problemas-ocultos-das-imobiliarias-de-locacao/",
+   "data": "23/10"
   }
  ]
 }
