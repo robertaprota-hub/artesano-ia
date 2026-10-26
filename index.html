@@ -154,6 +154,10 @@
   .partes{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
   .partes a{font-family:var(--font-mono);font-size:12.5px;color:var(--terra-deep);text-decoration:none;border:1px solid var(--line-strong);border-radius:99px;padding:6px 12px;min-height:32px;display:inline-flex;align-items:center}
   .partes a:hover{border-color:var(--terra)}
+  .m-adm-bar{display:flex;align-items:center;gap:12px;background:var(--terra-soft);border-color:transparent}
+  .m-adm{border:2px solid var(--terra)}
+  .m-adm-entrar{align-self:center;font-family:var(--font-mono);font-size:11.5px;color:var(--ink-3);padding:10px 14px;min-height:40px;letter-spacing:.04em}
+  .slot.adm{cursor:pointer;opacity:1}
   .check{width:28px;height:28px;border-radius:50%;border:1.5px solid var(--terra);display:flex;align-items:center;justify-content:center;color:transparent;flex:0 0 auto}
   .check.on{background:var(--terra);color:#fff}
   .check .icon{width:15px;height:15px;stroke-width:2.5}
@@ -375,6 +379,7 @@
         <div class="title" style="font-size:15px">Link mentoria Meet</div>
         <a class="btn primary" id="mMeet" href="#" target="_blank" rel="noopener"><svg class="icon"><use href="#i-video"/></svg>Entrar no Meet</a>
       </div>
+      <div id="mAdmBar" class="card m-adm-bar" hidden><div class="grow"><b>modo organizadora</b><div class="meta">toque em qualquer janela para trocar equipe, modalidade ou liberar</div></div><button class="btn ghost" id="mAdmSair">sair</button></div>
       <div class="section-label"><span class="kicker">1 · sua equipe</span><small id="mContagem"></small></div>
       <div class="card">
         <label for="mEquipe" class="meta" style="display:block;margin:0 0 6px">equipe do hackathon</label>
@@ -395,11 +400,23 @@
         <div class="row"><a class="btn primary" id="mFeitoOutlook" href="#" target="_blank" rel="noopener"><svg class="icon"><use href="#i-cal"/></svg>salvar no Outlook</a><button class="btn ghost" id="mFeitoOk">ok</button></div>
       </div>
       <div id="mDias" style="display:flex;flex-direction:column;gap:12px"></div>
+      <div id="mAdm" class="card m-adm" hidden>
+        <div class="kicker" style="color:var(--terra)">editar janela</div>
+        <div class="title" style="margin-top:4px" id="mAdmTit"></div>
+        <label for="mAdmEq" class="meta" style="display:block;margin:12px 0 6px">equipe</label>
+        <select id="mAdmEq" class="m-select"></select>
+        <div class="seg" role="group" aria-label="modalidade" style="margin-top:12px">
+          <button type="button" id="mAdmPres" data-amod="presencial" aria-pressed="true">presencial</button>
+          <button type="button" id="mAdmOn" data-amod="online" aria-pressed="false">online</button>
+        </div>
+        <div class="row" style="margin-top:14px;flex-wrap:wrap;gap:10px"><button class="btn primary" id="mAdmSalvar">salvar</button><button class="btn ghost" id="mAdmLiberar">liberar janela</button><button class="btn ghost" id="mAdmFechar">fechar</button></div>
+      </div>
       <div id="mConfirm" class="card m-confirm" hidden>
         <p id="mConfirmTxt"></p>
         <div class="row"><button class="btn primary" id="mOk">confirmar</button><button class="btn ghost on-dark" id="mCancel">voltar</button></div>
       </div>
       <div class="credit">programa conduzido por prota.ia</div>
+      <button type="button" id="mAdmEntrar" class="m-adm-entrar">modo organizadora</button>
     </div>
   </section>
 
@@ -618,12 +635,13 @@ function baixarIcs(lista,nome){const txt=['BEGIN:VCALENDAR','VERSION:2.0','PRODI
   const url=URL.createObjectURL(new Blob([txt],{type:'text/calendar;charset=utf-8'})); const a=document.createElement('a'); a.href=url; a.download=nome+'.ics'; document.body.appendChild(a); a.click(); a.remove(); setTimeout(()=>URL.revokeObjectURL(url),2000); toast('evento baixado');}
 
 /* ===== mentoria: reservas ===== */
+let mPin=ls.get('artesano-ia:mentoria:pin')||'', mAdmJ=null, mAdmMod='presencial';
 let mRes=[], mEq=ls.get('artesano-ia:mentoria:equipe')||'', mMod=ls.get('artesano-ia:mentoria:modalidade')||'presencial', mSel=null, mBusy=false, mMontado=false, mUltima=null;
 const mEsc=t=>String(t??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const mEquipe=id=>MENT_EQUIPES.find(e=>e.id===id);
 const mDM=iso=>{const p=partes(iso);return String(p.d).padStart(2,'0')+'/'+String(p.m).padStart(2,'0');};
 const mJanela=id=>{for(const D of MENT_DIAS){const g=MENT_GRADES[D.grade].find(x=>x[0]!=='p'&&x[0]!=='b'&&D.data+'-'+x[0]===id);if(g)return {...D,ini:g[1],fim:g[2]};}return null;};
-const mSemanas=()=>[...new Set(MENT_DIAS.map(d=>d.semana))].filter(s=>MENT_SEMANAS_ABERTAS.includes(s));
+const mSemanas=()=>[...new Set(MENT_DIAS.map(d=>d.semana))].filter(s=>mPin||MENT_SEMANAS_ABERTAS.includes(s));
 const mDiasDa=s=>MENT_DIAS.filter(d=>d.semana===s);
 const mDaSemana=(eqId,s)=>mRes.find(r=>r.equipe===eqId&&(mJanela(r.janela)||{}).semana===s);
 function mAviso(t){const a=$('#mAviso'); a.textContent=t||''; a.hidden=!t;}
@@ -636,6 +654,15 @@ function mMontar(){
   $('#mFeitoOk').addEventListener('click',()=>{mUltima=null; renderMentoria();});
   $('#mCancel').addEventListener('click',()=>{mSel=null; renderMentoria();});
   $('#mOk').addEventListener('click',()=>{ if(mSel) mEnviar({acao:'reservar',equipe:mEq,janela:mSel,modalidade:mMod}); });
+  $('#mAdmEntrar').addEventListener('click',async()=>{ if(mPin){abrirAba('mentoria');return;} const p=(prompt('PIN do modo organizadora')||'').trim(); if(!p) return;
+    try{const r=await fetch(MENT_API,{method:'POST',body:JSON.stringify({acao:'admin_verificar',pin:p})}); const j=await r.json();
+      if(j.ok){mPin=p; ls.set('artesano-ia:mentoria:pin',p); toast('modo organizadora ativo'); renderMentoria(); $('#mAdmBar').scrollIntoView({block:'nearest'});} else toast(j.erro||'PIN incorreto');
+    }catch(e){toast('sem conexão, tente de novo');} });
+  $('#mAdmSair').addEventListener('click',()=>{mPin=''; mAdmJ=null; ls.set('artesano-ia:mentoria:pin',''); toast('modo organizadora desligado'); renderMentoria();});
+  $$('[data-amod]').forEach(b=>b.addEventListener('click',()=>{mAdmMod=b.dataset.amod; renderMentoria();}));
+  $('#mAdmFechar').addEventListener('click',()=>{mAdmJ=null; renderMentoria();});
+  $('#mAdmSalvar').addEventListener('click',()=>{ const e=$('#mAdmEq').value; if(!e){toast('escolha a equipe');return;} mEnviar({acao:'admin_salvar',pin:mPin,janela:mAdmJ,equipe:e,modalidade:mAdmMod}); });
+  $('#mAdmLiberar').addEventListener('click',()=>{ if(!mRes.find(r=>r.janela===mAdmJ)){toast('a janela já está livre');return;} if(confirm('Liberar esta janela?')) mEnviar({acao:'admin_liberar',pin:mPin,janela:mAdmJ}); });
 }
 function mOpcoes(){
   const s=$('#mEquipe'); const ordem=[turma.slug,...TURMAS.map(t=>t.slug).filter(x=>x!==turma.slug)];
@@ -674,8 +701,11 @@ function renderMentoria(){
         if(r&&eq&&r.equipe===eq.id){el.classList.add('minha'); who='<b>sua equipe</b>'; tag=r.modalidade;}
         else if(r){who=`${mEsc(dono?dono.nome:'equipe')}<small>${mEsc(dono?dono.projeto:'')}</small>`; tag=r.modalidade; el.disabled=true;}
         else {el.classList.add('livre'); who=''; tag='livre'; if(passou){el.classList.add('fora'); el.disabled=true; tag='encerrada';}}
-        if(mSel===id) el.classList.add('sel');
+        if(mSel===id||mAdmJ===id) el.classList.add('sel');
         el.innerHTML=`<span class="hr">${g[1]} às ${g[2]}</span><span class="who">${who}</span><span class="tag">${tag}</span>`;
+        if(mPin){ el.disabled=false; el.classList.add('adm'); el.innerHTML=`<span class="hr">${g[1]} às ${g[2]}</span><span class="who">${r?`${mEsc(dono?dono.nome:'equipe')}<small>${mEsc(dono?dono.projeto:'')}</small>`:''}</span><span class="tag">${r?r.modalidade:'livre'}</span>`;
+          el.addEventListener('click',()=>{ mAdmJ=id; mAdmMod=r?r.modalidade:'presencial'; renderMentoria(); $('#mAdmEq').value=r?r.equipe:''; $('#mAdm').scrollIntoView({block:'nearest',behavior:'smooth'}); });
+          card.appendChild(el); return; }
         if(!el.disabled&&!(r&&eq&&r.equipe===eq.id&&r.modalidade===mMod)) el.addEventListener('click',()=>{
           if(!MENT_API){mAviso('As reservas abrem em instantes.');return;}
           if(!eq){mAviso('Escolha primeiro a sua equipe, no passo 1.'); $('#mEquipe').focus(); return;}
@@ -685,6 +715,15 @@ function renderMentoria(){
       box.appendChild(card);
     });
   });
+  $('#mAdmBar').hidden=!mPin; $('#mAdmEntrar').textContent=mPin?'modo organizadora ativo':'modo organizadora';
+  const pa=$('#mAdm');
+  if(mPin&&mAdmJ){ const j=mJanela(mAdmJ), atual=mRes.find(r=>r.janela===mAdmJ), sel=$('#mAdmEq').value;
+    pa.hidden=false; $('#mAdmTit').textContent=`${j.nome}, ${mDM(j.data)}, ${j.ini} às ${j.fim}`+(atual?'':' · livre');
+    $('#mAdmEq').innerHTML='<option value="">escolha a equipe</option>'+TURMAS.map(t=>`<optgroup label="${mEsc(t.nome)}">`+MENT_EQUIPES.filter(e=>e.turma===t.slug).map(e=>`<option value="${e.id}">${mEsc(e.nome)} · ${mEsc(e.projeto)}</option>`).join('')+'</optgroup>').join('');
+    $('#mAdmEq').value=sel||(atual?atual.equipe:'');
+    $('#mAdmPres').setAttribute('aria-pressed',mAdmMod==='presencial'); $('#mAdmOn').setAttribute('aria-pressed',mAdmMod==='online');
+    $('#mAdmSalvar').disabled=mBusy; $('#mAdmSalvar').textContent=mBusy?'salvando...':'salvar';
+  } else pa.hidden=true;
   const f=$('#mFeito'), ult=eq&&mUltima&&mRes.find(r=>r.equipe===eq.id&&r.janela===mUltima);
   if(ult){const j=mJanela(ult.janela); f.hidden=false;
     $('#mFeitoTxt').textContent=`${eq.nome}: ${j.nome.toLowerCase()}, ${mDM(j.data)}, ${j.ini} às ${j.fim}, ${ult.modalidade}.`;
@@ -706,7 +745,8 @@ async function mEnviar(body){
   if(mBusy) return; mBusy=true; renderMentoria();
   try{const r=await fetch(MENT_API,{method:'POST',body:JSON.stringify(body)}); const j=await r.json();
     if(Array.isArray(j.reservas)) mRes=j.reservas;
-    if(j.ok){mSel=null; mAviso(''); mUltima=body.acao==='reservar'?body.janela:null; toast(body.acao==='liberar'?'janela liberada':'janela reservada');} else mAviso(j.erro||'Não consegui salvar. Tente de novo.');
+    if(j.ok){mSel=null; mAviso(''); mUltima=body.acao==='reservar'?body.janela:null; if(String(body.acao).indexOf('admin')===0) mAdmJ=null; toast(/liberar/.test(body.acao)?'janela liberada':(body.acao==='admin_salvar'?'alteração salva':'janela reservada'));}
+    else { if(j.erro==='PIN incorreto.'){mPin=''; ls.set('artesano-ia:mentoria:pin','');} mAviso(j.erro||'Não consegui salvar. Tente de novo.'); }
   }catch(e){mAviso('Não consegui salvar. Confira a internet e tente de novo.');}
   mBusy=false; renderMentoria();
 }
