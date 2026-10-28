@@ -1,48 +1,48 @@
 {
- "atualizado": "27/10 20h43",
+ "atualizado": "28/10 12h12",
  "janela": 1,
  "resumo": {
-  "data": "27/10/2026",
-  "hora": "20h43",
+  "data": "28/10/2026",
+  "hora": "12h12",
   "periodo": "ontem",
   "itens": [
    {
-    "titulo": "CBIC e Caixa discutem atualização do SINAPI após redução da jornada de trabalho e Reforma Tributária",
-    "texto": "A Câmara Brasileira da Indústria da Construção (CBIC) e a equipe técnica do Sistema Nacional de Pesquisa de Custos e Índices da Construção Civil (SINAPI), da Caixa Econômica Federal, discutiram, na…",
+    "titulo": "Conselho Jurídico da CBIC reuniu especialistas em Goiânia para discutir mudanças legislativas e seus impactos sobre o setor da construção",
+    "texto": "A Câmara Brasileira da Indústria da Construção (CBIC) realizou nesta segunda-feira (26), em Goiânia, a 46ª reunião do Conselho Jurídico (Conjur), com debates sobre temas jurídicos e legislativos de impacto para a construção civil e o mercado imobiliário.",
     "fontes": [
      {
       "nome": "CBIC",
-      "url": "https://cbic.org.br/cbic-e-caixa-discutem-atualizacao-do-sinapi-apos-reducao-da-jornada-de-trabalho-e-reforma-tributaria/"
+      "url": "https://cbic.org.br/conselho-juridico-da-cbic-reuniu-especialistas-em-goiania-para-discutir-mudancas-legislativas-e-seus-impactos-sobre-o-setor-da-construcao/"
      }
     ]
    },
    {
-    "titulo": "CNI: Preocupação com juros altos na construção atinge o 2º maior nível da série histórica",
-    "texto": "Quatro em cada 10 empresários da indústria da construção apontaram as taxas de juros elevadas como o principal problema enfrentad pelo setor no 3º trimestre de 2026.",
+    "titulo": "Encontro CBIC debate importância do FGTS e perspectivas econômicas para a construção civil no Centro-Oeste",
+    "texto": "O papel do Fundo de Garantia do Tempo de Serviço (FGTS) no financiamento habitacional, os desafios econômicos da construção civil e as perspectivas para o mercado imobiliário foram os principais…",
     "fontes": [
      {
       "nome": "CBIC",
-      "url": "https://cbic.org.br/cni-preocupacao-com-juros-altos-na-construcao-atinge-o-2o-maior-nivel-da-serie-historica/"
+      "url": "https://cbic.org.br/encontro-cbic-debate-importancia-do-fgts-e-perspectivas-economicas-para-a-construcao-civil-no-centro-oeste/"
      }
     ]
    },
    {
-    "titulo": "Sinduscon-AL: Feira Minha Casa Própria chega à 8ª edição com cerca de 2 mil imóveis em Maceió",
-    "texto": "Evento será realizado de 28 de outubro a 2 de novembro, no Shopping Pátio Maceió, com opções de imóveis prontos e lançamentos a partir de R$ 240 mil Realizar o sonho da casa própria ou encontrar uma…",
+    "titulo": "Com Lula reeleito, a incerteza sai das urnas e vai para os juros",
+    "texto": "Tudo o que sabemos sobre o CUPOLA Summit 2027.",
     "fontes": [
      {
-      "nome": "CBIC",
-      "url": "https://cbic.org.br/sinduscon-al-feira-minha-casa-propria-chega-a-8a-edicao-com-cerca-de-2-mil-imoveis-em-maceio/"
+      "nome": "Imobi Report",
+      "url": "https://imobireport.com.br/newsletter-do-imobi/com-lula-reeleito-a-incerteza-sai-das-urnas-e-vai-para-os-juros/"
      }
     ]
    },
    {
-    "titulo": "Circuit breaker na Bolsa após eleições: o que incorporadoras precisam acompanhar",
-    "texto": "Dólar fecha em alta de 8,41% e Ibovespa recua 13,88%.",
+    "titulo": "Seminário Jurídico do Secovi-SP alerta para indefinições da reforma tributária",
+    "texto": "A dois meses do início da CBS, advogados do Conselho Jurídico da vice-presidência de Incorporação e Terrenos Urbanos apontam lacunas no regulamento e recomendam que as empresas se preparem…",
     "fontes": [
      {
-      "nome": "Portal VGV",
-      "url": "https://www.portalvgv.com.br/circuit-breaker-na-bolsa/"
+      "nome": "Secovi-SP",
+      "url": "https://secovi.com.br/seminario-juridico-do-secovi-sp-alerta-para-indefinicoes-da-reforma-tributaria/"
      }
     ]
    }
@@ -50,22 +50,40 @@
  },
  "itens": [
   {
-   "fonte": "Imobi Report",
-   "titulo": "Com VGV recorde e inspiração Art Déco, GT Building apresenta edifício New Yorker no Centro de Curitiba",
-   "url": "https://imobireport.com.br/incorporacao/com-vgv-recorde-e-inspiracao-art-deco-gt-building-apresenta-edificio-new-yorker-no-centro-de-curitiba/",
-   "data": "26/10"
-  },
-  {
-   "fonte": "Imobi Report",
-   "titulo": "Tudo o que sabemos sobre o CUPOLA Summit 2027",
-   "url": "https://imobireport.com.br/imobiliario/tudo-o-que-sabemos-sobre-o-cupola-summit-2027/",
-   "data": "26/10"
+   "fonte": "CBIC",
+   "titulo": "Receita Federal e Comitê Gestor do IBS criam grupos de trabalho para implementar a Reforma Tributária sobre o consumo",
+   "url": "https://cbic.org.br/receita-federal-e-comite-gestor-do-ibs-criam-grupos-de-trabalho-para-implementar-a-reforma-tributaria-sobre-o-consumo/",
+   "data": "27/10"
   },
   {
    "fonte": "Secovi-SP",
-   "titulo": "Apresentações do Seminário Jurídico da VPITU do Secovi-SP – 26/10/2026",
-   "url": "https://secovi.com.br/apresentacoes-do-seminario-juridico-da-vpitu-do-secovi-sp-26-10-2026/",
-   "data": "26/10"
+   "titulo": "Condomínios edilícios: quais documentos fiscais emitir? – 27/10/2026",
+   "url": "https://secovi.com.br/condominios-edilicios-quais-documentos-fiscais-emitir-27-10-2026/",
+   "data": "27/10"
+  },
+  {
+   "fonte": "Secovi-SP",
+   "titulo": "SCP é ferramenta de investimento, não atalho para vender imóvel, alertam advogados no Secovi-SP",
+   "url": "https://secovi.com.br/scp-e-ferramenta-de-investimento-nao-atalho-para-vender-imovel-alertam-advogados-no-secovi-sp/",
+   "data": "27/10"
+  },
+  {
+   "fonte": "SindusCon-SP",
+   "titulo": "Construção espera tempos melhores",
+   "url": "https://sindusconsp.com.br/construcao-espera-tempos-melhores/",
+   "data": "27/10"
+  },
+  {
+   "fonte": "SindusCon-SP",
+   "titulo": "Imprensa de Rio Preto destaca cenário econômico na Regional",
+   "url": "https://sindusconsp.com.br/imprensa-de-rio-preto-destaca-cenario-economico-na-regional/",
+   "data": "27/10"
+  },
+  {
+   "fonte": "SindusCon-SP",
+   "titulo": "INCC-M sobe 0,35% em outubro",
+   "url": "https://sindusconsp.com.br/incc-m-sobe-035-em-outubro/",
+   "data": "27/10"
   }
  ]
 }
