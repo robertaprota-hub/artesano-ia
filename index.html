@@ -371,7 +371,7 @@
         <div class="brand"><svg class="lockup" viewBox="0 0 626 602" role="img" aria-label="Artesano Urbanismo"><use href="#logoAll"/></svg><span class="sep"></span><span class="prota" role="img" aria-label="prota.ia"></span></div>
         <div class="kicker">hackathon · 20 min por equipe</div>
         <h1>Mentoria</h1>
-        <p style="margin:2px 0 0;color:var(--head-muted);font-size:14px;line-height:1.45">Agendamento por equipe, presencial ou online.</p>
+        <p style="margin:2px 0 0;color:var(--head-muted);font-size:14px;line-height:1.45">Agendamento por equipe ou por pessoa, presencial ou online.</p>
       </div>
     </header>
     <div class="content">
@@ -380,13 +380,13 @@
         <a class="btn primary" id="mMeet" href="#" target="_blank" rel="noopener"><svg class="icon"><use href="#i-video"/></svg>Entrar no Meet</a>
       </div>
       <div id="mAdmBar" class="card m-adm-bar" hidden><div class="grow"><b>modo organizadora</b><div class="meta">toque em qualquer janela para trocar equipe, modalidade ou liberar</div></div><button class="btn ghost" id="mAdmSair">sair</button></div>
-      <div class="section-label"><span class="kicker">1 · sua equipe</span><small id="mContagem"></small></div>
+      <div class="section-label"><span class="kicker">1 · sua equipe ou seu nome</span><small id="mContagem"></small></div>
       <div class="card">
-        <label for="mEquipe" class="meta" style="display:block;margin:0 0 6px">equipe do hackathon</label>
+        <label for="mEquipe" class="meta" style="display:block;margin:0 0 6px">equipe do hackathon ou seu nome</label>
         <select id="mEquipe" class="m-select"></select>
         <div id="mMinha"></div>
       </div>
-      <div class="section-label"><span class="kicker">2 · como a equipe participa</span></div>
+      <div class="section-label"><span class="kicker">2 · como participa</span></div>
       <div class="seg" role="group" aria-label="modalidade">
         <button type="button" id="mPres" data-mod="presencial" aria-pressed="true">presencial</button>
         <button type="button" id="mOn" data-mod="online" aria-pressed="false">online</button>
@@ -396,7 +396,7 @@
       <div id="mFeito" class="card m-feito" hidden role="status">
         <div class="kicker" style="color:var(--steel)">horário reservado</div>
         <div class="title" style="margin-top:4px" id="mFeitoTxt"></div>
-        <p class="tr-sub">Fica salvo na planilha da mentoria. Quando abrir esta aba e escolher a equipe, o horário aparece no passo 1. Para ter o lembrete, salve na sua agenda.</p>
+        <p class="tr-sub">Fica salvo na planilha da mentoria. Quando abrir esta aba e escolher a equipe ou o seu nome, o horário aparece no passo 1. Para ter o lembrete, salve na sua agenda.</p>
         <div class="row"><a class="btn primary" id="mFeitoOutlook" href="#" target="_blank" rel="noopener"><svg class="icon"><use href="#i-cal"/></svg>salvar no Outlook</a><button class="btn ghost" id="mFeitoOk">ok</button></div>
       </div>
       <div id="mDias" style="display:flex;flex-direction:column;gap:12px"></div>
@@ -460,9 +460,8 @@ const MENT_MEET = 'https://meet.google.com/wzc-pjqg-ktw';
 /* Mentorias do hackathon: equipes e janelas. Mesmo bloco no app (index.html) e no script da planilha (Code.gs). */
 const MENT_EQUIPES = [
   { id:'ba1', turma:'bairro-artesano', nome:'Giovanna e Tifany', projeto:'Automação de Novos Negócios' },
-  { id:'ba2', turma:'bairro-artesano', nome:'Nina e Julia', projeto:'Compatibilização de projetos' },
+  { id:'ba2', turma:'bairro-artesano', nome:'Nina, Julia e Carol', projeto:'Compatibilização de projetos' },
   { id:'ba3', turma:'bairro-artesano', nome:'Maira e Larissa', projeto:'Inteligência de Mercado' },
-  { id:'ba4', turma:'bairro-artesano', nome:'Laís e Carol', projeto:'Gestão ambiental' },
   { id:'ba5', turma:'bairro-artesano', nome:'Beatriz e Isabel', projeto:'PPA · Painel Parceiros Artesano' },
   { id:'ba6', turma:'bairro-artesano', nome:'Clara, Micaelle e Matheus', projeto:'Fluxo de pagamento de notas' },
   { id:'lo1', turma:'londrina', nome:'Renata, Cid e Mayara', projeto:'Ferramenta de parametrização' },
@@ -471,15 +470,38 @@ const MENT_EQUIPES = [
   { id:'lo4', turma:'londrina', nome:'Mari e Fernanda', projeto:'Ferramenta de gestão físico-financeira' },
   { id:'lo5', turma:'londrina', nome:'Schimming, Vitor e Denise', projeto:'Sistema de inteligência em compras' },
   { id:'pp1', turma:'praia-do-paiva', nome:'Vini e Leandro', projeto:'Gestão de inadimplência' },
-  { id:'pp2', turma:'praia-do-paiva', nome:'Raquel e Heloísa', projeto:'Consultoria' },
   { id:'pp4', turma:'praia-do-paiva', nome:'Guilherme e Thaís', projeto:'Gestão e benchmark contábil e financeiro' },
   { id:'sj1', turma:'sjc', nome:'Sassi, Ana e Vini', projeto:'Publicidade Artesano' },
   { id:'sj2', turma:'sjc', nome:'Flavio, Alice e Gabi', projeto:'Base de conhecimento jurídico' },
-  { id:'sj3', turma:'sjc', nome:'Tiago, Fernanda e Leo', projeto:'Gestão de TI e Comercial' }
+  { id:'sj3', turma:'sjc', nome:'Tiago, Fernanda e Leo', projeto:'Gestão de TI e Comercial' },
+  /* sem grupo: cada pessoa marca a sua janela */
+  { id:'sg1', turma:'sem-grupo', nome:'Deise Monique', projeto:'Tirar dúvidas' },
+  { id:'sg2', turma:'sem-grupo', nome:'Felipe Bortolotto', projeto:'Tirar dúvidas' },
+  { id:'sg3', turma:'sem-grupo', nome:'Heloísa Salfemoser', projeto:'Tirar dúvidas' },
+  { id:'sg4', turma:'sem-grupo', nome:'Isabela Menezes', projeto:'Tirar dúvidas' },
+  { id:'sg5', turma:'sem-grupo', nome:'Laís Miranda', projeto:'Tirar dúvidas' },
+  { id:'sg6', turma:'sem-grupo', nome:'Mariana Cacace', projeto:'Tirar dúvidas' },
+  { id:'sg7', turma:'sem-grupo', nome:'Monica Picavêa', projeto:'Tirar dúvidas' },
+  { id:'sg8', turma:'sem-grupo', nome:'Paulo Mantovani', projeto:'Tirar dúvidas' },
+  { id:'sg9', turma:'sem-grupo', nome:'Rafael Aguiar', projeto:'Tirar dúvidas' },
+  { id:'sg10', turma:'sem-grupo', nome:'Raquel Santana', projeto:'Tirar dúvidas' },
+  { id:'sg11', turma:'sem-grupo', nome:'Vanessa Duarte', projeto:'Tirar dúvidas' },
+  { id:'sg12', turma:'sem-grupo', nome:'Vanessa Pellicani', projeto:'Tirar dúvidas' },
+  { id:'sg13', turma:'sem-grupo', nome:'Vitor Sugui', projeto:'Tirar dúvidas' }
 ];
 /* 20 min por equipe. Cada equipe marca uma janela por semana (não é horário fixo).
    Grade "cedo" começa 9:30; grade "rodizio" começa 10:30 (quinta é o rodízio da Roberta). Pausas ('p') e blocos da turma ('b') só para exibir. */
 const MENT_GRADES = {
+  /* quarta 04/11: a partir das 10h, almoço 12h30 às 14h, um intervalo às 16h */
+  qua04: [
+    ['1000','10:00','10:20'],['1030','10:30','10:50'],['1100','11:00','11:20'],['1130','11:30','11:50'],['1200','12:00','12:20'],['p','12:30','14:00','almoço'],
+    ['1400','14:00','14:20'],['1430','14:30','14:50'],['1500','15:00','15:20'],['1530','15:30','15:50'],['p','16:00','16:15','intervalo'],
+    ['1615','16:15','16:35'],['1645','16:45','17:05'],['1715','17:15','17:35'],['1740','17:40','18:00'] ],
+  /* quinta 05/11: a partir das 10h, almoço 12h às 13h30, um intervalo às 16h */
+  qui05: [
+    ['1000','10:00','10:20'],['1030','10:30','10:50'],['1100','11:00','11:20'],['1130','11:30','11:50'],['p','12:00','13:30','almoço'],
+    ['1330','13:30','13:50'],['1400','14:00','14:20'],['1430','14:30','14:50'],['1500','15:00','15:20'],['1530','15:30','15:50'],['p','16:00','16:15','intervalo'],
+    ['1615','16:15','16:35'],['1645','16:45','17:05'],['1715','17:15','17:35'],['1740','17:40','18:00'] ],
   /* segunda 26/10: 9 projetos + a consultoria de Raquel e Heloísa (10h30), a partir das 10h */
   seg26: [
     ['1000','10:00','10:20'],['1030','10:30','10:50'],['1100','11:00','11:20'],['p','11:30','11:45','intervalo'],
@@ -521,10 +543,12 @@ const MENT_DIAS = [
   { data:'2026-10-20', nome:'Terça',   semana:1, grade:'ter20' },
   { data:'2026-10-22', nome:'Quinta',  semana:1, grade:'qui22' },
   { data:'2026-10-26', nome:'Segunda', semana:2, grade:'seg26' },
-  { data:'2026-10-27', nome:'Terça',   semana:2, grade:'ter27' }
+  { data:'2026-10-27', nome:'Terça',   semana:2, grade:'ter27' },
+  { data:'2026-11-04', nome:'Quarta',  semana:3, grade:'qua04' },
+  { data:'2026-11-05', nome:'Quinta',  semana:3, grade:'qui05' }
 ];
-/* Semanas que aparecem no app. Semana 2 (26 e 27/10) aberta em 22/10; a semana 1 já passou. */
-const MENT_SEMANAS_ABERTAS = [2];
+/* Semanas que aparecem no app. Semana 3 (04 e 05/11) aberta em 30/10; as anteriores já passaram. */
+const MENT_SEMANAS_ABERTAS = [3];
 
 const AULAS = [
   { num:'01', titulo:'Fundamentos e prompts',           sub:'camadas da IA, ciclo 4D e prompt em cinco passos', obs:{ 'bairro-artesano':'gravação da turma das 15h30' }, gravacao:{ 'bairro-artesano':'https://drive.google.com/file/d/1F5UpKPJe7M1erMY4gWXMhBJNUBDfXXfZ/view', 'praia-do-paiva':'https://drive.google.com/file/d/1TgD8MuzRevHAAA22NluUDnJmvp7dDtF9/view', 'londrina':'https://drive.google.com/file/d/1WEJcGi6XdLnXtzyayThBBHh3bIMB7MAG/view', 'sjc':'https://drive.google.com/file/d/1cGgSkf42ZTkLgZBARuqEFQt_SONC_jOV/view' }, pdf:{ 'bairro-artesano':'https://drive.google.com/file/d/1JslSaAxhZT7zo66bvLyM1vdumsekWSQc/view', 'londrina':'https://drive.google.com/file/d/194BF_Hf1dNiw_dTJvxSNhcm6oVfCXr_N/view', 'praia-do-paiva':'https://drive.google.com/file/d/1m8ZjrDNHeViy7dQI0tkhBBf56-RkghF7/view', 'sjc':'https://drive.google.com/file/d/1JcRqBRTS-tHPdSfIbd4g-ZDdEo4a10EZ/view' } },
@@ -597,8 +621,8 @@ function trilhaMarcos(){
   return [...aulas,
     {fase:2, num:'M1', titulo:'Mentoria 1 · lançamento do hackathon', data:ment1, fim:ment1, sub:'edital, critérios e escolha dos projetos', links:[['apresentação do lançamento',HACK_MATERIAL.deck],['gravação do lançamento',HACK_MATERIAL.gravacao],['pasta do hackathon',HACK_MATERIAL.pasta]]},
     {fase:2, num:'M2', titulo:'Mentoria 2', data:'2026-10-20', fim:'2026-10-22', feito:true, quando:'terça 20/10 ou quinta 22/10', sub:'20 min por equipe, presencial ou online'},
-    {fase:2, num:'M3', titulo:'Mentoria 3', data:'2026-10-26', fim:'2026-10-27', quando:'segunda 26/10 ou terça 27/10', sub:'20 min por equipe, presencial ou online'},
-    {fase:2, num:'M4', titulo:'Mentoria 4', fim:'2026-11-05', quando:'em breve'},
+    {fase:2, num:'M3', titulo:'Mentoria 3', data:'2026-10-26', fim:'2026-10-27', feito:true, quando:'segunda 26/10 ou terça 27/10', sub:'20 min por equipe, presencial ou online'},
+    {fase:2, num:'M4', titulo:'Mentoria 4', data:'2026-11-04', fim:'2026-11-05', quando:'quarta 04/11 ou quinta 05/11', sub:'20 min por equipe ou pessoa, presencial ou online'},
     {fase:2, num:'E', titulo:'Entrega da apresentação do pitch', data:'2026-11-06', fim:'2026-11-06', quando:'sexta, 06 de novembro', sub:'apresentação no modelo oficial, enviada pela equipe', links:[['modelo do pitch',HACK_MATERIAL.modelo],['como montar o pitch',HACK_MATERIAL.guia]]},
     {fase:2, num:'fim', titulo:'Hackathon', data:HACKATHON.data, fim:HACKATHON.data, quando:'quinta, 12 de novembro · '+HACKATHON.hora, sub:'linha de chegada · apresentação dos projetos no escritório da Artesano', chegada:true, links:[['modelo do pitch',HACK_MATERIAL.modelo],['como montar o pitch',HACK_MATERIAL.guia]]}];
 }
@@ -639,6 +663,8 @@ let mPin=ls.get('artesano-ia:mentoria:pin')||'', mAdmJ=null, mAdmMod='presencial
 let mRes=[], mEq=ls.get('artesano-ia:mentoria:equipe')||'', mMod=ls.get('artesano-ia:mentoria:modalidade')||'presencial', mSel=null, mBusy=false, mMontado=false, mUltima=null;
 const mEsc=t=>String(t??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const mEquipe=id=>MENT_EQUIPES.find(e=>e.id===id);
+const mOpcao=e=>`<option value="${e.id}">${mEsc(e.nome)}${e.turma==='sem-grupo'?'':' · '+mEsc(e.projeto)}</option>`;
+const mSemGrupo=()=>'<optgroup label="Sem grupo · tirar dúvidas">'+MENT_EQUIPES.filter(e=>e.turma==='sem-grupo').map(mOpcao).join('')+'</optgroup>';
 const mDM=iso=>{const p=partes(iso);return String(p.d).padStart(2,'0')+'/'+String(p.m).padStart(2,'0');};
 const mJanela=id=>{for(const D of MENT_DIAS){const g=MENT_GRADES[D.grade].find(x=>x[0]!=='p'&&x[0]!=='b'&&D.data+'-'+x[0]===id);if(g)return {...D,ini:g[1],fim:g[2]};}return null;};
 const mSemanas=()=>[...new Set(MENT_DIAS.map(d=>d.semana))].filter(s=>mPin||MENT_SEMANAS_ABERTAS.includes(s));
@@ -666,8 +692,8 @@ function mMontar(){
 }
 function mOpcoes(){
   const s=$('#mEquipe'); const ordem=[turma.slug,...TURMAS.map(t=>t.slug).filter(x=>x!==turma.slug)];
-  s.innerHTML='<option value="">escolha a sua equipe</option>'+ordem.map(slug=>{const t=TURMAS.find(x=>x.slug===slug);
-    return `<optgroup label="${mEsc(t.nome)}">`+MENT_EQUIPES.filter(e=>e.turma===slug).map(e=>`<option value="${e.id}">${mEsc(e.nome)} · ${mEsc(e.projeto)}</option>`).join('')+'</optgroup>';}).join('');
+  s.innerHTML='<option value="">escolha a sua equipe ou o seu nome</option>'+ordem.map(slug=>{const t=TURMAS.find(x=>x.slug===slug);
+    return `<optgroup label="${mEsc(t.nome)}">`+MENT_EQUIPES.filter(e=>e.turma===slug).map(mOpcao).join('')+'</optgroup>';}).join('')+mSemGrupo();
   s.value=mEquipe(mEq)?mEq:'';
 }
 function renderMentoria(){
@@ -675,20 +701,20 @@ function renderMentoria(){
   const eq=mEquipe(mEq);
   $('#mPres').setAttribute('aria-pressed',mMod==='presencial'); $('#mOn').setAttribute('aria-pressed',mMod==='online');
   const sem=mSemanas(), atual=sem.find(s=>mDiasDa(s).some(d=>d.data>=hojeISO))||sem[sem.length-1];
-  const marcaram=new Set(mRes.filter(r=>(mJanela(r.janela)||{}).semana===atual).map(r=>r.equipe)).size;
-  $('#mContagem').textContent=marcaram+' de '+MENT_EQUIPES.length+' equipes marcaram na semana '+atual;
+  const grupos=MENT_EQUIPES.filter(e=>e.turma!=='sem-grupo'), marcaram=new Set(mRes.filter(r=>(mJanela(r.janela)||{}).semana===atual&&grupos.some(e=>e.id===r.equipe)).map(r=>r.equipe)).size;
+  $('#mContagem').textContent=marcaram+' de '+grupos.length+' equipes marcaram na semana '+atual;
   const mb=$('#mMinha');
   if(eq){
     const minhas=mRes.filter(r=>r.equipe===eq.id).map(r=>({r,j:mJanela(r.janela)})).filter(x=>x.j);
     mb.innerHTML=sem.map(s=>{const x=minhas.find(m=>m.j.semana===s);
       return x?`<div class="m-minha"><div class="grow"><b>Semana ${s} · ${x.j.nome.toLowerCase()}, ${mDM(x.j.data)}, ${x.j.ini}</b><div class="meta">${x.r.modalidade} · até ${x.j.fim}</div></div><a class="btn ghost" href="${mOutlookUrl(x.r)}" target="_blank" rel="noopener">Outlook</a>${x.j.data>=hojeISO?`<button class="btn ghost" data-lib="${x.r.janela}">liberar</button>`:''}</div>`
-              :`<div class="meta" style="margin-top:10px">Semana ${s}: sua equipe ainda não marcou.</div>`;}).join('');
+              :`<div class="meta" style="margin-top:10px">Semana ${s}: ainda sem horário marcado.</div>`;}).join('');
     mb.querySelectorAll('[data-lib]').forEach(b=>b.addEventListener('click',()=>mEnviar({acao:'liberar',equipe:eq.id,janela:b.dataset.lib})));
   } else mb.innerHTML='';
   const box=$('#mDias'); box.innerHTML='';
   sem.forEach(s=>{
     const dias=mDiasDa(s);
-    const lab=document.createElement('div'); lab.className='section-label'; lab.innerHTML=`<span class="kicker">semana ${s}</span><small>uma janela por equipe</small>`; box.appendChild(lab);
+    const lab=document.createElement('div'); lab.className='section-label'; lab.innerHTML=`<span class="kicker">semana ${s}</span><small>uma janela por equipe ou pessoa</small>`; box.appendChild(lab);
     dias.forEach(D=>{
       const passou=D.data<hojeISO;
       const card=document.createElement('div'); card.className='card m-day'; if(passou) card.style.opacity='.55';
@@ -698,7 +724,7 @@ function renderMentoria(){
         const id=D.data+'-'+g[0], r=mRes.find(x=>x.janela===id), dono=r&&mEquipe(r.equipe);
         const el=document.createElement('button'); el.type='button'; el.className='slot';
         let who, tag;
-        if(r&&eq&&r.equipe===eq.id){el.classList.add('minha'); who='<b>sua equipe</b>'; tag=r.modalidade;}
+        if(r&&eq&&r.equipe===eq.id){el.classList.add('minha'); who='<b>sua reserva</b>'; tag=r.modalidade;}
         else if(r){who=`${mEsc(dono?dono.nome:'equipe')}<small>${mEsc(dono?dono.projeto:'')}</small>`; tag=r.modalidade; el.disabled=true;}
         else {el.classList.add('livre'); who=''; tag='livre'; if(passou){el.classList.add('fora'); el.disabled=true; tag='encerrada';}}
         if(mSel===id||mAdmJ===id) el.classList.add('sel');
@@ -708,7 +734,7 @@ function renderMentoria(){
           card.appendChild(el); return; }
         if(!el.disabled&&!(r&&eq&&r.equipe===eq.id&&r.modalidade===mMod)) el.addEventListener('click',()=>{
           if(!MENT_API){mAviso('As reservas abrem em instantes.');return;}
-          if(!eq){mAviso('Escolha primeiro a sua equipe, no passo 1.'); $('#mEquipe').focus(); return;}
+          if(!eq){mAviso('Escolha primeiro a sua equipe ou o seu nome, no passo 1.'); $('#mEquipe').focus(); return;}
           mAviso(''); mSel=id; renderMentoria(); $('#mConfirm').scrollIntoView({block:'nearest',behavior:'smooth'}); });
         card.appendChild(el);
       });
@@ -719,7 +745,7 @@ function renderMentoria(){
   const pa=$('#mAdm');
   if(mPin&&mAdmJ){ const j=mJanela(mAdmJ), atual=mRes.find(r=>r.janela===mAdmJ), sel=$('#mAdmEq').value;
     pa.hidden=false; $('#mAdmTit').textContent=`${j.nome}, ${mDM(j.data)}, ${j.ini} às ${j.fim}`+(atual?'':' · livre');
-    $('#mAdmEq').innerHTML='<option value="">escolha a equipe</option>'+TURMAS.map(t=>`<optgroup label="${mEsc(t.nome)}">`+MENT_EQUIPES.filter(e=>e.turma===t.slug).map(e=>`<option value="${e.id}">${mEsc(e.nome)} · ${mEsc(e.projeto)}</option>`).join('')+'</optgroup>').join('');
+    $('#mAdmEq').innerHTML='<option value="">escolha a equipe</option>'+TURMAS.map(t=>`<optgroup label="${mEsc(t.nome)}">`+MENT_EQUIPES.filter(e=>e.turma===t.slug).map(mOpcao).join('')+'</optgroup>').join('')+mSemGrupo();
     $('#mAdmEq').value=sel||(atual?atual.equipe:'');
     $('#mAdmPres').setAttribute('aria-pressed',mAdmMod==='presencial'); $('#mAdmOn').setAttribute('aria-pressed',mAdmMod==='online');
     $('#mAdmSalvar').disabled=mBusy; $('#mAdmSalvar').textContent=mBusy?'salvando...':'salvar';
@@ -731,7 +757,7 @@ function renderMentoria(){
   } else f.hidden=true;
   const c=$('#mConfirm');
   if(mSel&&eq){const j=mJanela(mSel), antes=mDaSemana(eq.id,j.semana); c.hidden=false;
-    $('#mConfirmTxt').textContent=`${eq.nome}: ${j.nome.toLowerCase()}, ${mDM(j.data)}, ${j.ini} às ${j.fim}, ${mMod}.`+(antes&&antes.janela!==mSel?' A janela que a equipe tinha nesta semana fica livre.':'');
+    $('#mConfirmTxt').textContent=`${eq.nome}: ${j.nome.toLowerCase()}, ${mDM(j.data)}, ${j.ini} às ${j.fim}, ${mMod}.`+(antes&&antes.janela!==mSel?' A janela marcada antes nesta semana fica livre.':'');
     $('#mOk').disabled=mBusy; $('#mOk').textContent=mBusy?'salvando...':'confirmar';
   } else c.hidden=true;
 }
