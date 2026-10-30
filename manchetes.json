@@ -1,48 +1,48 @@
 {
- "atualizado": "29/10 20h54",
+ "atualizado": "30/10 12h07",
  "janela": 1,
  "resumo": {
-  "data": "29/10/2026",
-  "hora": "20h54",
+  "data": "30/10/2026",
+  "hora": "12h07",
   "periodo": "ontem",
   "itens": [
    {
-    "titulo": "Conselho de Administração da CBIC debate impactos da reforma tributária e do fim da escala 6&#215;1",
-    "texto": "As adaptações necessárias da reforma tributária e os impactos do fim da escala 6x1 sobre os custos e a organização do trabalho na construção estiveram entre os principais temas da reunião…",
+    "titulo": "Reforma Tributária: TCU propõe alíquota de referência de 11,3% para a CBS em 2027",
+    "texto": "O plenário do Tribunal de Contas da União (TCU) aprovou, por unanimidade, nesta quarta-feira (28), a proposta de alíquota de referência de 11,3% para a Contribuição sobre Bens e Serviços (CBS), que substituirá o PIS e a Cofins a partir de janeiro de 2027.",
     "fontes": [
      {
       "nome": "CBIC",
-      "url": "https://cbic.org.br/conselho-de-administracao-da-cbic-debate-impactos-da-reforma-tributaria-e-do-fim-da-escala-6x1/"
+      "url": "https://cbic.org.br/reforma-tributaria-tcu-propoe-aliquota-de-referencia-de-113-para-a-cbs-em-2027/"
      }
     ]
    },
    {
-    "titulo": "CPRT avalia efeitos da redução da jornada de trabalho sobre custos e habitação",
-    "texto": "A redução da jornada de trabalho de 44 para 40 horas semanais pode representar um custo adicional de quase R$ 14 bilhões para a construção civil, considerando a contratação de trabalhadores para recompor as horas reduzidas e os encargos sociais básicos.",
+    "titulo": "CNI diminui de 2% para 1,6% a projeção de crescimento do PIB em 2026",
+    "texto": "A Confederação Nacional da Indústria (CNI) diminuiu de 2% para 1,6% a projeção de crescimento do Produto Interno Bruto (PIB) do país em 2026.",
     "fontes": [
      {
       "nome": "CBIC",
-      "url": "https://cbic.org.br/cprt-avalia-efeitos-da-reducao-da-jornada-de-trabalho-sobre-custos-e-habitacao/"
+      "url": "https://cbic.org.br/cni-diminui-de-2-para-16-a-projecao-de-crescimento-do-pib-em-2026/"
      }
     ]
    },
    {
-    "titulo": "Condo Meeting discute efeitos da reforma tributária e governança em supercondomínios",
-    "texto": "Especialistas orientaram administradoras e síndicos a ajustar contratos e sistemas antes de janeiro e defenderam convenções mais detalhadas em empreendimentos de grande porte Nesta terça-feira…",
+    "titulo": "CBIC participa de apresentação do Plano Edifica em evento do MME",
+    "texto": "A Câmara Brasileira da Indústria da Construção (CBIC) participou, nesta quinta-feira (29), em Brasília, da apresentação da versão final do Plano Edifica, promovida pelo Ministério de Minas e Energia (MME).",
     "fontes": [
      {
-      "nome": "Secovi-SP",
-      "url": "https://secovi.com.br/condo-meeting-discute-efeitos-da-reforma-tributaria-e-governanca-em-supercondominios/"
+      "nome": "CBIC",
+      "url": "https://cbic.org.br/cbic-participa-de-apresentacao-do-plano-edifica-em-evento-do-mme/"
      }
     ]
    },
    {
-    "titulo": "CBIC assina manifesto pela autonomia financeira das agências reguladoras",
-    "texto": "Assinado nesta terça-feira (27) por 41 instituições, o manifesto “Regulação não é gasto, é investimento” defende a autonomia financeira das agências reguladoras e a preservação dos recursos destinados às atividades de regulação e fiscalização no Orçamento de 2027.",
+    "titulo": "Construindo o Grande ABC debate crédito, legislação e produção imobiliária",
+    "texto": "Em sua 13ª edição, congresso reuniu representantes do setor e do poder público para discutir financiamento, aprovação de projetos e infraestrutura nas cidades da região.",
     "fontes": [
      {
-      "nome": "CBIC",
-      "url": "https://cbic.org.br/cbic-assina-manifesto-pela-autonomia-financeira-das-agencias-reguladoras/"
+      "nome": "Portal VGV",
+      "url": "https://www.portalvgv.com.br/construindo-o-grande-abc-cobertura-2026/"
      }
     ]
    }
@@ -50,28 +50,22 @@
  },
  "itens": [
   {
-   "fonte": "Secovi-SP",
-   "titulo": "Zoneamento, habitação social e distrato concentram riscos jurídicos do setor, apontam advogados no Secovi-SP",
-   "url": "https://secovi.com.br/zoneamento-habitacao-social-e-distrato-concentram-riscos-juridicos-do-setor-apontam-advogados-no-secovi-sp/",
-   "data": "28/10"
+   "fonte": "SindusCon-SP",
+   "titulo": "Congresso Jurídico debate temas atuais",
+   "url": "https://sindusconsp.com.br/congresso-juridico-debate-temas-atuais/",
+   "data": "29/10"
   },
   {
-   "fonte": "Imobi Report",
-   "titulo": "Conexão Imobiliária Secovi-SP convida o setor a reinventar seus resultados",
-   "url": "https://imobireport.com.br/imobiliario/conexao-imobiliaria-secovi-sp-convida-o-setor-a-reinventar-seus-resultados/",
-   "data": "28/10"
+   "fonte": "SindusCon-SP",
+   "titulo": "SindusCon-SP lança programa para ampliar contratações na construção civil",
+   "url": "https://sindusconsp.com.br/sinduscon-sp-lanca-programa-para-ampliar-contratacoes-na-construcao-civil/",
+   "data": "29/10"
   },
   {
-   "fonte": "Secovi-SP",
-   "titulo": "Secovi-SP promove Encontro com Secretários Municipais em São José dos Campos",
-   "url": "https://secovi.com.br/secovi-sp-promove-encontro-com-secretarios-municipais-em-sao-jose-dos-campos/",
-   "data": "28/10"
-  },
-  {
-   "fonte": "Imobi Report",
-   "titulo": "Como a realidade virtual bem produzida muda a forma de comprar imóvel na planta",
-   "url": "https://imobireport.com.br/inovacao/como-a-realidade-virtual-bem-produzida-muda-a-forma-de-comprar-imovel-na-planta/",
-   "data": "28/10"
+   "fonte": "SindusCon-SP",
+   "titulo": "Encontro reúne construtores e incorporadores",
+   "url": "https://sindusconsp.com.br/encontro-reune-construtores-e-incorporadores/",
+   "data": "29/10"
   }
  ]
 }
