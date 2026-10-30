@@ -474,20 +474,20 @@ const MENT_EQUIPES = [
   { id:'sj1', turma:'sjc', nome:'Sassi, Ana e Vini', projeto:'Publicidade Artesano' },
   { id:'sj2', turma:'sjc', nome:'Flavio, Alice e Gabi', projeto:'Base de conhecimento jurídico' },
   { id:'sj3', turma:'sjc', nome:'Tiago, Fernanda e Leo', projeto:'Gestão de TI e Comercial' },
-  /* sem grupo: cada pessoa marca a sua janela */
-  { id:'sg1', turma:'sem-grupo', nome:'Deise Monique', projeto:'Tirar dúvidas' },
-  { id:'sg2', turma:'sem-grupo', nome:'Felipe Bortolotto', projeto:'Tirar dúvidas' },
-  { id:'sg3', turma:'sem-grupo', nome:'Heloísa Salfemoser', projeto:'Tirar dúvidas' },
-  { id:'sg4', turma:'sem-grupo', nome:'Isabela Menezes', projeto:'Tirar dúvidas' },
-  { id:'sg5', turma:'sem-grupo', nome:'Laís Miranda', projeto:'Tirar dúvidas' },
-  { id:'sg6', turma:'sem-grupo', nome:'Mariana Cacace', projeto:'Tirar dúvidas' },
-  { id:'sg7', turma:'sem-grupo', nome:'Monica Picavêa', projeto:'Tirar dúvidas' },
-  { id:'sg8', turma:'sem-grupo', nome:'Paulo Mantovani', projeto:'Tirar dúvidas' },
-  { id:'sg9', turma:'sem-grupo', nome:'Rafael Aguiar', projeto:'Tirar dúvidas' },
-  { id:'sg10', turma:'sem-grupo', nome:'Raquel Santana', projeto:'Tirar dúvidas' },
-  { id:'sg11', turma:'sem-grupo', nome:'Vanessa Duarte', projeto:'Tirar dúvidas' },
-  { id:'sg12', turma:'sem-grupo', nome:'Vanessa Pellicani', projeto:'Tirar dúvidas' },
-  { id:'sg13', turma:'sem-grupo', nome:'Vitor Sugui', projeto:'Tirar dúvidas' }
+  /* tira dúvidas: cada pessoa marca a sua janela */
+  { id:'sg1', turma:'tira-duvidas', nome:'Deise Monique', projeto:'Tira dúvidas' },
+  { id:'sg2', turma:'tira-duvidas', nome:'Felipe Bortolotto', projeto:'Tira dúvidas' },
+  { id:'sg3', turma:'tira-duvidas', nome:'Heloísa Salfemoser', projeto:'Tira dúvidas' },
+  { id:'sg4', turma:'tira-duvidas', nome:'Isabela Menezes', projeto:'Tira dúvidas' },
+  { id:'sg5', turma:'tira-duvidas', nome:'Laís Miranda', projeto:'Tira dúvidas' },
+  { id:'sg6', turma:'tira-duvidas', nome:'Mariana Cacace', projeto:'Tira dúvidas' },
+  { id:'sg7', turma:'tira-duvidas', nome:'Monica Picavêa', projeto:'Tira dúvidas' },
+  { id:'sg8', turma:'tira-duvidas', nome:'Paulo Mantovani', projeto:'Tira dúvidas' },
+  { id:'sg9', turma:'tira-duvidas', nome:'Rafael Aguiar', projeto:'Tira dúvidas' },
+  { id:'sg10', turma:'tira-duvidas', nome:'Raquel Santana', projeto:'Tira dúvidas' },
+  { id:'sg11', turma:'tira-duvidas', nome:'Vanessa Duarte', projeto:'Tira dúvidas' },
+  { id:'sg12', turma:'tira-duvidas', nome:'Vanessa Pellicani', projeto:'Tira dúvidas' },
+  { id:'sg13', turma:'tira-duvidas', nome:'Vitor Sugui', projeto:'Tira dúvidas' }
 ];
 /* 20 min por equipe. Cada equipe marca uma janela por semana (não é horário fixo).
    Grade "cedo" começa 9:30; grade "rodizio" começa 10:30 (quinta é o rodízio da Roberta). Pausas ('p') e blocos da turma ('b') só para exibir. */
@@ -663,8 +663,8 @@ let mPin=ls.get('artesano-ia:mentoria:pin')||'', mAdmJ=null, mAdmMod='presencial
 let mRes=[], mEq=ls.get('artesano-ia:mentoria:equipe')||'', mMod=ls.get('artesano-ia:mentoria:modalidade')||'presencial', mSel=null, mBusy=false, mMontado=false, mUltima=null;
 const mEsc=t=>String(t??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const mEquipe=id=>MENT_EQUIPES.find(e=>e.id===id);
-const mOpcao=e=>`<option value="${e.id}">${mEsc(e.nome)}${e.turma==='sem-grupo'?'':' · '+mEsc(e.projeto)}</option>`;
-const mSemGrupo=()=>'<optgroup label="Sem grupo · tirar dúvidas">'+MENT_EQUIPES.filter(e=>e.turma==='sem-grupo').map(mOpcao).join('')+'</optgroup>';
+const mOpcao=e=>`<option value="${e.id}">${mEsc(e.nome)}${e.turma==='tira-duvidas'?'':' · '+mEsc(e.projeto)}</option>`;
+const mTiraDuvidas=()=>'<optgroup label="Tira dúvidas">'+MENT_EQUIPES.filter(e=>e.turma==='tira-duvidas').map(mOpcao).join('')+'</optgroup>';
 const mDM=iso=>{const p=partes(iso);return String(p.d).padStart(2,'0')+'/'+String(p.m).padStart(2,'0');};
 const mJanela=id=>{for(const D of MENT_DIAS){const g=MENT_GRADES[D.grade].find(x=>x[0]!=='p'&&x[0]!=='b'&&D.data+'-'+x[0]===id);if(g)return {...D,ini:g[1],fim:g[2]};}return null;};
 const mSemanas=()=>[...new Set(MENT_DIAS.map(d=>d.semana))].filter(s=>mPin||MENT_SEMANAS_ABERTAS.includes(s));
@@ -693,7 +693,7 @@ function mMontar(){
 function mOpcoes(){
   const s=$('#mEquipe'); const ordem=[turma.slug,...TURMAS.map(t=>t.slug).filter(x=>x!==turma.slug)];
   s.innerHTML='<option value="">escolha a sua equipe ou o seu nome</option>'+ordem.map(slug=>{const t=TURMAS.find(x=>x.slug===slug);
-    return `<optgroup label="${mEsc(t.nome)}">`+MENT_EQUIPES.filter(e=>e.turma===slug).map(mOpcao).join('')+'</optgroup>';}).join('')+mSemGrupo();
+    return `<optgroup label="${mEsc(t.nome)}">`+MENT_EQUIPES.filter(e=>e.turma===slug).map(mOpcao).join('')+'</optgroup>';}).join('')+mTiraDuvidas();
   s.value=mEquipe(mEq)?mEq:'';
 }
 function renderMentoria(){
@@ -701,7 +701,7 @@ function renderMentoria(){
   const eq=mEquipe(mEq);
   $('#mPres').setAttribute('aria-pressed',mMod==='presencial'); $('#mOn').setAttribute('aria-pressed',mMod==='online');
   const sem=mSemanas(), atual=sem.find(s=>mDiasDa(s).some(d=>d.data>=hojeISO))||sem[sem.length-1];
-  const grupos=MENT_EQUIPES.filter(e=>e.turma!=='sem-grupo'), marcaram=new Set(mRes.filter(r=>(mJanela(r.janela)||{}).semana===atual&&grupos.some(e=>e.id===r.equipe)).map(r=>r.equipe)).size;
+  const grupos=MENT_EQUIPES.filter(e=>e.turma!=='tira-duvidas'), marcaram=new Set(mRes.filter(r=>(mJanela(r.janela)||{}).semana===atual&&grupos.some(e=>e.id===r.equipe)).map(r=>r.equipe)).size;
   $('#mContagem').textContent=marcaram+' de '+grupos.length+' equipes marcaram na semana '+atual;
   const mb=$('#mMinha');
   if(eq){
@@ -745,7 +745,7 @@ function renderMentoria(){
   const pa=$('#mAdm');
   if(mPin&&mAdmJ){ const j=mJanela(mAdmJ), atual=mRes.find(r=>r.janela===mAdmJ), sel=$('#mAdmEq').value;
     pa.hidden=false; $('#mAdmTit').textContent=`${j.nome}, ${mDM(j.data)}, ${j.ini} às ${j.fim}`+(atual?'':' · livre');
-    $('#mAdmEq').innerHTML='<option value="">escolha a equipe</option>'+TURMAS.map(t=>`<optgroup label="${mEsc(t.nome)}">`+MENT_EQUIPES.filter(e=>e.turma===t.slug).map(mOpcao).join('')+'</optgroup>').join('')+mSemGrupo();
+    $('#mAdmEq').innerHTML='<option value="">escolha a equipe</option>'+TURMAS.map(t=>`<optgroup label="${mEsc(t.nome)}">`+MENT_EQUIPES.filter(e=>e.turma===t.slug).map(mOpcao).join('')+'</optgroup>').join('')+mTiraDuvidas();
     $('#mAdmEq').value=sel||(atual?atual.equipe:'');
     $('#mAdmPres').setAttribute('aria-pressed',mAdmMod==='presencial'); $('#mAdmOn').setAttribute('aria-pressed',mAdmMod==='online');
     $('#mAdmSalvar').disabled=mBusy; $('#mAdmSalvar').textContent=mBusy?'salvando...':'salvar';
