@@ -1,71 +1,52 @@
 {
- "atualizado": "30/10 20h38",
+ "atualizado": "31/10 11h35",
  "janela": 1,
  "resumo": {
-  "data": "30/10/2026",
-  "hora": "20h38",
+  "data": "31/10/2026",
+  "hora": "11h35",
   "periodo": "ontem",
   "itens": [
    {
-    "titulo": "Reforma Tributária: TCU propõe alíquota de referência de 11,3% para a CBS em 2027",
-    "texto": "O plenário do Tribunal de Contas da União (TCU) aprovou, por unanimidade, nesta quarta-feira (28), a proposta de alíquota de referência de 11,3% para a Contribuição sobre Bens e Serviços (CBS), que substituirá o PIS e a Cofins a partir de janeiro de 2027.",
+    "titulo": "Em dezembro, CBIC promove evento para tomadores de decisão da indústria da construção",
+    "texto": "As perspectivas para o setor da construção em 2027 e temas de sua agenda estratégica estarão no centro das discussões da próxima edição do Conexão CBIC.",
     "fontes": [
      {
       "nome": "CBIC",
-      "url": "https://cbic.org.br/reforma-tributaria-tcu-propoe-aliquota-de-referencia-de-113-para-a-cbs-em-2027/"
+      "url": "https://cbic.org.br/em-dezembro-cbic-promove-evento-para-tomadores-de-decisao-da-industria-da-construcao/"
      }
     ]
    },
    {
-    "titulo": "CNI diminui de 2% para 1,6% a projeção de crescimento do PIB em 2026",
-    "texto": "A Confederação Nacional da Indústria (CNI) diminuiu de 2% para 1,6% a projeção de crescimento do Produto Interno Bruto (PIB) do país em 2026.",
+    "titulo": "Orçamento do FGTS para 2027 chega a R$ 169 bilhões e transição do saque-aniversário é prorrogada",
+    "texto": "O Conselho Curador do Fundo de Garantia do Tempo de Serviço (CCFGTS) aprovou, nesta quinta-feira (29), durante a 208ª Reunião Ordinária, o orçamento de R$ 169 bilhões para 2027, com recursos destinados à habitação, ao saneamento básico e à infraestrutura urbana.",
     "fontes": [
      {
       "nome": "CBIC",
-      "url": "https://cbic.org.br/cni-diminui-de-2-para-16-a-projecao-de-crescimento-do-pib-em-2026/"
+      "url": "https://cbic.org.br/orcamento-do-fgts-para-2027-chega-a-r-169-bilhoes-e-transicao-do-saque-aniversario-e-prorrogada/"
      }
     ]
    },
    {
-    "titulo": "CBIC participa de apresentação do Plano Edifica em evento do MME",
-    "texto": "A Câmara Brasileira da Indústria da Construção (CBIC) participou, nesta quinta-feira (29), em Brasília, da apresentação da versão final do Plano Edifica, promovida pelo Ministério de Minas e Energia (MME).",
+    "titulo": "CBIC reúne lideranças da construção em Belém para discutir investimentos e desenvolvimento da Região Norte",
+    "texto": "A Câmara Brasileira da Indústria da Construção (CBIC) realiza, nesta quarta (4) e quinta-feira (5), em Belém (PA), o Encontro CBIC de Incorporadores e Construtores 2026 – Norte.",
     "fontes": [
      {
       "nome": "CBIC",
-      "url": "https://cbic.org.br/cbic-participa-de-apresentacao-do-plano-edifica-em-evento-do-mme/"
+      "url": "https://cbic.org.br/cbic-reune-liderancas-da-construcao-em-belem-para-discutir-investimentos-e-desenvolvimento-da-regiao-norte/"
      }
     ]
    },
    {
-    "titulo": "Construindo o Grande ABC debate crédito, legislação e produção imobiliária",
-    "texto": "Em sua 13ª edição, congresso reuniu representantes do setor e do poder público para discutir financiamento, aprovação de projetos e infraestrutura nas cidades da região.",
+    "titulo": "O mercado imobiliário não acordou. Foi acordado",
+    "texto": "Nos últimos meses, venho percebendo uma mudança relevante na forma como os imobiliaristas falam sobre o próprio negócio.",
     "fontes": [
      {
-      "nome": "Portal VGV",
-      "url": "https://www.portalvgv.com.br/construindo-o-grande-abc-cobertura-2026/"
+      "nome": "Imobi Report",
+      "url": "https://imobireport.com.br/imobi-report-opiniao/o-mercado-imobiliario-nao-acordou-foi-acordado/"
      }
     ]
    }
   ]
  },
- "itens": [
-  {
-   "fonte": "SindusCon-SP",
-   "titulo": "Congresso Jurídico debate temas atuais",
-   "url": "https://sindusconsp.com.br/congresso-juridico-debate-temas-atuais/",
-   "data": "29/10"
-  },
-  {
-   "fonte": "SindusCon-SP",
-   "titulo": "SindusCon-SP lança programa para ampliar contratações na construção civil",
-   "url": "https://sindusconsp.com.br/sinduscon-sp-lanca-programa-para-ampliar-contratacoes-na-construcao-civil/",
-   "data": "29/10"
-  },
-  {
-   "fonte": "SindusCon-SP",
-   "titulo": "Encontro reúne construtores e incorporadores",
-   "url": "https://sindusconsp.com.br/encontro-reune-construtores-e-incorporadores/",
-   "data": "29/10"
-  }
- ]
+ "itens": []
 }
