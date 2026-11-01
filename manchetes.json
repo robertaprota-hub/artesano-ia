@@ -1,52 +1,11 @@
 {
- "atualizado": "31/10 20h18",
+ "atualizado": "01/11 12h18",
  "janela": 1,
  "resumo": {
-  "data": "31/10/2026",
-  "hora": "20h18",
+  "data": "01/11/2026",
+  "hora": "12h18",
   "periodo": "ontem",
-  "itens": [
-   {
-    "titulo": "Em dezembro, CBIC promove evento para tomadores de decisão da indústria da construção",
-    "texto": "As perspectivas para o setor da construção em 2027 e temas de sua agenda estratégica estarão no centro das discussões da próxima edição do Conexão CBIC.",
-    "fontes": [
-     {
-      "nome": "CBIC",
-      "url": "https://cbic.org.br/em-dezembro-cbic-promove-evento-para-tomadores-de-decisao-da-industria-da-construcao/"
-     }
-    ]
-   },
-   {
-    "titulo": "Orçamento do FGTS para 2027 chega a R$ 169 bilhões e transição do saque-aniversário é prorrogada",
-    "texto": "O Conselho Curador do Fundo de Garantia do Tempo de Serviço (CCFGTS) aprovou, nesta quinta-feira (29), durante a 208ª Reunião Ordinária, o orçamento de R$ 169 bilhões para 2027, com recursos destinados à habitação, ao saneamento básico e à infraestrutura urbana.",
-    "fontes": [
-     {
-      "nome": "CBIC",
-      "url": "https://cbic.org.br/orcamento-do-fgts-para-2027-chega-a-r-169-bilhoes-e-transicao-do-saque-aniversario-e-prorrogada/"
-     }
-    ]
-   },
-   {
-    "titulo": "CBIC reúne lideranças da construção em Belém para discutir investimentos e desenvolvimento da Região Norte",
-    "texto": "A Câmara Brasileira da Indústria da Construção (CBIC) realiza, nesta quarta (4) e quinta-feira (5), em Belém (PA), o Encontro CBIC de Incorporadores e Construtores 2026 – Norte.",
-    "fontes": [
-     {
-      "nome": "CBIC",
-      "url": "https://cbic.org.br/cbic-reune-liderancas-da-construcao-em-belem-para-discutir-investimentos-e-desenvolvimento-da-regiao-norte/"
-     }
-    ]
-   },
-   {
-    "titulo": "O mercado imobiliário não acordou. Foi acordado",
-    "texto": "Nos últimos meses, venho percebendo uma mudança relevante na forma como os imobiliaristas falam sobre o próprio negócio.",
-    "fontes": [
-     {
-      "nome": "Imobi Report",
-      "url": "https://imobireport.com.br/imobi-report-opiniao/o-mercado-imobiliario-nao-acordou-foi-acordado/"
-     }
-    ]
-   }
-  ]
+  "itens": []
  },
  "itens": []
 }
