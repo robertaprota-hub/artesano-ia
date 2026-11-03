@@ -1,59 +1,11 @@
 {
- "atualizado": "02/11 23h11",
- "janela": 3,
+ "atualizado": "03/11 13h20",
+ "janela": 1,
  "resumo": {
-  "data": "02/11/2026",
-  "hora": "23h11",
-  "periodo": "sexta a domingo",
-  "itens": [
-   {
-    "titulo": "Em dezembro, CBIC promove evento para tomadores de decisão da indústria da construção",
-    "texto": "As perspectivas para o setor da construção em 2027 e temas de sua agenda estratégica estarão no centro das discussões da próxima edição do Conexão CBIC.",
-    "fontes": [
-     {
-      "nome": "CBIC",
-      "url": "https://cbic.org.br/em-dezembro-cbic-promove-evento-para-tomadores-de-decisao-da-industria-da-construcao/"
-     }
-    ]
-   },
-   {
-    "titulo": "Orçamento do FGTS para 2027 chega a R$ 169 bilhões e transição do saque-aniversário é prorrogada",
-    "texto": "O Conselho Curador do Fundo de Garantia do Tempo de Serviço (CCFGTS) aprovou, nesta quinta-feira (29), durante a 208ª Reunião Ordinária, o orçamento de R$ 169 bilhões para 2027, com recursos destinados à habitação, ao saneamento básico e à infraestrutura urbana.",
-    "fontes": [
-     {
-      "nome": "CBIC",
-      "url": "https://cbic.org.br/orcamento-do-fgts-para-2027-chega-a-r-169-bilhoes-e-transicao-do-saque-aniversario-e-prorrogada/"
-     }
-    ]
-   },
-   {
-    "titulo": "CBIC reúne lideranças da construção em Belém para discutir investimentos e desenvolvimento da Região Norte",
-    "texto": "A Câmara Brasileira da Indústria da Construção (CBIC) realiza, nesta quarta (4) e quinta-feira (5), em Belém (PA), o Encontro CBIC de Incorporadores e Construtores 2026 – Norte.",
-    "fontes": [
-     {
-      "nome": "CBIC",
-      "url": "https://cbic.org.br/cbic-reune-liderancas-da-construcao-em-belem-para-discutir-investimentos-e-desenvolvimento-da-regiao-norte/"
-     }
-    ]
-   },
-   {
-    "titulo": "Como vida e morte influenciam o preço dos imóveis, de Paris a Hong Kong",
-    "texto": "Na França, a expectativa de vida do vendedor define parte do valor da negociação; em Hong Kong, mortes não naturais podem reduzir o preço de um imóvel em até 50% The post Como vida e morte influenciam o preço dos imóveis, de Paris a Hong Kong appeared first on InfoMoney .",
-    "fontes": [
-     {
-      "nome": "InfoMoney",
-      "url": "https://www.infomoney.com.br/business/como-vida-e-morte-influenciam-o-preco-dos-imoveis-de-paris-a-hong-kong/"
-     }
-    ]
-   }
-  ]
+  "data": "03/11/2026",
+  "hora": "13h20",
+  "periodo": "ontem",
+  "itens": []
  },
- "itens": [
-  {
-   "fonte": "Imobi Report",
-   "titulo": "O mercado imobiliário não acordou. Foi acordado",
-   "url": "https://imobireport.com.br/imobi-report-opiniao/o-mercado-imobiliario-nao-acordou-foi-acordado/",
-   "data": "30/10"
-  }
- ]
+ "itens": []
 }
