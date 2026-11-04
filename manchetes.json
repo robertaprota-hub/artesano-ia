@@ -1,21 +1,11 @@
 {
- "atualizado": "04/11 13h31",
+ "atualizado": "04/11 14h07",
  "janela": 1,
  "resumo": {
   "data": "04/11/2026",
-  "hora": "13h31",
+  "hora": "14h07",
   "periodo": "ontem",
   "itens": [
-   {
-    "titulo": "Reforma Tributária: Receita Federal e Comitê Gestor avançam na adequação de documentos fiscais ao IBS e à CBS",
-    "texto": "A implementação da Reforma Tributária do Consumo ganhou uma nova etapa com a aprovação de especificações técnicas para documentos fiscais eletrônicos que deverão contemplar a Contribuição sobre Bens e Serviços (CBS) e o Imposto sobre Bens e Serviços (IBS).",
-    "fontes": [
-     {
-      "nome": "CBIC",
-      "url": "https://cbic.org.br/reforma-tributaria-receita-federal-e-comite-gestor-avancam-na-adequacao-de-documentos-fiscais-ao-ibs-e-a-cbs/"
-     }
-    ]
-   },
    {
     "titulo": "CBS a 11,3%: como as imobiliárias devem agir",
     "texto": "Acessos para o CUPOLA Summit 2027 estão oficialmente abertos.",
@@ -37,35 +27,26 @@
     ]
    },
    {
-    "titulo": "CBIC participa de primeira reunião como membro do Programa Destrava",
-    "texto": "A Câmara Brasileira da Indústria da Construção (CBIC) participou, nesta terça-feira (3), de sua primeira reunião como membro oficial do Programa Destrava, realizada na sede do Conselho Nacional de Justiça (CNJ), em Brasília.",
+    "titulo": "Comasp participa de evento da CDHU",
+    "texto": "Em pauta, planejamento urbano e habitacional sustentável O Comasp (Comitê de Meio Ambiente) do SindusCon-SP participou em 29 de outubro da mesa de diálogo “Bases do PDUH 2040: apoio ao planejamento e…",
     "fontes": [
      {
-      "nome": "CBIC",
-      "url": "https://cbic.org.br/cbic-participa-de-primeira-reuniao-como-membro-do-programa-destrava/"
+      "nome": "SindusCon-SP",
+      "url": "https://sindusconsp.com.br/comasp-participa-de-evento-da-cdhu/"
+     }
+    ]
+   },
+   {
+    "titulo": "Custo unitário básico paulista sobe 0,32% em outubro",
+    "texto": "Materiais de construção registraram alta de 0,47% no mês, enquanto mão de obra avançou 0,21% O Sindicato da Indústria da Construção Civil do Estado de São Paulo (SindusCon-SP) informa que o Custo…",
+    "fontes": [
+     {
+      "nome": "SindusCon-SP",
+      "url": "https://sindusconsp.com.br/custo-unitario-basico-paulista-sobe-032-em-outubro/"
      }
     ]
    }
   ]
  },
- "itens": [
-  {
-   "fonte": "CBIC",
-   "titulo": "CBIC oficializa participação no Programa Destrava para contribuir com retomada de obras paralisadas",
-   "url": "https://cbic.org.br/cbic-oficializa-participacao-no-programa-destrava-para-contribuir-com-retomada-de-obras-paralisadas/",
-   "data": "03/11"
-  },
-  {
-   "fonte": "SindusCon-SP",
-   "titulo": "Comasp participa de evento da CDHU",
-   "url": "https://sindusconsp.com.br/comasp-participa-de-evento-da-cdhu/",
-   "data": "03/11"
-  },
-  {
-   "fonte": "SindusCon-SP",
-   "titulo": "Custo unitário básico paulista sobe 0,32% em outubro",
-   "url": "https://sindusconsp.com.br/custo-unitario-basico-paulista-sobe-032-em-outubro/",
-   "data": "03/11"
-  }
- ]
+ "itens": []
 }
