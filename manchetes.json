@@ -1,11 +1,71 @@
 {
- "atualizado": "03/11 21h33",
+ "atualizado": "04/11 10h42",
  "janela": 1,
  "resumo": {
-  "data": "03/11/2026",
-  "hora": "21h33",
+  "data": "04/11/2026",
+  "hora": "10h42",
   "periodo": "ontem",
-  "itens": []
+  "itens": [
+   {
+    "titulo": "Reforma Tributária: Receita Federal e Comitê Gestor avançam na adequação de documentos fiscais ao IBS e à CBS",
+    "texto": "A implementação da Reforma Tributária do Consumo ganhou uma nova etapa com a aprovação de especificações técnicas para documentos fiscais eletrônicos que deverão contemplar a Contribuição sobre Bens e Serviços (CBS) e o Imposto sobre Bens e Serviços (IBS).",
+    "fontes": [
+     {
+      "nome": "CBIC",
+      "url": "https://cbic.org.br/reforma-tributaria-receita-federal-e-comite-gestor-avancam-na-adequacao-de-documentos-fiscais-ao-ibs-e-a-cbs/"
+     }
+    ]
+   },
+   {
+    "titulo": "CBS a 11,3%: como as imobiliárias devem agir",
+    "texto": "Acessos para o CUPOLA Summit 2027 estão oficialmente abertos.",
+    "fontes": [
+     {
+      "nome": "Imobi Report",
+      "url": "https://imobireport.com.br/newsletter-do-imobi/cbs-a-113-como-as-imobiliarias-devem-agir/"
+     }
+    ]
+   },
+   {
+    "titulo": "Câncer de próstata tem cura se diagnosticado cedo",
+    "texto": "Seconci-SP recomenda consulta anual ao urologista O câncer de próstata, segundo tumor mais incidente entre os homens, não produz sintomas agudos e é curável em 96% dos casos, quando detectado precocemente.",
+    "fontes": [
+     {
+      "nome": "SindusCon-SP",
+      "url": "https://sindusconsp.com.br/cancer-de-prostata-tem-cura-se-diagnosticado-cedo/"
+     }
+    ]
+   },
+   {
+    "titulo": "CBIC participa de primeira reunião como membro do Programa Destrava",
+    "texto": "A Câmara Brasileira da Indústria da Construção (CBIC) participou, nesta terça-feira (3), de sua primeira reunião como membro oficial do Programa Destrava, realizada na sede do Conselho Nacional de Justiça (CNJ), em Brasília.",
+    "fontes": [
+     {
+      "nome": "CBIC",
+      "url": "https://cbic.org.br/cbic-participa-de-primeira-reuniao-como-membro-do-programa-destrava/"
+     }
+    ]
+   }
+  ]
  },
- "itens": []
+ "itens": [
+  {
+   "fonte": "CBIC",
+   "titulo": "CBIC oficializa participação no Programa Destrava para contribuir com retomada de obras paralisadas",
+   "url": "https://cbic.org.br/cbic-oficializa-participacao-no-programa-destrava-para-contribuir-com-retomada-de-obras-paralisadas/",
+   "data": "03/11"
+  },
+  {
+   "fonte": "SindusCon-SP",
+   "titulo": "Comasp participa de evento da CDHU",
+   "url": "https://sindusconsp.com.br/comasp-participa-de-evento-da-cdhu/",
+   "data": "03/11"
+  },
+  {
+   "fonte": "SindusCon-SP",
+   "titulo": "Custo unitário básico paulista sobe 0,32% em outubro",
+   "url": "https://sindusconsp.com.br/custo-unitario-basico-paulista-sobe-032-em-outubro/",
+   "data": "03/11"
+  }
+ ]
 }
