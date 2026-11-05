@@ -1,48 +1,48 @@
 {
- "atualizado": "04/11 21h51",
+ "atualizado": "05/11 13h33",
  "janela": 1,
  "resumo": {
-  "data": "04/11/2026",
-  "hora": "21h51",
+  "data": "05/11/2026",
+  "hora": "13h33",
   "periodo": "ontem",
   "itens": [
    {
-    "titulo": "Reforma Tributária: Receita Federal e Comitê Gestor avançam na adequação de documentos fiscais ao IBS e à CBS",
-    "texto": "A implementação da Reforma Tributária do Consumo ganhou uma nova etapa com a aprovação de especificações técnicas para documentos fiscais eletrônicos que deverão contemplar a Contribuição sobre Bens e Serviços (CBS) e o Imposto sobre Bens e Serviços (IBS).",
+    "titulo": "CBIC apresenta 11 propostas ao Ministério do Trabalho para reduzir impactos da nova jornada na construção",
+    "texto": "A Câmara Brasileira da Indústria da Construção (CBIC) se reuniu, nesta quarta-feira (4), com o ministro do Trabalho e Emprego, Luiz Marinho, na Esplanada dos Ministérios, em Brasília, para apresentar as preocupações do setor com os impactos da redução da jornada de trabalho e do fim da escala 6x1.",
     "fontes": [
      {
       "nome": "CBIC",
-      "url": "https://cbic.org.br/reforma-tributaria-receita-federal-e-comite-gestor-avancam-na-adequacao-de-documentos-fiscais-ao-ibs-e-a-cbs/"
+      "url": "https://cbic.org.br/cbic-apresenta-11-propostas-ao-ministerio-do-trabalho-para-reduzir-impactos-da-nova-jornada-na-construcao/"
      }
     ]
    },
    {
-    "titulo": "CBS a 11,3%: como as imobiliárias devem agir",
-    "texto": "Acessos para o CUPOLA Summit 2027 estão oficialmente abertos.",
+    "titulo": "CBIC debate infraestrutura sustentável e desafios para ampliar investimentos durante encontro em Belém",
+    "texto": "A Câmara Brasileira da Indústria da Construção (CBIC) deu início, nesta quarta-feira (4), ao Encontro CBIC de Incorporadores e Construtores 2026 – Norte, em Belém.",
+    "fontes": [
+     {
+      "nome": "CBIC",
+      "url": "https://cbic.org.br/cbic-debate-infraestrutura-sustentavel-e-desafios-para-ampliar-investimentos-durante-encontro-em-belem/"
+     }
+    ]
+   },
+   {
+    "titulo": "Carolina Lacerda é eleita a primeira mulher a presidir o Sinduscon-GO",
+    "texto": "O Sindicato da Indústria da Construção no Estado de Goiás (Sinduscon-GO) elegeu nesta terça-feira (3) a chapa Construir o setor.",
+    "fontes": [
+     {
+      "nome": "CBIC",
+      "url": "https://cbic.org.br/carolina-lacerda-e-eleita-a-primeira-mulher-a-presidir-o-sinduscon-go/"
+     }
+    ]
+   },
+   {
+    "titulo": "Reforma Tributária adiada? É prudente não contar com iss",
+    "texto": "A deputada federal Any Ortiz (PP-RS) apresentou, na Câmara dos Deputados, uma Proposta de Emenda à Constituição (PEC) para estender o período de adaptação da Reforma Tributária.",
     "fontes": [
      {
       "nome": "Imobi Report",
-      "url": "https://imobireport.com.br/newsletter-do-imobi/cbs-a-113-como-as-imobiliarias-devem-agir/"
-     }
-    ]
-   },
-   {
-    "titulo": "Câncer de próstata tem cura se diagnosticado cedo",
-    "texto": "Seconci-SP recomenda consulta anual ao urologista O câncer de próstata, segundo tumor mais incidente entre os homens, não produz sintomas agudos e é curável em 96% dos casos, quando detectado precocemente.",
-    "fontes": [
-     {
-      "nome": "SindusCon-SP",
-      "url": "https://sindusconsp.com.br/cancer-de-prostata-tem-cura-se-diagnosticado-cedo/"
-     }
-    ]
-   },
-   {
-    "titulo": "CBIC participa de primeira reunião como membro do Programa Destrava",
-    "texto": "A Câmara Brasileira da Indústria da Construção (CBIC) participou, nesta terça-feira (3), de sua primeira reunião como membro oficial do Programa Destrava, realizada na sede do Conselho Nacional de Justiça (CNJ), em Brasília.",
-    "fontes": [
-     {
-      "nome": "CBIC",
-      "url": "https://cbic.org.br/cbic-participa-de-primeira-reuniao-como-membro-do-programa-destrava/"
+      "url": "https://imobireport.com.br/imobiliario/reforma-tributaria-adiada-e-prudente-nao-contar-com-iss/"
      }
     ]
    }
@@ -50,22 +50,22 @@
  },
  "itens": [
   {
-   "fonte": "CBIC",
-   "titulo": "CBIC oficializa participação no Programa Destrava para contribuir com retomada de obras paralisadas",
-   "url": "https://cbic.org.br/cbic-oficializa-participacao-no-programa-destrava-para-contribuir-com-retomada-de-obras-paralisadas/",
-   "data": "03/11"
+   "fonte": "Imobi Report",
+   "titulo": "Conexão Imobiliária Secovi-SP 2026 reúne lideranças do mercado imobiliário",
+   "url": "https://imobireport.com.br/imobiliario/conexao-imobiliaria-secovi-sp-2026-reune-liderancas-do-mercado-imobiliario/",
+   "data": "04/11"
   },
   {
-   "fonte": "SindusCon-SP",
-   "titulo": "Comasp participa de evento da CDHU",
-   "url": "https://sindusconsp.com.br/comasp-participa-de-evento-da-cdhu/",
-   "data": "03/11"
+   "fonte": "Imobi Report",
+   "titulo": "\"Passaporte do Inquilino\" permite que histórico de bons pagadores circule entre imobiliárias",
+   "url": "https://imobireport.com.br/aluguel/passaporte-do-inquilino-permite-que-historico-de-bons-pagadores-circule-entre-imobiliarias/",
+   "data": "04/11"
   },
   {
-   "fonte": "SindusCon-SP",
-   "titulo": "Custo unitário básico paulista sobe 0,32% em outubro",
-   "url": "https://sindusconsp.com.br/custo-unitario-basico-paulista-sobe-032-em-outubro/",
-   "data": "03/11"
+   "fonte": "Secovi-SP",
+   "titulo": "O desafio de produzir mais e melhor",
+   "url": "https://secovi.com.br/o-desafi-o-de-produzir-mais-e-melhor/",
+   "data": "04/11"
   }
  ]
 }
