@@ -1,48 +1,48 @@
 {
- "atualizado": "05/11 21h57",
+ "atualizado": "06/11 13h00",
  "janela": 1,
  "resumo": {
-  "data": "05/11/2026",
-  "hora": "21h57",
+  "data": "06/11/2026",
+  "hora": "13h00",
   "periodo": "ontem",
   "itens": [
    {
-    "titulo": "CBIC apresenta 11 propostas ao Ministério do Trabalho para reduzir impactos da nova jornada na construção",
-    "texto": "A Câmara Brasileira da Indústria da Construção (CBIC) se reuniu, nesta quarta-feira (4), com o ministro do Trabalho e Emprego, Luiz Marinho, na Esplanada dos Ministérios, em Brasília, para apresentar as preocupações do setor com os impactos da redução da jornada de trabalho e do fim da escala 6x1.",
+    "titulo": "Conexão CBIC, evento de integração e atualização para a alta liderança da construção, tem local definido",
+    "texto": "Conhecer cenários, antever tendências e discutir soluções novas para os desafios da indústria da construção com os mais importantes atores do poder público e da iniciativa privada é o objetivo do…",
     "fontes": [
      {
       "nome": "CBIC",
-      "url": "https://cbic.org.br/cbic-apresenta-11-propostas-ao-ministerio-do-trabalho-para-reduzir-impactos-da-nova-jornada-na-construcao/"
+      "url": "https://cbic.org.br/conexao-cbic-evento-de-integracao-e-atualizacao-para-a-alta-lideranca-da-construcao-tem-local-definido/"
      }
     ]
    },
    {
-    "titulo": "CBIC debate infraestrutura sustentável e desafios para ampliar investimentos durante encontro em Belém",
-    "texto": "A Câmara Brasileira da Indústria da Construção (CBIC) deu início, nesta quarta-feira (4), ao Encontro CBIC de Incorporadores e Construtores 2026 – Norte, em Belém.",
-    "fontes": [
-     {
-      "nome": "CBIC",
-      "url": "https://cbic.org.br/cbic-debate-infraestrutura-sustentavel-e-desafios-para-ampliar-investimentos-durante-encontro-em-belem/"
-     }
-    ]
-   },
-   {
-    "titulo": "Carolina Lacerda é eleita a primeira mulher a presidir o Sinduscon-GO",
-    "texto": "O Sindicato da Indústria da Construção no Estado de Goiás (Sinduscon-GO) elegeu nesta terça-feira (3) a chapa Construir o setor.",
-    "fontes": [
-     {
-      "nome": "CBIC",
-      "url": "https://cbic.org.br/carolina-lacerda-e-eleita-a-primeira-mulher-a-presidir-o-sinduscon-go/"
-     }
-    ]
-   },
-   {
-    "titulo": "Reforma Tributária adiada? É prudente não contar com isso",
-    "texto": "A deputada federal Any Ortiz (PP-RS) apresentou, na Câmara dos Deputados, uma Proposta de Emenda à Constituição (PEC) para estender o período de adaptação da Reforma Tributária.",
+    "titulo": "CashGo e MyBroker firmam parceria para antecipação de R$ 300 milhões em comissões a corretores",
+    "texto": "Integração tecnológica permite liberação de valores em até 24 horas para profissionais da rede imobiliária em todo o Brasil A fintech de crédito CashGo e a rede de intermediação de vendas de imóveis…",
     "fontes": [
      {
       "nome": "Imobi Report",
-      "url": "https://imobireport.com.br/imobiliario/reforma-tributaria-adiada-e-prudente-nao-contar-com-iss/"
+      "url": "https://imobireport.com.br/imobi-report-corretores/cashgo-e-mybroker-firmam-parceria-para-antecipacao-de-r-300-milhoes-em-comissoes-a-corretores/"
+     }
+    ]
+   },
+   {
+    "titulo": "Encontro CBIC reúne lideranças em Belém para debater desafios e oportunidades da construção na Região Norte",
+    "texto": "A Câmara Brasileira da Indústria da Construção (CBIC) deu continuidade, nesta quinta-feira (5), em Belém, ao Encontro CBIC de Incorporadores e Construtores 2026 – Norte.",
+    "fontes": [
+     {
+      "nome": "CBIC",
+      "url": "https://cbic.org.br/encontro-cbic-reune-liderancas-em-belem-para-debater-desafios-e-oportunidades-da-construcao-na-regiao-norte/"
+     }
+    ]
+   },
+   {
+    "titulo": "CNC e CNI acionam STF e pedem mudanças no cronograma de redução da jornada de trabalho",
+    "texto": "A Confederação Nacional do Comércio de Bens, Serviços e Turismo (CNC) e a Confederação Nacional da Indústria (CNI) acionaram o Supremo Tribunal Federal (STF) para questionar regras de implementação…",
+    "fontes": [
+     {
+      "nome": "CBIC",
+      "url": "https://cbic.org.br/cnc-e-cni-acionam-stf-e-pedem-mudancas-no-cronograma-de-reducao-da-jornada-de-trabalho/"
      }
     ]
    }
@@ -50,22 +50,28 @@
  },
  "itens": [
   {
-   "fonte": "Imobi Report",
-   "titulo": "Conexão Imobiliária Secovi-SP 2026 reúne lideranças do mercado imobiliário",
-   "url": "https://imobireport.com.br/imobiliario/conexao-imobiliaria-secovi-sp-2026-reune-liderancas-do-mercado-imobiliario/",
-   "data": "04/11"
+   "fonte": "SindusCon-SP",
+   "titulo": "Como ficam os contratos na reforma tributária",
+   "url": "https://sindusconsp.com.br/como-ficam-os-contratos-na-reforma-tributaria/",
+   "data": "05/11"
   },
   {
    "fonte": "Imobi Report",
-   "titulo": "\"Passaporte do Inquilino\" permite que histórico de bons pagadores circule entre imobiliárias",
-   "url": "https://imobireport.com.br/aluguel/passaporte-do-inquilino-permite-que-historico-de-bons-pagadores-circule-entre-imobiliarias/",
-   "data": "04/11"
+   "titulo": "Imobiliária reestrutura atendimento e revoluciona reputação no Reclame Aqui",
+   "url": "https://imobireport.com.br/gestao/imobiliaria-reestrutura-atendimento-e-revoluciona-reputacao-no-reclame-aqui/",
+   "data": "05/11"
   },
   {
-   "fonte": "Secovi-SP",
-   "titulo": "O desafio de produzir mais e melhor",
-   "url": "https://secovi.com.br/o-desafi-o-de-produzir-mais-e-melhor/",
-   "data": "04/11"
+   "fonte": "Imobi Report",
+   "titulo": "Grupo Quadra inicia obras de dois empreendimentos com design Pininfarina em Belém",
+   "url": "https://imobireport.com.br/incorporacao/grupo-quadra-inicia-obras-de-dois-empreendimentos-com-design-pininfarina-em-belem/",
+   "data": "05/11"
+  },
+  {
+   "fonte": "SindusCon-SP",
+   "titulo": "Construção cria 9,4 mil empregos em setembro",
+   "url": "https://sindusconsp.com.br/construcao-cria-94-mil-empregos-em-setembro/",
+   "data": "05/11"
   }
  ]
 }
