@@ -1,77 +1,11 @@
 {
- "atualizado": "07/11 20h36",
+ "atualizado": "08/11 12h22",
  "janela": 1,
  "resumo": {
-  "data": "07/11/2026",
-  "hora": "20h36",
+  "data": "08/11/2026",
+  "hora": "12h22",
   "periodo": "ontem",
-  "itens": [
-   {
-    "titulo": "Reforma Tributária: governo define regras de transição do Imposto Seletivo para 2027",
-    "texto": "O Governo Federal publicou a Medida Provisória (MPV) nº 1.399/2026, que estabelece as alíquotas e as regras complementares do Imposto Seletivo (IS) para 2027.",
-    "fontes": [
-     {
-      "nome": "CBIC",
-      "url": "https://cbic.org.br/reforma-tributaria-governo-define-regras-de-transicao-do-imposto-seletivo-para-2027/"
-     }
-    ]
-   },
-   {
-    "titulo": "FGTS, habitação e perspectivas de investimentos marcam debates do Encontro CBIC em Belém",
-    "texto": "O futuro do Fundo de Garantia do Tempo de Serviço (FGTS), a ampliação do acesso à moradia e as perspectivas de investimentos na Região Norte estiveram entre os principais temas do Encontro CBIC de Incorporadores e Construtores 2026 – Norte, realizado nos dias 4 e 5 de novembro, em Belém.",
-    "fontes": [
-     {
-      "nome": "CBIC",
-      "url": "https://cbic.org.br/fgts-habitacao-e-perspectivas-de-investimentos-marcam-debates-do-encontro-cbic-em-belem/"
-     }
-    ]
-   },
-   {
-    "titulo": "Painel na LARES projeta 2027 de crescimento moderado e aponta funding e mão de obra como gargalos",
-    "texto": "Com participação do Secovi-SP, debate na Fiesp reuniu economistas e representantes do setor para analisar juros, financiamento, construção civil, escritórios e galpões logísticos O painel “Economia e…",
-    "fontes": [
-     {
-      "nome": "Secovi-SP",
-      "url": "https://secovi.com.br/painel-na-lares-projeta-2027-de-crescimento-moderado-e-aponta-funding-e-mao-de-obra-como-gargalos/"
-     }
-    ]
-   },
-   {
-    "titulo": "Casa própria mais distante",
-    "texto": "Taxas maiores do crédito imobiliário nos bancos privados serão prejudiciais Há tempos a aquisição da casa própria para famílias com padrão médio de renda vem diminuindo, por conta dos juros altos do crédito imobiliário.",
-    "fontes": [
-     {
-      "nome": "SindusCon-SP",
-      "url": "https://sindusconsp.com.br/casa-propria-mais-distante/"
-     }
-    ]
-   }
-  ]
+  "itens": []
  },
- "itens": [
-  {
-   "fonte": "InfoMoney",
-   "titulo": "Quem financia os imóveis do Brasil? FIIs e CRIs avançam; poupança perde terreno",
-   "url": "https://www.infomoney.com.br/onde-investir/quem-financia-os-imoveis-do-brasil-fiis-e-cris-avancam-poupanca-perde-terreno/",
-   "data": "06/11"
-  },
-  {
-   "fonte": "SindusCon-SP",
-   "titulo": "Diretoria debate redução da escala de trabalho",
-   "url": "https://sindusconsp.com.br/diretoria-debate-reducao-da-escala-de-trabalho/",
-   "data": "06/11"
-  },
-  {
-   "fonte": "CBIC",
-   "titulo": "STF convoca CNC e CNI para audiência de conciliação sobre implementação da jornada 5&#215;2",
-   "url": "https://cbic.org.br/stf-convoca-cnc-e-cni-para-audiencia-de-conciliacao-sobre-implementacao-da-jornada-5x2/",
-   "data": "06/11"
-  },
-  {
-   "fonte": "SindusCon-SP",
-   "titulo": "SindusCon-SP aproxima moradores de Paraisópolis das oportunidades da construção civil",
-   "url": "https://sindusconsp.com.br/sinduscon-sp-aproxima-moradores-de-paraisopolis-das-oportunidades-da-construcao-civil/",
-   "data": "06/11"
-  }
- ]
+ "itens": []
 }
