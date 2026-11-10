@@ -1,77 +1,52 @@
 {
- "atualizado": "09/11 23h39",
- "janela": 3,
+ "atualizado": "10/11 13h28",
+ "janela": 1,
  "resumo": {
-  "data": "09/11/2026",
-  "hora": "23h39",
-  "periodo": "sexta a domingo",
+  "data": "10/11/2026",
+  "hora": "13h28",
+  "periodo": "ontem",
   "itens": [
    {
-    "titulo": "Reforma Tributária: governo define regras de transição do Imposto Seletivo para 2027",
-    "texto": "O Governo Federal publicou a Medida Provisória (MPV) nº 1.399/2026, que estabelece as alíquotas e as regras complementares do Imposto Seletivo (IS) para 2027.",
+    "titulo": "Conexão CBIC: sua marca junto aos mais importantes tomadores de decisão do país",
+    "texto": "O Conexão CBIC 2026 está se aproximando e receberá lideranças empresariais e tomadores de decisão de toda a indústria da construção e do mercado imobiliário, junto com especialistas e gestores públicos que moldam o futuro do setor e do país.",
     "fontes": [
      {
       "nome": "CBIC",
-      "url": "https://cbic.org.br/reforma-tributaria-governo-define-regras-de-transicao-do-imposto-seletivo-para-2027/"
+      "url": "https://cbic.org.br/conexao-cbic-sua-marca-junto-aos-mais-importantes-tomadores-de-decisao-do-pais/"
      }
     ]
    },
    {
-    "titulo": "FGTS, habitação e perspectivas de investimentos marcam debates do Encontro CBIC em Belém",
-    "texto": "O futuro do Fundo de Garantia do Tempo de Serviço (FGTS), a ampliação do acesso à moradia e as perspectivas de investimentos na Região Norte estiveram entre os principais temas do Encontro CBIC de Incorporadores e Construtores 2026 – Norte, realizado nos dias 4 e 5 de novembro, em Belém.",
+    "titulo": "Pesquisa sobre maturidade digital e BIM na habitação de interesse social recebe respostas até 19 de novembro",
+    "texto": "Construtoras e incorporadoras que atuam no segmento de habitação de interesse social (HIS) podem participar, até o dia 19 de novembro, da Pesquisa de Maturidade Digital e BIM na Habitação de Interesse Social.",
     "fontes": [
      {
       "nome": "CBIC",
-      "url": "https://cbic.org.br/fgts-habitacao-e-perspectivas-de-investimentos-marcam-debates-do-encontro-cbic-em-belem/"
+      "url": "https://cbic.org.br/pesquisa-sobre-maturidade-digital-e-bim-na-habitacao-de-interesse-social-recebe-respostas-ate-19-de-novembro/"
      }
     ]
    },
    {
-    "titulo": "Painel na LARES projeta 2027 de crescimento moderado e aponta funding e mão de obra como gargalos",
-    "texto": "Com participação do Secovi-SP, debate na Fiesp reuniu economistas e representantes do setor para analisar juros, financiamento, construção civil, escritórios e galpões logísticos O painel “Economia e…",
+    "titulo": "Belém recebe nesta terça-feira evento sobre industrialização da habitação de interesse social",
+    "texto": "Belém recebe, nesta terça-feira (10), o evento “Bota pra Industrializar – Conexões Produtivas para MCMV”, que conta com o apoio da Câmara Brasileira da Indústria da Construção (CBIC) e do…",
     "fontes": [
      {
-      "nome": "Secovi-SP",
-      "url": "https://secovi.com.br/painel-na-lares-projeta-2027-de-crescimento-moderado-e-aponta-funding-e-mao-de-obra-como-gargalos/"
+      "nome": "CBIC",
+      "url": "https://cbic.org.br/belem-recebe-nesta-terca-feira-evento-sobre-industrializacao-da-habitacao-de-interesse-social/"
      }
     ]
    },
    {
-    "titulo": "Casa própria mais distante",
-    "texto": "Taxas maiores do crédito imobiliário nos bancos privados serão prejudiciais Há tempos a aquisição da casa própria para famílias com padrão médio de renda vem diminuindo, por conta dos juros altos do crédito imobiliário.",
+    "titulo": "SindusCon-SP planeja ações com as Regionais",
+    "texto": "Integração de empreiteiros, Jornadas da Habitação e pesquisa de mercado estiveram entre os temas da reunião O fortalecimento da atuação do SindusCon-SP no Interior e a ampliação dos benefícios às…",
     "fontes": [
      {
       "nome": "SindusCon-SP",
-      "url": "https://sindusconsp.com.br/casa-propria-mais-distante/"
+      "url": "https://sindusconsp.com.br/sinduscon-sp-planeja-acoes-com-as-regionais/"
      }
     ]
    }
   ]
  },
- "itens": [
-  {
-   "fonte": "InfoMoney",
-   "titulo": "Quem financia os imóveis do Brasil? FIIs e CRIs avançam; poupança perde terreno",
-   "url": "https://www.infomoney.com.br/onde-investir/quem-financia-os-imoveis-do-brasil-fiis-e-cris-avancam-poupanca-perde-terreno/",
-   "data": "06/11"
-  },
-  {
-   "fonte": "SindusCon-SP",
-   "titulo": "Diretoria debate redução da escala de trabalho",
-   "url": "https://sindusconsp.com.br/diretoria-debate-reducao-da-escala-de-trabalho/",
-   "data": "06/11"
-  },
-  {
-   "fonte": "CBIC",
-   "titulo": "STF convoca CNC e CNI para audiência de conciliação sobre implementação da jornada 5&#215;2",
-   "url": "https://cbic.org.br/stf-convoca-cnc-e-cni-para-audiencia-de-conciliacao-sobre-implementacao-da-jornada-5x2/",
-   "data": "06/11"
-  },
-  {
-   "fonte": "SindusCon-SP",
-   "titulo": "SindusCon-SP aproxima moradores de Paraisópolis das oportunidades da construção civil",
-   "url": "https://sindusconsp.com.br/sinduscon-sp-aproxima-moradores-de-paraisopolis-das-oportunidades-da-construcao-civil/",
-   "data": "06/11"
-  }
- ]
+ "itens": []
 }
