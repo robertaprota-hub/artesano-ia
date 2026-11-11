@@ -1,52 +1,77 @@
 {
- "atualizado": "10/11 21h34",
+ "atualizado": "11/11 13h19",
  "janela": 1,
  "resumo": {
-  "data": "10/11/2026",
-  "hora": "21h34",
+  "data": "11/11/2026",
+  "hora": "13h19",
   "periodo": "ontem",
   "itens": [
    {
-    "titulo": "Conexão CBIC: sua marca junto aos mais importantes tomadores de decisão do país",
-    "texto": "O Conexão CBIC 2026 está se aproximando e receberá lideranças empresariais e tomadores de decisão de toda a indústria da construção e do mercado imobiliário, junto com especialistas e gestores públicos que moldam o futuro do setor e do país.",
+    "titulo": "Redução da jornada de trabalho pode impactar construção de 30 mil habitações populares por ano, estima CBIC",
+    "texto": "A redução da jornada semanal de trabalho de 44 para 40 horas, associada ao fim da escala 6x1, poderá comprometer a construção de aproximadamente 30 mil moradias populares por ano no Brasil, o equivalente ao atendimento habitacional de cerca de 83 mil pessoas.",
     "fontes": [
      {
       "nome": "CBIC",
-      "url": "https://cbic.org.br/conexao-cbic-sua-marca-junto-aos-mais-importantes-tomadores-de-decisao-do-pais/"
+      "url": "https://cbic.org.br/reducao-da-jornada-de-trabalho-pode-impactar-construcao-de-30-mil-habitacoes-populares-por-ano-estima-cbic/"
      }
     ]
    },
    {
-    "titulo": "Pesquisa sobre maturidade digital e BIM na habitação de interesse social recebe respostas até 19 de novembro",
-    "texto": "Construtoras e incorporadoras que atuam no segmento de habitação de interesse social (HIS) podem participar, até o dia 19 de novembro, da Pesquisa de Maturidade Digital e BIM na Habitação de Interesse Social.",
+    "titulo": "Ajuste fiscal, juros e reforma tributária pautam debate sobre o rumo do país depois das eleições",
+    "texto": "Ana Paula Vescovi ligou a queda dos juros ao controle da despesa obrigatória, Christian Lohbauer previu quatro anos de ajuste conjuntural e Ely Wertheim defendeu adiar a reforma tributária A [&#8230;]",
     "fontes": [
      {
-      "nome": "CBIC",
-      "url": "https://cbic.org.br/pesquisa-sobre-maturidade-digital-e-bim-na-habitacao-de-interesse-social-recebe-respostas-ate-19-de-novembro/"
+      "nome": "Secovi-SP",
+      "url": "https://secovi.com.br/ajuste-fiscal-juros-e-reforma-tributaria-pautam-debate-sobre-o-rumo-do-pais-depois-das-eleicoes/"
      }
     ]
    },
    {
-    "titulo": "Belém recebe nesta terça-feira evento sobre industrialização da habitação de interesse social",
-    "texto": "Belém recebe, nesta terça-feira (10), o evento “Bota pra Industrializar – Conexões Produtivas para MCMV”, que conta com o apoio da Câmara Brasileira da Indústria da Construção (CBIC) e do…",
+    "titulo": "Manutenção da Selic não reverte alta dos juros do crédito imobiliário",
+    "texto": "O CUPOLA Summit 2027 vai ser diferente. As conversas fora do palco valem tanto quanto as palestras.",
     "fontes": [
      {
-      "nome": "CBIC",
-      "url": "https://cbic.org.br/belem-recebe-nesta-terca-feira-evento-sobre-industrializacao-da-habitacao-de-interesse-social/"
+      "nome": "Imobi Report",
+      "url": "https://imobireport.com.br/newsletter-do-imobi/manter-juros-em-1375-nao-muda-cenario-do-credito-credito-imobiliario/"
      }
     ]
    },
    {
-    "titulo": "SindusCon-SP planeja ações com as Regionais",
-    "texto": "Integração de empreiteiros, Jornadas da Habitação e pesquisa de mercado estiveram entre os temas da reunião O fortalecimento da atuação do SindusCon-SP no Interior e a ampliação dos benefícios às…",
+    "titulo": "Reforma tributária muda anúncio, contrato e rotina de corretores e imobiliárias",
+    "texto": "Rodrigo Dias e Daniel Calderon, do Conselho Jurídico do Secovi-SP, explicaram imposto por fora, nota fiscal e split payment e apontaram oportunidades para quem se preparar Um imóvel anunciado hoje…",
     "fontes": [
      {
-      "nome": "SindusCon-SP",
-      "url": "https://sindusconsp.com.br/sinduscon-sp-planeja-acoes-com-as-regionais/"
+      "nome": "Secovi-SP",
+      "url": "https://secovi.com.br/reforma-tributaria-muda-anuncio-contrato-e-rotina-de-corretores-e-imobiliarias/"
      }
     ]
    }
   ]
  },
- "itens": []
+ "itens": [
+  {
+   "fonte": "Secovi-SP",
+   "titulo": "Vender é ciência, e o método precisa sobreviver ao próximo corretor, defende Leandro Munhoz",
+   "url": "https://secovi.com.br/vender-e-ciencia-e-o-metodo-precisa-sobreviver-ao-proximo-corretor-defende-leandro-munhoz/",
+   "data": "10/11"
+  },
+  {
+   "fonte": "CBIC",
+   "titulo": "Belém recebe primeiro encontro preparatório do Programa Bota pra Industrializar",
+   "url": "https://cbic.org.br/belem-recebe-primeiro-encontro-preparatorio-do-programa-bota-pra-industrializar/",
+   "data": "10/11"
+  },
+  {
+   "fonte": "CBIC",
+   "titulo": "Radar Trabalhista: Escala 6×1: STF marca audiência de conciliação para debater implementação da mudança",
+   "url": "https://cbic.org.br/radar-trabalhista-escala-6x1-stf-marca-audiencia-de-conciliacao-para-debater-implementacao-da-mudanca/",
+   "data": "10/11"
+  },
+  {
+   "fonte": "Imobi Report",
+   "titulo": "Melhor CRM imobiliário e site para 2027: a IA mudou a régua, e o seu sistema pode ter ficado em 1997",
+   "url": "https://imobireport.com.br/imobiliario/melhor-crm-imobiliario-e-site-para-2027-a-ia-mudou-a-regua-e-o-seu-sistema-pode-ter-ficado-em-1997/",
+   "data": "10/11"
+  }
+ ]
 }
