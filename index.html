@@ -490,8 +490,9 @@ const MENT_EQUIPES = [
 /* 20 min por equipe. Cada equipe marca uma janela por semana (não é horário fixo).
    Grade "cedo" começa 9:30; grade "rodizio" começa 10:30 (quinta é o rodízio da Roberta). Pausas ('p') e blocos da turma ('b') só para exibir. */
 const MENT_GRADES = {
-  /* sexta 13/11: ensaio do pitch, só equipes, 20 min + 5 de intervalo */
+  /* sexta 13/11: ensaio do pitch, só equipes; 8h30 às 9h30 sem intervalo, depois 20 min + 5 de intervalo */
   sex13: [
+    ['0830','8:30','8:50'],['0850','8:50','9:10'],['0910','9:10','9:30'],
     ['0930','9:30','9:50'],['0955','9:55','10:15'],['1020','10:20','10:40'],
     ['1045','10:45','11:05'],['1110','11:10','11:30'],['1135','11:35','11:55'] ],
   /* quarta 04/11: a partir das 10h, almoço 12h30 às 14h, um intervalo às 16h */
@@ -629,7 +630,7 @@ function trilhaMarcos(){
     {fase:2, num:'M2', titulo:'Mentoria 2', data:'2026-10-20', fim:'2026-10-22', feito:true, quando:'terça 20/10 ou quinta 22/10', sub:'20 min por equipe, presencial ou online'},
     {fase:2, num:'M3', titulo:'Mentoria 3', data:'2026-10-26', fim:'2026-10-27', feito:true, quando:'segunda 26/10 ou terça 27/10', sub:'20 min por equipe, presencial ou online'},
     {fase:2, num:'M4', titulo:'Mentoria 4', data:'2026-11-04', fim:'2026-11-05', feito:true, quando:'quarta 04/11 ou quinta 05/11', sub:'20 min por equipe ou pessoa, presencial ou online'},
-    {fase:2, num:'P', titulo:'Ensaio do pitch', data:'2026-11-13', fim:'2026-11-13', quando:'sexta 13/11, das 9h30 às 11h55', sub:'20 min por equipe, presencial ou online'},
+    {fase:2, num:'P', titulo:'Ensaio do pitch', data:'2026-11-13', fim:'2026-11-13', quando:'sexta 13/11, das 8h30 às 11h55', sub:'20 min por equipe, presencial ou online'},
     {fase:2, num:'E', titulo:'Entrega da apresentação do pitch', data:'2026-11-06', fim:'2026-11-06', quando:'sexta, 06 de novembro', sub:'apresentação no modelo oficial, enviada pela equipe', links:[['modelo do pitch',HACK_MATERIAL.modelo],['como montar o pitch',HACK_MATERIAL.guia]]},
     {fase:2, num:'fim', titulo:'Hackathon', data:HACKATHON.data, fim:HACKATHON.data, quando:'quarta, 18 de novembro · '+HACKATHON.hora, sub:'linha de chegada · apresentação dos projetos no escritório da Artesano', chegada:true, links:[['modelo do pitch',HACK_MATERIAL.modelo],['como montar o pitch',HACK_MATERIAL.guia]]}];
 }
