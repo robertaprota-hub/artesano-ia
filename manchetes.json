@@ -1,89 +1,52 @@
 {
- "atualizado": "12/11 21h59",
+ "atualizado": "13/11 13h33",
  "janela": 1,
  "resumo": {
-  "data": "12/11/2026",
-  "hora": "21h59",
+  "data": "13/11/2026",
+  "hora": "13h33",
   "periodo": "ontem",
   "itens": [
    {
-    "titulo": "CNI: Faturamento da indústria cresce 0,8% em setembro, mas não reverte perdas anteriores",
-    "texto": "O faturamento da indústria de transformação aumentou 0,8% em setembro em relação a agosto.",
+    "titulo": "Receita Federal anuncia medidas para transição da Reforma Tributária em 2027, mas desafios persistem para a construção civil",
+    "texto": "A Receita Federal anunciou, nesta quarta-feira (11), um conjunto de medidas para facilitar a implementação da Reforma Tributária do Consumo em 2027.",
     "fontes": [
      {
       "nome": "CBIC",
-      "url": "https://cbic.org.br/cni-faturamento-da-industria-cresce-08-em-setembro-mas-nao-reverte-perdas-anteriores/"
+      "url": "https://cbic.org.br/receita-federal-anuncia-medidas-para-transicao-da-reforma-tributaria-em-2027-mas-desafios-persistem-para-a-construcao-civil/"
      }
     ]
    },
    {
-    "titulo": "“Não existe bala de prata”: com juros altos, incorporadores precisam de precisão e parcerias de longo prazo",
-    "texto": "Mediado por Ely Wertheim, painel reuniu gestores que defenderam eficiência nos custos, financiamento à aquisição e ciclos longos de capital para quem desenvolve empreendimentos “O nível de CDI, esse…",
+    "titulo": "COINFRA realiza reunião presencial em Brasília para discutir agenda do setor e perspectivas para 2027",
+    "texto": "A Comissão de Infraestrutura (COINFRA) da Câmara Brasileira da Indústria da Construção (CBIC) realiza, no dia 2 de dezembro, em Brasília, sua reunião presencial, reunindo representantes do setor para…",
     "fontes": [
      {
-      "nome": "Secovi-SP",
-      "url": "https://secovi.com.br/nao-existe-bala-de-prata-com-juros-altos-incorporadores-precisam-de-precisao-e-parcerias-de-longo-prazo/"
+      "nome": "CBIC",
+      "url": "https://cbic.org.br/coinfra-realiza-reuniao-presencial-em-brasilia-para-discutir-agenda-do-setor-e-perspectivas-para-2027/"
      }
     ]
    },
    {
-    "titulo": "Quem financia o setor imobiliário com a poupança em queda? Gestores de FIIs respondem",
-    "texto": "Painel mediado por Rossano Nonino discutiu CRIs, crédito ao incorporador e novas estruturas de fundos; Jorge Cury propôs equiparar FIIs e Fiagros no diferimento do imposto Dez anos atrás, o [&#8230;]",
+    "titulo": "Fim da escala 6&#215;1: CBIC avalia que decisão de Flávio Dino traz flexibilizações, mas não afasta impactos na construção civil",
+    "texto": "A Câmara Brasileira da Indústria da Construção (CBIC) avalia que as flexibilizações previstas na decisão do ministro Flávio Dino, do Supremo Tribunal Federal (STF), representam um passo na direção correta, mas ainda são insuficientes diante dos desafios impostos pela redução da jornada de trabalho.",
     "fontes": [
      {
-      "nome": "Secovi-SP",
-      "url": "https://secovi.com.br/quem-financia-o-setor-imobiliario-com-a-poupanca-em-queda-gestores-de-fiis-respondem/"
+      "nome": "CBIC",
+      "url": "https://cbic.org.br/fim-da-escala-6x1-cbic-avalia-que-decisao-de-flavio-dino-traz-flexibilizacoes-mas-nao-afasta-impactos-na-construcao-civil/"
      }
     ]
    },
    {
-    "titulo": "Fundos imobiliários buscam escala e parceria com incorporadoras para crescer com juros altos",
-    "texto": "Painel mediado por Adriano Sartori reuniu Rodrigo Abbud e Luiz Augusto Amaral, que defenderam consolidação de fundos, regras claras para troca de cotas e abertura ao investidor estrangeiro “A gente…",
+    "titulo": "CTQ debate indicador de produtividade",
+    "texto": "Reunião também abordou redução da 6&#215;1 e sistemas construtivos Os próximos passos para a redução da escala 6&#215;1, a elaboração de indicadores de produtividade da construção e sistemas…",
     "fontes": [
      {
-      "nome": "Secovi-SP",
-      "url": "https://secovi.com.br/fundos-imobiliarios-buscam-escala-e-parceria-com-incorporadoras-para-crescer-com-juros-altos/"
+      "nome": "SindusCon-SP",
+      "url": "https://sindusconsp.com.br/ctq-debate-indicador-de-produtividade/"
      }
     ]
    }
   ]
  },
- "itens": [
-  {
-   "fonte": "CBIC",
-   "titulo": "CBIC e Ministério das Cidades promovem workshop sobre requalificação de áreas urbanas pelo projeto Se Essa Rua Fosse Minha",
-   "url": "https://cbic.org.br/cbic-e-ministerio-das-cidades-promovem-workshop-sobre-requalificacao-de-areas-urbanas-pelo-projeto-se-essa-rua-fosse-minha/",
-   "data": "11/11"
-  },
-  {
-   "fonte": "SindusCon-SP",
-   "titulo": "Por que a Selic parou de cair",
-   "url": "https://sindusconsp.com.br/por-que-a-selic-parou-de-cair/",
-   "data": "11/11"
-  },
-  {
-   "fonte": "CBIC",
-   "titulo": "Conexão CBIC debate tendências da construção no centro da capital federal",
-   "url": "https://cbic.org.br/conexao-cbic-debate-tendencias-da-construcao-no-centro-da-capital-federal/",
-   "data": "11/11"
-  },
-  {
-   "fonte": "Imobi Report",
-   "titulo": "Hive for Students, da ALTMA, projeta VGV de R$ 1,1 bilhão e expansão em nove cidades até 2029",
-   "url": "https://imobireport.com.br/incorporacao/hive-for-students-da-altma-projeta-vgv-de-r-11-bilhao-e-expansao-em-nove-cidades-ate-2029/",
-   "data": "11/11"
-  },
-  {
-   "fonte": "SindusCon-SP",
-   "titulo": "Emprego cresceu em cinco regionais do SindusCon-SP em setembro",
-   "url": "https://sindusconsp.com.br/emprego-cresceu-em-cinco-regionais-do-sinduscon-sp-em-setembro/",
-   "data": "11/11"
-  },
-  {
-   "fonte": "Imobi Report",
-   "titulo": "Os cuidados nas promoções da Black Friday para imobiliárias",
-   "url": "https://imobireport.com.br/gestao/os-cuidados-nas-promocoes-da-black-friday-para-imobiliarias/",
-   "data": "11/11"
-  }
- ]
+ "itens": []
 }
