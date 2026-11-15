@@ -1,52 +1,11 @@
 {
- "atualizado": "14/11 20h50",
+ "atualizado": "15/11 12h43",
  "janela": 1,
  "resumo": {
-  "data": "14/11/2026",
-  "hora": "20h50",
+  "data": "15/11/2026",
+  "hora": "12h43",
   "periodo": "ontem",
-  "itens": [
-   {
-    "titulo": "“Os problemas que estão na mesa dos empresários serão discutidos no Conexão CBIC”, afirma Eduardo Aroeira",
-    "texto": "Os principais desafios da indústria da construção e seus impactos sobre os negócios estarão em pauta na segunda edição do Conexão CBIC, que será realizada no dia 1º de dezembro, em Brasília.",
-    "fontes": [
-     {
-      "nome": "CBIC",
-      "url": "https://cbic.org.br/os-problemas-que-estao-na-mesa-dos-empresarios-serao-discutidos-no-conexao-cbic-afirma-eduardo-aroeira/"
-     }
-    ]
-   },
-   {
-    "titulo": "Senado aprova texto-base de projeto de ajuste fiscal com impactos para a construção civil",
-    "texto": "O Senado Federal aprovou, nesta quinta-feira (12), por 45 votos a 31, o texto-base do Projeto de Lei Complementar (PLP) 299/2026, que prevê novas medidas de ajuste fiscal com possíveis impactos para a indústria da construção.",
-    "fontes": [
-     {
-      "nome": "CBIC",
-      "url": "https://cbic.org.br/senado-aprova-texto-base-de-projeto-de-ajuste-fiscal-com-impactos-para-a-construcao-civil/"
-     }
-    ]
-   },
-   {
-    "titulo": "CBIC apresenta indicadores do mercado imobiliário nacional no dia 23 de novembro",
-    "texto": "A Câmara Brasileira da Indústria da Construção (CBIC) realiza, neste dia 23 de novembro, às 10h, uma coletiva para apresentar os Indicadores Imobiliários Nacionais referentes ao terceiro trimestre de 2026.",
-    "fontes": [
-     {
-      "nome": "CBIC",
-      "url": "https://cbic.org.br/cbic-apresenta-indicadores-do-mercado-imobiliario-nacional-nesta-segunda/"
-     }
-    ]
-   },
-   {
-    "titulo": "Missão impossível",
-    "texto": "Construção não terá tempo hábil para reduzir a escala de trabalho Nos 23 dias úteis que restam para o início da implementação da escala de trabalho de 42 horas semanais, será impossível à indústria da construção cumprir esta tarefa complexa.",
-    "fontes": [
-     {
-      "nome": "SindusCon-SP",
-      "url": "https://sindusconsp.com.br/missao-impossivel/"
-     }
-    ]
-   }
-  ]
+  "itens": []
  },
  "itens": []
 }
