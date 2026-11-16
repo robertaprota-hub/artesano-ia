@@ -977,36 +977,36 @@ setInterval(()=>{ ultimaCarga=Date.now(); carregarNoticias(); },30*6e4);
 (function(){
 const API = MENT_API;
 const VOT_PROJ = [
-  {n:1,nome:'Compatibilização em BIM',equipe:'Nina, Julia e Carol',areas:['Edificações'],h:'13:45'},
+  {n:1,nome:'Compatibilização em BIM',equipe:'Nina, Julia e Carol',areas:['Produto'],h:'13:45'},
   {n:2,nome:'Central Artesano',equipe:'Clara, Micaelle e Matheus',areas:['Negócios','Planejamento Financeiro'],h:'14:00'},
   {n:3,nome:'Gestão de inadimplência',equipe:'Vini e Leandro',areas:['Financeiro'],h:'14:15'},
-  {n:4,nome:'Newsletter Ecoar',equipe:'Sassi, Ana e Vini',areas:['Marketing'],h:'14:30'},
+  {n:4,nome:'Newsletter Ecoar',equipe:'Sassi, Ana e Vini',areas:['Marketing','Experiência do Cliente'],h:'14:30'},
   {n:5,nome:'Copiloto de Novos Negócios',equipe:'Giovanna e Tifany',areas:['Produto'],h:'14:45'},
   {n:6,nome:'Inteligência de Mercado',equipe:'Maira e Larissa',areas:['Produto'],h:'15:00'},
   {n:7,nome:'Greta, gestão ambiental',equipe:'Beatriz, Isabel e Caroline',areas:['Negócios'],h:'15:15'},
-  {n:8,nome:'Sistema de Gestão de Obras',equipe:'Gustavo, André e Willian',areas:['Obras'],h:'15:50'},
-  {n:9,nome:'Inteligência em Compras',equipe:'Schimming, Vitor e Denise',areas:['Suprimentos','Obras'],h:'16:05'},
-  {n:10,nome:'Gestão de Obra Artesano',equipe:'Fernanda B, Arthur e Zé',areas:['Obras'],h:'16:20'},
-  {n:11,nome:'Controles físico-financeiros',equipe:'Mari e Fernanda',areas:['Administração de Obras','Planejamento Técnico'],h:'16:35'},
+  {n:8,nome:'Sistema de Gestão de Obras',equipe:'Gustavo, André e Willian',areas:['Obra'],h:'15:50'},
+  {n:9,nome:'Inteligência em Compras',equipe:'Schimming, Vitor e Denise',areas:['Suprimentos','Obra'],h:'16:05'},
+  {n:10,nome:'Gestão de Obra Artesano',equipe:'Fernanda B, Arthur e Zé',areas:['Obra'],h:'16:20'},
+  {n:11,nome:'Controles físico-financeiros',equipe:'Mari e Fernanda',areas:['Obra','Planejamento Técnico'],h:'16:35'},
   {n:12,nome:'Memória de Custos',equipe:'Renata, Cid e Mayara',areas:['Engenharia'],h:'16:50'},
   {n:13,nome:'Escritório Jurídico',equipe:'Flavio, Alice e Gabi',areas:['Jurídico'],h:'17:05'}
 ];
 const VOT_PESSOAS = [
-  ['h01','Nina Caldeira','Edificações',1],['h02','Julia Dell Acqua','Edificações',1],['h03','Carol','Edificações',1],
+  ['h01','Nina Caldeira','Produto',1],['h02','Julia Dell Acqua','Produto',1],['h03','Carol','Produto',1],
   ['h04','Clara','Negócios',2],['h05','Micaelle','Negócios',2],['h06','Matheus','Planejamento Financeiro',2],
   ['h07','Vinícius Valladares','Financeiro',3],['h08','Leandro Souza','Financeiro',3],
-  ['h09','Pedro Sassi','Marketing',4],['h10','Ana Carolina','Marketing',4],['h11','Vinicius','Marketing',4],
+  ['h09','Pedro Sassi','Marketing',4],['h10','Ana Carolina Prado','Experiência do Cliente',4],['h11','Vinicius Lopes','Marketing',4],
   ['h12','Giovanna','Produto',5],['h13','Tifany','Produto',5],
   ['h14','Maira','Produto',6],['h15','Larissa','Produto',6],
   ['h16','Beatriz Amâncio','Negócios',7],['h17','Maria Izabel Mendonça','Negócios',7],['h18','Caroline Tiemi','Negócios',7],
-  ['h19','Gustavo Melo','Obras',8],['h20','André','Obras',8],['h21','Willian','Obras',8],
-  ['h22','Alexandre Schimming','Obras',9],['h23','Victor Araújo','Suprimentos',9],['h24','Denise Gomes','Suprimentos',9],
-  ['h25','Fernanda Boschetti','Obras',10],['h26','Arthur','Obras',10],['h27','José Augusto','Obras',10],
-  ['h28','Mariana Figueira','Planejamento Técnico',11],['h29','Fernanda Dantas','Administração de Obras',11],
+  ['h19','Gustavo Melo','Obra',8],['h20','André','Obra',8],['h21','Willian','Obra',8],
+  ['h22','Alexandre Schimming','Obra',9],['h23','Victor Araújo','Suprimentos',9],['h24','Denise Gomes','Suprimentos',9],
+  ['h25','Fernanda Boschetti','Obra',10],['h26','Arthur','Obra',10],['h27','José Augusto','Obra',10],
+  ['h28','Mariana Figueira','Planejamento Técnico',11],['h29','Fernanda Dantas','Obra',11],
   ['h30','Renata','Engenharia',12],['h31','Cid','Engenharia',12],['h32','Mayara','Engenharia',12],
   ['h33','Flávio','Jurídico',13],['h34','Alice','Jurídico',13],['h35','Gabriela','Jurídico',13]
 ].map(r=>({id:r[0],nome:r[1],area:r[2],proj:r[3]}));
-const VOT_AREAS = ['Administração de Obras','Comercial','Edificações','Engenharia','Experiência do Cliente','Financeiro','Instituto','Jurídico','Marketing','Negócios','Novos Negócios','Obras','Planejamento Financeiro','Planejamento Técnico','Produto','RH','Suprimentos','Diretoria (comitê)','Outra'];
+const VOT_AREAS = ['Comercial','Engenharia','Experiência do Cliente','Financeiro','Implantação','Instituto','Jurídico','Marketing','Negócios','Novos Negócios','Obra','Planejamento Financeiro','Planejamento Técnico','Produto','RH','Suprimentos','Diretoria (comitê)','Outra'];
 const DIR = 'Diretoria (comitê)';
 const CRIT = [['i','Inovação'],['m','Impacto para a Artesano'],['h','Horas ganhas']];
 const KEY = 'artesano-ia:final:v2';
