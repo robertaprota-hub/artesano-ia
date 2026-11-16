@@ -265,6 +265,60 @@
   .m-feito{background:var(--steel-soft);border-color:var(--steel)}
   .m-feito .row{gap:10px;flex-wrap:wrap;margin-top:10px}
   .m-feito .btn{min-height:40px;font-size:13.5px}
+  /* ===== final do hackathon: avaliação e votação ===== */
+  :root{--hk-ok:#2f6b4f;--hk-ok-bg:#e3f0e8;--hk-err:#a3352b;--hk-err-bg:#f8e3e0;--hk-warn:#9a5b1f;--hk-warn-bg:#fbeedd;--hk-star-off:rgba(2,57,74,.18)}
+  @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--hk-ok:#8fd0ad;--hk-ok-bg:#183126;--hk-err:#f0a097;--hk-err-bg:#3a1e1b;--hk-warn:#e8b37a;--hk-warn-bg:#33261a;--hk-star-off:rgba(243,241,236,.18)}}
+  :root[data-theme="dark"]{--hk-ok:#8fd0ad;--hk-ok-bg:#183126;--hk-err:#f0a097;--hk-err-bg:#3a1e1b;--hk-warn:#e8b37a;--hk-warn-bg:#33261a;--hk-star-off:rgba(243,241,236,.18)}
+  .hk-who{display:flex;flex-direction:column;gap:8px}
+  .hk-fora{display:flex;flex-direction:column;gap:8px}
+  .hk-fora[hidden],.hk-save[hidden],.hk-msg[hidden],.hk-done[hidden],.hk-form[hidden]{display:none}
+  input.m-select{min-height:48px}
+  .hk-chips{display:flex;flex-wrap:wrap;gap:6px}
+  .hk-chip{font-size:12.5px;padding:3px 10px;border-radius:99px;background:var(--terra-soft);color:var(--ink)}
+  .hk-save{font-family:var(--font-mono);font-size:12.5px;border-radius:10px;padding:8px 12px;background:var(--hk-ok-bg);color:var(--hk-ok)}
+  .hk-save.pend{background:var(--hk-warn-bg);color:var(--hk-warn)}
+  .hk-lista{display:flex;flex-direction:column;gap:12px}
+  .hk-pj{display:flex;flex-direction:column;gap:8px}
+  .hk-pj.bloq{opacity:.8}
+  .hk-top{display:flex;gap:10px;align-items:flex-start}
+  .hk-num{flex:0 0 auto;width:30px;height:30px;border-radius:9px;background:var(--petrol);color:var(--sand);display:flex;align-items:center;justify-content:center;font-weight:600;font-size:14px}
+  .hk-top .grow{flex:1;min-width:0}
+  .hk-avg{flex:0 0 auto;min-width:54px;text-align:center;border-radius:12px;padding:5px 8px;background:var(--terra-soft);line-height:1}
+  .hk-avg b{display:block;font-family:var(--font-display);font-weight:700;font-size:22px;color:var(--terra-deep);font-variant-numeric:tabular-nums}
+  .hk-avg span{font-family:var(--font-mono);font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3)}
+  .hk-avg.vazio b{color:var(--ink-3)}
+  .hk-crit{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:8px;font-size:13.5px;color:var(--ink-2)}
+  .hk-stars{display:flex;gap:2px}
+  .hk-stars button{width:30px;height:30px;display:flex;align-items:center;justify-content:center;border-radius:8px}
+  .hk-stars button svg{width:21px;height:21px;fill:var(--hk-star-off);stroke:none}
+  .hk-stars button.on svg{fill:var(--terra)}
+  .hk-stars button:focus-visible{outline:2px solid var(--terra);outline-offset:1px}
+  .hk-obs{width:100%;min-height:64px;resize:vertical;border-radius:12px;border:1px solid var(--line-strong);background:var(--card);color:var(--ink);font:400 14px/1.4 var(--font-body);padding:10px 12px}
+  .hk-obs:focus-visible{outline:2px solid var(--terra);outline-offset:2px}
+  .hk-tag{align-self:flex-start;font-family:var(--font-mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;border-radius:99px;padding:3px 9px;background:var(--card-2);color:var(--ink-2)}
+  .hk-parcial{font-family:var(--font-mono);font-size:12px;color:var(--ink-3)}
+  .hk-coffee{padding:8px 14px;border-radius:12px;background:var(--petrol);color:var(--sand);font-family:var(--font-mono);font-size:12.5px;letter-spacing:.04em}
+  .hk-rank-card{display:flex;flex-direction:column;gap:10px}
+  .hk-rank{display:flex;flex-direction:column;gap:6px;margin:0;padding:0;list-style:none}
+  .hk-rank li{display:grid;grid-template-columns:24px minmax(0,1fr) auto;gap:8px;align-items:center;font-size:14px}
+  .hk-rank li b{font-family:var(--font-mono);color:var(--terra-deep)}
+  .hk-rank li .sc{font-family:var(--font-mono);font-size:13px;color:var(--ink-2)}
+  .hk-status{font-family:var(--font-mono);font-size:13px;border-radius:12px;padding:10px 12px;background:var(--card-2);color:var(--ink-2)}
+  .hk-status.aberta{background:var(--hk-ok-bg);color:var(--hk-ok)}
+  .hk-status.fechada{background:var(--hk-warn-bg);color:var(--hk-warn)}
+  .hk-form{display:flex;flex-direction:column;gap:14px}
+  .hk-place{display:grid;grid-template-columns:52px minmax(0,1fr);gap:10px;align-items:center}
+  .hk-medal{display:flex;flex-direction:column;align-items:center;justify-content:center;height:48px;border-radius:12px;background:var(--terra-soft);line-height:1}
+  .hk-medal b{font-size:17px;font-weight:700;color:var(--terra-deep)}
+  .hk-medal span{font-family:var(--font-mono);font-size:11px;color:var(--ink-2);margin-top:3px}
+  .hk-check{display:flex;gap:10px;align-items:flex-start;font-size:14.5px}
+  .hk-check input{margin-top:3px;width:20px;height:20px;accent-color:var(--terra)}
+  .hk-msg{font-size:14px;border-radius:12px;padding:10px 12px}
+  .hk-msg.hk-err{background:var(--hk-err-bg);color:var(--hk-err)}
+  .hk-msg.hk-ok{background:var(--hk-ok-bg);color:var(--hk-ok)}
+  .hk-done{display:flex;flex-direction:column;gap:12px}
+  .hk-done ol{margin:0;padding-left:20px}
+  .btn[disabled]{opacity:.5;cursor:not-allowed}
 </style>
 </head>
 <body>
@@ -284,6 +338,9 @@
     <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-6-5.3-6-10a6 6 0 0 1 12 0c0 4.7-6 10-6 10z"/><circle cx="12" cy="11" r="2.2"/></symbol>
     <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></symbol>
     <symbol id="i-flag" viewBox="0 0 24 24"><path d="M5 21V4"/><path d="M5 4h12l-2.5 4L17 12H5"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4-4.7-4.4 6.4-.8z"/></symbol>
+    <symbol id="i-edit" viewBox="0 0 24 24"><path d="M4 20h4L19 9l-4-4L4 16z"/><path d="M13.5 6.5l4 4"/></symbol>
+    <symbol id="i-vote" viewBox="0 0 24 24"><path d="M4 13h16v7H4z"/><path d="M8 13V5h8v8"/><path d="M10 9l1.5 1.5L14 8"/></symbol>
   </defs>
 </svg>
 
@@ -420,11 +477,83 @@
     </div>
   </section>
 
+  <!-- AVALIAÇÃO (final do hackathon, 18/11) -->
+  <section class="view" data-view="avaliacao">
+    <header class="head">
+      <div class="head-inner">
+        <div class="brand"><svg class="lockup" viewBox="0 0 626 602" role="img" aria-label="Artesano Urbanismo"><use href="#logoAll"/></svg><span class="sep"></span><span class="prota" role="img" aria-label="prota.ia"></span></div>
+        <div class="kicker">hackathon · final 18/11</div>
+        <h1>Avaliação</h1>
+        <p class="editorial">Dê suas notas durante as apresentações. Elas ajudam a montar o seu pódio.</p>
+      </div>
+    </header>
+    <div class="content">
+      <div class="card hk-who">
+        <label class="kicker" for="hkAPessoa">quem é você</label>
+        <select id="hkAPessoa" class="m-select"></select>
+        <div class="hk-fora" id="hkAFora" hidden>
+          <input type="text" id="hkANome" class="m-select" placeholder="Nome e sobrenome" autocomplete="name">
+          <select id="hkAArea" class="m-select"></select>
+        </div>
+        <div class="hk-chips" id="hkAPerfil"></div>
+      </div>
+      <div class="hk-save" id="hkSalvo" hidden></div>
+      <div id="hkLista" class="hk-lista"></div>
+      <div class="card hk-rank-card">
+        <div class="kicker">seu ranking</div>
+        <ol class="hk-rank" id="hkRank"></ol>
+        <button class="btn primary full" id="hkLevar" type="button">Levar meu top 3 para a votação</button>
+        <p class="note">Média das 3 notas. Projetos bloqueados para você não entram.</p>
+      </div>
+      <div class="credit">programa conduzido por prota.ia</div>
+    </div>
+  </section>
+
+  <!-- VOTAÇÃO FINAL -->
+  <section class="view" data-view="votacao">
+    <header class="head">
+      <div class="head-inner">
+        <div class="brand"><svg class="lockup" viewBox="0 0 626 602" role="img" aria-label="Artesano Urbanismo"><use href="#logoAll"/></svg><span class="sep"></span><span class="prota" role="img" aria-label="prota.ia"></span></div>
+        <div class="kicker">hackathon · final 18/11</div>
+        <h1>Votação final</h1>
+        <p class="editorial">Seu pódio: 3 pontos para o 1º, 2 para o 2º e 1 para o 3º.</p>
+      </div>
+    </header>
+    <div class="content">
+      <div class="hk-status" id="hkStatus">conferindo se a votação está aberta…</div>
+      <form id="hkForm" class="card hk-form" novalidate>
+        <div class="hk-who">
+          <label class="kicker" for="hkVPessoa">quem é você</label>
+          <select id="hkVPessoa" class="m-select"></select>
+          <div class="hk-fora" id="hkVFora" hidden>
+            <input type="text" id="hkVNome" class="m-select" placeholder="Nome e sobrenome" autocomplete="name">
+            <select id="hkVArea" class="m-select"></select>
+          </div>
+          <div class="hk-chips" id="hkVPerfil"></div>
+        </div>
+        <label class="hk-check"><input type="checkbox" id="hkAssisti"> <span>Assisti às 13 apresentações.</span></label>
+        <div class="hk-place"><div class="hk-medal"><b>1º</b><span>3 pts</span></div><select id="hkV1" class="m-select" aria-label="1º lugar"></select></div>
+        <div class="hk-place"><div class="hk-medal"><b>2º</b><span>2 pts</span></div><select id="hkV2" class="m-select" aria-label="2º lugar"></select></div>
+        <div class="hk-place"><div class="hk-medal"><b>3º</b><span>1 pt</span></div><select id="hkV3" class="m-select" aria-label="3º lugar"></select></div>
+        <p class="note" id="hkBnote"></p>
+        <div class="hk-msg hk-err" id="hkErro" hidden></div>
+        <button type="submit" class="btn primary full" id="hkEnviar">Enviar voto</button>
+      </form>
+      <div class="card hk-done" id="hkDone" hidden>
+        <div class="hk-msg hk-ok" id="hkOk">Voto registrado.</div>
+        <ol id="hkResumo"></ol>
+        <button type="button" class="btn ghost full" id="hkMudar">Alterar meu voto</button>
+        <button type="button" class="btn ghost full" id="hkOutro">Votar como outra pessoa</button>
+      </div>
+      <div class="credit">programa conduzido por prota.ia</div>
+    </div>
+  </section>
+
   <nav class="tabs" aria-label="seções">
     <button class="tab active" data-tab="noticias"><svg class="icon"><use href="#i-news"/></svg>notícias</button>
     <button class="tab" data-tab="materiais"><svg class="icon"><use href="#i-folder"/></svg>materiais</button>
-    <button class="tab" data-tab="agenda"><svg class="icon"><use href="#i-flag"/></svg>trilha IA</button>
-    <button class="tab" data-tab="mentoria"><svg class="icon"><use href="#i-clock"/></svg>mentoria</button>
+    <button class="tab" data-tab="avaliacao"><svg class="icon"><use href="#i-edit"/></svg>avaliação</button>
+    <button class="tab" data-tab="votacao"><svg class="icon"><use href="#i-vote"/></svg>votação</button>
   </nav>
 
   <div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheetTitle">
@@ -800,7 +929,7 @@ function toast(msg){const t=$('#toast');t.textContent=msg;t.classList.add('show'
 let mAuto=null;
 function mAutoAtualizar(on){ clearInterval(mAuto); mAuto=null; if(on) mAuto=setInterval(()=>{ if(!document.hidden&&!mBusy&&!mSel) mCarregar(); },20000); }
 document.addEventListener('visibilitychange',()=>{ if(!document.hidden&&$('.view.active')?.dataset.view==='mentoria') mCarregar(); });
-function abrirAba(nome){const b=$$('.tab').find(x=>x.dataset.tab===nome); if(!b) return; $$('.tab').forEach(x=>x.classList.toggle('active',x===b));$$('.view').forEach(v=>v.classList.toggle('active',v.dataset.view===nome));$('.view.active').scrollTop=0; if(nome==='mentoria') mCarregar(); mAutoAtualizar(nome==='mentoria');}
+function abrirAba(nome){const b=$$('.tab').find(x=>x.dataset.tab===nome); if(!b) return; $$('.tab').forEach(x=>x.classList.toggle('active',x===b));$$('.view').forEach(v=>v.classList.toggle('active',v.dataset.view===nome));$('.view.active').scrollTop=0; if(nome==='mentoria') mCarregar(); mAutoAtualizar(nome==='mentoria'); if(window.hkAbriu) hkAbriu(nome);}
 $$('.tab').forEach(b=>b.addEventListener('click',()=>abrirAba(b.dataset.tab)));
 $$('[data-open-sheet]').forEach(b=>b.addEventListener('click',()=>$('#sheet').classList.add('open')));
 $('#sheet').addEventListener('click',e=>{if(e.target===e.currentTarget&&turma)$('#sheet').classList.remove('open');});
@@ -811,8 +940,7 @@ TURMAS.forEach(t=>{const b=document.createElement('button');b.className='opt';b.
   b.addEventListener('click',()=>{setTurma(t.slug);$('#sheet').classList.remove('open');toast('turma '+t.nome);}); opts.appendChild(b);});
 const dow=hoje.getDay(); $('#newsDate').textContent=DIAS_L[dow]+(dow>=1&&dow<=5?'-feira':'')+', '+hoje.getDate()+' de '+MESES_L[hoje.getMonth()]+' de '+hoje.getFullYear();
 const salva=ls.get(KEY_TURMA);
-if(salva&&TURMAS.some(t=>t.slug===salva)) setTurma(salva); else { setTurma(TURMAS[0].slug); ls.set(KEY_TURMA,''); $$('.opt').forEach(o=>o.classList.remove('sel')); $('#sheet').classList.add('open'); }
-if(location.hash==='#mentoria') abrirAba('mentoria');
+if(salva&&TURMAS.some(t=>t.slug===salva)) setTurma(salva); else { setTurma(TURMAS[0].slug); ls.set(KEY_TURMA,''); $$('.opt').forEach(o=>o.classList.remove('sel')); if(!/^#(avaliacao|votacao)$/.test(location.hash)) $('#sheet').classList.add('open'); }
 </script>
 
 <script>
@@ -841,6 +969,252 @@ let ultimaCarga=Date.now(), abertoEm=Date.now();
 document.addEventListener('visibilitychange',()=>{ if(document.visibilityState!=='visible') return; if(Date.now()-abertoEm>20*36e5){ location.reload(); return; } if(Date.now()-ultimaCarga>5*6e4){ ultimaCarga=Date.now(); carregarNoticias(); } });
 setInterval(()=>{ ultimaCarga=Date.now(); carregarNoticias(); },30*6e4);
 })();
+</script>
+<script>
+/* ===== final do hackathon (18/11): avaliação do dia todo e votação final =====
+   Grava na planilha pelo mesmo Apps Script da mentoria (MENT_API), ações vot_*.
+   VOT_PROJ / VOT_PESSOAS / VOT_AREAS iguais aos do Code.gs. */
+(function(){
+const API = MENT_API;
+const VOT_PROJ = [
+  {n:1,nome:'Compatibilização em BIM',equipe:'Nina, Julia e Carol',areas:['Edificações'],h:'13:45'},
+  {n:2,nome:'Central Artesano',equipe:'Clara, Micaelle e Matheus',areas:['Negócios','Planejamento Financeiro'],h:'14:00'},
+  {n:3,nome:'Gestão de inadimplência',equipe:'Vini e Leandro',areas:['Financeiro'],h:'14:15'},
+  {n:4,nome:'Newsletter Ecoar',equipe:'Sassi, Ana e Vini',areas:['Marketing'],h:'14:30'},
+  {n:5,nome:'Copiloto de Novos Negócios',equipe:'Giovanna e Tifany',areas:['Produto'],h:'14:45'},
+  {n:6,nome:'Inteligência de Mercado',equipe:'Maira e Larissa',areas:['Produto'],h:'15:00'},
+  {n:7,nome:'Greta, gestão ambiental',equipe:'Beatriz, Isabel e Caroline',areas:['Negócios'],h:'15:15'},
+  {n:8,nome:'Sistema de Gestão de Obras',equipe:'Gustavo, André e Willian',areas:['Obras'],h:'15:50'},
+  {n:9,nome:'Inteligência em Compras',equipe:'Schimming, Vitor e Denise',areas:['Suprimentos','Obras'],h:'16:05'},
+  {n:10,nome:'Gestão de Obra Artesano',equipe:'Fernanda B, Arthur e Zé',areas:['Obras'],h:'16:20'},
+  {n:11,nome:'Controles físico-financeiros',equipe:'Mari e Fernanda',areas:['Administração de Obras','Planejamento Técnico'],h:'16:35'},
+  {n:12,nome:'Memória de Custos',equipe:'Renata, Cid e Mayara',areas:['Engenharia'],h:'16:50'},
+  {n:13,nome:'Escritório Jurídico',equipe:'Flavio, Alice e Gabi',areas:['Jurídico'],h:'17:05'}
+];
+const VOT_PESSOAS = [
+  ['h01','Nina Caldeira','Edificações',1],['h02','Julia Dell Acqua','Edificações',1],['h03','Carol','Edificações',1],
+  ['h04','Clara','Negócios',2],['h05','Micaelle','Negócios',2],['h06','Matheus','Planejamento Financeiro',2],
+  ['h07','Vinícius Valladares','Financeiro',3],['h08','Leandro Souza','Financeiro',3],
+  ['h09','Pedro Sassi','Marketing',4],['h10','Ana Carolina','Marketing',4],['h11','Vinicius','Marketing',4],
+  ['h12','Giovanna','Produto',5],['h13','Tifany','Produto',5],
+  ['h14','Maira','Produto',6],['h15','Larissa','Produto',6],
+  ['h16','Beatriz Amâncio','Negócios',7],['h17','Maria Izabel Mendonça','Negócios',7],['h18','Caroline Tiemi','Negócios',7],
+  ['h19','Gustavo Melo','Obras',8],['h20','André','Obras',8],['h21','Willian','Obras',8],
+  ['h22','Alexandre Schimming','Obras',9],['h23','Victor Araújo','Suprimentos',9],['h24','Denise Gomes','Suprimentos',9],
+  ['h25','Fernanda Boschetti','Obras',10],['h26','Arthur','Obras',10],['h27','José Augusto','Obras',10],
+  ['h28','Mariana Figueira','Planejamento Técnico',11],['h29','Fernanda Dantas','Administração de Obras',11],
+  ['h30','Renata','Engenharia',12],['h31','Cid','Engenharia',12],['h32','Mayara','Engenharia',12],
+  ['h33','Flávio','Jurídico',13],['h34','Alice','Jurídico',13],['h35','Gabriela','Jurídico',13]
+].map(r=>({id:r[0],nome:r[1],area:r[2],proj:r[3]}));
+const VOT_AREAS = ['Administração de Obras','Arquitetura e Urbanismo','Comercial','Edificações','Engenharia','Experiência do Cliente','Financeiro','Instituto','Jurídico','Marketing','Negócios','Novos Negócios','Obras','Planejamento Financeiro','Planejamento Técnico','Produto','RH','Suprimentos','Diretoria (comitê)','Outra'];
+const DIR = 'Diretoria (comitê)';
+const CRIT = [['i','Inovação'],['m','Impacto para a Artesano'],['h','Horas ganhas']];
+const KEY = 'artesano-ia:final:v1';
+const esc = t=>String(t??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const hhmm = ()=>new Date().toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'});
+
+/* estado local: identidade, notas por pessoa, pendências de envio */
+let E; try{ E=JSON.parse(localStorage.getItem(KEY)||'null'); }catch(e){ E=null; }
+if(!E||typeof E!=='object') E={};
+E.sel=E.sel||''; E.nome=E.nome||''; E.area=E.area||''; E.notas=E.notas||{}; E.pend=E.pend||{}; E.voto=E.voto||null;
+if(!E.aparelho) E.aparelho=Math.random().toString(36).slice(2,10)+Date.now().toString(36).slice(-4);
+let falhaLocal=false;
+function grava(){ try{ localStorage.setItem(KEY,JSON.stringify(E)); falhaLocal=false; }catch(e){ falhaLocal=true; } }
+grava();
+
+let comiteFora = true, aberta = null;
+
+/* identidade */
+function eu(){
+  if(E.sel==='') return null;
+  if(E.sel==='fora'){ const nome=E.nome.trim().replace(/\s+/g,' '); return {fora:true,nome,area:E.area,proj:null,key:'fora:'+nome.toLowerCase(),pronto:nome.split(' ').length>=2&&!!E.area}; }
+  const p=VOT_PESSOAS.find(x=>x.id===E.sel); return p?{...p,key:p.id,pronto:true}:null;
+}
+const paraServidor = e=>e.fora?{nome:e.nome,area:e.area}:{id:e.id};
+function bloqueios(e){
+  const b={}; if(!e||!e.pronto) return b;
+  VOT_PROJ.forEach(p=>{ if(e.proj===p.n) b[p.n]='seu projeto'; else if(p.areas.includes(e.area)) b[p.n]='sua área'; });
+  return b;
+}
+const minhas = ()=>{ const e=eu(); if(!e||!e.pronto) return {}; return (E.notas[e.key]=E.notas[e.key]||{}); };
+function media(nt){ const v=CRIT.map(([k])=>(nt&&nt[k])||0).filter(Boolean); return {n:v.length,v:v.length?v.reduce((a,b)=>a+b,0)/v.length:0}; }
+const fmt = v=>(Math.round(v*10)/10).toLocaleString('pt-BR',{maximumFractionDigits:1});
+
+function opcoesPessoa(){
+  let h='<option value="">escolha seu nome</option>';
+  VOT_PROJ.forEach(p=>{ h+=`<optgroup label="${p.n}. ${esc(p.nome)}">`+VOT_PESSOAS.filter(x=>x.proj===p.n).map(x=>`<option value="${x.id}">${esc(x.nome)}</option>`).join('')+'</optgroup>'; });
+  return h+'<optgroup label="Fora das equipes"><option value="fora">Não estou na lista</option></optgroup>';
+}
+const opcoesArea='<option value="">escolha sua área</option>'+VOT_AREAS.map(a=>`<option>${esc(a)}</option>`).join('');
+function preencheIdent(){
+  ['A','V'].forEach(x=>{ $('#hk'+x+'Pessoa').value=E.sel; $('#hk'+x+'Nome').value=E.nome; $('#hk'+x+'Area').value=E.area; $('#hk'+x+'Fora').hidden=E.sel!=='fora';
+    const e=eu(); $('#hk'+x+'Perfil').innerHTML=!e?'':e.fora?(e.area?`<span class="hk-chip">${esc(e.area)}</span>`:''):`<span class="hk-chip">${esc(e.area)}</span><span class="hk-chip">${esc(VOT_PROJ[e.proj-1].nome)}</span>`; });
+}
+function trocaIdent(x){
+  E.sel=$('#hk'+x+'Pessoa').value; E.nome=$('#hk'+x+'Nome').value; E.area=$('#hk'+x+'Area').value; grava();
+  preencheIdent(); renderAval(); renderVoto(); recuperar();
+}
+
+/* ===== avaliação ===== */
+function renderAval(){
+  const e=eu(), b=bloqueios(e), nt=minhas(), lista=$('#hkLista');
+  if(!e||!e.pronto){ lista.innerHTML='<p class="note">Escolha seu nome para começar a avaliar.</p>'; $('#hkRank').innerHTML=''; statusSalvo(); return; }
+  let h='';
+  VOT_PROJ.forEach(p=>{
+    if(p.n===8) h+='<div class="hk-coffee">15h30 · coffee break</div>';
+    const n=nt[p.n]||{}, m=media(n);
+    h+=`<div class="card hk-pj ${b[p.n]?'bloq':''}">
+      <div class="hk-top"><div class="hk-num">${p.n}</div><div class="grow"><div class="title">${esc(p.nome)}</div><div class="meta">${p.h} · ${esc(p.equipe)}</div></div>
+        <div class="hk-avg ${m.n?'':'vazio'}"><b>${m.n?fmt(m.v):'–'}</b><span>média</span></div></div>
+      ${b[p.n]?`<span class="hk-tag">${b[p.n]} · fora do seu voto</span>`:''}
+      ${CRIT.map(([k,t])=>`<div class="hk-crit"><span>${t}</span><div class="hk-stars" role="group" aria-label="${t}">${[1,2,3,4,5].map(s=>`<button type="button" class="${s<=(n[k]||0)?'on':''}" data-n="${p.n}" data-k="${k}" data-s="${s}" aria-label="${t}: ${s} de 5"><svg><use href="#i-star"/></svg></button>`).join('')}</div></div>`).join('')}
+      <textarea class="hk-obs" data-n="${p.n}" placeholder="Observações" maxlength="2000">${esc(n.obs||'')}</textarea>
+      ${m.n&&m.n<3?`<div class="hk-parcial">média de ${m.n} de 3 critérios</div>`:''}
+    </div>`;
+  });
+  lista.innerHTML=h; renderRank(); statusSalvo();
+}
+function ranking(){
+  const e=eu(), b=bloqueios(e), nt=minhas();
+  return VOT_PROJ.filter(p=>!b[p.n]).map(p=>({p,m:media(nt[p.n])})).filter(r=>r.m.n).sort((a,c)=>c.m.v-a.m.v||a.p.n-c.p.n);
+}
+function renderRank(){
+  const r=ranking();
+  $('#hkRank').innerHTML=r.length?r.slice(0,5).map((x,i)=>`<li><b>${i+1}º</b><span>${esc(x.p.nome)}</span><span class="sc">${fmt(x.m.v)}</span></li>`).join(''):'<li><span></span><span class="note">Dê notas para ver seu ranking aqui.</span><span></span></li>';
+}
+function mexeu(n){
+  const e=eu(); if(!e||!e.pronto) return;
+  (E.pend[e.key]=E.pend[e.key]||{})[n]=Date.now(); grava(); agendaEnvio(); statusSalvo();
+}
+$('#hkLista').addEventListener('click',ev=>{
+  const bt=ev.target.closest('.hk-stars button'); if(!bt) return;
+  const nt=minhas(), n=bt.dataset.n, k=bt.dataset.k, s=+bt.dataset.s;
+  nt[n]=nt[n]||{}; nt[n][k]=nt[n][k]===s?0:s; mexeu(n);
+  const card=bt.closest('.hk-pj'), m=media(nt[n]);
+  card.querySelectorAll(`.hk-stars button[data-k="${k}"]`).forEach(x=>x.classList.toggle('on',+x.dataset.s<=nt[n][k]));
+  const av=card.querySelector('.hk-avg'); av.classList.toggle('vazio',!m.n); av.querySelector('b').textContent=m.n?fmt(m.v):'–';
+  let pa=card.querySelector('.hk-parcial'); if(m.n&&m.n<3){ if(!pa){pa=document.createElement('div');pa.className='hk-parcial';card.appendChild(pa);} pa.textContent=`média de ${m.n} de 3 critérios`; } else if(pa) pa.remove();
+  renderRank();
+});
+$('#hkLista').addEventListener('input',ev=>{
+  const t=ev.target; if(!t.classList.contains('hk-obs')) return;
+  const nt=minhas(); nt[t.dataset.n]=nt[t.dataset.n]||{}; nt[t.dataset.n].obs=t.value; mexeu(t.dataset.n);
+});
+
+/* envio para a planilha: só o que mudou, com nova tentativa sozinha */
+let timer=null, enviando=false, ultimoOk='', erroEnvio=false;
+function agendaEnvio(ms){ clearTimeout(timer); timer=setTimeout(envia, ms??1500); }
+async function envia(){
+  const e=eu(); if(!e||!e.pronto||enviando) return;
+  const pend=E.pend[e.key]||{}, ns=Object.keys(pend); if(!ns.length) return;
+  enviando=true; const marca={...pend}, nt=minhas(), notas={}; ns.forEach(n=>notas[n]=nt[n]||{});
+  try{
+    const r=await fetch(API,{method:'POST',body:JSON.stringify({acao:'vot_avaliar',aparelho:E.aparelho,pessoa:paraServidor(e),notas})});
+    const j=await r.json(); if(!j.ok) throw new Error(j.erro||'erro');
+    Object.keys(marca).forEach(n=>{ if(pend[n]===marca[n]) delete pend[n]; }); grava();
+    ultimoOk=j.hora||hhmm(); erroEnvio=false;
+  }catch(err){ erroEnvio=true; agendaEnvio(15000); }
+  enviando=false; statusSalvo();
+  if(Object.keys(E.pend[e.key]||{}).length&&!erroEnvio) agendaEnvio(800);
+}
+window.addEventListener('online',()=>agendaEnvio(300));
+document.addEventListener('visibilitychange',()=>{ if(document.hidden) envia(); });
+function statusSalvo(){
+  const s=$('#hkSalvo'), e=eu(); if(!e||!e.pronto){ s.hidden=true; return; }
+  const pend=Object.keys(E.pend[e.key]||{}).length;
+  s.hidden=false; s.classList.toggle('pend',!!pend||falhaLocal);
+  s.textContent=falhaLocal?'Este navegador não está guardando as notas. Use o app ou outro navegador.'
+    :pend?(erroEnvio?'Salvo no celular · sem conexão, envio sozinho quando voltar':'Salvo no celular · enviando…')
+    :ultimoOk?`Salvo às ${ultimoOk} · no celular e na planilha`:'Suas notas ficam salvas no celular e na planilha.';
+}
+/* recupera as notas da planilha quando o celular não tem nada desta pessoa */
+async function recuperar(){
+  const e=eu(); if(!e||!e.pronto) return;
+  const nt=minhas(); if(Object.keys(nt).length) return;
+  try{
+    const q=e.fora?`nome=${encodeURIComponent(e.nome)}&area=${encodeURIComponent(e.area)}`:`id=${e.id}`;
+    const r=await fetch(API+'?acao=vot_minhas&'+q+'&t='+Date.now(),{cache:'no-store'}); const j=await r.json();
+    if(j.ok&&j.notas&&Object.keys(j.notas).length&&!Object.keys(minhas()).length){
+      Object.assign(minhas(),j.notas); grava(); renderAval(); toast('suas notas foram recuperadas');
+    }
+  }catch(err){}
+}
+$('#hkLevar').addEventListener('click',()=>{
+  const r=ranking().slice(0,3);
+  ['#hkV1','#hkV2','#hkV3'].forEach((id,i)=>{ $(id).value=r[i]?String(r[i].p.n):''; });
+  abrirAba('votacao'); renderVoto();
+  erro(r.length<3?'Seu ranking tem menos de 3 projetos avaliados. Complete o pódio aqui.':'');
+});
+
+/* ===== votação ===== */
+function erro(t){ const x=$('#hkErro'); x.textContent=t; x.hidden=!t; }
+function renderVoto(){
+  const e=eu(), b=bloqueios(e), pronto=e&&e.pronto, dir=pronto&&e.area===DIR&&comiteFora;
+  if(E.voto&&e&&E.voto.key===e.key){ mostraFeito(E.voto); } else { $('#hkForm').hidden=false; $('#hkDone').hidden=true; }
+  const esc3=['#hkV1','#hkV2','#hkV3'].map(id=>$(id).value);
+  ['#hkV1','#hkV2','#hkV3'].forEach(id=>{
+    const sel=$(id), atual=sel.value; let h='<option value="">escolha o projeto</option>';
+    VOT_PROJ.forEach(p=>{ const m=b[p.n], usado=esc3.includes(String(p.n))&&atual!==String(p.n);
+      h+=`<option value="${p.n}" ${(!pronto||dir||m||usado)?'disabled':''} ${atual===String(p.n)&&!m?'selected':''}>${p.n}. ${esc(p.nome)}${m?' · '+m:usado?' · já escolhido':''}</option>`; });
+    sel.innerHTML=h; if(b[atual]) sel.value=''; sel.disabled=!pronto||dir;
+  });
+  const nb=Object.keys(b).length;
+  $('#hkBnote').textContent=!e?'Escolha seu nome para liberar os projetos.':!pronto?'Escreva nome e sobrenome e escolha sua área.':dir?'Quem é do comitê vota na etapa final, com os 5 mais votados.':nb?`${nb} projeto${nb>1?'s':''} bloqueado${nb>1?'s':''} para você; ${13-nb} liberados.`:'Os 13 projetos estão liberados para você.';
+  $('#hkEnviar').disabled=aberta===false;
+}
+function mostraFeito(v){
+  $('#hkForm').hidden=true; $('#hkDone').hidden=false;
+  $('#hkOk').textContent=`Voto de ${v.nome} registrado às ${v.hora}.`;
+  $('#hkResumo').innerHTML=v.picks.map((n,i)=>`<li>${esc(VOT_PROJ[n-1].nome)} · ${3-i} pt${i<2?'s':''}</li>`).join('');
+}
+async function status(){
+  try{
+    const r=await fetch(API+'?acao=vot_status&t='+Date.now(),{cache:'no-store'}); const j=await r.json();
+    if(!j.ok) throw 0; aberta=!!j.aberta; comiteFora=j.comite_fora!==false;
+    const s=$('#hkStatus'); s.className='hk-status '+(aberta?'aberta':'fechada');
+    s.textContent=aberta?'Votação aberta. Envie seu pódio.':`Votação fechada. Abre às ${String(j.abre||'17:20').replace(':','h')}, depois do último pitch.`;
+  }catch(err){ aberta=null; const s=$('#hkStatus'); s.className='hk-status'; s.textContent='Sem conexão para conferir a votação. Você pode tentar enviar mesmo assim.'; }
+  renderVoto();
+}
+let stTimer=null;
+function vigia(on){ clearInterval(stTimer); stTimer=null; if(on){ status(); stTimer=setInterval(()=>{ if(!document.hidden) status(); },30000); } }
+$('#hkForm').addEventListener('change',ev=>{ if(/^hkV[123]$/.test(ev.target.id)){ erro(''); renderVoto(); } });
+$('#hkForm').addEventListener('submit',async ev=>{
+  ev.preventDefault();
+  const e=eu();
+  if(!e) return erro('Escolha seu nome na lista ou marque “Não estou na lista”.');
+  if(!e.pronto) return erro(e.fora&&e.nome.split(' ').length<2?'Escreva nome e sobrenome.':'Escolha sua área.');
+  if(e.area===DIR&&comiteFora) return erro('Quem é do comitê vota na etapa final.');
+  if(!$('#hkAssisti').checked) return erro('Para votar, confirme que assistiu às 13 apresentações.');
+  const picks=['#hkV1','#hkV2','#hkV3'].map(id=>+$(id).value);
+  if(picks.some(x=>!x)) return erro('Escolha um projeto para cada lugar do pódio.');
+  if(new Set(picks).size<3) return erro('Os três lugares precisam ser projetos diferentes.');
+  const bt=$('#hkEnviar'); bt.disabled=true; bt.textContent='Enviando…'; erro('');
+  try{
+    const r=await fetch(API,{method:'POST',body:JSON.stringify({acao:'vot_votar',aparelho:E.aparelho,pessoa:paraServidor(e),assistiu:true,picks})});
+    const j=await r.json();
+    if(!j.ok){ erro(j.erro||'Não consegui registrar. Tente de novo.'); }
+    else { E.voto={key:e.key,nome:e.nome,picks,hora:j.hora||hhmm()}; grava(); mostraFeito(E.voto); toast('voto registrado'); }
+  }catch(err){ erro('Sem conexão. Seu voto não foi enviado. Tente de novo.'); }
+  bt.disabled=aberta===false; bt.textContent='Enviar voto';
+});
+$('#hkMudar').addEventListener('click',()=>{ E.voto=null; grava(); $('#hkForm').hidden=false; $('#hkDone').hidden=true; $('#hkAssisti').checked=false; erro(''); renderVoto(); });
+$('#hkOutro').addEventListener('click',()=>{
+  E.voto=null; E.sel=''; E.nome=''; E.area=''; grava();
+  ['#hkV1','#hkV2','#hkV3'].forEach(id=>$(id).value=''); $('#hkAssisti').checked=false;
+  preencheIdent(); renderAval(); renderVoto(); erro('');
+});
+
+/* início */
+['#hkAPessoa','#hkVPessoa'].forEach(id=>$(id).innerHTML=opcoesPessoa());
+['#hkAArea','#hkVArea'].forEach(id=>$(id).innerHTML=opcoesArea);
+['A','V'].forEach(x=>['Pessoa','Nome','Area'].forEach(c=>$('#hk'+x+c).addEventListener('change',()=>trocaIdent(x))));
+preencheIdent(); renderAval(); renderVoto(); recuperar(); agendaEnvio(500);
+$$('.tab').forEach(b=>b.addEventListener('click',()=>vigia(b.dataset.tab==='votacao')));
+window.hkAbriu=nome=>vigia(nome==='votacao');
+})();
+
+if(/^#(avaliacao|votacao)$/.test(location.hash)) abrirAba(location.hash.slice(1));
 </script>
 </body>
 </html>
