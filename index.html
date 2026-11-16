@@ -544,7 +544,6 @@
         <div class="hk-msg hk-ok" id="hkOk">Voto registrado.</div>
         <ol id="hkResumo"></ol>
         <button type="button" class="btn ghost full" id="hkMudar">Alterar meu voto</button>
-        <button type="button" class="btn ghost full" id="hkOutro">Votar como outra pessoa</button>
       </div>
       <div class="credit">programa conduzido por prota.ia</div>
     </div>
@@ -1010,7 +1009,7 @@ const VOT_PESSOAS = [
 const VOT_AREAS = ['Administração de Obras','Comercial','Edificações','Engenharia','Experiência do Cliente','Financeiro','Instituto','Jurídico','Marketing','Negócios','Novos Negócios','Obras','Planejamento Financeiro','Planejamento Técnico','Produto','RH','Suprimentos','Diretoria (comitê)','Outra'];
 const DIR = 'Diretoria (comitê)';
 const CRIT = [['i','Inovação'],['m','Impacto para a Artesano'],['h','Horas ganhas']];
-const KEY = 'artesano-ia:final:v1';
+const KEY = 'artesano-ia:final:v2';
 const esc = t=>String(t??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const hhmm = ()=>new Date().toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'});
 
@@ -1049,10 +1048,11 @@ function opcoesPessoa(){
 }
 const opcoesArea='<option value="">escolha sua área</option>'+VOT_AREAS.map(a=>`<option>${esc(a)}</option>`).join('');
 function preencheIdent(){
-  ['A','V'].forEach(x=>{ $('#hk'+x+'Pessoa').value=E.sel; $('#hk'+x+'Nome').value=E.nome; $('#hk'+x+'Area').value=E.area; $('#hk'+x+'Fora').hidden=E.sel!=='fora';
+  ['A','V'].forEach(x=>{ ['Pessoa','Nome','Area'].forEach(c=>$('#hk'+x+c).disabled=!!E.travado); $('#hk'+x+'Pessoa').value=E.sel; $('#hk'+x+'Nome').value=E.nome; $('#hk'+x+'Area').value=E.area; $('#hk'+x+'Fora').hidden=E.sel!=='fora';
     const e=eu(); $('#hk'+x+'Perfil').innerHTML=!e?'':e.fora?(e.area?`<span class="hk-chip">${esc(e.area)}</span>`:''):`<span class="hk-chip">${esc(e.area)}</span><span class="hk-chip">${esc(VOT_PROJ[e.proj-1].nome)}</span>`; });
 }
 function trocaIdent(x){
+  if(E.travado){ preencheIdent(); return; }
   E.sel=$('#hk'+x+'Pessoa').value; E.nome=$('#hk'+x+'Nome').value; E.area=$('#hk'+x+'Area').value; grava();
   preencheIdent(); renderAval(); renderVoto(); recuperar();
 }
@@ -1196,17 +1196,11 @@ $('#hkForm').addEventListener('submit',async ev=>{
     const r=await fetch(API,{method:'POST',body:JSON.stringify({acao:'vot_votar',aparelho:E.aparelho,pessoa:paraServidor(e),assistiu:true,picks})});
     const j=await r.json();
     if(!j.ok){ erro(j.erro||'Não consegui registrar. Tente de novo.'); }
-    else { E.voto={key:e.key,nome:e.nome,picks,hora:j.hora||hhmm()}; grava(); mostraFeito(E.voto); toast('voto registrado'); }
+    else { E.voto={key:e.key,nome:e.nome,picks,hora:j.hora||hhmm()}; E.travado=e.key; grava(); preencheIdent(); mostraFeito(E.voto); toast('voto registrado'); }
   }catch(err){ erro('Sem conexão. Seu voto não foi enviado. Tente de novo.'); }
   bt.disabled=aberta===false; bt.textContent='Enviar voto';
 });
 $('#hkMudar').addEventListener('click',()=>{ E.voto=null; grava(); $('#hkForm').hidden=false; $('#hkDone').hidden=true; $('#hkAssisti').checked=false; erro(''); renderVoto(); });
-$('#hkOutro').addEventListener('click',()=>{
-  E.voto=null; E.sel=''; E.nome=''; E.area=''; grava();
-  ['#hkV1','#hkV2','#hkV3'].forEach(id=>$(id).value=''); $('#hkAssisti').checked=false;
-  preencheIdent(); renderAval(); renderVoto(); erro('');
-});
-
 /* início */
 ['#hkAPessoa','#hkVPessoa'].forEach(id=>$(id).innerHTML=opcoesPessoa());
 ['#hkAArea','#hkVArea'].forEach(id=>$(id).innerHTML=opcoesArea);
