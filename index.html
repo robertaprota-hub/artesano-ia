@@ -296,6 +296,7 @@
   .hk-obs{width:100%;min-height:64px;resize:vertical;border-radius:12px;border:1px solid var(--line-strong);background:var(--card);color:var(--ink);font:400 14px/1.4 var(--font-body);padding:10px 12px}
   .hk-obs:focus-visible{outline:2px solid var(--terra);outline-offset:2px}
   .hk-tag{align-self:flex-start;font-family:var(--font-mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;border-radius:99px;padding:3px 9px;background:var(--card-2);color:var(--ink-2)}
+  .hk-area{font-family:var(--font-mono);font-size:12px;letter-spacing:.04em;color:var(--terra-deep);margin-top:2px}
   .hk-parcial{font-family:var(--font-mono);font-size:12px;color:var(--ink-3)}
   .hk-coffee{padding:8px 14px;border-radius:12px;background:var(--petrol);color:var(--sand);font-family:var(--font-mono);font-size:12.5px;letter-spacing:.04em}
   .hk-rank-card{display:flex;flex-direction:column;gap:10px}
@@ -1038,11 +1039,12 @@ function bloqueios(e){
 }
 const minhas = ()=>{ const e=eu(); if(!e||!e.pronto) return {}; return (E.notas[e.key]=E.notas[e.key]||{}); };
 function media(nt){ const v=CRIT.map(([k])=>(nt&&nt[k])||0).filter(Boolean); return {n:v.length,v:v.length?v.reduce((a,b)=>a+b,0)/v.length:0}; }
+const areaTxt = p=>p.areas.join(' e ');
 const fmt = v=>(Math.round(v*10)/10).toLocaleString('pt-BR',{maximumFractionDigits:1});
 
 function opcoesPessoa(){
   let h='<option value="">escolha seu nome</option>';
-  VOT_PROJ.forEach(p=>{ h+=`<optgroup label="${p.n}. ${esc(p.nome)}">`+VOT_PESSOAS.filter(x=>x.proj===p.n).map(x=>`<option value="${x.id}">${esc(x.nome)}</option>`).join('')+'</optgroup>'; });
+  VOT_PROJ.forEach(p=>{ h+=`<optgroup label="${p.n}. ${esc(p.nome)} · ${esc(areaTxt(p))}">`+VOT_PESSOAS.filter(x=>x.proj===p.n).map(x=>`<option value="${x.id}">${esc(x.nome)}</option>`).join('')+'</optgroup>'; });
   return h+'<optgroup label="Fora das equipes"><option value="fora">Não estou na lista</option></optgroup>';
 }
 const opcoesArea='<option value="">escolha sua área</option>'+VOT_AREAS.map(a=>`<option>${esc(a)}</option>`).join('');
@@ -1064,7 +1066,7 @@ function renderAval(){
     if(p.n===8) h+='<div class="hk-coffee">15h30 · coffee break</div>';
     const n=nt[p.n]||{}, m=media(n);
     h+=`<div class="card hk-pj ${b[p.n]?'bloq':''}">
-      <div class="hk-top"><div class="hk-num">${p.n}</div><div class="grow"><div class="title">${esc(p.nome)}</div><div class="meta">${p.h} · ${esc(p.equipe)}</div></div>
+      <div class="hk-top"><div class="hk-num">${p.n}</div><div class="grow"><div class="title">${esc(p.nome)}</div><div class="meta">${p.h} · ${esc(p.equipe)}</div><div class="hk-area">${esc(areaTxt(p))}</div></div>
         <div class="hk-avg ${m.n?'':'vazio'}"><b>${m.n?fmt(m.v):'–'}</b><span>média</span></div></div>
       ${b[p.n]?`<span class="hk-tag">${b[p.n]} · fora do seu voto</span>`:''}
       ${CRIT.map(([k,t])=>`<div class="hk-crit"><span>${t}</span><div class="hk-stars" role="group" aria-label="${t}">${[1,2,3,4,5].map(s=>`<button type="button" class="${s<=(n[k]||0)?'on':''}" data-n="${p.n}" data-k="${k}" data-s="${s}" aria-label="${t}: ${s} de 5"><svg><use href="#i-star"/></svg></button>`).join('')}</div></div>`).join('')}
@@ -1155,7 +1157,7 @@ function renderVoto(){
   ['#hkV1','#hkV2','#hkV3'].forEach(id=>{
     const sel=$(id), atual=sel.value; let h='<option value="">escolha o projeto</option>';
     VOT_PROJ.forEach(p=>{ const m=b[p.n], usado=esc3.includes(String(p.n))&&atual!==String(p.n);
-      h+=`<option value="${p.n}" ${(!pronto||dir||m||usado)?'disabled':''} ${atual===String(p.n)&&!m?'selected':''}>${p.n}. ${esc(p.nome)}${m?' · '+m:usado?' · já escolhido':''}</option>`; });
+      h+=`<option value="${p.n}" ${(!pronto||dir||m||usado)?'disabled':''} ${atual===String(p.n)&&!m?'selected':''}>${p.n}. ${esc(p.nome)} · ${esc(areaTxt(p))}${m?' · '+m:usado?' · já escolhido':''}</option>`; });
     sel.innerHTML=h; if(b[atual]) sel.value=''; sel.disabled=!pronto||dir;
   });
   const nb=Object.keys(b).length;
