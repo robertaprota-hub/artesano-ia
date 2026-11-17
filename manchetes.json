@@ -1,9 +1,9 @@
 {
- "atualizado": "17/11 18h44",
+ "atualizado": "17/11 20h27",
  "janela": 1,
  "resumo": {
   "data": "17/11/2026",
-  "hora": "18h44",
+  "hora": "20h27",
   "periodo": "ontem",
   "itens": [
    {
@@ -13,6 +13,16 @@
      {
       "nome": "CBIC",
       "url": "https://cbic.org.br/cbic-participa-do-congresso-brasileiro-de-eficiencia-energetica-2026/"
+     }
+    ]
+   },
+   {
+    "titulo": "Regional Ribeirão Preto reúne lideranças para debater perspectivas da construção civil",
+    "texto": "Encontro com associados promoveu discussões sobre financiamento habitacional para 2027, oportunidades no Minha Casa, Minha Vida e desenvolvimento urbano sustentável A Regional Ribeirão Preto do…",
+    "fontes": [
+     {
+      "nome": "SindusCon-SP",
+      "url": "https://sindusconsp.com.br/regional-ribeirao-preto-reune-liderancas-para-debater-perspectivas-da-construcao-civil/"
      }
     ]
    },
@@ -35,24 +45,26 @@
       "url": "https://cbic.org.br/cbic-promove-2a-maratona-de-inovacao-para-aproximar-jovens-da-engenharia-e-estimular-solucoes-para-o-setor/"
      }
     ]
-   },
-   {
-    "titulo": "Encontro de Gerações reúne Setin e Kallas e discute sucessão, legado e propósito",
-    "texto": "Quarta edição do evento do Secovi-SP colocou pais e filhos de duas incorporadoras familiares no mesmo palco para falar de como passaram o bastão &#160; O Secovi-SP realizou, na quinta-feira [&#8230;]",
-    "fontes": [
-     {
-      "nome": "Secovi-SP",
-      "url": "https://secovi.com.br/encontro-de-geracoes-reune-setin-e-kallas-e-discute-sucessao-legado-e-proposito/"
-     }
-    ]
    }
   ]
  },
  "itens": [
   {
+   "fonte": "Secovi-SP",
+   "titulo": "Encontro de Gerações reúne Setin e Kallas e discute sucessão, legado e propósito",
+   "url": "https://secovi.com.br/encontro-de-geracoes-reune-setin-e-kallas-e-discute-sucessao-legado-e-proposito/",
+   "data": "16/11"
+  },
+  {
    "fonte": "CBIC",
    "titulo": "Radar Trabalhista: STF vai reiniciar julgamento sobre fim da escala 6&#215;1 em plenário presencial",
    "url": "https://cbic.org.br/radar-trabalhista-stf-vai-reiniciar-julgamento-sobre-fim-da-escala-6x1-em-plenario-presencial/",
+   "data": "16/11"
+  },
+  {
+   "fonte": "SindusCon-SP",
+   "titulo": "Assembleia Geral Ordinária – Convocação",
+   "url": "https://sindusconsp.com.br/assembleia-geral-ordinaria-convocacao-9/",
    "data": "16/11"
   }
  ]
