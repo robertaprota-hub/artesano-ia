@@ -1,9 +1,9 @@
 {
- "atualizado": "16/11 19h52",
+ "atualizado": "16/11 21h09",
  "janela": 3,
  "resumo": {
   "data": "16/11/2026",
-  "hora": "19h52",
+  "hora": "21h09",
   "periodo": "sexta a domingo",
   "itens": [
    {
@@ -33,16 +33,6 @@
      {
       "nome": "CBIC",
       "url": "https://cbic.org.br/cbic-apresenta-indicadores-do-mercado-imobiliario-nacional-nesta-segunda/"
-     }
-    ]
-   },
-   {
-    "titulo": "Missão impossível",
-    "texto": "Construção não terá tempo hábil para reduzir a escala de trabalho Nos 23 dias úteis que restam para o início da implementação da escala de trabalho de 42 horas semanais, será impossível à indústria da construção cumprir esta tarefa complexa.",
-    "fontes": [
-     {
-      "nome": "SindusCon-SP",
-      "url": "https://sindusconsp.com.br/missao-impossivel/"
      }
     ]
    }
