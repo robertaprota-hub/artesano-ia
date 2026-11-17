@@ -318,6 +318,16 @@
   .hk-msg.hk-err{background:var(--hk-err-bg);color:var(--hk-err)}
   .hk-msg.hk-ok{background:var(--hk-ok-bg);color:var(--hk-ok)}
   .hk-done{display:flex;flex-direction:column;gap:12px}
+  .hk-etapa{display:flex;align-items:center;gap:12px;margin-top:10px;scroll-margin-top:12px}
+  .hk-etapa-n{flex:0 0 auto;width:34px;height:34px;border-radius:50%;background:var(--petrol);color:var(--sand);display:flex;align-items:center;justify-content:center;font-family:var(--font-mono);font-weight:600}
+  .hk-etapa b{display:block;font-family:var(--font-display);font-size:20px;color:var(--ink)}
+  .hk-etapa span:not(.hk-etapa-n){display:block;font-family:var(--font-mono);font-size:12px;color:var(--ink-2)}
+  .hk-pj{scroll-margin-top:12px}
+  .pg-hora{font-family:var(--font-mono);font-size:12.5px;color:var(--ink-2)}
+  button.tr-card{width:100%;text-align:left;font:inherit;color:inherit;cursor:pointer}
+  .pg-ir{font-family:var(--font-mono);font-size:12px;color:var(--terra-deep);margin-top:6px}
+  .tr-marco.pausa .tr-card{background:var(--card-2)}
+  .pg-regras ul{margin:8px 0 0;padding-left:18px;display:flex;flex-direction:column;gap:6px;font-size:14px;line-height:1.4;color:var(--ink-2)}
   .hk-done ol{margin:0;padding-left:20px}
   .btn[disabled]{opacity:.5;cursor:not-allowed}
 </style>
@@ -478,14 +488,39 @@
     </div>
   </section>
 
-  <!-- AVALIAÇÃO (final do hackathon, 18/11) -->
+  <!-- PROGRAMAÇÃO DO DIA (final do hackathon, 18/11) -->
+  <section class="view" data-view="programacao">
+    <header class="head">
+      <div class="head-inner">
+        <div class="brand"><svg class="lockup" viewBox="0 0 626 602" role="img" aria-label="Artesano Urbanismo"><use href="#logoAll"/></svg><span class="sep"></span><span class="prota" role="img" aria-label="prota.ia"></span></div>
+        <div class="kicker">hackathon · final 18/11</div>
+        <h1>Programação do dia</h1>
+        <p class="editorial">Quarta, 18 de novembro · 13h30 às 18h · escritório da Artesano</p>
+      </div>
+    </header>
+    <div class="content">
+      <div id="pgLista" style="display:flex;flex-direction:column"></div>
+      <div class="card pg-regras">
+        <div class="kicker">regras</div>
+        <ul>
+          <li>Cada projeto tem 15 minutos: 7 de pitch, 3 de perguntas e 5 para a troca de equipe.</li>
+          <li>Só vota quem assistir às 13 apresentações.</li>
+          <li>Ninguém vota no próprio projeto nem em projeto da própria área.</li>
+          <li>Os 5 mais votados vão para o comitê, que define 1º, 2º e 3º lugar.</li>
+        </ul>
+      </div>
+      <div class="credit">programa conduzido por prota.ia</div>
+    </div>
+  </section>
+
+  <!-- AVALIAÇÃO E VOTAÇÃO (final do hackathon, 18/11) -->
   <section class="view" data-view="avaliacao">
     <header class="head">
       <div class="head-inner">
         <div class="brand"><svg class="lockup" viewBox="0 0 626 602" role="img" aria-label="Artesano Urbanismo"><use href="#logoAll"/></svg><span class="sep"></span><span class="prota" role="img" aria-label="prota.ia"></span></div>
         <div class="kicker">hackathon · final 18/11</div>
-        <h1>Avaliação</h1>
-        <p class="editorial">Dê suas notas durante as apresentações. Elas ajudam a montar o seu pódio.</p>
+        <h1>Avaliação e votação</h1>
+        <p class="editorial">Dê suas notas durante as apresentações. No fim, monte seu pódio com 3 projetos.</p>
       </div>
     </header>
     <div class="content">
@@ -498,40 +533,18 @@
         </div>
         <div class="hk-chips" id="hkAPerfil"></div>
       </div>
+      <div class="hk-etapa"><span class="hk-etapa-n">1</span><div><b>Notas</b><span>durante as apresentações</span></div></div>
       <div class="hk-save" id="hkSalvo" hidden></div>
       <div id="hkLista" class="hk-lista"></div>
       <div class="card hk-rank-card">
         <div class="kicker">seu ranking</div>
         <ol class="hk-rank" id="hkRank"></ol>
-        <button class="btn primary full" id="hkLevar" type="button">Levar meu top 3 para a votação</button>
+        <button class="btn primary full" id="hkLevar" type="button">Levar meu top 3 para o pódio</button>
         <p class="note">Média das 3 notas. Projetos bloqueados para você não entram.</p>
       </div>
-      <div class="credit">programa conduzido por prota.ia</div>
-    </div>
-  </section>
-
-  <!-- VOTAÇÃO FINAL -->
-  <section class="view" data-view="votacao">
-    <header class="head">
-      <div class="head-inner">
-        <div class="brand"><svg class="lockup" viewBox="0 0 626 602" role="img" aria-label="Artesano Urbanismo"><use href="#logoAll"/></svg><span class="sep"></span><span class="prota" role="img" aria-label="prota.ia"></span></div>
-        <div class="kicker">hackathon · final 18/11</div>
-        <h1>Votação final</h1>
-        <p class="editorial">Seu pódio: 3 pontos para o 1º, 2 para o 2º e 1 para o 3º.</p>
-      </div>
-    </header>
-    <div class="content">
+      <div class="hk-etapa" id="hkPodio"><span class="hk-etapa-n">2</span><div><b>Pódio</b><span>3 pontos para o 1º, 2 para o 2º e 1 para o 3º</span></div></div>
       <div class="hk-status" id="hkStatus">conferindo se a votação está aberta…</div>
       <form id="hkForm" class="card hk-form" novalidate>
-        <div class="hk-who">
-          <label class="kicker" for="hkVPessoa">quem é você</label>
-          <select id="hkVPessoa" class="m-select"></select>
-          <div class="hk-fora" id="hkVFora" hidden>
-            <input type="text" id="hkVNome" class="m-select" placeholder="Nome e sobrenome" autocomplete="name">
-            <select id="hkVArea" class="m-select"></select>
-          </div>
-          <div class="hk-chips" id="hkVPerfil"></div>
-        </div>
         <label class="hk-check"><input type="checkbox" id="hkAssisti"> <span>Assisti às 13 apresentações.</span></label>
         <div class="hk-place"><div class="hk-medal"><b>1º</b><span>3 pts</span></div><select id="hkV1" class="m-select" aria-label="1º lugar"></select></div>
         <div class="hk-place"><div class="hk-medal"><b>2º</b><span>2 pts</span></div><select id="hkV2" class="m-select" aria-label="2º lugar"></select></div>
@@ -552,8 +565,8 @@
   <nav class="tabs" aria-label="seções">
     <button class="tab active" data-tab="noticias"><svg class="icon"><use href="#i-news"/></svg>notícias</button>
     <button class="tab" data-tab="materiais"><svg class="icon"><use href="#i-folder"/></svg>materiais</button>
-    <button class="tab" data-tab="avaliacao"><svg class="icon"><use href="#i-edit"/></svg>avaliação</button>
-    <button class="tab" data-tab="votacao"><svg class="icon"><use href="#i-vote"/></svg>votação</button>
+    <button class="tab" data-tab="programacao"><svg class="icon"><use href="#i-clock"/></svg>programação</button>
+    <button class="tab" data-tab="avaliacao"><svg class="icon"><use href="#i-vote"/></svg>votação</button>
   </nav>
 
   <div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheetTitle">
@@ -940,7 +953,7 @@ TURMAS.forEach(t=>{const b=document.createElement('button');b.className='opt';b.
   b.addEventListener('click',()=>{setTurma(t.slug);$('#sheet').classList.remove('open');toast('turma '+t.nome);}); opts.appendChild(b);});
 const dow=hoje.getDay(); $('#newsDate').textContent=DIAS_L[dow]+(dow>=1&&dow<=5?'-feira':'')+', '+hoje.getDate()+' de '+MESES_L[hoje.getMonth()]+' de '+hoje.getFullYear();
 const salva=ls.get(KEY_TURMA);
-if(salva&&TURMAS.some(t=>t.slug===salva)) setTurma(salva); else { setTurma(TURMAS[0].slug); ls.set(KEY_TURMA,''); $$('.opt').forEach(o=>o.classList.remove('sel')); if(!/^#(avaliacao|votacao)$/.test(location.hash)) $('#sheet').classList.add('open'); }
+if(salva&&TURMAS.some(t=>t.slug===salva)) setTurma(salva); else { setTurma(TURMAS[0].slug); ls.set(KEY_TURMA,''); $$('.opt').forEach(o=>o.classList.remove('sel')); if(!/^#(avaliacao|votacao|programacao)$/.test(location.hash)) $('#sheet').classList.add('open'); }
 </script>
 
 <script>
@@ -1048,7 +1061,7 @@ function opcoesPessoa(){
 }
 const opcoesArea='<option value="">escolha sua área</option>'+VOT_AREAS.map(a=>`<option>${esc(a)}</option>`).join('');
 function preencheIdent(){
-  ['A','V'].forEach(x=>{ ['Pessoa','Nome','Area'].forEach(c=>$('#hk'+x+c).disabled=!!E.travado); $('#hk'+x+'Pessoa').value=E.sel; $('#hk'+x+'Nome').value=E.nome; $('#hk'+x+'Area').value=E.area; $('#hk'+x+'Fora').hidden=E.sel!=='fora';
+  ['A'].forEach(x=>{ ['Pessoa','Nome','Area'].forEach(c=>$('#hk'+x+c).disabled=!!E.travado); $('#hk'+x+'Pessoa').value=E.sel; $('#hk'+x+'Nome').value=E.nome; $('#hk'+x+'Area').value=E.area; $('#hk'+x+'Fora').hidden=E.sel!=='fora';
     const e=eu(); $('#hk'+x+'Perfil').innerHTML=!e?'':e.fora?(e.area?`<span class="hk-chip">${esc(e.area)}</span>`:''):`<span class="hk-chip">${esc(e.area)}</span><span class="hk-chip">${esc(VOT_PROJ[e.proj-1].nome)}</span>`; });
 }
 function trocaIdent(x){
@@ -1065,7 +1078,7 @@ function renderAval(){
   VOT_PROJ.forEach(p=>{
     if(p.n===8) h+='<div class="hk-coffee">15h30 · coffee break</div>';
     const n=nt[p.n]||{}, m=media(n);
-    h+=`<div class="card hk-pj ${b[p.n]?'bloq':''}">
+    h+=`<div class="card hk-pj ${b[p.n]?'bloq':''}" id="hkPj${p.n}">
       <div class="hk-top"><div class="hk-num">${p.n}</div><div class="grow"><div class="title">${esc(p.nome)}</div><div class="meta">${p.h} · ${esc(p.equipe)}</div><div class="hk-area">${esc(areaTxt(p))}</div></div>
         <div class="hk-avg ${m.n?'':'vazio'}"><b>${m.n?fmt(m.v):'–'}</b><span>média</span></div></div>
       ${b[p.n]?`<span class="hk-tag">${b[p.n]} · fora do seu voto</span>`:''}
@@ -1144,11 +1157,13 @@ async function recuperar(){
 $('#hkLevar').addEventListener('click',()=>{
   const r=ranking().slice(0,3);
   ['#hkV1','#hkV2','#hkV3'].forEach((id,i)=>{ $(id).value=r[i]?String(r[i].p.n):''; });
-  abrirAba('votacao'); renderVoto();
+  renderVoto(); irPodio();
   erro(r.length<3?'Seu ranking tem menos de 3 projetos avaliados. Complete o pódio aqui.':'');
 });
 
 /* ===== votação ===== */
+function irPodio(){ $('#hkPodio').scrollIntoView({behavior:'smooth',block:'start'}); }
+window.hkIrPodio=irPodio;
 function erro(t){ const x=$('#hkErro'); x.textContent=t; x.hidden=!t; }
 function renderVoto(){
   const e=eu(), b=bloqueios(e), pronto=e&&e.pronto, dir=pronto&&e.area===DIR&&comiteFora;
@@ -1161,7 +1176,7 @@ function renderVoto(){
     sel.innerHTML=h; if(b[atual]) sel.value=''; sel.disabled=!pronto||dir;
   });
   const nb=Object.keys(b).length;
-  $('#hkBnote').textContent=!e?'Escolha seu nome para liberar os projetos.':!pronto?'Escreva nome e sobrenome e escolha sua área.':dir?'Quem é do comitê vota na etapa final, com os 5 mais votados.':nb?`${nb} projeto${nb>1?'s':''} bloqueado${nb>1?'s':''} para você; ${13-nb} liberados.`:'Os 13 projetos estão liberados para você.';
+  $('#hkBnote').textContent=!e?'Escolha seu nome no topo da página para liberar os projetos.':!pronto?'Escreva nome e sobrenome e escolha sua área.':dir?'Quem é do comitê vota na etapa final, com os 5 mais votados.':nb?`${nb} projeto${nb>1?'s':''} bloqueado${nb>1?'s':''} para você; ${13-nb} liberados.`:'Os 13 projetos estão liberados para você.';
   $('#hkEnviar').disabled=aberta===false;
 }
 function mostraFeito(v){
@@ -1184,7 +1199,7 @@ $('#hkForm').addEventListener('change',ev=>{ if(/^hkV[123]$/.test(ev.target.id))
 $('#hkForm').addEventListener('submit',async ev=>{
   ev.preventDefault();
   const e=eu();
-  if(!e) return erro('Escolha seu nome na lista ou marque “Não estou na lista”.');
+  if(!e) return erro('Escolha seu nome no topo da página ou marque “Não estou na lista”.');
   if(!e.pronto) return erro(e.fora&&e.nome.split(' ').length<2?'Escreva nome e sobrenome.':'Escolha sua área.');
   if(e.area===DIR&&comiteFora) return erro('Quem é do comitê vota na etapa final.');
   if(!$('#hkAssisti').checked) return erro('Para votar, confirme que assistiu às 13 apresentações.');
@@ -1202,15 +1217,44 @@ $('#hkForm').addEventListener('submit',async ev=>{
 });
 $('#hkMudar').addEventListener('click',()=>{ E.voto=null; grava(); $('#hkForm').hidden=false; $('#hkDone').hidden=true; $('#hkAssisti').checked=false; erro(''); renderVoto(); });
 /* início */
-['#hkAPessoa','#hkVPessoa'].forEach(id=>$(id).innerHTML=opcoesPessoa());
-['#hkAArea','#hkVArea'].forEach(id=>$(id).innerHTML=opcoesArea);
-['A','V'].forEach(x=>['Pessoa','Nome','Area'].forEach(c=>$('#hk'+x+c).addEventListener('change',()=>trocaIdent(x))));
+$('#hkAPessoa').innerHTML=opcoesPessoa();
+$('#hkAArea').innerHTML=opcoesArea;
+['A'].forEach(x=>['Pessoa','Nome','Area'].forEach(c=>$('#hk'+x+c).addEventListener('change',()=>trocaIdent(x))));
 preencheIdent(); renderAval(); renderVoto(); recuperar(); agendaEnvio(500);
-$$('.tab').forEach(b=>b.addEventListener('click',()=>vigia(b.dataset.tab==='votacao')));
-window.hkAbriu=nome=>vigia(nome==='votacao');
+window.hkAbriu=nome=>{ vigia(nome==='avaliacao'); if(nome==='programacao') renderProg(); };
+
+/* ===== programação do dia ===== */
+const DIA='2026-11-18';
+const mais15=h=>{ const [a,b]=h.split(':').map(Number), t=a*60+b+15; return String(Math.floor(t/60)).padStart(2,'0')+':'+String(t%60).padStart(2,'0'); };
+const PROG=[{ini:'13:30',fim:'13:45',t:'Abertura',sub:'Regras do dia e palavra dos diretores',ic:'i-flag'}];
+VOT_PROJ.forEach(p=>{ if(p.n===8) PROG.push({ini:'15:30',fim:'15:50',t:'Coffee break',ic:'i-clock',pausa:true}); PROG.push({ini:p.h,fim:p.n===7?'15:30':mais15(p.h),t:p.nome,sub:p.equipe+' · '+areaTxt(p),n:p.n}); });
+PROG.push({ini:'17:20',fim:'17:30',t:'Votação dos participantes',sub:'Cada um monta seu pódio no app. Os 5 mais votados vão para o comitê.',ic:'i-vote',podio:true},
+  {ini:'17:30',fim:'17:45',t:'Comitê da diretoria',sub:'Define 1º, 2º e 3º lugar',ic:'i-star'},
+  {ini:'17:45',fim:'18:00',t:'Premiação e encerramento',ic:'i-flag',chegada:true});
+const hfmt=h=>h.replace(':','h');
+function agoraMin(){ const d=new Date(), iso=d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0'); return iso<DIA?-1:iso>DIA?1e9:d.getHours()*60+d.getMinutes(); }
+const min=h=>{ const [a,b]=h.split(':').map(Number); return a*60+b; };
+function renderProg(){
+  const box=$('#pgLista'), t=agoraMin();
+  box.innerHTML=PROG.map(b=>{
+    const feito=t>=min(b.fim), agora=!feito&&t>=min(b.ini), alvo=b.n||b.podio;
+    const dot=b.n?b.n:`<svg class="icon"><use href="#${b.ic}"/></svg>`;
+    const corpo=`<div class="row" style="gap:10px;align-items:flex-start"><div class="grow"><div class="pg-hora">${hfmt(b.ini)} às ${hfmt(b.fim)}</div><div class="title">${esc(b.t)}</div></div>${agora?'<span class="pill hoje">agora</span>':''}</div>
+      ${b.sub?`<p class="tr-sub">${esc(b.sub)}</p>`:''}${b.n?'<div class="pg-ir">dar notas →</div>':b.podio?'<div class="pg-ir">ir para o pódio →</div>':''}`;
+    return `<div class="tr-marco${feito?' feito':''}${agora?' agora':''}${b.chegada?' chegada':''}${b.pausa?' pausa':''}"><div class="tr-dot" aria-hidden="true">${dot}</div>
+      ${alvo?`<button type="button" class="card tr-card" data-pg="${b.n||'podio'}">${corpo}</button>`:`<div class="card tr-card">${corpo}</div>`}</div>`;
+  }).join('');
+}
+$('#pgLista').addEventListener('click',ev=>{
+  const bt=ev.target.closest('[data-pg]'); if(!bt) return;
+  abrirAba('avaliacao');
+  setTimeout(()=>{ if(bt.dataset.pg==='podio') irPodio(); else { const c=$('#hkPj'+bt.dataset.pg); if(c) c.scrollIntoView({behavior:'smooth',block:'start'}); else $('.hk-who').scrollIntoView({behavior:'smooth'}); } },30);
+});
+renderProg(); setInterval(()=>{ if(!document.hidden&&$('.view.active')?.dataset.view==='programacao') renderProg(); },60000);
 })();
 
-if(/^#(avaliacao|votacao)$/.test(location.hash)) abrirAba(location.hash.slice(1));
+if(location.hash==='#programacao') abrirAba('programacao');
+else if(/^#(avaliacao|votacao)$/.test(location.hash)){ abrirAba('avaliacao'); if(location.hash==='#votacao') setTimeout(()=>window.hkIrPodio&&hkIrPodio(),50); }
 </script>
 </body>
 </html>
