@@ -60,9 +60,9 @@ h1{font-size:18px;font-weight:600;margin:0;color:var(--muted);letter-spacing:.02
     <div id="msg" class="msg erro" hidden></div>
 
     <div class="bts">
-      <button type="button" class="bt b1" id="b1" data-fase="geral_abrir"><span class="n">1</span><span>Abrir voto geral</span><span class="tag" hidden>AGORA</span></button>
-      <button type="button" class="bt b2" id="b2" data-fase="geral_fechar"><span class="n">2</span><span>Fechar voto geral</span><span class="tag" hidden>AGORA</span></button>
-      <button type="button" class="bt b3" id="b3" data-fase="comite_abrir"><span class="n">3</span><span>Abrir voto do comitê</span><span class="tag" hidden>AGORA</span></button>
+      <button type="button" class="bt b1" id="b1" data-fase="geral_abrir"><span class="n">1</span><span>Abrir voto geral</span></button>
+      <button type="button" class="bt b2" id="b2" data-fase="geral_fechar"><span class="n">2</span><span>Fechar voto geral</span></button>
+      <button type="button" class="bt b3" id="b3" data-fase="comite_abrir"><span class="n">3</span><span>Abrir voto do comitê</span></button>
     </div>
 
     <div class="nums">
@@ -101,8 +101,6 @@ function pinta(j) {
   if (j.geral) { e.className = 'estado geral'; e.innerHTML = 'VOTO GERAL ABERTO<small>Os participantes já podem enviar o pódio.</small>'; }
   else if (j.comite) { e.className = 'estado comite'; e.innerHTML = 'VOTO DO COMITÊ ABERTO<small>O comitê vê só os finalistas e dá as notas.</small>'; }
   else { e.className = 'estado fechado'; e.innerHTML = 'TUDO FECHADO<small>Ninguém consegue enviar o pódio agora.</small>'; }
-  const ativo = j.geral ? 'b1' : j.comite ? 'b3' : 'b2';
-  ['b1', 'b2', 'b3'].forEach(b => { $(b).classList.toggle('ativo', b === ativo); $(b).querySelector('.tag').hidden = b !== ativo; });
   $('nVal').textContent = j.validos;
   $('nAl').textContent = j.alertas_altos; $('nAlBox').classList.toggle('alerta', j.alertas_altos > 0);
   const f = j.finalistas || [];
