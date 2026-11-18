@@ -1,48 +1,48 @@
 {
- "atualizado": "17/11 23h19",
+ "atualizado": "18/11 14h21",
  "janela": 1,
  "resumo": {
-  "data": "17/11/2026",
-  "hora": "23h19",
+  "data": "18/11/2026",
+  "hora": "14h21",
   "periodo": "ontem",
   "itens": [
    {
-    "titulo": "CBIC participa do Congresso Brasileiro de Eficiência Energética 2026",
-    "texto": "A Câmara Brasileira da Indústria da Construção (CBIC) participa da 22ª edição do Congresso Brasileiro de Eficiência Energética (COBEE 2026), que vai reunir especialistas, representantes do poder…",
+    "titulo": "Conexão CBIC: programação do evento debate cenário econômico, habitação e infraestrutura em Brasília",
+    "texto": "Os desafios políticos e econômicos para o Brasil em 2027, as perspectivas para o mercado habitacional e os investimentos necessários para avançar na infraestrutura estarão no centro da programação do Conexão CBIC 2026.",
     "fontes": [
      {
       "nome": "CBIC",
-      "url": "https://cbic.org.br/cbic-participa-do-congresso-brasileiro-de-eficiencia-energetica-2026/"
+      "url": "https://cbic.org.br/conexao-cbic-programacao-do-evento-debate-cenario-economico-habitacao-e-infraestrutura-em-brasilia/"
      }
     ]
    },
    {
-    "titulo": "Regional Ribeirão Preto reúne lideranças para debater perspectivas da construção civil",
-    "texto": "Encontro com associados promoveu discussões sobre financiamento habitacional para 2027, oportunidades no Minha Casa, Minha Vida e desenvolvimento urbano sustentável A Regional Ribeirão Preto do…",
+    "titulo": "Receita Federal estabelece novas regras para divulgação de benefícios fiscais de empresas",
+    "texto": "A Receita Federal do Brasil (RFB) estabeleceu novos critérios para a divulgação de informações sobre incentivos, renúncias, benefícios e imunidades tributárias utilizados por pessoas jurídicas.",
+    "fontes": [
+     {
+      "nome": "CBIC",
+      "url": "https://cbic.org.br/receita-federal-estabelece-novas-regras-para-divulgacao-de-beneficios-fiscais-de-empresas/"
+     }
+    ]
+   },
+   {
+    "titulo": "Rio Preto vive bom momento e contraria a tendência de mercado",
+    "texto": "Mesmo diante dos juros elevados e da retração do mercado imobiliário em boa parte do interior paulista, São José do Rio Preto apresenta resultados positivos, com crescimento nos lançamentos e nas vendas de imóveis.",
     "fontes": [
      {
       "nome": "SindusCon-SP",
-      "url": "https://sindusconsp.com.br/regional-ribeirao-preto-reune-liderancas-para-debater-perspectivas-da-construcao-civil/"
+      "url": "https://sindusconsp.com.br/rio-preto-vive-bom-momento-e-contraria-a-tendencia-de-mercado/"
      }
     ]
    },
    {
-    "titulo": "O preço de não confiar no futuro",
-    "texto": "Empreender é um ato de confiança. Quem abre uma empresa, investe capital, contrata pessoas ou ergue um empreendimento está apostando no futuro – não apenas no próprio, mas no país em que decidiu produzir, gerar empregos e assumir riscos.",
+    "titulo": "Caixa avalia seguir bancos privados na elevação dos juros do financiamento",
+    "texto": "O Imobi Report e a CUPOLA anunciam os “100+ Influentes do Mercado Imobiliário” em 2026.",
     "fontes": [
      {
-      "nome": "Secovi-SP",
-      "url": "https://secovi.com.br/o-preco-de-nao-confiar-no-futuro/"
-     }
-    ]
-   },
-   {
-    "titulo": "CBIC promove 2ª Maratona de Inovação para aproximar jovens da engenharia e estimular soluções para o setor",
-    "texto": "A Câmara Brasileira da Indústria da Construção (CBIC), em parceria com o Serviço Social da Indústria (SESI) e o Grupo Rede+, realiza, nos dias 23 e 24 de novembro, a segunda edição da Maratona de Inovação CBIC 2026.",
-    "fontes": [
-     {
-      "nome": "CBIC",
-      "url": "https://cbic.org.br/cbic-promove-2a-maratona-de-inovacao-para-aproximar-jovens-da-engenharia-e-estimular-solucoes-para-o-setor/"
+      "nome": "Imobi Report",
+      "url": "https://imobireport.com.br/newsletter-do-imobi/caixa-avalia-seguir-bancos-privados-na-elevacao-dos-juros-do-financiamento/"
      }
     ]
    }
@@ -50,22 +50,46 @@
  },
  "itens": [
   {
-   "fonte": "Secovi-SP",
-   "titulo": "Encontro de Gerações reúne Setin e Kallas e discute sucessão, legado e propósito",
-   "url": "https://secovi.com.br/encontro-de-geracoes-reune-setin-e-kallas-e-discute-sucessao-legado-e-proposito/",
-   "data": "16/11"
-  },
-  {
    "fonte": "CBIC",
-   "titulo": "Radar Trabalhista: STF vai reiniciar julgamento sobre fim da escala 6&#215;1 em plenário presencial",
-   "url": "https://cbic.org.br/radar-trabalhista-stf-vai-reiniciar-julgamento-sobre-fim-da-escala-6x1-em-plenario-presencial/",
-   "data": "16/11"
+   "titulo": "CBIC destaca papel estratégico do FGTS para a habitação durante sessão solene na Câmara dos Deputados",
+   "url": "https://cbic.org.br/cbic-destaca-papel-estrategico-do-fgts-para-a-habitacao-durante-sessao-solene-na-camara-dos-deputados/",
+   "data": "17/11"
   },
   {
-   "fonte": "SindusCon-SP",
-   "titulo": "Assembleia Geral Ordinária – Convocação",
-   "url": "https://sindusconsp.com.br/assembleia-geral-ordinaria-convocacao-9/",
-   "data": "16/11"
+   "fonte": "Secovi-SP",
+   "titulo": "Pesquisa Mensal do Mercado Imobiliário – Setembro 2026",
+   "url": "https://secovi.com.br/pesquisa-mensal-do-mercado-imobiliario-setembro-2026/",
+   "data": "17/11"
+  },
+  {
+   "fonte": "Imobi Report",
+   "titulo": "Fim da Escala 6&#215;1: como reorganizar sua imobiliária",
+   "url": "https://imobireport.com.br/gestao/fim-da-escala-6x1-como-reorganizar-sua-imobiliaria/",
+   "data": "17/11"
+  },
+  {
+   "fonte": "InfoMoney",
+   "titulo": "Estrangeiros já respondem por um terço do volume negociado em FIIs na B3",
+   "url": "https://www.infomoney.com.br/onde-investir/estrangeiros-volume-negociado-fiis-b3/",
+   "data": "17/11"
+  },
+  {
+   "fonte": "Secovi-SP",
+   "titulo": "Basilio Jafet aponta burocracia e lentidão nas aprovações como desafios para o setor imobiliário",
+   "url": "https://secovi.com.br/basilio-jafet-aponta-burocracia-e-lentidao-nas-aprovacoes-como-desafios-para-o-setor-imobiliario/",
+   "data": "17/11"
+  },
+  {
+   "fonte": "InfoMoney",
+   "titulo": "Nordeste ganha força e acelera descentralização da demanda do mercado imobiliário",
+   "url": "https://www.infomoney.com.br/minhas-financas/nordeste-ganha-forca-e-acelera-descentralizacao-da-demanda-do-mercado-imobiliario/",
+   "data": "17/11"
+  },
+  {
+   "fonte": "InfoMoney",
+   "titulo": "Leilão reúne mais de 500 casas e apartamentos com lances a partir de R$ 39.800",
+   "url": "https://www.infomoney.com.br/minhas-financas/leilao-de-imoveis-mais-de-500-casas-e-apartamentos-com-lances-a-partir-de-r-39-800/",
+   "data": "17/11"
   }
  ]
 }
