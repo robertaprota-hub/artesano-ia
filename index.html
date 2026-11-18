@@ -1086,7 +1086,7 @@ function renderAval(){
   if(!e||!e.pronto){ lista.innerHTML='<p class="note">Escolha seu nome para começar a avaliar.</p>'; $('#hkRank').innerHTML=''; statusSalvo(); return; }
   const CR=critsDe(e);
   const so=ehComite(e)&&finalistas.length;
-  let h=!ehComite(e)?'':so?`<div class="hk-coffee">Comitê: dê as três notas de 1 a 5 nos ${finalistas.length} finalistas.</div>`:'<div class="hk-coffee">Comitê: os finalistas aparecem aqui quando a votação fechar. Até lá, dê nota em qualquer projeto.</div>';
+  let h=!ehComite(e)?'':so?`<div class="hk-coffee">Comitê: dê as três notas de 1 a 5 nos ${finalistas.length} finalistas.</div>`:'<div class="hk-coffee">Comitê: os finalistas aparecem aqui quando o voto do comitê abrir. Até lá, dê nota em qualquer projeto.</div>';
   VOT_PROJ.filter(p=>!so||finalistas.includes(p.n)).forEach(p=>{
     if(p.n===8&&!so) h+='<div class="hk-coffee">15h30 · coffee break</div>';
     const n=nt[p.n]||{}, m=media(n,CR);
@@ -1203,12 +1203,12 @@ async function status(){
     const fin=Array.isArray(j.finalistas)?j.finalistas.map(Number):[];
     if(fin.join()!==finalistas.join()){ finalistas=fin; if(ehComite(eu())) renderAval(); }
     const s=$('#hkStatus'); s.className='hk-status '+(aberta?'aberta':'fechada');
-    s.textContent=aberta?'Votação aberta. Envie seu pódio.':`Votação fechada. Abre às ${String(j.abre||'17:20').replace(':','h')}, depois do último pitch.`;
+    s.textContent=aberta?'Votação aberta. Envie seu pódio.':(j.comite?'Votação geral encerrada. O comitê está avaliando os finalistas.':'Votação fechada. Abre depois do último pitch.');
   }catch(err){ aberta=null; const s=$('#hkStatus'); s.className='hk-status'; s.textContent='Sem conexão para conferir a votação. Você pode tentar enviar mesmo assim.'; }
   renderVoto();
 }
 let stTimer=null;
-function vigia(on){ clearInterval(stTimer); stTimer=null; if(on){ status(); stTimer=setInterval(()=>{ if(!document.hidden) status(); },30000); } }
+function vigia(on){ clearInterval(stTimer); stTimer=null; if(on){ status(); stTimer=setInterval(()=>{ if(!document.hidden) status(); },12000); } }
 $('#hkForm').addEventListener('change',ev=>{ if(/^hkV[123]$/.test(ev.target.id)){ erro(''); renderVoto(); } });
 $('#hkForm').addEventListener('submit',async ev=>{
   ev.preventDefault();
