@@ -47,10 +47,6 @@ h1{font-size:18px;font-weight:600;margin:0;color:var(--muted);letter-spacing:.02
 .links{display:flex;flex-wrap:wrap;gap:10px}
 .links a,.links button{font:inherit;font-weight:600;font-size:15px;color:var(--ink);background:var(--surface);border:1px solid var(--ink);
   border-radius:10px;padding:10px 14px;text-decoration:none;cursor:pointer}
-.pin{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:20px;display:flex;flex-direction:column;gap:12px}
-.pin label{font-weight:600}
-.pin input{font:inherit;font-size:28px;letter-spacing:.3em;padding:12px 14px;border:2px solid var(--ink);border-radius:10px;width:100%}
-.pin button{font:inherit;font-weight:600;background:var(--ink);color:#fff;font-size:18px;padding:14px;border:0;border-radius:10px;cursor:pointer}
 .hora{color:var(--muted);font-size:14px;text-align:center}
 [hidden]{display:none!important}
 </style>
@@ -59,14 +55,7 @@ h1{font-size:18px;font-weight:600;margin:0;color:var(--muted);letter-spacing:.02
 <div class="wrap">
   <h1>Hackathon IA Artesano · controle da votação</h1>
 
-  <form id="pinBox" class="pin" hidden>
-    <label for="pin">PIN da organizadora</label>
-    <input id="pin" type="password" inputmode="numeric" autocomplete="off" maxlength="12">
-    <button type="submit">Entrar</button>
-    <div id="pinErro" class="msg erro" hidden></div>
-  </form>
-
-  <div id="painel" class="wrap" hidden>
+  <div id="painel" class="wrap">
     <div id="estado" class="estado espera">Conferindo…</div>
     <div id="msg" class="msg erro" hidden></div>
 
@@ -89,7 +78,6 @@ h1{font-size:18px;font-weight:600;margin:0;color:var(--muted);letter-spacing:.02
     <div class="links">
       <a href="https://claude.ai/artifact/PQnawm1P2GRQT6Dpe5e4s1" target="_blank" rel="noopener">Ver apuração completa</a>
       <a href="https://docs.google.com/spreadsheets/d/1d2Ns3dy7Rw7PlPfJ395k4YDF7r8d0iMObEe-kSAGEmE/edit#gid=1802177507" target="_blank" rel="noopener">Abrir planilha</a>
-      <button type="button" id="sair">Trocar PIN</button>
     </div>
     <div id="hora" class="hora"></div>
   </div>
@@ -97,14 +85,12 @@ h1{font-size:18px;font-weight:600;margin:0;color:var(--muted);letter-spacing:.02
 
 <script>
 const API = 'https://script.google.com/macros/s/AKfycbwFbpnZZlhOoy8xvkJwEwGfzwAu_kUiUmsjMlxTLVsKGzp59kG6WgRej43x8Q9rTpf1/exec';
-const KEY = 'artesano-ia:controle:pin';
 const $ = id => document.getElementById(id);
 const esc = t => String(t ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
-let PIN = ''; try { PIN = localStorage.getItem(KEY) || ''; } catch (e) {}
 let ocupado = false, ultimo = null, confirmar = null;
 
 async function chama(fase) {
-  const r = await fetch(API, { method: 'POST', body: JSON.stringify({ acao: 'vot_admin_fase', pin: PIN, fase }) });
+  const r = await fetch(API, { method: 'POST', body: JSON.stringify({ acao: 'vot_admin_fase', fase }) });
   return r.json();
 }
 function msg(t, tipo) { const m = $('msg'); m.hidden = !t; m.className = 'msg ' + (tipo || 'erro'); m.textContent = t || ''; }
@@ -126,13 +112,12 @@ function pinta(j) {
 }
 
 async function atualiza() {
-  if (ocupado || !PIN) return;
+  if (ocupado) return;
   try { const j = await chama('ver'); if (j.ok) { pinta(j); if ($('msg').className.includes('erro')) msg(''); } else trataErro(j); }
   catch (e) { msg('Sem conexão com a planilha. Os botões podem não responder. Tento de novo sozinho.'); }
 }
 function trataErro(j) {
-  if (/PIN/i.test(j.erro || '')) { sai('PIN incorreto.'); return; }
-  if (/desconhecida/i.test(j.erro || '')) { msg('O script da planilha ainda não foi implantado. Clique em Implantar no Apps Script e recarregue esta página.'); return; }
+  if (/PIN|desconhecida/i.test(j.erro || '')) { msg('O script da planilha ainda não foi implantado. Clique em Implantar no Apps Script e recarregue esta página.'); return; }
   msg(j.erro || 'A planilha recusou o comando.');
 }
 
@@ -151,26 +136,9 @@ document.querySelectorAll('.bt').forEach(bt => bt.addEventListener('click', asyn
   rot.textContent = antes; document.querySelectorAll('.bt').forEach(b => b.disabled = false); ocupado = false;
 }));
 
-function entra() { $('pinBox').hidden = true; $('painel').hidden = false; atualiza(); }
-function sai(erro) {
-  PIN = ''; try { localStorage.removeItem(KEY); } catch (e) {}
-  $('painel').hidden = true; $('pinBox').hidden = false; $('pin').value = '';
-  $('pinErro').hidden = !erro; $('pinErro').textContent = erro || '';
-}
-$('pinBox').addEventListener('submit', async ev => {
-  ev.preventDefault(); PIN = $('pin').value.trim(); if (!PIN) return;
-  const pe = $('pinErro'); pe.hidden = true;
-  try {
-    const j = await chama('ver');
-    if (j.ok) { try { localStorage.setItem(KEY, PIN); } catch (e) {} $('pinBox').hidden = true; $('painel').hidden = false; pinta(j); return; }
-    pe.textContent = /desconhecida/i.test(j.erro || '') ? 'O script da planilha ainda não foi implantado. Clique em Implantar no Apps Script e tente de novo.' : (j.erro || 'PIN incorreto.');
-  } catch (e) { pe.textContent = 'Sem conexão com a planilha. Tente de novo.'; }
-  pe.hidden = false; PIN = '';
-});
-$('sair').addEventListener('click', () => sai(''));
 setInterval(() => { if (!document.hidden) atualiza(); }, 20000);
 document.addEventListener('visibilitychange', () => { if (!document.hidden) atualiza(); });
-if (PIN) entra(); else $('pinBox').hidden = false;
+atualiza();
 </script>
 </body>
 </html>
