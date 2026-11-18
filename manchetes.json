@@ -1,9 +1,9 @@
 {
- "atualizado": "18/11 16h22",
+ "atualizado": "18/11 18h24",
  "janela": 1,
  "resumo": {
   "data": "18/11/2026",
-  "hora": "16h22",
+  "hora": "18h24",
   "periodo": "ontem",
   "itens": [
    {
@@ -27,16 +27,6 @@
     ]
    },
    {
-    "titulo": "Rio Preto vive bom momento e contraria a tendência de mercado",
-    "texto": "Mesmo diante dos juros elevados e da retração do mercado imobiliário em boa parte do interior paulista, São José do Rio Preto apresenta resultados positivos, com crescimento nos lançamentos e nas vendas de imóveis.",
-    "fontes": [
-     {
-      "nome": "SindusCon-SP",
-      "url": "https://sindusconsp.com.br/rio-preto-vive-bom-momento-e-contraria-a-tendencia-de-mercado/"
-     }
-    ]
-   },
-   {
     "titulo": "Caixa avalia seguir bancos privados na elevação dos juros do financiamento",
     "texto": "O Imobi Report e a CUPOLA anunciam os “100+ Influentes do Mercado Imobiliário” em 2026.",
     "fontes": [
@@ -45,16 +35,20 @@
       "url": "https://imobireport.com.br/newsletter-do-imobi/caixa-avalia-seguir-bancos-privados-na-elevacao-dos-juros-do-financiamento/"
      }
     ]
+   },
+   {
+    "titulo": "CBIC destaca papel estratégico do FGTS para a habitação durante sessão solene na Câmara dos Deputados",
+    "texto": "A Câmara dos Deputados realizou, nesta terça-feira (17), uma sessão solene em homenagem aos 60 anos do Fundo de Garantia do Tempo de Serviço (FGTS).",
+    "fontes": [
+     {
+      "nome": "CBIC",
+      "url": "https://cbic.org.br/cbic-destaca-papel-estrategico-do-fgts-para-a-habitacao-durante-sessao-solene-na-camara-dos-deputados/"
+     }
+    ]
    }
   ]
  },
  "itens": [
-  {
-   "fonte": "CBIC",
-   "titulo": "CBIC destaca papel estratégico do FGTS para a habitação durante sessão solene na Câmara dos Deputados",
-   "url": "https://cbic.org.br/cbic-destaca-papel-estrategico-do-fgts-para-a-habitacao-durante-sessao-solene-na-camara-dos-deputados/",
-   "data": "17/11"
-  },
   {
    "fonte": "Secovi-SP",
    "titulo": "Pesquisa Mensal do Mercado Imobiliário – Setembro 2026",
