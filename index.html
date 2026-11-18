@@ -1022,7 +1022,9 @@ const VOT_PESSOAS = [
 const VOT_AREAS = ['Comercial','Engenharia','Experiência do Cliente','Financeiro','Implantação','Instituto','Jurídico','Marketing','Negócios','Novos Negócios','Obra','Planejamento Financeiro','Planejamento Técnico','Produto','RH','Suprimentos','Diretoria (comitê)','Outra'];
 const DIR = 'Diretoria (comitê)';
 /* comitê da diretoria (etapa 2): entra como pessoa fora das equipes, área Diretoria (comitê) */
-const VOT_COMITE = ['Roberta Prota','Claudia Yassuda','Mariana Cacace','Rafael Aguiar','Bruno Caloi','Anna Rolim','Felipe Bortolotto','Mônica Picavea'];
+const VOT_COMITE = ['Anna Rolim','Bruno Caloi','Claudia Yassuda','Felipe Bortolotto','Mariana Cacace','Mônica Picavea','Rafael Aguiar','Roberta Prota'];
+const abc = (a,b)=>a.localeCompare(b,'pt-BR',{sensitivity:'base'});
+let finalistas = [];
 const ehComite = e=>!!(e&&e.area===DIR);
 const critsDe = e=>CRIT;
 const CRIT = [['i','Inovação'],['m','Impacto para a Artesano'],['h','Horas ganhas']];
@@ -1061,7 +1063,7 @@ const fmt = v=>(Math.round(v*10)/10).toLocaleString('pt-BR',{maximumFractionDigi
 
 function opcoesPessoa(){
   let h='<option value="">escolha seu nome</option>';
-  VOT_PROJ.forEach(p=>{ h+=`<optgroup label="${p.n}. ${esc(p.nome)} · ${esc(areaTxt(p))}">`+VOT_PESSOAS.filter(x=>x.proj===p.n).map(x=>`<option value="${x.id}">${esc(x.nome)}</option>`).join('')+'</optgroup>'; });
+  h+='<optgroup label="Participantes">'+VOT_PESSOAS.slice().sort((a,b)=>abc(a.nome,b.nome)).map(x=>`<option value="${x.id}">${esc(x.nome)}</option>`).join('')+'</optgroup>';
   h+='<optgroup label="Comitê da diretoria">'+VOT_COMITE.map((n,i)=>`<option value="c:${i}">${esc(n)}</option>`).join('')+'<option value="c:outro">Outro (comitê)</option></optgroup>';
   return h+'<optgroup label="Fora das equipes"><option value="fora">Não estou na lista</option></optgroup>';
 }
@@ -1083,9 +1085,10 @@ function renderAval(){
   const e=eu(), b=bloqueios(e), nt=minhas(), lista=$('#hkLista');
   if(!e||!e.pronto){ lista.innerHTML='<p class="note">Escolha seu nome para começar a avaliar.</p>'; $('#hkRank').innerHTML=''; statusSalvo(); return; }
   const CR=critsDe(e);
-  let h=ehComite(e)?'<div class="hk-coffee">Comitê: dê as três notas de 1 a 5. Contam as notas dos 5 finalistas.</div>':'';
-  VOT_PROJ.forEach(p=>{
-    if(p.n===8) h+='<div class="hk-coffee">15h30 · coffee break</div>';
+  const so=ehComite(e)&&finalistas.length;
+  let h=!ehComite(e)?'':so?`<div class="hk-coffee">Comitê: dê as três notas de 1 a 5 nos ${finalistas.length} finalistas.</div>`:'<div class="hk-coffee">Comitê: os finalistas aparecem aqui quando a votação fechar. Até lá, dê nota em qualquer projeto.</div>';
+  VOT_PROJ.filter(p=>!so||finalistas.includes(p.n)).forEach(p=>{
+    if(p.n===8&&!so) h+='<div class="hk-coffee">15h30 · coffee break</div>';
     const n=nt[p.n]||{}, m=media(n,CR);
     h+=`<div class="card hk-pj ${b[p.n]?'bloq':''}" id="hkPj${p.n}">
       <div class="hk-top"><div class="hk-num">${p.n}</div><div class="grow"><div class="title">${esc(p.nome)}</div><div class="meta">${p.h} · ${esc(p.equipe)}</div><div class="hk-area">${esc(areaTxt(p))}</div></div>
@@ -1197,6 +1200,8 @@ async function status(){
   try{
     const r=await fetch(API+'?acao=vot_status&t='+Date.now(),{cache:'no-store'}); const j=await r.json();
     if(!j.ok) throw 0; aberta=!!j.aberta; comiteFora=j.comite_fora!==false;
+    const fin=Array.isArray(j.finalistas)?j.finalistas.map(Number):[];
+    if(fin.join()!==finalistas.join()){ finalistas=fin; if(ehComite(eu())) renderAval(); }
     const s=$('#hkStatus'); s.className='hk-status '+(aberta?'aberta':'fechada');
     s.textContent=aberta?'Votação aberta. Envie seu pódio.':`Votação fechada. Abre às ${String(j.abre||'17:20').replace(':','h')}, depois do último pitch.`;
   }catch(err){ aberta=null; const s=$('#hkStatus'); s.className='hk-status'; s.textContent='Sem conexão para conferir a votação. Você pode tentar enviar mesmo assim.'; }
