@@ -1024,7 +1024,7 @@ const DIR = 'Diretoria (comitê)';
 /* comitê da diretoria (etapa 2): entra como pessoa fora das equipes, área Diretoria (comitê) */
 const VOT_COMITE = ['Roberta Prota','Claudia Yassuda','Mariana Cacace','Rafael Aguiar','Bruno Caloi','Anna Rolim','Felipe Bortolotto','Mônica Picavea'];
 const ehComite = e=>!!(e&&e.area===DIR);
-const critsDe = e=>ehComite(e)?CRIT.slice(0,2):CRIT;
+const critsDe = e=>CRIT;
 const CRIT = [['i','Inovação'],['m','Impacto para a Artesano'],['h','Horas ganhas']];
 const KEY = 'artesano-ia:final:v2';
 const esc = t=>String(t??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
@@ -1083,7 +1083,7 @@ function renderAval(){
   const e=eu(), b=bloqueios(e), nt=minhas(), lista=$('#hkLista');
   if(!e||!e.pronto){ lista.innerHTML='<p class="note">Escolha seu nome para começar a avaliar.</p>'; $('#hkRank').innerHTML=''; statusSalvo(); return; }
   const CR=critsDe(e);
-  let h=ehComite(e)?'<div class="hk-coffee">Comitê: dê Inovação e Impacto. Horas ganhas entra calculada pelas horas de cada projeto. Contam as notas dos 5 finalistas.</div>':'';
+  let h=ehComite(e)?'<div class="hk-coffee">Comitê: dê as três notas de 1 a 5. Contam as notas dos 5 finalistas.</div>':'';
   VOT_PROJ.forEach(p=>{
     if(p.n===8) h+='<div class="hk-coffee">15h30 · coffee break</div>';
     const n=nt[p.n]||{}, m=media(n,CR);
@@ -1185,7 +1185,7 @@ function renderVoto(){
     sel.innerHTML=h; if(b[atual]) sel.value=''; sel.disabled=!pronto||dir;
   });
   const nb=Object.keys(b).length;
-  $('#hkBnote').textContent=!e?'Escolha seu nome no topo da página para liberar os projetos.':!pronto?'Escreva nome e sobrenome e escolha sua área.':dir?'Comitê não vota aqui. Seu voto são as notas de Inovação e Impacto nos 5 finalistas, lá em cima.':nb?`${nb} projeto${nb>1?'s':''} bloqueado${nb>1?'s':''} para você; ${13-nb} liberados.`:'Os 13 projetos estão liberados para você.';
+  $('#hkBnote').textContent=!e?'Escolha seu nome no topo da página para liberar os projetos.':!pronto?'Escreva nome e sobrenome e escolha sua área.':dir?'Comitê não vota aqui. Seu voto são as suas notas nos 5 finalistas, lá em cima.':nb?`${nb} projeto${nb>1?'s':''} bloqueado${nb>1?'s':''} para você; ${13-nb} liberados.`:'Os 13 projetos estão liberados para você.';
   $('#hkEnviar').disabled=aberta===false;
 }
 function mostraFeito(v){
