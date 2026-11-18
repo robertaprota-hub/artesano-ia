@@ -1021,6 +1021,10 @@ const VOT_PESSOAS = [
 ].map(r=>({id:r[0],nome:r[1],area:r[2],proj:r[3]}));
 const VOT_AREAS = ['Comercial','Engenharia','Experiência do Cliente','Financeiro','Implantação','Instituto','Jurídico','Marketing','Negócios','Novos Negócios','Obra','Planejamento Financeiro','Planejamento Técnico','Produto','RH','Suprimentos','Diretoria (comitê)','Outra'];
 const DIR = 'Diretoria (comitê)';
+/* comitê da diretoria (etapa 2): entra como pessoa fora das equipes, área Diretoria (comitê) */
+const VOT_COMITE = ['Roberta Prota','Claudia Yassuda','Mariana Cacace','Rafael Aguiar','Bruno Caloi','Anna Rolim','Felipe Bortolotto','Mônica Picavea'];
+const ehComite = e=>!!(e&&e.area===DIR);
+const critsDe = e=>ehComite(e)?CRIT.slice(0,2):CRIT;
 const CRIT = [['i','Inovação'],['m','Impacto para a Artesano'],['h','Horas ganhas']];
 const KEY = 'artesano-ia:final:v2';
 const esc = t=>String(t??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
@@ -1040,7 +1044,8 @@ let comiteFora = true, aberta = null;
 /* identidade */
 function eu(){
   if(E.sel==='') return null;
-  if(E.sel==='fora'){ const nome=E.nome.trim().replace(/\s+/g,' '); return {fora:true,nome,area:E.area,proj:null,key:'fora:'+nome.toLowerCase(),pronto:nome.split(' ').length>=2&&!!E.area}; }
+  if(E.sel==='fora'||E.sel==='c:outro'){ const nome=E.nome.trim().replace(/\s+/g,' '), area=E.sel==='c:outro'?DIR:E.area; return {fora:true,nome,area,proj:null,key:'fora:'+nome.toLowerCase(),pronto:nome.split(' ').length>=2&&!!area}; }
+  if(E.sel.indexOf('c:')===0){ const nome=VOT_COMITE[+E.sel.slice(2)]; if(nome) return {fora:true,nome,area:DIR,proj:null,key:'fora:'+nome.toLowerCase(),pronto:true}; }
   const p=VOT_PESSOAS.find(x=>x.id===E.sel); return p?{...p,key:p.id,pronto:true}:null;
 }
 const paraServidor = e=>e.fora?{nome:e.nome,area:e.area}:{id:e.id};
@@ -1050,23 +1055,26 @@ function bloqueios(e){
   return b;
 }
 const minhas = ()=>{ const e=eu(); if(!e||!e.pronto) return {}; return (E.notas[e.key]=E.notas[e.key]||{}); };
-function media(nt){ const v=CRIT.map(([k])=>(nt&&nt[k])||0).filter(Boolean); return {n:v.length,v:v.length?v.reduce((a,b)=>a+b,0)/v.length:0}; }
+function media(nt,cr){ const v=(cr||CRIT).map(([k])=>(nt&&nt[k])||0).filter(Boolean); return {n:v.length,v:v.length?v.reduce((a,b)=>a+b,0)/v.length:0}; }
 const areaTxt = p=>p.areas.join(' e ');
 const fmt = v=>(Math.round(v*10)/10).toLocaleString('pt-BR',{maximumFractionDigits:1});
 
 function opcoesPessoa(){
   let h='<option value="">escolha seu nome</option>';
   VOT_PROJ.forEach(p=>{ h+=`<optgroup label="${p.n}. ${esc(p.nome)} · ${esc(areaTxt(p))}">`+VOT_PESSOAS.filter(x=>x.proj===p.n).map(x=>`<option value="${x.id}">${esc(x.nome)}</option>`).join('')+'</optgroup>'; });
+  h+='<optgroup label="Comitê da diretoria">'+VOT_COMITE.map((n,i)=>`<option value="c:${i}">${esc(n)}</option>`).join('')+'<option value="c:outro">Outro (comitê)</option></optgroup>';
   return h+'<optgroup label="Fora das equipes"><option value="fora">Não estou na lista</option></optgroup>';
 }
 const opcoesArea='<option value="">escolha sua área</option>'+VOT_AREAS.map(a=>`<option>${esc(a)}</option>`).join('');
 function preencheIdent(){
-  ['A'].forEach(x=>{ ['Pessoa','Nome','Area'].forEach(c=>$('#hk'+x+c).disabled=!!E.travado); $('#hk'+x+'Pessoa').value=E.sel; $('#hk'+x+'Nome').value=E.nome; $('#hk'+x+'Area').value=E.area; $('#hk'+x+'Fora').hidden=E.sel!=='fora';
+  ['A'].forEach(x=>{ ['Pessoa','Nome','Area'].forEach(c=>$('#hk'+x+c).disabled=!!E.travado); $('#hk'+x+'Pessoa').value=E.sel; $('#hk'+x+'Nome').value=E.nome; $('#hk'+x+'Area').value=E.area; $('#hk'+x+'Fora').hidden=E.sel!=='fora'&&E.sel!=='c:outro'; $('#hk'+x+'Area').hidden=E.sel==='c:outro';
     const e=eu(); $('#hk'+x+'Perfil').innerHTML=!e?'':e.fora?(e.area?`<span class="hk-chip">${esc(e.area)}</span>`:''):`<span class="hk-chip">${esc(e.area)}</span><span class="hk-chip">${esc(VOT_PROJ[e.proj-1].nome)}</span>`; });
 }
 function trocaIdent(x){
   if(E.travado){ preencheIdent(); return; }
-  E.sel=$('#hk'+x+'Pessoa').value; E.nome=$('#hk'+x+'Nome').value; E.area=$('#hk'+x+'Area').value; grava();
+  E.sel=$('#hk'+x+'Pessoa').value; E.nome=$('#hk'+x+'Nome').value; E.area=$('#hk'+x+'Area').value;
+  if(E.sel==='c:outro'){ E.area=DIR; $('#hk'+x+'Area').value=DIR; }
+  grava();
   preencheIdent(); renderAval(); renderVoto(); recuperar();
 }
 
@@ -1074,24 +1082,25 @@ function trocaIdent(x){
 function renderAval(){
   const e=eu(), b=bloqueios(e), nt=minhas(), lista=$('#hkLista');
   if(!e||!e.pronto){ lista.innerHTML='<p class="note">Escolha seu nome para começar a avaliar.</p>'; $('#hkRank').innerHTML=''; statusSalvo(); return; }
-  let h='';
+  const CR=critsDe(e);
+  let h=ehComite(e)?'<div class="hk-coffee">Comitê: dê Inovação e Impacto. Horas ganhas entra calculada pelas horas de cada projeto. Contam as notas dos 5 finalistas.</div>':'';
   VOT_PROJ.forEach(p=>{
     if(p.n===8) h+='<div class="hk-coffee">15h30 · coffee break</div>';
-    const n=nt[p.n]||{}, m=media(n);
+    const n=nt[p.n]||{}, m=media(n,CR);
     h+=`<div class="card hk-pj ${b[p.n]?'bloq':''}" id="hkPj${p.n}">
       <div class="hk-top"><div class="hk-num">${p.n}</div><div class="grow"><div class="title">${esc(p.nome)}</div><div class="meta">${p.h} · ${esc(p.equipe)}</div><div class="hk-area">${esc(areaTxt(p))}</div></div>
         <div class="hk-avg ${m.n?'':'vazio'}"><b>${m.n?fmt(m.v):'–'}</b><span>média</span></div></div>
       ${b[p.n]?`<span class="hk-tag">${b[p.n]} · fora do seu voto</span>`:''}
-      ${CRIT.map(([k,t])=>`<div class="hk-crit"><span>${t}</span><div class="hk-stars" role="group" aria-label="${t}">${[1,2,3,4,5].map(s=>`<button type="button" class="${s<=(n[k]||0)?'on':''}" data-n="${p.n}" data-k="${k}" data-s="${s}" aria-label="${t}: ${s} de 5"><svg><use href="#i-star"/></svg></button>`).join('')}</div></div>`).join('')}
+      ${CR.map(([k,t])=>`<div class="hk-crit"><span>${t}</span><div class="hk-stars" role="group" aria-label="${t}">${[1,2,3,4,5].map(s=>`<button type="button" class="${s<=(n[k]||0)?'on':''}" data-n="${p.n}" data-k="${k}" data-s="${s}" aria-label="${t}: ${s} de 5"><svg><use href="#i-star"/></svg></button>`).join('')}</div></div>`).join('')}
       <textarea class="hk-obs" data-n="${p.n}" placeholder="Observações" maxlength="2000">${esc(n.obs||'')}</textarea>
-      ${m.n&&m.n<3?`<div class="hk-parcial">média de ${m.n} de 3 critérios</div>`:''}
+      ${m.n&&m.n<CR.length?`<div class="hk-parcial">média de ${m.n} de ${CR.length} critérios</div>`:''}
     </div>`;
   });
   lista.innerHTML=h; renderRank(); statusSalvo();
 }
 function ranking(){
   const e=eu(), b=bloqueios(e), nt=minhas();
-  return VOT_PROJ.filter(p=>!b[p.n]).map(p=>({p,m:media(nt[p.n])})).filter(r=>r.m.n).sort((a,c)=>c.m.v-a.m.v||a.p.n-c.p.n);
+  return VOT_PROJ.filter(p=>!b[p.n]).map(p=>({p,m:media(nt[p.n],critsDe(e))})).filter(r=>r.m.n).sort((a,c)=>c.m.v-a.m.v||a.p.n-c.p.n);
 }
 function renderRank(){
   const r=ranking();
@@ -1105,10 +1114,10 @@ $('#hkLista').addEventListener('click',ev=>{
   const bt=ev.target.closest('.hk-stars button'); if(!bt) return;
   const nt=minhas(), n=bt.dataset.n, k=bt.dataset.k, s=+bt.dataset.s;
   nt[n]=nt[n]||{}; nt[n][k]=nt[n][k]===s?0:s; mexeu(n);
-  const card=bt.closest('.hk-pj'), m=media(nt[n]);
+  const CR=critsDe(eu()), card=bt.closest('.hk-pj'), m=media(nt[n],CR);
   card.querySelectorAll(`.hk-stars button[data-k="${k}"]`).forEach(x=>x.classList.toggle('on',+x.dataset.s<=nt[n][k]));
   const av=card.querySelector('.hk-avg'); av.classList.toggle('vazio',!m.n); av.querySelector('b').textContent=m.n?fmt(m.v):'–';
-  let pa=card.querySelector('.hk-parcial'); if(m.n&&m.n<3){ if(!pa){pa=document.createElement('div');pa.className='hk-parcial';card.appendChild(pa);} pa.textContent=`média de ${m.n} de 3 critérios`; } else if(pa) pa.remove();
+  let pa=card.querySelector('.hk-parcial'); if(m.n&&m.n<CR.length){ if(!pa){pa=document.createElement('div');pa.className='hk-parcial';card.appendChild(pa);} pa.textContent=`média de ${m.n} de ${CR.length} critérios`; } else if(pa) pa.remove();
   renderRank();
 });
 $('#hkLista').addEventListener('input',ev=>{
@@ -1176,7 +1185,7 @@ function renderVoto(){
     sel.innerHTML=h; if(b[atual]) sel.value=''; sel.disabled=!pronto||dir;
   });
   const nb=Object.keys(b).length;
-  $('#hkBnote').textContent=!e?'Escolha seu nome no topo da página para liberar os projetos.':!pronto?'Escreva nome e sobrenome e escolha sua área.':dir?'Quem é do comitê vota na etapa final, com os 5 mais votados.':nb?`${nb} projeto${nb>1?'s':''} bloqueado${nb>1?'s':''} para você; ${13-nb} liberados.`:'Os 13 projetos estão liberados para você.';
+  $('#hkBnote').textContent=!e?'Escolha seu nome no topo da página para liberar os projetos.':!pronto?'Escreva nome e sobrenome e escolha sua área.':dir?'Comitê não vota aqui. Seu voto são as notas de Inovação e Impacto nos 5 finalistas, lá em cima.':nb?`${nb} projeto${nb>1?'s':''} bloqueado${nb>1?'s':''} para você; ${13-nb} liberados.`:'Os 13 projetos estão liberados para você.';
   $('#hkEnviar').disabled=aberta===false;
 }
 function mostraFeito(v){
