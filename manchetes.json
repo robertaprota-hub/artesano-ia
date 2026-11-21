@@ -1,71 +1,32 @@
 {
- "atualizado": "20/11 22h23",
+ "atualizado": "21/11 13h13",
  "janela": 1,
  "resumo": {
-  "data": "20/11/2026",
-  "hora": "22h23",
+  "data": "21/11/2026",
+  "hora": "13h13",
   "periodo": "ontem",
   "itens": [
    {
-    "titulo": "Sinduscon-Rio debate reforma tributária com empresários e profissionais do setor",
-    "texto": "Os impactos da Reforma Tributária nos negócios, nos custos e no planejamento das empresas estiveram em pauta no Café Empresarial do Sinduscon-Rio, realizado nesta terça-feira (17).",
+    "titulo": "Fintech transforma aluguéis futuros em dinheiro imediato; entenda",
+    "texto": "Modelo de fintech permite que proprietários recebam antecipadamente valores de até 24 meses de contrato.",
     "fontes": [
      {
-      "nome": "CBIC",
-      "url": "https://cbic.org.br/sinduscon-rio-debate-reforma-tributaria-com-empresarios-e-profissionais-do-setor/"
+      "nome": "InfoMoney",
+      "url": "https://www.infomoney.com.br/business/fintech-transforma-alugueis-futuros-em-dinheiro-imediato-entenda/"
      }
     ]
    },
    {
-    "titulo": "Conexão CBIC: reforma tributária e mudanças na jornada de trabalho estão entre os desafios da construção para 2027",
-    "texto": "As transformações no ambiente econômico e nas relações de trabalho vão exigir atenção das empresas da construção em 2027.",
+    "titulo": "Rumo à industrialização da construção",
+    "texto": "Legislações precisam mudar para mitigar custos e elevar produtividade No afã de arrecadar mais para reparar o rombo do Orçamento de 2027, o pacote fiscal do governo trouxe aumentos como o de 20% nos…",
     "fontes": [
      {
-      "nome": "CBIC",
-      "url": "https://cbic.org.br/conexao-cbic-reforma-tributaria-e-mudancas-na-jornada-de-trabalho-estao-entre-os-desafios-da-construcao-para-2027/"
-     }
-    ]
-   },
-   {
-    "titulo": "CBIC e Ministério das Cidades debatem desafios e soluções para requalificação urbana em workshop",
-    "texto": "A Câmara Brasileira da Indústria da Construção (CBIC) e o Ministério das Cidades promovem, no dia 25 de novembro, em Brasília, o workshop “Se Essa Rua Fosse Minha – Requalificação de Áreas Urbanas”.",
-    "fontes": [
-     {
-      "nome": "CBIC",
-      "url": "https://cbic.org.br/cbic-e-ministerio-das-cidades-debatem-desafios-e-solucoes-para-requalificacao-urbana-em-workshop/"
-     }
-    ]
-   },
-   {
-    "titulo": "Minha Casa, Minha Vida caminha para 3 milhões de unidades contratadas, afirma secretário nacional de Habitação",
-    "texto": "Em reunião executiva do Secovi-SP e do SindusCon-SP, Augusto Rabelo apresentou o balanço do programa e as perspectivas para 2027; a entidade levou pleitos sobre o faixa 2, os recortes [&#8230;]",
-    "fontes": [
-     {
-      "nome": "Secovi-SP",
-      "url": "https://secovi.com.br/minha-casa-minha-vida-caminha-para-3-milhoes-de-unidades-contratadas-afirma-secretario-nacional-de-habitacao/"
+      "nome": "SindusCon-SP",
+      "url": "https://sindusconsp.com.br/rumo-a-industrializacao-da-construcao/"
      }
     ]
    }
   ]
  },
- "itens": [
-  {
-   "fonte": "Secovi-SP",
-   "titulo": "Palco Arena debate IA, dados e novas fontes de receita para corretores e imobiliárias",
-   "url": "https://secovi.com.br/palco-arena-debate-ia-dados-e-novas-fontes-de-receita-para-corretores-e-imobiliarias/",
-   "data": "19/11"
-  },
-  {
-   "fonte": "SindusCon-SP",
-   "titulo": "SindusCon-SP participa de encontro com parlamentares em Rio Preto",
-   "url": "https://sindusconsp.com.br/sinduscon-sp-participa-de-encontro-com-parlamentares-em-rio-preto/",
-   "data": "19/11"
-  },
-  {
-   "fonte": "Imobi Report",
-   "titulo": "Morte ou invalidez do inquilino: o que ocorre com a locação e como mitigar o risco financeiro",
-   "url": "https://imobireport.com.br/aluguel/morte-ou-invalidez-do-inquilino-o-que-ocorre-com-a-locacao-e-como-mitigar-o-risco-financeiro/",
-   "data": "19/11"
-  }
- ]
+ "itens": []
 }
