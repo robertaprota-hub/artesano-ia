@@ -1,32 +1,11 @@
 {
- "atualizado": "21/11 21h16",
+ "atualizado": "22/11 13h26",
  "janela": 1,
  "resumo": {
-  "data": "21/11/2026",
-  "hora": "21h16",
+  "data": "22/11/2026",
+  "hora": "13h26",
   "periodo": "ontem",
-  "itens": [
-   {
-    "titulo": "Fintech transforma aluguéis futuros em dinheiro imediato; entenda",
-    "texto": "Modelo de fintech permite que proprietários recebam antecipadamente valores de até 24 meses de contrato.",
-    "fontes": [
-     {
-      "nome": "InfoMoney",
-      "url": "https://www.infomoney.com.br/business/fintech-transforma-alugueis-futuros-em-dinheiro-imediato-entenda/"
-     }
-    ]
-   },
-   {
-    "titulo": "Rumo à industrialização da construção",
-    "texto": "Legislações precisam mudar para mitigar custos e elevar produtividade No afã de arrecadar mais para reparar o rombo do Orçamento de 2027, o pacote fiscal do governo trouxe aumentos como o de 20% nos…",
-    "fontes": [
-     {
-      "nome": "SindusCon-SP",
-      "url": "https://sindusconsp.com.br/rumo-a-industrializacao-da-construcao/"
-     }
-    ]
-   }
-  ]
+  "itens": []
  },
  "itens": []
 }
