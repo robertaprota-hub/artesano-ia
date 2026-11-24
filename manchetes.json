@@ -1,32 +1,77 @@
 {
- "atualizado": "23/11 23h51",
- "janela": 3,
+ "atualizado": "23/11 01h42",
+ "janela": 1,
  "resumo": {
-  "data": "23/11/2026",
-  "hora": "23h51",
-  "periodo": "sexta a domingo",
+  "data": "24/11/2026",
+  "hora": "01h42",
+  "periodo": "ontem",
   "itens": [
    {
-    "titulo": "Fintech transforma aluguéis futuros em dinheiro imediato; entenda",
-    "texto": "Modelo de fintech permite que proprietários recebam antecipadamente valores de até 24 meses de contrato.",
+    "titulo": "Redução da jornada, reforma tributária e juros elevados preocupam construção civil para 2027, aponta CBIC",
+    "texto": "Setor prevê ano desafiador, com riscos de aumento dos custos, adiamento de investimentos e impactos na produção habitacional; Minha Casa, Minha Vida deve seguir como principal motor do mercado A…",
     "fontes": [
      {
-      "nome": "InfoMoney",
-      "url": "https://www.infomoney.com.br/business/fintech-transforma-alugueis-futuros-em-dinheiro-imediato-entenda/"
+      "nome": "CBIC",
+      "url": "https://cbic.org.br/reducao-da-jornada-reforma-tributaria-e-juros-elevados-preocupam-construcao-civil-para-2027-aponta-cbic/"
      }
     ]
    },
    {
-    "titulo": "Rumo à industrialização da construção",
-    "texto": "Legislações precisam mudar para mitigar custos e elevar produtividade No afã de arrecadar mais para reparar o rombo do Orçamento de 2027, o pacote fiscal do governo trouxe aumentos como o de 20% nos…",
+    "titulo": "Minha Casa, Minha Vida segura lançamentos e vendas no 3º tri, mas 2027 preocupa CBIC",
+    "texto": "Entidade avalia que juros altos, reforma tributária e aumento de custos devem dificultar nova expansão do setor em 2027 The post Minha Casa, Minha Vida segura lançamentos e vendas no 3º tri, mas 2027 preocupa CBIC appeared first on InfoMoney .",
     "fontes": [
      {
-      "nome": "SindusCon-SP",
-      "url": "https://sindusconsp.com.br/rumo-a-industrializacao-da-construcao/"
+      "nome": "InfoMoney",
+      "url": "https://www.infomoney.com.br/economia/minha-casa-minha-vida-segura-lancamentos-e-vendas-no-3o-tri-mas-2027-preocupa-cbic/"
+     }
+    ]
+   },
+   {
+    "titulo": "Minha Casa, Minha Vida atinge participação recorde de 58,6% nos lançamentos imobiliários, aponta CBIC",
+    "texto": "Programa registra crescimento de 28,2% nos lançamentos e 21,6% nas vendas no terceiro trimestre de 2026; mercado nacional acumula alta de 4,9% nas unidades comercializadas no ano O programa Minha…",
+    "fontes": [
+     {
+      "nome": "CBIC",
+      "url": "https://cbic.org.br/minha-casa-minha-vida-atinge-participacao-recorde-de-586-nos-lancamentos-imobiliarios-aponta-cbic/"
+     }
+    ]
+   },
+   {
+    "titulo": "Conexão CBIC 2026: encontro estratégico amplia oportunidades e fortalece o futuro da construção",
+    "texto": "Ampliar conexões, acompanhar as principais transformações do setor e participar de discussões que influenciam o ambiente de negócios.",
+    "fontes": [
+     {
+      "nome": "CBIC",
+      "url": "https://cbic.org.br/conexao-cbic-2026-encontro-estrategico-amplia-oportunidades-e-fortalece-o-futuro-da-construcao/"
      }
     ]
    }
   ]
  },
- "itens": []
+ "itens": [
+  {
+   "fonte": "Secovi-SP",
+   "titulo": "\"É um ano desafiador\", diz economista do Bradesco, que projeta PIB de 0,4% e inflação de 5% a 6% em 2027",
+   "url": "https://secovi.com.br/e-um-ano-desafiador-diz-economista-do-bradesco-que-projeta-pib-de-04-e-inflacao-de-5-a-6-em-2027/",
+   "data": "23/11"
+  },
+  {
+   "fonte": "Secovi-SP",
+   "titulo": "Vacância baixa e oferta controlada indicam espaço para crescer no self storage e na logística urbana",
+   "url": "https://secovi.com.br/vacancia-baixa-e-oferta-controlada-indicam-espaco-para-crescer-no-self-storage-e-na-logistica-urbana/",
+   "data": "23/11"
+  },
+  {
+   "fonte": "Secovi-SP",
+   "titulo": "Apartamentos menores ampliam a demanda por self storage, afirma presidente executivo do Secovi-SP",
+   "url": "https://secovi.com.br/apartamentos-menores-ampliam-a-demanda-por-self-storage-afirma-presidente-executivo-do-secovi-sp/",
+   "data": "23/11"
+  },
+  {
+   "fonte": "SindusCon-SP",
+   "titulo": "CHP debate ajustes no Minha Casa",
+   "url": "https://sindusconsp.com.br/chp-debate-ajustes-no-minha-casa/",
+   "data": "23/11"
+  }
+ ]
 }
