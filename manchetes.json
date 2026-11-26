@@ -1,9 +1,9 @@
 {
- "atualizado": "26/11 15h36",
+ "atualizado": "26/11 15h57",
  "janela": 1,
  "resumo": {
   "data": "26/11/2026",
-  "hora": "15h36",
+  "hora": "15h57",
   "periodo": "ontem",
   "itens": [
    {
@@ -56,9 +56,21 @@
    "data": "25/11"
   },
   {
+   "fonte": "SindusCon-SP",
+   "titulo": "COI debate perspectivas para a construção industrial em 2027",
+   "url": "https://sindusconsp.com.br/coi-debate-perspectivas-para-a-construcao-industrial-em-2027/",
+   "data": "25/11"
+  },
+  {
    "fonte": "Imobi Report",
    "titulo": "Como a Apolar reaquece leads com inteligência artificial",
    "url": "https://imobireport.com.br/vendas/como-a-apolar-reaquece-leads-com-inteligencia-artificial/",
+   "data": "25/11"
+  },
+  {
+   "fonte": "SindusCon-SP",
+   "titulo": "Rodrigo von Uhlendorff assumirá a presidência do SindusCon-SP para o biênio 2027-2028",
+   "url": "https://sindusconsp.com.br/rodrigo-von-uhlendorff-assumira-a-presidencia-do-sinduscon-sp-para-o-bienio-2027-2028/",
    "data": "25/11"
   }
  ]
