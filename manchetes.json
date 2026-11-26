@@ -1,48 +1,48 @@
 {
- "atualizado": "25/11 23h44",
+ "atualizado": "26/11 15h29",
  "janela": 1,
  "resumo": {
-  "data": "25/11/2026",
-  "hora": "23h44",
+  "data": "26/11/2026",
+  "hora": "15h29",
   "periodo": "ontem",
   "itens": [
    {
-    "titulo": "CBIC apresenta demandas da construção à Vice-Presidência da República",
-    "texto": "A Câmara Brasileira da Indústria da Construção (CBIC) apresentou à Vice-Presidência da República, na última quinta-feira (19), as principais preocupações e propostas do setor relacionadas à implementação da Reforma Tributária do Consumo e à redução da jornada de trabalho.",
+    "titulo": "Reforma Tributária: Simples Nacional terá novas regras para IBS e CBS",
+    "texto": "O Comitê Gestor do Simples Nacional (CGSN) publicou nesta terça-feira (24), no Diário Oficial da União (DOU), uma resolução que regulamenta a apuração, o recolhimento e o creditamento do Imposto…",
     "fontes": [
      {
       "nome": "CBIC",
-      "url": "https://cbic.org.br/cbic-apresenta-demandas-da-construcao-a-vice-presidencia-da-republica/"
+      "url": "https://cbic.org.br/reforma-tributaria-simples-nacional-tera-novas-regras-para-ibs-e-cbs/"
      }
     ]
    },
    {
-    "titulo": "Distratos chegam a 25% das vendas das incorporadoras",
-    "texto": "Confira os principais eventos na agenda do Imobi Report e da CUPOLA nesta semana: Entre as incorporadoras listadas na B3, os distratos chegaram a 25% das vendas de imóveis no 3º trimestre.",
+    "titulo": "CBIC e Ministério das Cidades discutem ampliação de investimentos em requalificação urbana",
+    "texto": "A recuperação de centros históricos e a transformação de espaços públicos degradados em polos de desenvolvimento econômico e social foram temas do Workshop Requalificação de Áreas Urbanas, realizado…",
     "fontes": [
      {
-      "nome": "Imobi Report",
-      "url": "https://imobireport.com.br/newsletter-do-imobi/distratos-chegam-a-25-das-vendas-das-incorporadoras/"
+      "nome": "CBIC",
+      "url": "https://cbic.org.br/cbic-e-ministerio-das-cidades-discutem-ampliacao-de-investimentos-em-requalificacao-urbana/"
      }
     ]
    },
    {
-    "titulo": "Conexão CBIC confirma especialistas para participar de debates sobre habitação e infraestrutura",
-    "texto": "Inovação na produção habitacional, crédito imobiliário, retomada de obras públicas e investimentos em logística estão entre os temas da segunda edição do Conexão CBIC.",
+    "titulo": "Conexão CBIC: agenda de debates para quem quer antecipar os rumos da construção",
+    "texto": "O que vai influenciar os negócios da construção em 2027?",
     "fontes": [
      {
       "nome": "CBIC",
-      "url": "https://cbic.org.br/conexao-cbic-confirma-especialistas-para-participar-de-debates-sobre-habitacao-e-infraestrutura/"
+      "url": "https://cbic.org.br/conexao-cbic-agenda-de-debates-para-quem-quer-antecipar-os-rumos-da-construcao/"
      }
     ]
    },
    {
-    "titulo": "Missão à China: CBIC acompanha avanços em robótica e industrialização da construção",
-    "texto": "O presidente da Câmara Brasileira da Indústria da Construção (CBIC), Eduardo Aroeira, acompanha uma série de visitas técnicas na China para conhecer soluções tecnológicas voltadas à modernização dos processos construtivos.",
+    "titulo": "Teto de juros do financiamento imobiliário \"vai ser resolvido\", acredita presidente do Bradesco",
+    "texto": "Marcelo Noronha também projetou crescimento de 0,4% do PIB e de 9% a 10% do crédito imobiliário em 2027; Carlos Andreazza apontou 2030 como janela de mudança O teto de [&#8230;]",
     "fontes": [
      {
-      "nome": "CBIC",
-      "url": "https://cbic.org.br/missao-a-china-cbic-acompanha-avancos-em-robotica-e-industrializacao-da-construcao/"
+      "nome": "Secovi-SP",
+      "url": "https://secovi.com.br/teto-de-juros-do-financiamento-imobiliario-vai-ser-resolvido-acredita-presidente-do-bradesco/"
      }
     ]
    }
@@ -50,34 +50,16 @@
  },
  "itens": [
   {
-   "fonte": "SindusCon-SP",
-   "titulo": "MCMV atinge participação recorde em lançamentos",
-   "url": "https://sindusconsp.com.br/mcmv-atinge-participacao-recorde-em-lancamentos/",
-   "data": "24/11"
-  },
-  {
-   "fonte": "InfoMoney",
-   "titulo": "Aluguel comercial sobe 12% em um ano, quase três vezes a inflação, diz FipeZAP",
-   "url": "https://www.infomoney.com.br/minhas-financas/aluguel-comercial-sobe-12-em-um-ano-quase-tres-vezes-a-inflacao-diz-fipezap/",
-   "data": "24/11"
-  },
-  {
    "fonte": "Secovi-SP",
-   "titulo": "Antes da inteligência artificial, self storage precisa de dado confiável e de poucos indicadores, dizem executivos",
-   "url": "https://secovi.com.br/antes-da-inteligencia-artificial-self-storage-precisa-de-dado-confiavel-e-de-poucos-indicadores-dizem-executivos/",
-   "data": "24/11"
+   "titulo": "Condomínio não é empresa",
+   "url": "https://secovi.com.br/condominio-nao-e-empresa/",
+   "data": "25/11"
   },
   {
-   "fonte": "SindusCon-SP",
-   "titulo": "Impactos da redução da jornada na construção são tema de entrevista à Rádio Bandeirantes e BandNews TV",
-   "url": "https://sindusconsp.com.br/impactos-da-reducao-da-jornada-na-construcao-sao-tema-de-entrevista-a-radio-bandeirantes-e-bandnews-tv/",
-   "data": "24/11"
-  },
-  {
-   "fonte": "SindusCon-SP",
-   "titulo": "Mensagem do presidente eleito do SindusCon-SP, Rodrigo Fairbanks von Uhlendorff, na diplomação dos eleitos para Diretoria e Conselhos da entidade, em 23/11/2026",
-   "url": "https://sindusconsp.com.br/mensagem-do-presidente-eleito-do-sinduscon-sp-rodrigo-fairbanks-von-uhlendorff-na-diplomacao-dos-eleitos-para-diretoria-e-conselhos-da-entidade-em-23-11-2026/",
-   "data": "24/11"
+   "fonte": "Imobi Report",
+   "titulo": "Como a Apolar reaquece leads com inteligência artificial",
+   "url": "https://imobireport.com.br/vendas/como-a-apolar-reaquece-leads-com-inteligencia-artificial/",
+   "data": "25/11"
   }
  ]
 }
