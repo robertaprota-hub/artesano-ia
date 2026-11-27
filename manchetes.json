@@ -1,9 +1,9 @@
 {
- "atualizado": "27/11 16h54",
+ "atualizado": "27/11 18h56",
  "janela": 1,
  "resumo": {
   "data": "27/11/2026",
-  "hora": "16h54",
+  "hora": "18h56",
   "periodo": "ontem",
   "itens": [
    {
@@ -68,9 +68,27 @@
    "data": "26/11"
   },
   {
+   "fonte": "SindusCon-SP",
+   "titulo": "Senai-SP e Sesi-SP abrem novas licitações",
+   "url": "https://sindusconsp.com.br/senai-sp-e-sesi-sp-abrem-novas-licitacoes-10/",
+   "data": "26/11"
+  },
+  {
    "fonte": "Imobi Report",
    "titulo": "CasaSul e São Pietro lançam três empreendimentos senior living no Paraná",
    "url": "https://imobireport.com.br/incorporacao/casasul-e-sao-pietro-lancam-tres-empreendimentos-senior-living-no-parana/",
+   "data": "26/11"
+  },
+  {
+   "fonte": "SindusCon-SP",
+   "titulo": "Entidades unem-se pela qualidade dos projetos",
+   "url": "https://sindusconsp.com.br/entidades-unem-se-pela-qualidade-dos-projetos/",
+   "data": "26/11"
+  },
+  {
+   "fonte": "SindusCon-SP",
+   "titulo": "GT de Produtividade do CTQ avança no desenvolvimento de indicador para a construção",
+   "url": "https://sindusconsp.com.br/gt-de-produtividade-avanca-na-construcao-de-indicador-para-a-construcao/",
    "data": "26/11"
   },
   {
