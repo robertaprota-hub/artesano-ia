@@ -1,48 +1,48 @@
 {
- "atualizado": "26/11 23h45",
+ "atualizado": "27/11 15h16",
  "janela": 1,
  "resumo": {
-  "data": "26/11/2026",
-  "hora": "23h45",
+  "data": "27/11/2026",
+  "hora": "15h16",
   "periodo": "ontem",
   "itens": [
    {
-    "titulo": "Reforma Tributária: Simples Nacional terá novas regras para IBS e CBS",
-    "texto": "O Comitê Gestor do Simples Nacional (CGSN) publicou nesta terça-feira (24), no Diário Oficial da União (DOU), uma resolução que regulamenta a apuração, o recolhimento e o creditamento do Imposto…",
+    "titulo": "Ademi-AL: Prêmio Master Ademi 2026 reconhece os destaques do mercado imobiliário alagoano",
+    "texto": "O mercado imobiliário alagoano terá uma noite de celebração e reconhecimento nesta sexta-feira, 27 de novembro, com a realização do Prêmio Master Ademi 2026.",
     "fontes": [
      {
       "nome": "CBIC",
-      "url": "https://cbic.org.br/reforma-tributaria-simples-nacional-tera-novas-regras-para-ibs-e-cbs/"
+      "url": "https://cbic.org.br/ademi-al-premio-master-ademi-2026-reconhece-os-destaques-do-mercado-imobiliario-alagoano/"
      }
     ]
    },
    {
-    "titulo": "CBIC e Ministério das Cidades discutem ampliação de investimentos em requalificação urbana",
-    "texto": "A recuperação de centros históricos e a transformação de espaços públicos degradados em polos de desenvolvimento econômico e social foram temas do Workshop Requalificação de Áreas Urbanas, realizado…",
+    "titulo": "CBIC participa do CONEST e debate segurança de máquinas e equipamentos na construção",
+    "texto": "A segurança nos canteiros de obras começa antes da operação de uma máquina ou da instalação de um equipamento.",
     "fontes": [
      {
       "nome": "CBIC",
-      "url": "https://cbic.org.br/cbic-e-ministerio-das-cidades-discutem-ampliacao-de-investimentos-em-requalificacao-urbana/"
+      "url": "https://cbic.org.br/cbic-participa-do-conest-e-debate-seguranca-de-maquinas-e-equipamentos-na-construcao/"
      }
     ]
    },
    {
-    "titulo": "Conexão CBIC: agenda de debates para quem quer antecipar os rumos da construção",
-    "texto": "O que vai influenciar os negócios da construção em 2027?",
+    "titulo": "Segurança na construção: cumprimento da NR-6 vai além do fornecimento de EPIs",
+    "texto": "O fornecimento de Equipamentos de Proteção Individual (EPIs) é fundamental para a segurança dos trabalhadores da construção civil.",
     "fontes": [
      {
       "nome": "CBIC",
-      "url": "https://cbic.org.br/conexao-cbic-agenda-de-debates-para-quem-quer-antecipar-os-rumos-da-construcao/"
+      "url": "https://cbic.org.br/seguranca-na-construcao-cumprimento-da-nr-6-vai-alem-do-fornecimento-de-epis/"
      }
     ]
    },
    {
-    "titulo": "Teto de juros do financiamento imobiliário \"vai ser resolvido\", acredita presidente do Bradesco",
-    "texto": "Marcelo Noronha também projetou crescimento de 0,4% do PIB e de 9% a 10% do crédito imobiliário em 2027; Carlos Andreazza apontou 2030 como janela de mudança O teto de [&#8230;]",
+    "titulo": "“A venda é consequência do relacionamento”: dois operadores mostram como atender melhor e medir quanto do anúncio vira contrato",
+    "texto": "Yasmin Almeida, fundadora da BS Box Self Storage, defendeu o atendimento humanizado como diferencial competitivo, e Daniel Freitas, diretor da CabeMais, apresentou como a integração de dados e a IA…",
     "fontes": [
      {
       "nome": "Secovi-SP",
-      "url": "https://secovi.com.br/teto-de-juros-do-financiamento-imobiliario-vai-ser-resolvido-acredita-presidente-do-bradesco/"
+      "url": "https://secovi.com.br/a-venda-e-consequencia-do-relacionamento-dois-operadores-mostram-como-atender-melhor-e-medir-quanto-do-anuncio-vira-contrato/"
      }
     ]
    }
@@ -51,21 +51,57 @@
  "itens": [
   {
    "fonte": "Secovi-SP",
-   "titulo": "Condomínio não é empresa",
-   "url": "https://secovi.com.br/condominio-nao-e-empresa/",
-   "data": "25/11"
+   "titulo": "Quando a IA cria um produto em dois dias, o que diferencia a marca? Propósito, repertório e distribuição",
+   "url": "https://secovi.com.br/quando-a-ia-cria-um-produto-em-dois-dias-o-que-diferencia-a-marca-proposito-repertorio-e-distribuicao/",
+   "data": "26/11"
   },
   {
-   "fonte": "Imobi Report",
-   "titulo": "Como a Apolar reaquece leads com inteligência artificial",
-   "url": "https://imobireport.com.br/vendas/como-a-apolar-reaquece-leads-com-inteligencia-artificial/",
-   "data": "25/11"
+   "fonte": "Secovi-SP",
+   "titulo": "\"A IA erra com a mesma eloquência com que acerta\", alerta cofundadora da Bits",
+   "url": "https://secovi.com.br/a-ia-erra-com-a-mesma-eloquencia-com-que-acerta-alerta-cofundadora-da-bits/",
+   "data": "26/11"
+  },
+  {
+   "fonte": "InfoMoney",
+   "titulo": "Black Friday da casa própria? BB põe 215 imóveis à venda em leilão sem lance mínimo",
+   "url": "https://www.infomoney.com.br/minhas-financas/black-friday-da-casa-propria-bb-poe-215-imoveis-a-venda-em-leilao-sem-lance-minimo/",
+   "data": "26/11"
   },
   {
    "fonte": "SindusCon-SP",
-   "titulo": "Rodrigo von Uhlendorff assumirá a presidência do SindusCon-SP para o biênio 2027-2028",
-   "url": "https://sindusconsp.com.br/rodrigo-von-uhlendorff-assumira-a-presidencia-do-sinduscon-sp-para-o-bienio-2027-2028/",
-   "data": "25/11"
+   "titulo": "Senai-SP e Sesi-SP abrem novas licitações",
+   "url": "https://sindusconsp.com.br/senai-sp-e-sesi-sp-abrem-novas-licitacoes-10/",
+   "data": "26/11"
+  },
+  {
+   "fonte": "Imobi Report",
+   "titulo": "CasaSul e São Pietro lançam três empreendimentos senior living no Paraná",
+   "url": "https://imobireport.com.br/incorporacao/casasul-e-sao-pietro-lancam-tres-empreendimentos-senior-living-no-parana/",
+   "data": "26/11"
+  },
+  {
+   "fonte": "SindusCon-SP",
+   "titulo": "Entidades unem-se pela qualidade dos projetos",
+   "url": "https://sindusconsp.com.br/entidades-unem-se-pela-qualidade-dos-projetos/",
+   "data": "26/11"
+  },
+  {
+   "fonte": "SindusCon-SP",
+   "titulo": "GT de Produtividade do CTQ avança no desenvolvimento de indicador para a construção",
+   "url": "https://sindusconsp.com.br/gt-de-produtividade-avanca-na-construcao-de-indicador-para-a-construcao/",
+   "data": "26/11"
+  },
+  {
+   "fonte": "Imobi Report",
+   "titulo": "Estudo inédito da UFMG mede a velocidade de venda e locação de imóveis em três das maiores capitais do país",
+   "url": "https://imobireport.com.br/aluguel/estudo-inedito-da-ufmg-mede-a-velocidade-de-venda-e-locacao-de-imoveis-em-tres-das-maiores-capitais-do-pais/",
+   "data": "26/11"
+  },
+  {
+   "fonte": "Imobi Report",
+   "titulo": "Como a IA transforma o marketing das imobiliárias",
+   "url": "https://imobireport.com.br/imobi-report-opiniao/como-a-ia-transforma-o-marketing-das-imobiliarias/",
+   "data": "26/11"
   }
  ]
 }
