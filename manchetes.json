@@ -1,48 +1,48 @@
 {
- "atualizado": "27/11 23h36",
+ "atualizado": "28/11 13h58",
  "janela": 1,
  "resumo": {
-  "data": "27/11/2026",
-  "hora": "23h36",
+  "data": "28/11/2026",
+  "hora": "13h58",
   "periodo": "ontem",
   "itens": [
    {
-    "titulo": "Ademi-AL: Prêmio Master Ademi 2026 reconhece os destaques do mercado imobiliário alagoano",
-    "texto": "O mercado imobiliário alagoano terá uma noite de celebração e reconhecimento nesta sexta-feira, 27 de novembro, com a realização do Prêmio Master Ademi 2026.",
+    "titulo": "Conexão CBIC: falta pouco para o encontro que debate o futuro da construção",
+    "texto": "Falta pouco para a segunda edição do Conexão CBIC, que acontece nesta terça-feira (1º), em Brasília.",
     "fontes": [
      {
       "nome": "CBIC",
-      "url": "https://cbic.org.br/ademi-al-premio-master-ademi-2026-reconhece-os-destaques-do-mercado-imobiliario-alagoano/"
+      "url": "https://cbic.org.br/conexao-cbic-falta-pouco-para-o-encontro-que-debate-o-futuro-da-construcao/"
      }
     ]
    },
    {
-    "titulo": "CBIC participa do CONEST e debate segurança de máquinas e equipamentos na construção",
-    "texto": "A segurança nos canteiros de obras começa antes da operação de uma máquina ou da instalação de um equipamento.",
+    "titulo": "CBIC apoia manifesto em defesa da independência das agências reguladoras",
+    "texto": "Publicado nesta quinta-feira (26), por diversas instituições, o manifesto “Regulação é função de Estado, não de governo” defende a independência técnica e decisória das agências reguladoras brasileiras.",
     "fontes": [
      {
       "nome": "CBIC",
-      "url": "https://cbic.org.br/cbic-participa-do-conest-e-debate-seguranca-de-maquinas-e-equipamentos-na-construcao/"
+      "url": "https://cbic.org.br/cbic-apoia-manifesto-em-defesa-da-independencia-das-agencias-reguladoras/"
      }
     ]
    },
    {
-    "titulo": "Segurança na construção: cumprimento da NR-6 vai além do fornecimento de EPIs",
-    "texto": "O fornecimento de Equipamentos de Proteção Individual (EPIs) é fundamental para a segurança dos trabalhadores da construção civil.",
+    "titulo": "Redução da 6&#215;1 tumultua a construção",
+    "texto": "Setor requer mais prazo para lidar com impactos sobre as obras Faltando apenas 13 dias úteis para o fim da escala de trabalho 6&#215;1, a indústria da construção enfrenta grandes dificuldades para se adaptar à jornada de 42 horas semanais, com 2 dias de Descanso Semanal Remunerado.",
     "fontes": [
      {
-      "nome": "CBIC",
-      "url": "https://cbic.org.br/seguranca-na-construcao-cumprimento-da-nr-6-vai-alem-do-fornecimento-de-epis/"
+      "nome": "SindusCon-SP",
+      "url": "https://sindusconsp.com.br/reducao-da-6x1-tumultua-a-construcao/"
      }
     ]
    },
    {
-    "titulo": "“A venda é consequência do relacionamento”: dois operadores mostram como atender melhor e medir quanto do anúncio vira contrato",
-    "texto": "Yasmin Almeida, fundadora da BS Box Self Storage, defendeu o atendimento humanizado como diferencial competitivo, e Daniel Freitas, diretor da CabeMais, apresentou como a integração de dados e a IA…",
+    "titulo": "CBIC debate produtividade e gestão de projetos industriais no Megaobra 2026",
+    "texto": "A produtividade e os desafios da gestão no setor de obras industriais foram temas de dois painéis promovidos pela Comissão de Obras Industriais e Corporativas da Câmara Brasileira da Indústria da…",
     "fontes": [
      {
-      "nome": "Secovi-SP",
-      "url": "https://secovi.com.br/a-venda-e-consequencia-do-relacionamento-dois-operadores-mostram-como-atender-melhor-e-medir-quanto-do-anuncio-vira-contrato/"
+      "nome": "CBIC",
+      "url": "https://cbic.org.br/cbic-debate-produtividade-e-gestao-de-projetos-industriais-no-megaobra-2026/"
      }
     ]
    }
@@ -50,58 +50,16 @@
  },
  "itens": [
   {
-   "fonte": "Secovi-SP",
-   "titulo": "Quando a IA cria um produto em dois dias, o que diferencia a marca? Propósito, repertório e distribuição",
-   "url": "https://secovi.com.br/quando-a-ia-cria-um-produto-em-dois-dias-o-que-diferencia-a-marca-proposito-repertorio-e-distribuicao/",
-   "data": "26/11"
-  },
-  {
-   "fonte": "Secovi-SP",
-   "titulo": "\"A IA erra com a mesma eloquência com que acerta\", alerta cofundadora da Bits",
-   "url": "https://secovi.com.br/a-ia-erra-com-a-mesma-eloquencia-com-que-acerta-alerta-cofundadora-da-bits/",
-   "data": "26/11"
-  },
-  {
-   "fonte": "InfoMoney",
-   "titulo": "Black Friday da casa própria? BB põe 215 imóveis à venda em leilão sem lance mínimo",
-   "url": "https://www.infomoney.com.br/minhas-financas/black-friday-da-casa-propria-bb-poe-215-imoveis-a-venda-em-leilao-sem-lance-minimo/",
-   "data": "26/11"
+   "fonte": "SindusCon-SP",
+   "titulo": "SindusCon-SP prestigia festa de 25 anos da ABCIC",
+   "url": "https://sindusconsp.com.br/sinduscon-sp-prestigia-festa-de-25-anos-da-abcic/",
+   "data": "27/11"
   },
   {
    "fonte": "SindusCon-SP",
-   "titulo": "Senai-SP e Sesi-SP abrem novas licitações",
-   "url": "https://sindusconsp.com.br/senai-sp-e-sesi-sp-abrem-novas-licitacoes-10/",
-   "data": "26/11"
-  },
-  {
-   "fonte": "Imobi Report",
-   "titulo": "CasaSul e São Pietro lançam três empreendimentos senior living no Paraná",
-   "url": "https://imobireport.com.br/incorporacao/casasul-e-sao-pietro-lancam-tres-empreendimentos-senior-living-no-parana/",
-   "data": "26/11"
-  },
-  {
-   "fonte": "SindusCon-SP",
-   "titulo": "Entidades unem-se pela qualidade dos projetos",
-   "url": "https://sindusconsp.com.br/entidades-unem-se-pela-qualidade-dos-projetos/",
-   "data": "26/11"
-  },
-  {
-   "fonte": "SindusCon-SP",
-   "titulo": "GT de Produtividade do CTQ avança no desenvolvimento de indicador para a construção",
-   "url": "https://sindusconsp.com.br/gt-de-produtividade-avanca-na-construcao-de-indicador-para-a-construcao/",
-   "data": "26/11"
-  },
-  {
-   "fonte": "Imobi Report",
-   "titulo": "Estudo inédito da UFMG mede a velocidade de venda e locação de imóveis em três das maiores capitais do país",
-   "url": "https://imobireport.com.br/aluguel/estudo-inedito-da-ufmg-mede-a-velocidade-de-venda-e-locacao-de-imoveis-em-tres-das-maiores-capitais-do-pais/",
-   "data": "26/11"
-  },
-  {
-   "fonte": "Imobi Report",
-   "titulo": "Como a IA transforma o marketing das imobiliárias",
-   "url": "https://imobireport.com.br/imobi-report-opiniao/como-a-ia-transforma-o-marketing-das-imobiliarias/",
-   "data": "26/11"
+   "titulo": "Pessimismo da construção é sinal de alerta",
+   "url": "https://sindusconsp.com.br/pessimismo-da-construcao-e-sinal-de-alerta/",
+   "data": "27/11"
   }
  ]
 }
