@@ -1,9 +1,9 @@
 {
- "atualizado": "28/11 14h46",
+ "atualizado": "28/11 15h12",
  "janela": 1,
  "resumo": {
   "data": "28/11/2026",
-  "hora": "14h46",
+  "hora": "15h12",
   "periodo": "ontem",
   "itens": [
    {
@@ -27,16 +27,6 @@
     ]
    },
    {
-    "titulo": "Redução da 6&#215;1 tumultua a construção",
-    "texto": "Setor requer mais prazo para lidar com impactos sobre as obras Faltando apenas 13 dias úteis para o fim da escala de trabalho 6&#215;1, a indústria da construção enfrenta grandes dificuldades para se adaptar à jornada de 42 horas semanais, com 2 dias de Descanso Semanal Remunerado.",
-    "fontes": [
-     {
-      "nome": "SindusCon-SP",
-      "url": "https://sindusconsp.com.br/reducao-da-6x1-tumultua-a-construcao/"
-     }
-    ]
-   },
-   {
     "titulo": "CBIC debate produtividade e gestão de projetos industriais no Megaobra 2026",
     "texto": "A produtividade e os desafios da gestão no setor de obras industriais foram temas de dois painéis promovidos pela Comissão de Obras Industriais e Corporativas da Câmara Brasileira da Indústria da…",
     "fontes": [
@@ -48,18 +38,5 @@
    }
   ]
  },
- "itens": [
-  {
-   "fonte": "SindusCon-SP",
-   "titulo": "SindusCon-SP prestigia festa de 25 anos da ABCIC",
-   "url": "https://sindusconsp.com.br/sinduscon-sp-prestigia-festa-de-25-anos-da-abcic/",
-   "data": "27/11"
-  },
-  {
-   "fonte": "SindusCon-SP",
-   "titulo": "Pessimismo da construção é sinal de alerta",
-   "url": "https://sindusconsp.com.br/pessimismo-da-construcao-e-sinal-de-alerta/",
-   "data": "27/11"
-  }
- ]
+ "itens": []
 }
